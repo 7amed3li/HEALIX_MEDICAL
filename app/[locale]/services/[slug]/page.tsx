@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowLeft, ArrowRight, CheckCircle2, Info, ShieldAlert } from "lucide-react";
@@ -7,8 +8,8 @@ import { getDictionary, getServiceDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, type LocalizedPaths } from "@/lib/seo/metadata";
 import { getServiceBySlug, services } from "@/content/services";
 import { pagePath, servicePath } from "@/lib/i18n/routes";
+import { serviceImage } from "@/lib/service-images";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
-import { SpecialtyVisual } from "@/components/ui/SpecialtyVisual";
 import { FaqAccordion } from "@/components/ui/FaqAccordion";
 import { BdiText } from "@/components/ui/BdiText";
 
@@ -69,7 +70,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   return (
     <>
       {/* 1. Specialty Hero on light #EFF5F7 (mist) with #10283E headings & SpecialtyVisual */}
-      <section className="border-b border-line bg-mist py-12 sm:py-16">
+      <section className="page-hero">
         <div className="container-page">
           <nav aria-label={dict.a11y.breadcrumb}>
             <Link
@@ -83,23 +84,23 @@ export default async function ServiceDetailPage({ params }: Props) {
 
           <div className="mt-6 grid items-center gap-8 lg:grid-cols-12 lg:gap-10">
             <div className="lg:col-span-7">
-              <h1 className="text-3xl font-bold text-navy sm:text-4xl">
+              <h1 className="text-4xl font-semibold leading-[1.12] text-navy sm:text-5xl">
                 {content.name}
               </h1>
               <p className="mt-4 text-base leading-relaxed text-slate sm:text-lg">
                 <BdiText text={content.intro} />
               </p>
-              <div className="mt-7 flex flex-wrap items-center gap-3.5">
+              <div className="mt-8 flex flex-wrap items-center gap-3.5">
                 <Link
                   href={pagePath(locale as Locale, "contact")}
-                  className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-action px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-action-hover"
+                  className="btn-primary min-h-12 px-6 py-3 text-sm"
                 >
                   <span>{content.cta}</span>
                   <ArrowRight className="flip-rtl h-4 w-4" aria-hidden="true" />
                 </Link>
                 <Link
                   href={pagePath(locale as Locale, "journey")}
-                  className="inline-flex min-h-11 items-center rounded-lg border border-line bg-white px-4 py-2.5 text-sm font-medium text-navy hover:border-ice"
+                  className="btn-ghost min-h-12 px-5 py-3 text-sm"
                 >
                   {dict.common.ctaSecondary}
                 </Link>
@@ -107,22 +108,34 @@ export default async function ServiceDetailPage({ params }: Props) {
             </div>
 
             <div className="lg:col-span-5">
-              <SpecialtyVisual
-                id={svc.id}
-                steps={content.steps}
-                stepsTitle={dict.servicesPage.stepsTitle}
-              />
+              {/* Anatomical render panel (Design v2) – the specialty's organ
+                  illustration as the hero's visual block */}
+              <div className="relative overflow-hidden rounded-[1.75rem] shadow-card ring-1 ring-line-soft">
+                <Image
+                  src={serviceImage(svc.id)}
+                  alt={content.name}
+                  width={1200}
+                  height={900}
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-bright via-ice to-brand-red"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* 2. Asymmetric editorial body: Overview blocks + What HEALIX coordinates */}
-      <section className="bg-white py-14 sm:py-18">
+      <section className="bg-white py-20 sm:py-24">
         <div className="container-page space-y-14">
           {isTransplant && (
-            <div className="flex items-start gap-3.5 rounded-2xl border border-ice/60 bg-mist p-5">
-              <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-brand-red" aria-hidden="true" />
+            <div className="flex items-start gap-3.5 rounded-[1.5rem] border border-gold/45 bg-[#faf6ec] p-6">
+              <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-gold-deep" aria-hidden="true" />
               <div className="text-xs leading-relaxed text-navy">
                 <p className="font-bold">{dict.servicesPage.noticeTitle}</p>
                 <p className="mt-1 text-slate-strong">
@@ -135,19 +148,19 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div className="grid items-start gap-8 lg:grid-cols-12">
             {/* Short structured blocks explaining the subject of inquiry */}
             <div className="lg:col-span-6">
-              <h2 className="text-xl font-bold text-navy sm:text-2xl">
+              <h2 className="text-2xl font-semibold text-navy sm:text-[1.7rem]">
                 {dict.servicesPage.descriptionTitle}
               </h2>
-              <div className="mt-5 space-y-4">
+              <div className="mt-6 space-y-4">
                 {content.overview.map((paragraph, idx) => (
                   <div
                     key={paragraph}
-                    className="rounded-xl border border-line bg-mist/45 p-5 text-sm leading-relaxed text-navy"
+                    className="rounded-2xl border border-line-soft bg-white p-6 text-sm leading-relaxed text-navy shadow-soft"
                   >
-                    <span className="inline-block text-xs font-bold uppercase tracking-wider text-action">
+                    <span className="display-type inline-block text-[1.6rem] font-semibold leading-none text-bright">
                       0{idx + 1}
                     </span>
-                    <p className="mt-1.5 text-slate-strong">
+                    <p className="mt-2.5 text-slate-strong">
                       <BdiText text={paragraph} />
                     </p>
                   </div>
@@ -156,18 +169,18 @@ export default async function ServiceDetailPage({ params }: Props) {
             </div>
 
             {/* What HEALIX MEDICAL coordinates */}
-            <div className="rounded-2xl border border-line bg-mist/75 p-6 sm:p-8 lg:col-span-6">
-              <h2 className="text-xl font-bold text-navy">
+            <div className="rounded-[1.75rem] border border-line-soft bg-mist-soft p-7 sm:p-9 lg:col-span-6">
+              <h2 className="text-2xl font-semibold text-navy">
                 {dict.servicesPage.coordinationTitle}
               </h2>
-              <ul className="mt-5 space-y-3 text-sm leading-relaxed text-navy">
+              <ul className="mt-6 space-y-3 text-sm leading-relaxed text-navy">
                 {content.coordination.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 rounded-xl border border-line bg-white px-4 py-3"
+                    className="flex items-start gap-3 rounded-xl border border-line-soft bg-white px-4 py-3"
                   >
                     <CheckCircle2
-                      className="mt-0.5 h-4 w-4 shrink-0 text-action"
+                      className="mt-0.5 h-4 w-4 shrink-0 text-bright"
                       aria-hidden="true"
                     />
                     <span>{item}</span>
@@ -178,23 +191,26 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
 
           {/* 3. Service-specific 4-stage coordination timeline */}
-          <div className="border-t border-line pt-12">
-            <h2 className="text-xl font-bold text-navy sm:text-2xl">
+          <div className="border-t border-line-soft pt-14">
+            <h2 className="text-2xl font-semibold text-navy sm:text-[1.7rem]">
               {dict.servicesPage.stepsTitle}
             </h2>
-            <ol className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <ol className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {content.steps.map((step, i) => (
                 <li
                   key={step.title}
-                  className="flex flex-col rounded-2xl border border-line bg-white p-5"
+                  className="flex flex-col rounded-3xl border border-line-soft bg-white p-6 shadow-soft"
                 >
-                  <div className="flex items-center gap-2.5">
-                    <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy text-xs font-bold text-white">
+                  <div className="flex items-baseline gap-3">
+                    <span className="display-type text-[2rem] font-semibold leading-none text-bright">
                       {i + 1}
                     </span>
-                    <span className="h-px flex-1 bg-ice/60" aria-hidden="true" />
+                    <span
+                      className="h-px flex-1 self-center bg-gradient-to-r from-bright/50 to-ice/30 rtl:bg-gradient-to-l"
+                      aria-hidden="true"
+                    />
                   </div>
-                  <h3 className="mt-3.5 text-base font-bold text-navy">
+                  <h3 className="display-type mt-4 text-[1.15rem] font-semibold leading-snug text-navy">
                     {step.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-slate">
@@ -206,9 +222,9 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
 
           {/* 4. Service-specific FAQ accordion */}
-          <div className="grid items-start gap-8 border-t border-line pt-12 lg:grid-cols-12">
+          <div className="grid items-start gap-8 border-t border-line-soft pt-14 lg:grid-cols-12">
             <div className="lg:col-span-4">
-              <h2 className="text-xl font-bold text-navy sm:text-2xl">
+              <h2 className="text-2xl font-semibold text-navy sm:text-[1.7rem]">
                 {dict.servicesPage.faqTitle}
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate">
@@ -221,19 +237,23 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
 
           {/* 5. Service CTA + Medical disclaimer banner */}
-          <div className="rounded-2xl border border-ice/55 bg-mist p-7 sm:p-9 lg:flex lg:items-center lg:justify-between lg:gap-8">
+          <div className="on-dark surface-dark grain relative overflow-hidden rounded-[2rem] p-8 shadow-lift sm:p-11 lg:flex lg:items-center lg:justify-between lg:gap-10">
+            <span
+              aria-hidden="true"
+              className="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-ice/70 to-transparent"
+            />
             <div className="max-w-2xl">
-              <h2 className="text-xl font-bold text-navy sm:text-2xl">
+              <h2 className="text-2xl font-semibold text-white sm:text-[1.8rem]">
                 {dict.servicesPage.ctaTitle}
               </h2>
-              <p className="mt-2 text-sm leading-relaxed text-slate">
+              <p className="mt-3 text-sm leading-relaxed text-white/75 sm:text-base">
                 {dict.servicesPage.ctaText}
               </p>
             </div>
-            <div className="mt-5 shrink-0 lg:mt-0">
+            <div className="mt-6 shrink-0 lg:mt-0">
               <Link
                 href={pagePath(locale as Locale, "contact")}
-                className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-action px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-action-hover"
+                className="btn-primary min-h-12 px-6 py-3 text-sm"
               >
                 <span>{content.cta}</span>
                 <ArrowRight className="flip-rtl h-4 w-4" aria-hidden="true" />
@@ -241,7 +261,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             </div>
           </div>
 
-          <div className="flex items-start gap-3 rounded-2xl border border-line bg-mist p-5">
+          <div className="flex items-start gap-3 rounded-[1.5rem] border border-line-soft bg-mist-soft p-6">
             <Info className="mt-0.5 h-5 w-5 shrink-0 text-action" aria-hidden="true" />
             <div>
               <h2 className="text-sm font-bold text-navy">
@@ -254,11 +274,13 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
 
           {/* 6. Compact "Other services" strip at the bottom of the page (not a crowded sidebar) */}
-          <div className="border-t border-line pt-10">
+          <div className="border-t border-line-soft pt-12">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-sm font-bold uppercase tracking-wider text-navy">
                 {dict.servicesPage.relatedTitle}
               </h2>
+              <span className="h-px w-10 bg-brand-red" aria-hidden="true" />
+              <span className="h-px flex-1 bg-line-soft" aria-hidden="true" />
               <Link
                 href={pagePath(locale as Locale, "services")}
                 className="inline-flex items-center gap-1 text-xs font-semibold text-action hover:text-action-hover"
@@ -267,14 +289,14 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <ArrowRight className="flip-rtl h-3.5 w-3.5" aria-hidden="true" />
               </Link>
             </div>
-            <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((item) => (
                 <Link
                   key={item.id}
                   href={servicePath(locale as Locale, item.id)}
-                  className="group flex items-center gap-3 rounded-xl border border-line bg-white p-4 transition-colors hover:border-ice hover:bg-mist/40"
+                  className="group flex items-center gap-3 rounded-2xl border border-line-soft bg-white p-4 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-bright/40 hover:shadow-lift"
                 >
-                  <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-mist text-action">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-mist text-action transition-colors duration-300 group-hover:bg-navy group-hover:text-ice">
                     <ServiceIcon id={item.id} className="h-4 w-4" />
                   </span>
                   <span className="text-sm font-semibold text-navy group-hover:text-action">
