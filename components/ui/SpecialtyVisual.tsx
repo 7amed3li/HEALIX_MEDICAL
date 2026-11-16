@@ -20,27 +20,27 @@ type Props = {
  */
 export function SpecialtyVisual({ id, steps, stepsTitle }: Props) {
   return (
-    <div className="rounded-2xl border border-line bg-white p-6 shadow-soft">
-      <div className="flex items-center gap-3.5 border-b border-line pb-4">
-        <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-ice/45 bg-mist text-action">
+    <div className="overflow-hidden rounded-[1.75rem] border border-line-soft bg-white shadow-card">
+      <div className="flex items-center gap-4 border-b border-line-soft bg-gradient-to-r from-mist to-white px-6 py-5 rtl:bg-gradient-to-l">
+        <span className="inline-flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl bg-navy text-ice ring-1 ring-gold/40">
           <ServiceIcon id={id} className="h-6 w-6" />
         </span>
         {stepsTitle && (
-          <h2 className="text-base font-bold text-navy">{stepsTitle}</h2>
+          <h2 className="text-[1.05rem] font-semibold text-navy">{stepsTitle}</h2>
         )}
       </div>
 
       {steps && steps.length > 0 && (
-        <ol className="mt-4 grid gap-2.5 sm:grid-cols-2">
+        <ol className="grid gap-2.5 p-5 sm:grid-cols-2 sm:p-6">
           {steps.map((step, idx) => (
             <li
               key={step.title}
-              className="flex items-center gap-2.5 rounded-xl border border-line/80 bg-mist/50 px-3.5 py-2.5"
+              className="flex items-center gap-3 rounded-xl bg-mist-soft px-4 py-3"
             >
-              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-navy text-xs font-bold text-white">
+              <span className="display-type w-6 shrink-0 text-center text-[1.15rem] font-semibold text-gold-deep">
                 {idx + 1}
               </span>
-              <span className="text-xs font-semibold text-navy">
+              <span className="text-[13px] font-semibold leading-snug text-navy">
                 {step.title}
               </span>
             </li>
@@ -48,5 +48,5 @@ export function SpecialtyVisual({ id, steps, stepsTitle }: Props) {
         </ol>
       )}
     </div>
-            );
+  );
 }

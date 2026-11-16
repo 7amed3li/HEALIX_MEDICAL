@@ -12,7 +12,7 @@ type Props = {
 /**
  * Official HEALIX MEDICAL brand mark.
  * Combines the extracted heart-and-person emblem from the official reference card
- * with the clean English "HEALIX MEDICAL" typography (with the signature red 'X').
+ * with the clean English "HEALIX MEDICAL" typography (with the champagne-gold 'X').
  * Always rendered LTR so the English brand name never flips in RTL layouts.
  */
 export function BrandLogo({ href, ariaLabel, variant = "light", size = "md" }: Props) {
@@ -42,11 +42,11 @@ export function BrandLogo({ href, ariaLabel, variant = "light", size = "md" }: P
             isDark ? "text-white" : "text-navy"
           }`}
         >
-          HEALI<span className="text-brand-red">X</span>
+          HEALI<span className={isDark ? "text-gold" : "text-gold-deep"}>X</span>
         </span>
         <span
           className={`mt-1 text-[10px] font-semibold tracking-[0.28em] ${
-            isDark ? "text-ice" : "text-slate"
+            isDark ? "text-gold-soft" : "text-slate"
           }`}
         >
           MEDICAL
