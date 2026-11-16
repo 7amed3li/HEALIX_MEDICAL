@@ -1,0 +1,447 @@
+{
+  "meta": {
+    "siteName": "HEALIX MEDICAL",
+    "defaultTitle": "HEALIX MEDICAL – Türkiye’de Uluslararası Hasta Koordinasyonu",
+    "defaultDescription": "HEALIX MEDICAL, Türkiye’de sağlık hizmetlerini araştıran uluslararası hastaların sürecini ve iletişimini koordine eder. Tıbbi kararlar lisanslı hastane ve hekimlere aittir.",
+    "ogImageAlt": "Sakin bir danışma alanında yetişkin bir erkek hastayla görüşen erkek hasta koordinatörü"
+  },
+  "a11y": {
+    "skipToContent": "Ana içeriğe geç",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "mainNav": "Ana gezinme",
+    "footerNav": "Alt bilgi bağlantıları",
+    "languageSwitcher": "Dil seçimi",
+    "breadcrumb": "Sayfa yolu",
+    "homeLink": "HEALIX MEDICAL – Ana sayfa",
+    "externalLink": "yeni sekmede açılır"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "journey": "Hasta Yolculuğu",
+    "about": "Hakkımızda",
+    "faq": "SSS",
+    "contact": "İletişim"
+  },
+  "common": {
+    "ctaPrimary": "İletişime geçin",
+    "ctaSecondary": "Hasta yolculuğunu inceleyin",
+    "learnMore": "Ayrıntılı bilgi",
+    "allServices": "Tüm hizmetleri görüntüle",
+    "backToServices": "Tüm hizmetler",
+    "readPrivacy": "Gizlilik politikası",
+    "coordinationNotice": "HEALIX MEDICAL, hasta yolculuğunu ve iletişimi koordine eder. Tanı, uygunluk, tedavi kararı ve tıbbi uygulama lisanslı hastane ve sağlık ekibinin sorumluluğundadır.",
+    "featured": "Tanıtım materyallerinde öne çıkan",
+    "step": "Adım"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Uluslararası hasta koordinasyonu · Türkiye",
+      "title": "Tedavi yolculuğunuz net bir adımla başlar",
+      "lead": "HEALIX MEDICAL, uluslararası hastaların ve ailelerinin ilk başvurularını düzenlemelerine ve Türkiye’deki sağlık kuruluşlarıyla iletişimi koordine etmelerine yardımcı olur. Tüm tıbbi kararlar lisanslı hekimlere aittir.",
+      "imageAlt": "Aydınlık ve sakin bir danışma alanında yetişkin erkek hastayı dinleyen tabletli erkek koordinatör"
+    },
+    "strip": [
+      {
+        "title": "Beş dilde web sitesi",
+        "text": "Arapça, İngilizce, Fransızca, Rusça ve Türkçe."
+      },
+      {
+        "title": "Türkiye’de koordinasyon",
+        "text": "Sizinle sağlık kuruluşları arasındaki iletişimi düzenliyoruz."
+      },
+      {
+        "title": "Tıbbi karar hekimlerindir",
+        "text": "Tanı ve tedavi kararları lisanslı ekiplerce verilir."
+      },
+      {
+        "title": "Önce gizlilik",
+        "text": "Web sitesi üzerinden tıbbi dosya talep edilmez."
+      }
+    ],
+    "services": {
+      "eyebrow": "Hizmetler",
+      "title": "Başvuruları koordine ettiğimiz on iki alan",
+      "lead": "Karaciğer ve böbrek nakli, şirket materyallerinde öne çıktığı için vurgulanmıştır. On iki hizmetin tamamına eşit ve kolay biçimde ulaşabilirsiniz.",
+      "othersTitle": "Diğer hizmetler"
+    },
+    "journey": {
+      "eyebrow": "Hasta yolculuğu",
+      "title": "Veremeyeceğimiz vaatler olmadan dört net aşama",
+      "lead": "Her başvuru kendine özgüdür. Süreler, uygunluk ve sonuçlar yalnızca sağlık kuruluşu tarafından belirlenir."
+    },
+    "help": {
+      "eyebrow": "Görev ayrımı",
+      "title": "HEALIX MEDICAL nasıl yardımcı olur — ve hangi kararlar hastaneye aittir",
+      "oursTitle": "HEALIX MEDICAL’in koordine ettiği konular",
+      "ours": [
+        "İlk başvurunuzu almak ve koordinasyon sürecini açıklamak",
+        "Talebinizi tıbbi olmayan genel çerçevede netleştirmek",
+        "Sağlık kuruluşunun uluslararası hasta birimiyle iletişimi koordine etmek",
+        "Talep edildiğinde tıbbi belgelerin güvenli kanalla nasıl paylaşılacağını açıklamak",
+        "Yalnızca teyit edilen hizmet kapsamı dahilinde seyahat düzenlemelerini görüşmek"
+      ],
+      "theirsTitle": "Lisanslı hastane ve hekimlerin karar verdiği konular",
+      "theirs": [
+        "Tanı ve tıbbi değerlendirme",
+        "Tıbbi uygunluk ve vaka kabulü",
+        "Tedavi planı, işlemler ve olası riskler",
+        "Tıbbi maliyetler ve tedavi süresi",
+        "Klinik bakım ve tıbbi takip"
+      ]
+    },
+    "faq": {
+      "eyebrow": "Sorular",
+      "title": "Başlamadan önce sıkça sorulan sorular",
+      "more": "Tüm soruları görüntüle"
+    },
+    "cta": {
+      "title": "İlk adımı atmaya hazır mısınız?",
+      "text": "İletişim bilgilerinizi içeren kısa bir başvuru gönderin. Lütfen tıbbi rapor eklemeyin.",
+      "privacyNote": "Bilgilerinizi şu metne uygun olarak işliyoruz:"
+    }
+  },
+  "journey": {
+    "metaTitle": "Hasta Yolculuğu – Koordinasyon Süreci Nasıl İşler",
+    "metaDescription": "İlk iletişimden seyahat düzenlemelerine kadar HEALIX MEDICAL ile koordinasyonun dört aşamasını ve hekimlere ait tıbbi karar sınırlarını inceleyin.",
+    "title": "Hasta yolculuğu",
+    "lead": "Koordinasyon sürecinin nasıl işlediğine dair şeffaf bir özet. Bu adımlar organizasyon sürecini açıklar; süre, kabul veya sonuç garantisi vermez.",
+    "steps": [
+      {
+        "title": "İlk iletişim",
+        "text": "Adınız, ülkeniz, tercih ettiğiniz dil, iletişim yöntemi ve bilgi almak istediğiniz hizmeti içeren kısa formu gönderirsiniz. Bu aşamada tıbbi belge istenmez."
+      },
+      {
+        "title": "İhtiyacın netleştirilmesi",
+        "text": "Bir koordinatör sizinle iletişime geçerek talebinizi genel çerçevede anlar: hastanın kim olduğu, iletişimi kimin yürüttüğü ve hangi konuda bilgi arandığı netleştirilir."
+      },
+      {
+        "title": "Sağlık kuruluşuyla iletişimin koordinasyonu",
+        "text": "Devam etmek isterseniz uygun sağlık kuruluşuyla iletişimi koordine ederiz. Tıbbi belgeler talep edildiğinde yalnızca onayınızla ve ayrı, güvenli bir kanal üzerinden paylaşılır."
+      },
+      {
+        "title": "Mevcut hizmete göre seyahat ve takip düzenlemeleri",
+        "text": "Sağlık kuruluşunun yönlendirmesi sonrasında, sunulan hizmet ve vakanız için teyit edilen kapsam doğrultusunda seyahat ve takip düzenlemeleri görüşülür."
+      }
+    ],
+    "principlesTitle": "Her aşamada bağlı kaldığımız ilkeler",
+    "principles": [
+      {
+        "title": "Net rol ayrımı",
+        "text": "Biz koordine ederiz; hastane ve hekimler tanı koyar, karar verir ve tedavi eder."
+      },
+      {
+        "title": "Garanti verilmemesi",
+        "text": "Kabul, sonuç, maliyet veya süre konusunda hiçbir zaman garanti vermeyiz."
+      },
+      {
+        "title": "Önce açık rıza",
+        "text": "Tıbbi bilgiler yalnızca onayınızla ve güvenli bir kanal üzerinden paylaşılır."
+      },
+      {
+        "title": "Dürüst iletişim",
+        "text": "Sunulmayan bir hizmet varsa bunu açıkça belirtiriz."
+      }
+    ]
+  },
+  "about": {
+    "metaTitle": "HEALIX MEDICAL Hakkında – Uluslararası Hasta Koordinasyonu",
+    "metaDescription": "HEALIX MEDICAL, Türkiye’de sağlık hizmetlerini araştıran uluslararası hastalar için süreç koordinasyonu sağlar. Rolümüzü ve çalışma ilkelerimizi öğrenin.",
+    "title": "HEALIX MEDICAL hakkında",
+    "lead": "HEALIX MEDICAL, Türkiye’de sağlık hizmetlerini araştıran uluslararası hastaların başvuru ve iletişim sürecini koordine eder.",
+    "imageAlt": "Aydınlık bir ofiste masa başında telefon görüşmesi yapan erkek koordinatör",
+    "roleTitle": "Rolümüz",
+    "role": [
+      "Yurt dışında sağlık hizmeti araştırmak; nereden başlanacağı, kiminle görüşüleceği ve bilgilerin nasıl güvenle paylaşılacağı gibi pek çok pratik soru doğurur. Görevimiz bu ilk adımı daha düzenli ve anlaşılır hale getirmektir.",
+      "Biz bir hastane değil, koordinasyon şirketiyiz. Tanı, uygunluk, tedavi kararları ve klinik bakım lisanslı hastanelerin ve tıbbi ekiplerin sorumluluğundadır. Sonuç, kabul, maliyet veya süre vaadinde bulunmayız."
+    ],
+    "valuesTitle": "Çalışmamıza yön veren değerler",
+    "values": [
+      {
+        "title": "Özen ve düzen",
+        "text": "Net adımlar, açık sorumluluklar ve düzenli iletişim."
+      },
+      {
+        "title": "Saygı",
+        "text": "Her hasta ve yakınına sabır ve saygıyla yaklaşılır."
+      },
+      {
+        "title": "Şeffaflık",
+        "text": "Neyi koordine ettiğimizi ve neyin hekimlere ait olduğunu açıkça belirtiriz."
+      },
+      {
+        "title": "Gizlilik",
+        "text": "Sağlık verileri pazarlama araçlarından uzak tutulur ve yalnızca onayla paylaşılır."
+      }
+    ]
+  },
+  "faqPage": {
+    "metaTitle": "Sıkça Sorulan Sorular – HEALIX MEDICAL",
+    "metaDescription": "HEALIX MEDICAL ile ilk iletişim, koordinasyon rolümüz, desteklenen diller, gizlilik ve Türkiye’ye seyahat süreci hakkında genel bilgiler.",
+    "title": "Sıkça sorulan sorular",
+    "lead": "Tanı amacı taşımayan genel bilgiler. Tanı, tıbbi uygunluk, tedavi veya organ nakli mevzuatına ilişkin sorular tıbbi ekip ve yetkili makamlarca yanıtlanmalıdır.",
+    "items": [
+      {
+        "q": "HEALIX MEDICAL ne yapar?",
+        "a": "HEALIX MEDICAL, Türkiye’de sağlık hizmeti arayan uluslararası hastalar için iletişimi ve hasta yolculuğunu koordine eder. Hastane değiliz ve tıbbi bakım sunmayız."
+      },
+      {
+        "q": "Sürece nasıl başlayabilirim?",
+        "a": "Adınız, ülkeniz, tercih ettiğiniz dil, iletişim yöntemi ve sormak istediğiniz hizmeti kısa iletişim formuyla gönderin. Koordinatörümüz seçtiğiniz yöntemle size ulaşacaktır."
+      },
+      {
+        "q": "Tıbbi raporlarımı web sitesi üzerinden göndermeli miyim?",
+        "a": "Hayır. Web sitesindeki form yalnızca ilk başvuru içindir. Sağlık kuruluşu daha sonra belge talep ederse, dosyalara kimlerin erişebileceği açıklanarak ayrı ve güvenli bir kanal paylaşılır."
+      },
+      {
+        "q": "Tedaviye uygun olup olmadığıma kim karar verir?",
+        "a": "Tanı, uygunluk ve tedavi kararları yalnızca lisanslı hastane ve tıbbi ekip tarafından kendi değerlendirmeleri sonucunda verilir."
+      },
+      {
+        "q": "Tedavi maliyeti veya süresi hakkında bilgi veriyor musunuz?",
+        "a": "Maliyet ve süreler sağlık kuruluşunun tıbbi değerlendirmesine bağlıdır. Nihai maliyet veya süre yayınlamaz ve garanti etmeyiz."
+      },
+      {
+        "q": "Web sitesi hangi dillerde sunuluyor?",
+        "a": "Web sitesi Arapça, İngilizce, Fransızca, Rusça ve Türkçe olarak sunulmaktadır. Doğrudan iletişimde vakanız için hangi dillerin mevcut olduğunu bizimle teyit edebilirsiniz."
+      },
+      {
+        "q": "Hasta adına bir yakını iletişime geçebilir mi?",
+        "a": "Evet, ilk başvuruyu bir aile üyesi başlatabilir. Hastaya ait tıbbi bilgiler ise daha sonra yalnızca hastanın onayıyla paylaşılmalıdır."
+      },
+      {
+        "q": "Ulaşım ve konaklama ayarlıyor musunuz?",
+        "a": "Seyahatle ilgili düzenlemeler yalnızca ilgili vaka için teyit edilen koordinasyon kapsamına dahil olduğunda görüşülür. Neyin dahil olup olmadığını açıkça belirtiriz."
+      },
+      {
+        "q": "HEALIX MEDICAL acil sağlık hizmeti veriyor mu?",
+        "a": "Hayır. Acil durumlarda derhal bulunduğunuz yerdeki acil sağlık hizmetlerine başvurun."
+      }
+    ]
+  },
+  "servicesPage": {
+    "metaTitle": "Hizmetler – Türkiye’de Hasta Koordinasyonu",
+    "metaDescription": "Karaciğer ve böbrek nakli dahil olmak üzere HEALIX MEDICAL’in Türkiye’de uluslararası hasta başvurularını koordine ettiği on iki hizmet alanını inceleyin.",
+    "title": "Hizmetler",
+    "lead": "Aşağıdaki hizmet alanları HEALIX MEDICAL broşüründeki başlıkları izler. Her alanda sağlık kuruluşlarıyla iletişimi koordine ederiz; tüm klinik kararlar tıbbi ekibe aittir.",
+    "descriptionTitle": "Hizmet hakkında",
+    "coordinationTitle": "HEALIX MEDICAL neyi koordine eder",
+    "stepsTitle": "Genel adımlar",
+    "faqTitle": "Bu hizmetle ilgili sorular",
+    "relatedTitle": "Diğer hizmetler",
+    "noticeTitle": "Tıbbi uyarı",
+    "notice": "Bu sayfadaki bilgiler yalnızca genel bilgilendirme amaçlıdır ve hekim muayenesinin yerini tutmaz. HEALIX MEDICAL tanı koymaz, tedavi uygulamaz; uygunluk, sonuç, maliyet veya süre garantisi vermez. Tüm tıbbi kararlar lisanslı hastane ve sağlık ekibine aittir.",
+    "ctaTitle": "Bu hizmet hakkında sorunuz mu var?",
+    "ctaText": "Kısa bir başvuru gönderin. Lütfen tıbbi rapor veya tanı bilgisi eklemeyin."
+  },
+  "contact": {
+    "metaTitle": "İletişim – HEALIX MEDICAL ile İlk Başvuru",
+    "metaDescription": "HEALIX MEDICAL’e gizliliğinizi koruyan kısa bir ilk başvuru gönderin. Web sitesi üzerinden tıbbi dosya talep edilmez.",
+    "title": "İlk başvurunuzu başlatın",
+    "lead": "Temel iletişim bilgilerinizi ve sormak istediğiniz hizmeti paylaşın. Koordinatörümüz tercih ettiğiniz yöntemle sizinle iletişime geçecektir.",
+    "beforeTitle": "Göndermeden önce",
+    "before": [
+      "Tanı, rapor, görüntüleme veya tıbbi geçmiş bilgisi yazmayın.",
+      "Daha sonra tıbbi dosya gerekirse ayrı ve güvenli bir kanal size açıklanacaktır.",
+      "Acil bir durumda bulunduğunuz yerdeki acil servislerle iletişime geçin."
+    ],
+    "socialTitle": "HEALIX MEDICAL’i takip edin",
+    "form": {
+      "name": "Ad soyad",
+      "country": "İkamet edilen ülke",
+      "language": "Tercih edilen dil",
+      "contactMethod": "Tercih edilen iletişim yöntemi",
+      "contactValue": "İletişim bilginiz",
+      "contactValueHint": "Seçtiğiniz yönteme göre telefon numarası, WhatsApp numarası veya e-posta adresi.",
+      "service": "Bilgi almak istediğiniz hizmet",
+      "servicePlaceholder": "Bir hizmet seçin",
+      "serviceGeneral": "Genel soru / henüz emin değilim",
+      "select": "Seçin",
+      "methods": {
+        "phone": "Telefon görüşmesi",
+        "whatsapp": "WhatsApp",
+        "email": "E-posta"
+      },
+      "consent": "HEALIX MEDICAL’in gizlilik politikasında açıklandığı şekilde başvurumla ilgili benimle iletişime geçmesini kabul ediyorum.",
+      "consentLink": "Gizlilik politikasını okuyun",
+      "noMedical": "Lütfen bu forma tıbbi bilgi yazmayın.",
+      "required": "Zorunlu",
+      "submit": "Başvuruyu gönder",
+      "sending": "Gönderiliyor…",
+      "success": "Teşekkür ederiz. Başvurunuz alındı. Koordinatörümüz tercih ettiğiniz yöntemle sizinle iletişime geçecektir.",
+      "unavailable": "Çevrim içi form gönderimi henüz aktif değildir. Şimdilik resmi sosyal medya hesaplarımız üzerinden bize ulaşabilirsiniz.",
+      "error": "Bir sorun oluştu. Lütfen daha sonra tekrar deneyin.",
+      "errors": {
+        "name": "Lütfen adınızı girin (2–100 karakter).",
+        "country": "Lütfen ülkenizi girin.",
+        "language": "Lütfen bir dil seçin.",
+        "contactMethod": "Lütfen bir iletişim yöntemi seçin.",
+        "contactValue": "Lütfen seçilen yönteme uygun geçerli bir iletişim bilgisi girin.",
+        "service": "Lütfen bir hizmet veya ‘Genel soru’ seçin.",
+        "consent": "Lütfen iletişim onayını işaretleyin."
+      },
+      "errorSummary": "Lütfen işaretlenen alanları kontrol edin."
+    }
+  },
+  "legal": {
+    "updated": "Son güncelleme",
+    "reviewNotice": "Bu metin başlangıç sürümü olarak yayınlanmıştır ve nihai hukuki incelemeye tabidir.",
+    "privacy": {
+      "metaTitle": "Gizlilik ve Çerezler – HEALIX MEDICAL",
+      "metaDescription": "HEALIX MEDICAL’in iletişim başvurularını nasıl işlediği, web sitesinde toplanan veriler ve çerez ile reklam araçlarına yaklaşımımız.",
+      "title": "Gizlilik ve çerez politikası",
+      "sections": [
+        {
+          "h": "Veri sorumlusu hakkında",
+          "p": [
+            "Bu web sitesi, Türkiye’de sağlık hizmetlerini araştıran uluslararası hastaların yolculuğunu koordine eden HEALIX MEDICAL tarafından işletilmektedir."
+          ]
+        },
+        {
+          "h": "Web sitesi üzerinden toplanan veriler",
+          "p": [
+            "İletişim formu yalnızca şu bilgileri toplar: adınız, ülkeniz, tercih ettiğiniz dil, tercih ettiğiniz iletişim yöntemi ve iletişim bilginiz, sormak istediğiniz hizmet alanı ve iletişim onayınız.",
+            "Form; tanı, tıbbi rapor, görüntüleme veya tıbbi geçmiş istemez ve dosya yüklemeye izin vermez. Lütfen forma bu tür bilgiler eklemeyin."
+          ]
+        },
+        {
+          "h": "Verilerin kullanım amacı",
+          "p": [
+            "Bu bilgileri yalnızca başvurunuza yanıt vermek ve talep ettiğiniz koordinasyon adımlarını düzenlemek için kullanırız. Verilerinizi satmayız."
+          ]
+        },
+        {
+          "h": "Tıbbi bilgiler",
+          "p": [
+            "Bir sağlık kuruluşu daha sonra tıbbi kayıtlarınıza ihtiyaç duyarsa, bu kayıtlar yalnızca açık rızanız alındıktan ve dosyalara kimlerin erişebileceği açıklandıktan sonra ayrı ve güvenli bir kanal üzerinden paylaşılır."
+          ]
+        },
+        {
+          "h": "Çerezler ve reklam araçları",
+          "p": [
+            "Bu web sitesi şu anda analitik veya reklam çerezleri kullanmamaktadır ve Meta Pixel veya benzeri izleme araçlarını çalıştırmamaktadır. Instagram ve Facebook bağlantıları standart harici bağlantılardır; bu platformları ziyaret ettiğinizde kendi politikaları geçerli olur.",
+            "Gelecekte analitik veya reklam araçları kullanılmaya başlanırsa, önce bu politika güncellenecek ve gerekli onaylar istenecektir. Sağlıkla ilgili bilgiler, form içeriği ve sorduğunuz hizmet adı hiçbir zaman reklam platformlarına gönderilmeyecektir."
+          ]
+        },
+        {
+          "h": "Saklama ve paylaşım",
+          "p": [
+            "Başvuru bilgileri yalnızca talebinizi sonuçlandırmak ve yasal yükümlülükleri yerine getirmek için gereken süre boyunca saklanır ve yalnızca talebinizi koordine etmek amacıyla onayınız doğrultusunda ilgili sağlık kuruluşuyla paylaşılır."
+          ]
+        },
+        {
+          "h": "Haklarınız",
+          "p": [
+            "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) dahil yürürlükteki mevzuat kapsamında kişisel verilerinize erişim, düzeltme veya silme talebinde bulunma hakkına sahip olabilirsiniz. Taleplerinizi resmi iletişim kanallarımız üzerinden iletebilirsiniz."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Kullanım Koşulları – HEALIX MEDICAL",
+      "metaDescription": "HEALIX MEDICAL web sitesinin kullanım koşulları, koordinasyon hizmetimizin niteliği ve sitedeki bilgilerin sınırları.",
+      "title": "Kullanım koşulları",
+      "sections": [
+        {
+          "h": "Web sitesinin amacı",
+          "p": [
+            "Bu web sitesi HEALIX MEDICAL’i tanıtır ve ziyaretçilerin ilk başvurularını iletmelerine olanak tanır. Bir hastane sitesi, randevu/rezervasyon platformu veya çevrim içi mağaza değildir."
+          ]
+        },
+        {
+          "h": "Hizmetimizin niteliği",
+          "p": [
+            "HEALIX MEDICAL iletişimi ve hasta yolculuğunu koordine eder. Tanı, uygunluk, tedavi kararları ve tıbbi bakım lisanslı hastanelerin ve sağlık ekiplerinin sorumluluğundadır."
+          ]
+        },
+        {
+          "h": "Garanti verilmemesi",
+          "p": [
+            "Başvuru göndermek hasta-hekim ilişkisi oluşturmaz ve herhangi bir sağlık kuruluşu tarafından kabul edilmeyi, tedavi sonuçlarını, maliyetleri veya süreleri garanti etmez."
+          ]
+        },
+        {
+          "h": "Web sitesi içeriği",
+          "p": [
+            "Bu web sitesindeki içerikler genel bilgilendirme amaçlıdır ve güncellenebilir. Tıbbi tavsiye niteliği taşımaz ve uzman hekim görüşünün yerini almaz."
+          ]
+        },
+        {
+          "h": "Üçüncü taraf bağlantıları",
+          "p": [
+            "Instagram veya Facebook gibi dış platformlara verilen bağlantılar kolaylık sağlamak içindir. Bu platformların içerik veya politikalarından sorumlu değiliz."
+          ]
+        },
+        {
+          "h": "Değişiklikler",
+          "p": [
+            "Bu koşulları güncelleyebiliriz. Bu sayfada yayınlanan sürüm, yayınlandığı tarihten itibaren geçerlidir."
+          ]
+        }
+      ]
+    },
+    "disclaimer": {
+      "metaTitle": "Tıbbi Sorumluluk Reddi – HEALIX MEDICAL",
+      "metaDescription": "HEALIX MEDICAL bir hasta koordinasyon şirketidir. Web sitesi içeriği genel bilgilendirme amaçlıdır ve tıbbi tavsiye yerine geçmez.",
+      "title": "Tıbbi sorumluluk reddi",
+      "sections": [
+        {
+          "h": "Tıbbi bakım değil, koordinasyon",
+          "p": [
+            "HEALIX MEDICAL bir hastane veya sağlık hizmeti sunucusu değildir. Tanı koymaz, tedavi etmez, reçete yazmaz veya tıbbi işlem gerçekleştirmez."
+          ]
+        },
+        {
+          "h": "Yalnızca genel bilgilendirme",
+          "p": [
+            "Bu web sitesindeki hizmet açıklamaları genel ve bilgilendirici niteliktedir. Tanı veya tedavi önerisi değildir ve hekim danışmanlığının yerini tutmaz."
+          ]
+        },
+        {
+          "h": "Lisanslı uzmanların kararları",
+          "p": [
+            "Tanı, uygunluk, tedavi planları, riskler ve takip yalnızca lisanslı hastaneler ve tıbbi ekipler tarafından kendi değerlendirmeleri sonrasında belirlenir."
+          ]
+        },
+        {
+          "h": "Sonuç vaadi yoktur",
+          "p": [
+            "Vaka kabulü, tedavi başarısı, nihai maliyet veya tedavi süresi konusunda garanti vermeyiz."
+          ]
+        },
+        {
+          "h": "Organ nakli başvuruları",
+          "p": [
+            "Organ bağışı, verici uygunluğu ve ilgili yasal gerekliliklere ilişkin sorular yürürlükteki mevzuat çerçevesinde yalnızca sağlık kuruluşu ve yetkili makamlarca yanıtlanır."
+          ]
+        },
+        {
+          "h": "Acil durumlar",
+          "p": [
+            "HEALIX MEDICAL bir acil sağlık hizmeti değildir. Acil bir durumda derhal yerel acil servislerle iletişime geçin."
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Türkiye’de uluslararası hasta koordinasyonu.",
+    "pages": "Sayfalar",
+    "legal": "Yasal",
+    "languages": "Diller",
+    "follow": "Bizi takip edin",
+    "rights": "Tüm hakları saklıdır.",
+    "disclaimerShort": "HEALIX MEDICAL hasta yolculuğunu koordine eder ve doğrudan tıbbi bakım sunmaz. Tıbbi kararlar lisanslı hastane ve hekimlere aittir."
+  },
+  "legalNav": {
+    "privacy": "Gizlilik ve çerezler",
+    "terms": "Kullanım koşulları",
+    "disclaimer": "Tıbbi sorumluluk reddi"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "text": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
+    "back": "Ana sayfaya dön"
+  }
+}

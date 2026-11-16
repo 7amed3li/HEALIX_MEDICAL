@@ -1,0 +1,614 @@
+{
+  "liver-transplantation": {
+    "name": "Karaciğer Nakli",
+    "short": "Karaciğer nakli sürecini araştıran uluslararası hastalar ve aileleri için Türkiye’deki nakil merkezleriyle iletişimin koordinasyonu.",
+    "metaTitle": "Türkiye’de Karaciğer Nakli – Hasta Koordinasyonu",
+    "metaDescription": "HEALIX MEDICAL, uluslararası hastaların ve ailelerinin Türkiye’deki lisanslı karaciğer nakli ekipleriyle düzenli bir ilk iletişim kurmasına yardımcı olur.",
+    "intro": "Karaciğer nakli, yalnızca uzman ve lisanslı organ nakli ekipleri tarafından kararlaştırılan ve uygulanan kapsamlı bir tıbbi süreçtir. HEALIX MEDICAL, uluslararası hastaların ve ailelerinin bu iletişime düzenli ve anlaşılır bir adımla başlamasına yardımcı olur.",
+    "overview": [
+      "Karaciğer nakli, ileri derecede hasar görmüş karaciğerin bir vericiden alınan sağlıklı karaciğer veya karaciğer dokusu ile değiştirilmesini konu alır. Naklin uygun olup olmadığı, hangi yöntemin değerlendirileceği ve hazırlık tetkikleri hastanenin nakil ekibi tarafından tıbbi değerlendirme sonrasında belirlenir.",
+      "Nakil süreçleri ayrıca yürürlükteki mevzuat çerçevesinde hastane ve yetkili makamlarca uygulanan tıbbi, etik ve yasal kurallara tabidir. HEALIX MEDICAL hasta veya verici uygunluğunu değerlendirmez ve organ bağışı mevzuatı hakkında hukuki görüş vermez; bu sorular ilgili tıbbi ve resmi mercilere yönlendirilir."
+    ],
+    "coordination": [
+      "İlk başvurunuzu almak ve koordinasyon sürecinin nasıl işlediğini açıklamak.",
+      "Web sitesi üzerinden tıbbi dosya toplamadan, sağlık kuruluşunun hangi tür bilgileri isteyebileceğini genel çerçevede açıklamak.",
+      "Sizinle karaciğer nakli merkezinin uluslararası hasta birimi arasındaki iletişimi koordine etmek.",
+      "Değerlendirme ve sonraki adımlar hakkında nakil ekibine yönelteceğiniz soruları düzenli bir liste haline getirmenize yardımcı olmak.",
+      "Yalnızca vakanız için teyit edilen hizmet kapsamına dahil olduğunda seyahat düzenlemelerini görüşmek."
+    ],
+    "steps": [
+      {
+        "title": "İlk iletişim",
+        "text": "Adınız, ülkeniz, tercih ettiğiniz dil ve iletişim yöntemiyle kısa bir başvuru gönderirsiniz. Bu aşamada tıbbi belge istenmez."
+      },
+      {
+        "title": "Talebin anlaşılması",
+        "text": "Koordinatörümüz sizinle iletişime geçerek başvurunun genel çerçevesini ve iletişimi yürüten kişileri netleştirir."
+      },
+      {
+        "title": "Nakil ekibiyle bağlantı",
+        "text": "Devam etmek isterseniz nakil merkeziyle iletişimi koordine ederiz. Tıbbi kayıtlar yalnızca onayınızla ve ayrı, güvenli bir kanal üzerinden paylaşılır."
+      },
+      {
+        "title": "Tıbbi karar ve planlama",
+        "text": "Nakil ekibi değerlendirme, uygunluk ve olası tedavi planına karar verir. Seyahat düzenlemeleri teyit edilen kapsam doğrultusunda ele alınır."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "HEALIX MEDICAL karaciğer nakline uygun olup olmadığımı söyleyebilir mi?",
+        "a": "Hayır. Buna yalnızca lisanslı nakil ekibi kendi tıbbi değerlendirmesi sonrasında karar verebilir."
+      },
+      {
+        "q": "Verici ve yasal koşullarla ilgili soruları kim yanıtlar?",
+        "a": "Vericiler, onay süreçleri ve yasal prosedürlerle ilgili sorular hastane ve yetkili resmi makamlar tarafından yanıtlanır."
+      },
+      {
+        "q": "Tıbbi raporlarımı iletişim formundan göndermeli miyim?",
+        "a": "Hayır. İletişim formu yalnızca ilk başvuru içindir. Daha sonra tıbbi kayıt gerekirse, dosyalara kimlerin erişebileceği açıklanarak ayrı bir güvenli kanal paylaşılır."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "kidney-transplantation": {
+    "name": "Böbrek Nakli",
+    "short": "Uluslararası hastalar için Türkiye’deki böbrek nakli ekipleriyle düzenli ilk iletişim ve süreç koordinasyonu.",
+    "metaTitle": "Türkiye’de Böbrek Nakli – Hasta Koordinasyonu",
+    "metaDescription": "Türkiye’de böbrek nakli hakkında düzenli bir ilk başvuru başlatın. HEALIX MEDICAL iletişimi koordine eder; tüm tıbbi kararlar lisanslı nakil ekibine aittir.",
+    "intro": "İleri evre böbrek hastalığıyla yaşayan kişiler ve aileleri için yurt dışında böbrek nakli sürecini araştırmak pek çok pratik soru doğurur. HEALIX MEDICAL ilk adımları düzenlemenize ve Türkiye’deki ilgili uluslararası hasta ekiplerine ulaşmanıza yardımcı olur.",
+    "overview": [
+      "Böbrek nakli, böbrekleri yeterli düzeyde çalışmayan bir hastaya vericiden alınan sağlıklı bir böbreğin nakledilmesini kapsar. Bir hastanın değerlendirmeye alınıp alınamayacağına, gerekli tetkiklere ve takip planına yalnızca nakil ekibi karar verir.",
+      "Canlı veya kadavra vericili süreçler hastane ve yetkili makamların uyguladığı tıbbi, etik ve yasal kurallara tabidir. HEALIX MEDICAL verici değerlendirmesi veya doku uyumu analizi yapmaz ve hukuki danışmanlık vermez."
+    ],
+    "coordination": [
+      "Başvurunuzun nasıl ele alındığını ve koordinasyon sürecinden ne bekleyebileceğinizi açıklamak.",
+      "Web sitesi üzerinden tanı veya tetkik sonucu istemeden talebinizi net biçimde ifade etmenize yardımcı olmak.",
+      "Bir böbrek nakli merkezinin uluslararası hasta birimiyle iletişimi koordine etmek.",
+      "Mevcut olduğu ölçüde tercih ettiğiniz dilde düzenli iletişim sağlamak.",
+      "Yalnızca vakanız için teyit edilen kapsam dahilinde seyahat ve konaklama düzenlemelerini görüşmek."
+    ],
+    "steps": [
+      {
+        "title": "Kısa başvuru",
+        "text": "Temel iletişim bilgilerinizi ve sormak istediğiniz hizmeti paylaşın. Lütfen tanı veya tahlil sonucu eklemeyin."
+      },
+      {
+        "title": "Koordinatör görüşmesi",
+        "text": "Talebinizi, sürece dahil olan kişileri ve tercih ettiğiniz iletişim yöntemini netleştiririz."
+      },
+      {
+        "title": "Güvenli bilgi paylaşımı",
+        "text": "Nakil merkezi tıbbi bilgi talep ettiğinde, dosyalara kimlerin erişeceği açıklanarak ayrı bir güvenli kanal sunulur."
+      },
+      {
+        "title": "Hastane değerlendirmesi",
+        "text": "Nakil ekibi bilgileri inceler ve sonraki adımlara karar verir. Her türlü süre, maliyet veya plan yalnızca sağlık kuruluşundan gelir."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Hasta adına bir aile üyesi başvurabilir mi?",
+        "a": "Evet, ilk başvuruyu bir aile üyesi başlatabilir. Hastaya ait tıbbi bilgiler daha sonra yalnızca hastanın onayıyla ve güvenli kanal üzerinden paylaşılmalıdır."
+      },
+      {
+        "q": "HEALIX MEDICAL verici uyumuna karar verir mi?",
+        "a": "Hayır. Uyum ve verici uygunluğu yalnızca nakil ekibi ve yetkili makamlarca değerlendirilir."
+      },
+      {
+        "q": "İlk iletişimde fiyat bilgisi veriliyor mu?",
+        "a": "Maliyet bilgileri yalnızca sağlık kuruluşunun kendi incelemesi sonrasında paylaşılır. Nihai tedavi maliyetlerini yayınlamaz veya garanti etmeyiz."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "parkinsons-disease": {
+    "name": "Parkinson Hastalığı",
+    "short": "Parkinson hastalığıyla yaşayan kişiler için Türkiye’deki nöroloji ve hareket bozuklukları ekipleriyle iletişimin koordinasyonu.",
+    "metaTitle": "Türkiye’de Parkinson Hastalığı Bakımı – Hasta Koordinasyonu",
+    "metaDescription": "HEALIX MEDICAL, Parkinson hastalarının ve ailelerinin Türkiye’deki uzman nöroloji ekiplerine düzenli ve gizliliğe saygılı bir başvuruyla ulaşmasına yardımcı olur.",
+    "intro": "Parkinson hastalığıyla yaşamak çoğu zaman birden fazla uzmanlık dalının uzun süreli takibini gerektirir. HEALIX MEDICAL, Türkiye’deki bakım seçeneklerini araştırmak isteyen hasta ve ailelerin ilgili tıbbi ekiplerle net bir iletişim başlatmasına yardımcı olur.",
+    "overview": [
+      "Parkinson hastalığı hareketi ve günlük yaşamın farklı yönlerini etkileyebilen ilerleyici bir nörolojik durumdur. Bakım planlaması nörologlar ve gerektiğinde beyin cerrahları ile rehabilitasyon uzmanları tarafından yapılır.",
+      "Hangi değerlendirme veya tedavilerin uygun olacağına tıbbi ekip kendi muayenesi sonrasında karar verir. HEALIX MEDICAL tedavi önermez ve herhangi bir işleme uygunluk konusunda görüş bildirmez."
+    ],
+    "coordination": [
+      "Hasta ve ailesinin ne öğrenmek istediğini sade bir dille dinlemek.",
+      "Sorunuzun hangi uzmanlık ekibine yönlendirilmesi gerektiğini birlikte netleştirmek.",
+      "Hastanenin uluslararası hasta birimiyle iletişimi koordine etmek.",
+      "Hastanın onayıyla aile üyelerini ve refakatçileri koordinasyon adımları hakkında bilgilendirmek.",
+      "Teyit edilen kapsam dahilinde seyahat sırasındaki erişilebilirlik ihtiyaçlarını görüşmek."
+    ],
+    "steps": [
+      {
+        "title": "İlk başvuru",
+        "text": "Hasta veya yakını kısa bir talep gönderir. Formda belirti veya ilaç bilgisi sorulmaz."
+      },
+      {
+        "title": "Sorunun netleştirilmesi",
+        "text": "Tıbbi tavsiye vermeksizin, uzman görüşü veya rehabilitasyon programı gibi neyi araştırmak istediğinizi konuşuruz."
+      },
+      {
+        "title": "Uzman ekiple iletişim",
+        "text": "Güvenli kanal üzerinden kayıt talep edebilecek nöroloji veya hareket bozuklukları ekibiyle iletişimi koordine ederiz."
+      },
+      {
+        "title": "Tıbbi ekipten plan",
+        "text": "Uzmanlar uygun değerlendirme veya bakıma karar verir. Seyahat planlaması onların yönlendirmesini ve teyit edilen kapsamı izler."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "İletişimi hasta yakını yürütebilir mi?",
+        "a": "Evet, bir hasta yakını başvuruyu başlatabilir ve destekleyebilir. Tıbbi bilgilerin paylaşılması hastanın onayını veya yasal yetkiyi gerektirir."
+      },
+      {
+        "q": "Parkinson hastalığı için belirli bir tedavi öneriyor musunuz?",
+        "a": "Hayır. Tedavi önerileri yalnızca değerlendirme sonrasında lisanslı tıbbi ekip tarafından verilir."
+      },
+      {
+        "q": "Bu başlık neden ayrı bir hizmet olarak yer alıyor?",
+        "a": "Bu hizmet adı HEALIX MEDICAL broşürünü izler. Uygulamada başvurunuz sağlık kuruluşunun ilgili nöroloji ekibine yönlendirilir."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "orthopedic-surgery": {
+    "name": "Ortopedik Cerrahi",
+    "short": "Kemik, eklem ve omurga ile ilgili başvurularınız için Türkiye’deki ortopedi ekipleriyle iletişimin koordinasyonu.",
+    "metaTitle": "Türkiye’de Ortopedik Cerrahi – Hasta Koordinasyonu",
+    "metaDescription": "Türkiye’de ortopedi görüşmesi mi planlıyorsunuz? HEALIX MEDICAL lisanslı ortopedi ekipleriyle iletişimi koordine eder; tıbbi kararlar cerraha aittir.",
+    "intro": "Eklem, kemik ve kas-iskelet sistemi sorunları günlük yaşamı kısıtlayabilir. Türkiye’de bir ortopedi konsültasyonu düşünüyorsanız, HEALIX MEDICAL doğru ekibe düzenli ve şeffaf bir şekilde ulaşmanıza yardımcı olur.",
+    "overview": [
+      "Ortopedik cerrahi; kemikleri, eklemleri, bağları, tendonları ve omurgayı etkileyen durumların cerrahi veya cerrahi dışı değerlendirmesini kapsar.",
+      "Ameliyatın gerekli olup olmadığı, hangi tekniğin kullanılabileceği ve iyileşme sürecinin nasıl ilerleyeceği ortopedi cerrahı tarafından belirlenir. HEALIX MEDICAL görüntüleme yorumlamaz veya işlem önermez."
+    ],
+    "coordination": [
+      "Web sitesinde tıbbi ayrıntı toplamadan sorunuzun genel alanını anlamak.",
+      "Ortopedi bölümünün uluslararası hasta birimiyle iletişimi koordine etmek.",
+      "Değerlendirme, iyileşme ve takip hakkında cerraha soracağınız soruları hazırlamanıza yardımcı olmak.",
+      "Hastane talep ettiğinde bilgi ve görüntülerin güvenli kanalla paylaşımını koordine etmek.",
+      "Teyit edilen kapsam dahilinde hareketlilikle ilgili seyahat ihtiyaçlarını görüşmek."
+    ],
+    "steps": [
+      {
+        "title": "İletişime geçin",
+        "text": "İletişim bilgilerinizi ve ilgilendiğiniz hizmeti içeren ilk başvuruyu gönderin."
+      },
+      {
+        "title": "Koordinatörle görüşme",
+        "text": "Ne aradığınızı, tercih ettiğiniz dili ve iletişim yöntemini netleştiririz."
+      },
+      {
+        "title": "Ortopedi ekibinin incelemesi",
+        "text": "Ortopedi ekibi yalnızca onayınızla güvenli kanaldan paylaşılan görüntü veya raporları isteyebilir."
+      },
+      {
+        "title": "Cerrahın önerisi",
+        "text": "Cerrah, ameliyat içerip içermeyeceğine bakılmaksızın sonraki adıma karar verir. Seyahat yalnızca tıbbi yönlendirme sonrasında planlanır."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Ameliyata ihtiyacım olup olmadığını söyleyebilir misiniz?",
+        "a": "Hayır. Bu kararı yalnızca vakanızı inceleyen ortopedi cerrahı verebilir."
+      },
+      {
+        "q": "Röntgen veya MR görüntülerimi şimdi göndermeli miyim?",
+        "a": "Lütfen web sitesi üzerinden görüntü göndermeyin. Tıbbi ekip talep ederse ayrı ve güvenli bir yöntem sağlanacaktır."
+      },
+      {
+        "q": "Fizyoterapi bu hizmetin parçası mı?",
+        "a": "Rehabilitasyon ayrı bir hizmet olarak listelenmiştir. Tıbbi ekip rehabilitasyonun planınızın parçası olup olmadığına karar verir."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "neurosurgery": {
+    "name": "Beyin ve Sinir Cerrahisi",
+    "short": "Beyin, omurga ve sinir sistemiyle ilgili başvurular için Türkiye’deki nöroşirürji ekipleriyle özenli iletişim koordinasyonu.",
+    "metaTitle": "Türkiye’de Beyin ve Sinir Cerrahisi – Hasta Koordinasyonu",
+    "metaDescription": "HEALIX MEDICAL uluslararası hastaların Türkiye’deki lisanslı beyin ve sinir cerrahisi ekipleriyle düzenli iletişim kurmasına yardımcı olur.",
+    "intro": "Beyin, omurga veya sinirlerle ilgili sorular sakin ve özenli bir iletişim gerektirir. HEALIX MEDICAL, uluslararası hastaların ve ailelerinin Türkiye’deki beyin ve sinir cerrahisi ekiplerine ulaşmasına ve iletişimi düzenli sürdürmesine yardımcı olur.",
+    "overview": [
+      "Beyin ve sinir cerrahisi; beyin, omurilik, omurga ve periferik sinirlerin cerrahi değerlendirme gerektirebilecek durumlarıyla ilgilenir ve çoğu zaman nöroloji, radyoloji ve rehabilitasyon uzmanlarıyla birlikte çalışır.",
+      "Cerrahi gerekip gerekmediği ve herhangi bir işlemin planlanması tamamen beyin cerrahisi ekibine aittir. HEALIX MEDICAL görüntüleme, aciliyet veya risk konusunda görüş vermez."
+    ],
+    "coordination": [
+      "Başvurunuzu almak ve koordinasyon adımlarını açıkça anlatmak.",
+      "Beyin ve sinir cerrahisi bölümünün uluslararası hasta ekibiyle iletişimi koordine etmek.",
+      "Uzmana yönelteceğiniz soruları net bir sırayla düzenlemenize yardımcı olmak.",
+      "Hastane talep ettiğinde kayıtların onayınızla güvenli kanalla paylaşımını koordine etmek.",
+      "Hasta onay verdiğinde aile üyelerini koordinasyon adımlarından haberdar etmek."
+    ],
+    "steps": [
+      {
+        "title": "Başvuru",
+        "text": "İletişim bilgilerinizi ve sormak istediğiniz hizmeti paylaşın. Acil durumlar yerel acil servislerce ele alınmalıdır."
+      },
+      {
+        "title": "Netleştirme",
+        "text": "Bir koordinatör talebiniz ve iletişim desteğiniz hakkında sizinle görüşür."
+      },
+      {
+        "title": "Uzman iletişimi",
+        "text": "Hangi bilgileri incelemesi gerektiğine karar veren nöroşirürji ekibiyle iletişimi koordine ederiz."
+      },
+      {
+        "title": "Tıbbi yönlendirme",
+        "text": "Beyin cerrahı sonraki adımları önerir. Her türlü seyahat yalnızca tıbbi yönlendirme ve teyit edilen kapsam doğrultusunda düzenlenir."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Acil bir durumda ne yapmalıyım?",
+        "a": "Herhangi bir acil tıbbi durumda derhal yerel acil servislerle iletişime geçin. HEALIX MEDICAL acil sağlık hizmeti değildir."
+      },
+      {
+        "q": "MR görüntümü inceleyebilir misiniz?",
+        "a": "Hayır. Tıbbi görüntüler yalnızca tıbbi ekip tarafından, güvenli bir kanal üzerinden ve onayınızla incelenir."
+      },
+      {
+        "q": "Cerrah benim dilimi konuşacak mı?",
+        "a": "Dil desteği hastaneye göre değişir. Vakanız için hangi iletişim desteğinin mevcut olduğunu size dürüstçe bildiririz."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "urology-prostate": {
+    "name": "Üroloji ve Prostat Sağlığı",
+    "short": "Böbrek, mesane ve prostatla ilgili başvurular için Türkiye’deki üroloji ekipleriyle gizliliğe özen gösteren koordinasyon.",
+    "metaTitle": "Türkiye’de Üroloji ve Prostat Sağlığı – Hasta Koordinasyonu",
+    "metaDescription": "Uluslararası hastalar için Türkiye’deki lisanslı üroloji ekipleriyle gizliliğe duyarlı koordinasyon. HEALIX MEDICAL tanı koymaz ve tedavi önermez.",
+    "intro": "Üroloji ve prostatla ilgili sorular kişiseldir. HEALIX MEDICAL, hassas ayrıntıları web sitesinin dışında tutarak başvuru başlatmanız ve Türkiye’deki üroloji ekiplerine ulaşmanız için özenli bir yol sunar.",
+    "overview": [
+      "Üroloji; böbrekler, üreterler ve mesane dahil idrar yolları ile prostat dahil erkek üreme organlarının durumlarını kapsar. Değerlendirme genellikle üroloğun seçtiği muayene ve testlerle başlar.",
+      "Her türlü tanı, tetkik planı veya tedavi seçeneği üroloji ekibi tarafından belirlenir. HEALIX MEDICAL gizliliğinize saygı duyar ve iletişim formunda belirti veya sonuç istemez."
+    ],
+    "coordination": [
+      "Gizliliğe özen gösteren, sade bir ilk iletişim süreci sunmak.",
+      "Üroloji bölümünün uluslararası hasta ekibiyle iletişimi koordine etmek.",
+      "Hastane talep ederse tıbbi bilgilerin nasıl ve nereden güvenle paylaşılacağını açıklamak.",
+      "Konsültasyon için genel sorularınızı hazırlamanıza yardımcı olmak.",
+      "Yalnızca teyit edilen hizmet kapsamı dahilinde seyahat düzenlemelerini görüşmek."
+    ],
+    "steps": [
+      {
+        "title": "Gizli ilk başvuru",
+        "text": "Yalnızca iletişim bilgilerinizi ve hizmet adını gönderin. Bu aşamada sağlık ayrıntılarına gerek yoktur."
+      },
+      {
+        "title": "Saygılı görüşme",
+        "text": "Koordinatörümüz talebinizi ve nasıl iletişim kurmak istediğinizi netleştirir."
+      },
+      {
+        "title": "Üroloji ekibiyle iletişim",
+        "text": "Hangi bilgilere ihtiyaç duyduğuna karar veren üroloji ekibiyle iletişimi koordine ederiz."
+      },
+      {
+        "title": "Konsültasyon planı",
+        "text": "Ürolog yapılacak değerlendirme veya tedaviyi belirler. Kararlaştırılan kapsamda iletişimi koordine etmeye devam ederiz."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Bilgilerim gizli tutulacak mı?",
+        "a": "Web sitesi formunu yalnızca iletişim bilgileriyle sınırlı tutuyor ve sağlık bilgilerini hiçbir zaman reklam araçlarına aktarmıyoruz. Ayrıntılar için gizlilik politikamızı okuyabilirsiniz."
+      },
+      {
+        "q": "Prostat taraması yapıyor musunuz?",
+        "a": "Hayır. HEALIX MEDICAL bir sağlık kuruluşu değildir. Tarama ve testler tıbbi ekip tarafından kararlaştırılır ve uygulanır."
+      },
+      {
+        "q": "İletişim yöntemini seçebilir miyim?",
+        "a": "Evet. Formda tercih ettiğiniz iletişim yöntemini seçebilirsiniz."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "endocrinology": {
+    "name": "Endokrinoloji",
+    "short": "Hormon, tiroid ve metabolizma ile ilgili başvurular için Türkiye’deki endokrinoloji ekipleriyle koordinasyon.",
+    "metaTitle": "Türkiye’de Endokrinoloji – Hasta Koordinasyonu",
+    "metaDescription": "HEALIX MEDICAL’in düzenli koordinasyonuyla Türkiye’deki lisanslı endokrinoloji ekiplerine ulaşın. Tıbbi değerlendirme ve tedavi uzmanlara aittir.",
+    "intro": "Hormonal ve metabolik durumlar genellikle dikkatli bir değerlendirme ve uzun süreli takip gerektirir. HEALIX MEDICAL, Türkiye’de uzman konsültasyonu isteyen uluslararası hastaların bu süreci net bir şekilde başlatmasına yardımcı olur.",
+    "overview": [
+      "Endokrinoloji; tiroid, böbrek üstü bezleri, hipofiz bezi, diyabet ve metabolizma dahil olmak üzere vücudu düzenleyen bezler ve hormonlarla ilgilenir.",
+      "Hangi test ve tedavilerin uygun olduğuna ve ülkenize döndükten sonra takibin nasıl süreceğine endokrinologlar karar verir. HEALIX MEDICAL laboratuvar sonuçlarını yorumlamaz veya tedaviyi değiştirmez."
+    ],
+    "coordination": [
+      "Ne tür bir uzman konsültasyonu aradığınızı netleştirmek.",
+      "Endokrinoloji bölümünün uluslararası hasta ekibiyle iletişimi koordine etmek.",
+      "Takip düzenlemeleri hakkında uzmana soracağınız soruları hazırlamanıza yardımcı olmak.",
+      "Hastane talep ettiğinde önceki sonuçların güvenli paylaşımını koordine etmek.",
+      "Koordinasyon adımlarını sizin için şeffaf ve düzenli tutmak."
+    ],
+    "steps": [
+      {
+        "title": "İletişime geçin",
+        "text": "Kısa form aracılığıyla iletişim bilgilerinizi ve ilgilendiğiniz hizmeti gönderin."
+      },
+      {
+        "title": "Talebi tanımlayın",
+        "text": "Konsültasyon, ikinci görüş veya uzmanla başka bir iletişim türü arayıp aramadığınızı netleştiririz."
+      },
+      {
+        "title": "Uzman koordinasyonu",
+        "text": "Güvenli bir kanal üzerinden önceki sonuçları isteyebilecek endokrinoloji ekibiyle iletişimi koordine ederiz."
+      },
+      {
+        "title": "Takip yönlendirmesi",
+        "text": "Uzman, değerlendirme ve takip konusunda tavsiyede bulunur. Koordinasyon teyit edilen hizmet kapsamında sürdürülür."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Laboratuvar sonuçlarımı açıklayabilir misiniz?",
+        "a": "Hayır. Laboratuvar sonuçları yalnızca yetkili hekimler tarafından yorumlanır."
+      },
+      {
+        "q": "Ülkeme döndükten sonra takip nasıl yapılır?",
+        "a": "Takip tıbbi ekip tarafından planlanır. Yerel doktorunuzla sürekli bakımın nasıl düzenlenmesi gerektiğini uzmana danışabilirsiniz."
+      },
+      {
+        "q": "Diyabet bu kapsama dahil mi?",
+        "a": "Diyabet genellikle endokrinoloji kapsamında ele alınır. Durumunuz için hangi uzmanın en uygun olduğuna tıbbi kuruluş karar verir."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "gastroenterology": {
+    "name": "Gastroenteroloji",
+    "short": "Sindirim sistemi başvuruları için Türkiye’deki gastroenteroloji ekipleriyle düzenli iletişim.",
+    "metaTitle": "Türkiye’de Gastroenteroloji – Hasta Koordinasyonu",
+    "metaDescription": "HEALIX MEDICAL, uluslararası hastalar ile Türkiye’deki lisanslı gastroenteroloji ekipleri arasındaki iletişimi koordine eder.",
+    "intro": "Sindirim sağlığıyla ilgili sorular, uzun süreli şikayetlerden özel işlemlere ilişkin sorulara kadar uzanabilir. HEALIX MEDICAL, Türkiye’deki gastroenteroloji ekiplerine açık ve düzenli bir başvuruyla ulaşmanıza yardımcı olur.",
+    "overview": [
+      "Gastroenteroloji; yemek borusu, mide, bağırsaklar, karaciğer, safra kesesi ve pankreası kapsar. Uzmanlar bir durumu değerlendirmek için muayene, laboratuvar testleri, görüntüleme ve endoskopik incelemelerden yararlanabilir.",
+      "Hangi incelemelerin gerekli olduğuna ve nasıl yapılacağına gastroenterolog karar verir. HEALIX MEDICAL işlem önermez veya belirtileri değerlendirmez."
+    ],
+    "coordination": [
+      "Başvurunuzu almak ve bundan sonra ne olacağını açıklamak.",
+      "Gastroenteroloji bölümünün uluslararası hasta ekibiyle iletişimi koordine etmek.",
+      "Konsültasyon öncesinde sormak isteyebileceğiniz pratik soruları hazırlamanıza yardımcı olmak.",
+      "Uzman talep ederse kayıtların güvenli aktarımını koordine etmek.",
+      "Tıbbi ekibin yönlendirmesine ve teyit edilen kapsama göre seyahat zamanlamasını görüşmek."
+    ],
+    "steps": [
+      {
+        "title": "Başvuru gönderin",
+        "text": "Kısa formu doldurun. Belirti, sonuç veya tıbbi geçmiş eklemeyin."
+      },
+      {
+        "title": "Amacınızı netleştirin",
+        "text": "Konsültasyon mu, doktorunuzun sorduğu belirli bir inceleme mi yoksa süreç hakkında genel bilgi mi aradığınızı görüşürüz."
+      },
+      {
+        "title": "Ekiple koordinasyon",
+        "text": "Gastroenteroloji ekibi hangi bilgilere ihtiyaç duyduğuna ve bunları nasıl inceleyeceğine karar verir."
+      },
+      {
+        "title": "Doktordan sonraki adımlar",
+        "text": "Her türlü inceleme veya tedavi planı uzmandan gelir; biz bunun etrafındaki iletişimi koordine ederiz."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Benim için endoskopi randevusu alabilir misiniz?",
+        "a": "Bu web sitesi bir rezervasyon sistemi değildir. Her türlü inceleme, sağlık kuruluşunun kendi değerlendirmesi sonrasında kararlaştırılır ve planlanır."
+      },
+      {
+        "q": "Karaciğer hastalıkları burada mı yoksa karaciğer nakli altında mı ele alınır?",
+        "a": "Genel karaciğer rahatsızlıkları çoğunlukla gastroenteroloji veya hepatolojide değerlendirilir. Nakil değerlendirmesi ise nakil ekibi tarafından yapılır. Doğru yolu sağlık kuruluşu belirler."
+      },
+      {
+        "q": "Sevk belgesi gerekiyor mu?",
+        "a": "Gereklilikler hastaneye göre değişir. Koordinasyon sırasında sağlık kuruluşunun ne istediğini netleştiririz."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "oncology": {
+    "name": "Onkoloji",
+    "short": "Kanserle ilgili soruları olan hasta ve aileler için Türkiye’deki onkoloji ekipleriyle duyarlı ve düzenli koordinasyon.",
+    "metaTitle": "Türkiye’de Onkoloji – Hasta Koordinasyonu",
+    "metaDescription": "HEALIX MEDICAL, hasta ve ailelerin Türkiye’deki lisanslı onkoloji ekipleriyle düzenli bir başvuru başlatmasına yardımcı olur. Tedavi kararları tıbbi ekibe aittir.",
+    "intro": "Kanserle ilgili bir tanı veya şüphe, hastalar ve aileleri için zor sorular beraberinde getirir. HEALIX MEDICAL, yalnızca hekimlerin yanıtlayabileceği konularda vaatlerde bulunmadan, Türkiye’deki bir onkoloji ekibine ulaşmanın ilk adımını daha net ve sakin hale getirmeyi amaçlar.",
+    "overview": [
+      "Onkoloji, kanserle ilgilenen tıp alanıdır. Tedavi planlaması genellikle medikal onkologlar, cerrahlar, radyasyon onkologları, radyologlar ve patologları içerebilen multidisipliner ekipler tarafından değerlendirilir.",
+      "Tedavi seçenekleri, beklenen sonuçlar ve süreler yalnızca onkoloji ekibinin incelemesi sonrasında görüşülebilir. HEALIX MEDICAL hastalık seyri, sağkalım veya herhangi bir tedavinin uygunluğu hakkında yorum yapmaz."
+    ],
+    "coordination": [
+      "Hastalar ve aileleri için sakin ve saygılı bir ilk iletişim noktası sağlamak.",
+      "Onkoloji bölümünün uluslararası hasta ekibiyle iletişimi koordine etmek.",
+      "Hastane tarafından patoloji raporları veya görüntüleme istendiğinde kullanılan güvenli kanalı açıklamak.",
+      "Ailelerin tıbbi ekip için sorularını düzenlemesine yardımcı olmak.",
+      "Kimin neden sorumlu olduğunun bilinmesi için koordinasyon adımlarını net tutmak."
+    ],
+    "steps": [
+      {
+        "title": "İlk mesaj",
+        "text": "Hasta veya bir aile üyesi kısa bir başvuru gönderir. Form aracılığıyla rapor veya tanı istenmez."
+      },
+      {
+        "title": "Önce dinleme",
+        "text": "Bir koordinatör talebiniz ve nasıl iletişim kurmayı tercih ettiğiniz hakkında sizinle konuşur."
+      },
+      {
+        "title": "Onkoloji ekibi koordinasyonu",
+        "text": "Kayıtları yalnızca onayla güvenli kanaldan inceleyen onkoloji ekibiyle iletişimi koordine ederiz."
+      },
+      {
+        "title": "Ekibin görüşü",
+        "text": "Tıbbi ekip görüşünü ve önerilen planı paylaşır. Kararlar hasta ile hekimleri arasında kalır."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Başarı oranları hakkında bilgi verebilir misiniz?",
+        "a": "Hayır. HEALIX MEDICAL başarı oranı yayınlamaz veya vaat etmez. Sonuçlarla ilgili sorular doğrudan onkoloji ekibiyle görüşülmelidir."
+      },
+      {
+        "q": "İkinci görüş isteyebilir miyim?",
+        "a": "İkinci görüş aradığınızı bize belirtebilirsiniz. Bunun nasıl ve hangi koşullarda sunulacağına sağlık kuruluşu karar verir."
+      },
+      {
+        "q": "Patoloji raporları nasıl paylaşılır?",
+        "a": "Asla web sitesi formu üzerinden değil; yalnızca onayınız sonrasında ve kimlerin erişeceği açıklandıktan sonra ayrı bir güvenli kanal üzerinden paylaşılır."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "cardiology": {
+    "name": "Kardiyoloji",
+    "short": "Kalp ve damar sağlığıyla ilgili acil olmayan başvurular için Türkiye’deki kardiyoloji ekipleriyle koordinasyon.",
+    "metaTitle": "Türkiye’de Kardiyoloji – Hasta Koordinasyonu",
+    "metaDescription": "Uluslararası hastalar için Türkiye’deki lisanslı kardiyoloji ekipleriyle düzenli koordinasyon. HEALIX MEDICAL acil servis değildir ve tanı koymaz.",
+    "intro": "Kalple ilgili sorular dikkatli tıbbi değerlendirme gerektirir. HEALIX MEDICAL, uluslararası hastaların Türkiye’deki kardiyoloji ekipleriyle acil olmayan başvurularını planlamasına ve iletişimi düzenli tutmasına yardımcı olur.",
+    "overview": [
+      "Kardiyoloji; ritim bozuklukları, koroner arter hastalığı, kalp kapak rahatsızlıkları ve kalp yetmezliği dahil kalp ve kan damarlarıyla ilgilenir. Cerrahi değerlendirme gerektiğinde kardiyologlar kalp ve damar cerrahlarıyla birlikte çalışabilir.",
+      "Tetkikler, işlemler ve tedavi planları kardiyoloji ekibi tarafından kararlaştırılır. HEALIX MEDICAL tıbbi görüş vermez ve acil durumlar için uygun değildir."
+    ],
+    "coordination": [
+      "Acil olmayan başvuruları ele almak ve koordinasyon sürecini açıklamak.",
+      "Kardiyoloji bölümünün uluslararası hasta ekibiyle iletişimi koordine etmek.",
+      "Değerlendirme ve seyahate uygunluk hakkında doktorlarınıza soracağınız soruları hazırlamanıza yardımcı olmak.",
+      "Talep edildiğinde kayıtların güvenli paylaşımını koordine etmek.",
+      "Seyahat düzenlemelerini yalnızca tıbbi yönlendirme sonrasında ve teyit edilen kapsamda görüşmek."
+    ],
+    "steps": [
+      {
+        "title": "Acil olmayan başvuru",
+        "text": "İletişim bilgilerinizi gönderin. Göğüs ağrınız veya başka acil belirtileriniz varsa hemen yerel acil servislerle iletişime geçin."
+      },
+      {
+        "title": "Talebi netleştirin",
+        "text": "Aradığınız kardiyoloji iletişimini ve iletişim tercihlerinizi netleştiririz."
+      },
+      {
+        "title": "Kardiyoloji ekibinin incelemesi",
+        "text": "Kardiyoloji ekibi hangi kayıtlara ihtiyaç duyduğuna karar verir ve bunları güvenli bir kanal üzerinden inceler."
+      },
+      {
+        "title": "Sonraki adımlar için tıbbi görüş",
+        "text": "Kardiyolog; değerlendirme, tedavi ve seyahatin uygun olup olmadığı konusunda karar verir."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "HEALIX MEDICAL bir acil servis mi?",
+        "a": "Hayır. Herhangi bir acil kalp belirtisinde derhal yerel acil servislerle iletişime geçin."
+      },
+      {
+        "q": "Seyahat edip edemeyeceğime kim karar verir?",
+        "a": "Seyahate uygunluk tıbbi bir karardır. Tedavinizi yürüten doktorunuza ve kabul eden tıbbi ekibe danışın."
+      },
+      {
+        "q": "Kalp cerrahlarıyla da çalışıyor musunuz?",
+        "a": "Kardiyoloji ekibi cerrahi değerlendirme gerektiğini düşünürse bu süreç sağlık kuruluşu tarafından düzenlenir; biz yalnızca iletişimi koordine ederiz."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "rehabilitation-physiotherapy": {
+    "name": "Rehabilitasyon ve Fizyoterapi",
+    "short": "İyileşme odaklı başvuruları desteklemek üzere Türkiye’deki rehabilitasyon ve fizyoterapi ekipleriyle iletişimin koordinasyonu.",
+    "metaTitle": "Türkiye’de Rehabilitasyon ve Fizyoterapi – Hasta Koordinasyonu",
+    "metaDescription": "HEALIX MEDICAL, Türkiye’deki lisanslı rehabilitasyon ve fizyoterapi ekipleriyle iletişimi koordine eder. Programlar tıbbi ekip tarafından planlanır.",
+    "intro": "Rehabilitasyon; yaralanma, ameliyat veya nörolojik hastalık sonrasında iyileşme sürecinin önemli bir parçası olabilir. HEALIX MEDICAL, Türkiye’deki rehabilitasyon ekiplerine ulaşmanıza ve programların nasıl planlandığını anlamanıza yardımcı olur.",
+    "overview": [
+      "Fiziksel tıp ve rehabilitasyon ile fizyoterapi; hareketi, işlevi ve bağımsızlığı desteklemeyi amaçlar. Programlarda fiziksel tıp ve rehabilitasyon hekimleri, fizyoterapistler, ergoterapistler ve konuşma terapistleri yer alabilir.",
+      "Bir programın içeriği, yoğunluğu ve süresi değerlendirme sonrasında rehabilitasyon ekibi tarafından belirlenir. HEALIX MEDICAL program tasarlamaz veya ilerleme öngörüsünde bulunmaz."
+    ],
+    "coordination": [
+      "Ameliyat sonrası rehabilitasyon gibi başvurunuzun genel amacını anlamak.",
+      "Bir rehabilitasyon merkezinin uluslararası hasta ekibiyle iletişimi koordine etmek.",
+      "Program hakkında ekibe yönelteceğiniz pratik soruları hazırlamanıza yardımcı olmak.",
+      "Talep edildiğinde taburculuk özetlerinin güvenli paylaşımını koordine etmek.",
+      "Teyit edilen kapsama dahil olduğunda seyahat ve konaklama için erişilebilirlik ihtiyaçlarını görüşmek."
+    ],
+    "steps": [
+      {
+        "title": "Kısa formla başlayın",
+        "text": "İletişim bilgilerinizi paylaşın ve rehabilitasyon hizmetini seçin."
+      },
+      {
+        "title": "Hedeflerinizi görüşün",
+        "text": "Durumunuzu tıbbi olarak değerlendirmeden neyi araştırmak istediğinizi konuşuruz."
+      },
+      {
+        "title": "Ekip değerlendirmesi",
+        "text": "Rehabilitasyon ekibi hangi bilgilere ihtiyaç duyduğuna ve yüz yüze değerlendirme gerekip gerekmediğine karar verir."
+      },
+      {
+        "title": "Uzmanlardan program",
+        "text": "Ekip uygun görürse bir program önerir; biz iletişimi ve kararlaştırılan düzenlemeleri koordine ederiz."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Bir rehabilitasyon programı ne kadar sürer?",
+        "a": "Süre tıbbi değerlendirmeye bağlıdır. Program sürelerini yayınlamaz veya garanti etmeyiz."
+      },
+      {
+        "q": "Hastaya bir aile üyesi eşlik edebilir mi?",
+        "a": "Pek çok hasta bir refakatçiyle seyahat eder. Pratik düzenlemeler teyit edilen hizmet kapsamı dahilinde görüşülür."
+      },
+      {
+        "q": "Fizyoterapi seanslarını siz mi veriyorsunuz?",
+        "a": "Hayır. Seanslar sağlık kuruluşundaki lisanslı uzmanlar tarafından uygulanır."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  },
+  "hematology": {
+    "name": "Hematoloji",
+    "short": "Kan hastalıklarıyla ilgili başvurular için Türkiye’deki hematoloji ekipleriyle koordinasyon.",
+    "metaTitle": "Türkiye’de Hematoloji – Hasta Koordinasyonu",
+    "metaDescription": "Türkiye’deki lisanslı hematoloji ekipleriyle düzenli bir başvuru başlatın. HEALIX MEDICAL iletişimi koordine eder; tüm tıbbi kararları uzmanlar verir.",
+    "intro": "Kan hastalıkları çoğu zaman uzmanlaşmış değerlendirme ve uzun süreli bakım gerektirir. HEALIX MEDICAL, uluslararası hastaların ve ailelerinin açık ve düzenli bir iletişimle Türkiye’deki hematoloji ekiplerine ulaşmasına yardımcı olur.",
+    "overview": [
+      "Hematoloji; anemiler, pıhtılaşma bozuklukları ve kan kanserleri dahil olmak üzere kan, kemik iliği ve lenfatik sistemle ilgilenir. Bazı durumlar onkoloji ekipleriyle birlikte yönetilir.",
+      "Değerlendirme, tedavi ve ileri tedaviler hematoloji ekibi tarafından kararlaştırılır. HEALIX MEDICAL kan tahlillerini yorumlamaz veya tedavi uygunluğu hakkında görüş bildirmez."
+    ],
+    "coordination": [
+      "Hastalar ve aileleri için net bir ilk iletişim süreci sunmak.",
+      "Hematoloji bölümünün uluslararası hasta ekibiyle iletişimi koordine etmek.",
+      "Hastane talep ettiğinde tahlil sonuçlarının ve raporların nasıl güvenle paylaşılacağını açıklamak.",
+      "Ailelerin uzman için düzenli sorular hazırlamasına yardımcı olmak.",
+      "Süreç boyunca koordinasyon adımlarını şeffaf tutmak."
+    ],
+    "steps": [
+      {
+        "title": "Başvuru",
+        "text": "Yalnızca iletişim bilgilerini içeren kısa bir talep gönderin."
+      },
+      {
+        "title": "Koordinatör görüşmesi",
+        "text": "Aradığınız uzman iletişimini netleştiririz."
+      },
+      {
+        "title": "Hematoloji ekibiyle iletişim",
+        "text": "Güvenli bir kanal üzerinden sonuç talep edebilecek ekiple iletişimi koordine ederiz."
+      },
+      {
+        "title": "Uzman yönlendirmesi",
+        "text": "Hematolog değerlendirme ve bakıma karar verir. Kararlaştırılan kapsamda iletişimi destekleriz."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Kan tahlili sonuçlarımı açıklayabilir misiniz?",
+        "a": "Hayır. Kan tahlili sonuçlarını yalnızca yetkili hekimler yorumlayabilir."
+      },
+      {
+        "q": "Kemik iliği nakli bu kapsama dahil mi?",
+        "a": "İleri tedavilerle ilgili sorular yalnızca inceleme sonrasında hematoloji ekibi tarafından yanıtlanır; uygunluk değerlendirmesi yapmayız."
+      },
+      {
+        "q": "Yerel doktorum ekiple iletişim kurabilir mi?",
+        "a": "Hekimler arası iletişim sağlık kuruluşu tarafından düzenlenir; bağlantının koordine edilmesine yardımcı olabiliriz."
+      }
+    ],
+    "cta": "Bu hizmet için koordinasyon talep edin"
+  }
+}

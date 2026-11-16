@@ -1,0 +1,447 @@
+{
+  "meta": {
+    "siteName": "HEALIX MEDICAL",
+    "defaultTitle": "HEALIX MEDICAL – International Patient Coordination in Türkiye",
+    "defaultDescription": "HEALIX MEDICAL coordinates the journey of international patients seeking medical services in Türkiye. Medical decisions are made by licensed hospitals and doctors.",
+    "ogImageAlt": "A male care coordinator talking with an adult male patient in a calm consultation lounge"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "footerNav": "Footer navigation",
+    "languageSwitcher": "Choose language",
+    "breadcrumb": "Breadcrumb",
+    "homeLink": "HEALIX MEDICAL – home",
+    "externalLink": "opens in a new tab"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "journey": "Patient Journey",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "common": {
+    "ctaPrimary": "Start your enquiry",
+    "ctaSecondary": "Explore the patient journey",
+    "learnMore": "Learn more",
+    "allServices": "View all services",
+    "backToServices": "All services",
+    "readPrivacy": "Privacy policy",
+    "coordinationNotice": "HEALIX MEDICAL coordinates communication and the patient journey. Diagnosis, eligibility, treatment decisions and medical care are the responsibility of the licensed hospital and medical team.",
+    "featured": "Featured in our materials",
+    "step": "Step"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "International patient coordination · Türkiye",
+      "title": "Your treatment journey starts with a clear step",
+      "lead": "HEALIX MEDICAL helps international patients and families organise their first contact and coordinate communication with medical providers in Türkiye. Every medical decision stays with the licensed medical team.",
+      "imageAlt": "A male coordinator with a tablet listening to an adult male patient in a bright, calm lounge"
+    },
+    "strip": [
+      {
+        "title": "Five website languages",
+        "text": "Arabic, English, French, Russian and Turkish."
+      },
+      {
+        "title": "Coordination in Türkiye",
+        "text": "We organise communication between you and medical providers."
+      },
+      {
+        "title": "Medical decisions by doctors",
+        "text": "Diagnosis and treatment are decided by licensed teams."
+      },
+      {
+        "title": "Privacy first",
+        "text": "No medical files are requested through this website."
+      }
+    ],
+    "services": {
+      "eyebrow": "Services",
+      "title": "Twelve areas in which we coordinate enquiries",
+      "lead": "Liver and kidney transplantation are highlighted because they are prominent in our materials. All twelve services are equally accessible.",
+      "othersTitle": "Other services"
+    },
+    "journey": {
+      "eyebrow": "Patient journey",
+      "title": "Four clear stages, without promises we cannot make",
+      "lead": "Every case is different. Timelines, eligibility and results are determined only by the medical provider."
+    },
+    "help": {
+      "eyebrow": "Roles",
+      "title": "How HEALIX MEDICAL helps — and what remains with the hospital",
+      "oursTitle": "What HEALIX MEDICAL coordinates",
+      "ours": [
+        "Receiving your first enquiry and explaining the process",
+        "Clarifying your request in non-medical terms",
+        "Coordinating communication with the medical provider",
+        "Explaining how medical files are shared securely, when requested",
+        "Discussing travel arrangements only within a confirmed scope"
+      ],
+      "theirsTitle": "What the licensed hospital and doctors decide",
+      "theirs": [
+        "Diagnosis and medical evaluation",
+        "Eligibility and acceptance of a case",
+        "Treatment plan, procedures and risks",
+        "Medical costs and treatment duration",
+        "Clinical care and medical follow-up"
+      ]
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Common questions before you start",
+      "more": "See all questions"
+    },
+    "cta": {
+      "title": "Ready to take the first step?",
+      "text": "Send a short enquiry with your contact details. Please do not include medical reports.",
+      "privacyNote": "We handle your details according to our"
+    }
+  },
+  "journey": {
+    "metaTitle": "Patient Journey – How Coordination Works",
+    "metaDescription": "Understand the four stages of coordination with HEALIX MEDICAL, from first contact to travel arrangements, and which decisions remain with the medical team.",
+    "title": "The patient journey",
+    "lead": "A transparent overview of how coordination works. These stages describe our process; they do not guarantee timelines, acceptance or results.",
+    "steps": [
+      {
+        "title": "Initial contact",
+        "text": "You send a short enquiry with your name, country, preferred language, contact method and the service you are asking about. We do not request medical documents at this stage."
+      },
+      {
+        "title": "Clarifying the need",
+        "text": "A coordinator contacts you to understand your request in non-medical terms: who the patient is, who is supporting them and what you hope to learn."
+      },
+      {
+        "title": "Coordinating with the medical provider",
+        "text": "If you choose to continue, we coordinate communication with a suitable medical provider. When medical files are requested, they are shared through a separate secure channel with your consent."
+      },
+      {
+        "title": "Travel arrangements and follow-up",
+        "text": "After the medical provider gives its guidance, travel and follow-up arrangements are discussed according to the service available and the scope confirmed for your case."
+      }
+    ],
+    "principlesTitle": "Principles we follow at every stage",
+    "principles": [
+      {
+        "title": "Clear roles",
+        "text": "We coordinate; the hospital and doctors diagnose, decide and treat."
+      },
+      {
+        "title": "No guarantees",
+        "text": "We never promise acceptance, results, costs or durations."
+      },
+      {
+        "title": "Consent first",
+        "text": "Medical information is shared only with your consent and through a secure channel."
+      },
+      {
+        "title": "Honest communication",
+        "text": "If something is not available, we tell you."
+      }
+    ]
+  },
+  "about": {
+    "metaTitle": "About HEALIX MEDICAL – International Patient Coordination",
+    "metaDescription": "HEALIX MEDICAL is a patient coordination company working with international patients seeking medical services in Türkiye. Learn about our role and principles.",
+    "title": "About HEALIX MEDICAL",
+    "lead": "HEALIX MEDICAL coordinates the journey of international patients who are exploring medical services in Türkiye.",
+    "imageAlt": "A male coordinator on a phone call at a desk in a bright office",
+    "roleTitle": "Our role",
+    "role": [
+      "Travelling abroad for medical care involves many questions: where to start, whom to contact and how to share information safely. Our role is to make this first part of the journey clearer and more organised.",
+      "We are a coordination company, not a hospital. Diagnosis, eligibility, treatment decisions and medical care are the responsibility of licensed hospitals and medical teams. We do not promise outcomes, acceptance, costs or durations."
+    ],
+    "valuesTitle": "What guides our work",
+    "values": [
+      {
+        "title": "Precision",
+        "text": "Clear steps, clear responsibilities and organised communication."
+      },
+      {
+        "title": "Respect",
+        "text": "Every patient and family is treated with patience and dignity."
+      },
+      {
+        "title": "Transparency",
+        "text": "We explain what we coordinate and what we do not."
+      },
+      {
+        "title": "Privacy",
+        "text": "Health information is kept out of marketing tools and shared only with consent."
+      }
+    ]
+  },
+  "faqPage": {
+    "metaTitle": "Frequently Asked Questions – HEALIX MEDICAL",
+    "metaDescription": "Answers to general questions about contacting HEALIX MEDICAL, our coordination role, website languages, privacy and travel to Türkiye.",
+    "title": "Frequently asked questions",
+    "lead": "General, non-medical information. Questions about diagnosis, eligibility, treatment or organ donation law must be answered by the medical team and competent authorities.",
+    "items": [
+      {
+        "q": "What does HEALIX MEDICAL do?",
+        "a": "HEALIX MEDICAL coordinates communication and the patient journey for international patients seeking medical services in Türkiye. We are not a hospital and do not provide medical care."
+      },
+      {
+        "q": "How do I start?",
+        "a": "Use the short contact form to send your name, country, preferred language, contact method and the service you are asking about. A coordinator will contact you using the method you chose."
+      },
+      {
+        "q": "Should I send my medical reports through the website?",
+        "a": "No. The website form is only for a first enquiry. If a medical provider later needs records, a separate secure channel will be explained to you, including who can access the files."
+      },
+      {
+        "q": "Who decides whether I can be treated?",
+        "a": "Only the licensed hospital and medical team can decide on diagnosis, eligibility and treatment after their own evaluation."
+      },
+      {
+        "q": "Can you tell me the cost or duration of treatment?",
+        "a": "Costs and durations depend on the medical provider's evaluation. We do not publish or guarantee final costs or timelines."
+      },
+      {
+        "q": "Which languages is the website available in?",
+        "a": "The website is available in Arabic, English, French, Russian and Turkish. Ask us which languages are available for direct communication in your case."
+      },
+      {
+        "q": "Can a family member contact you on behalf of a patient?",
+        "a": "Yes. A family member can send the first enquiry. Medical information about the patient should only be shared later with the patient's consent."
+      },
+      {
+        "q": "Do you arrange travel and accommodation?",
+        "a": "Travel-related arrangements are discussed only where they are part of the coordination scope confirmed for a specific case. We will tell you clearly what is and is not included."
+      },
+      {
+        "q": "Is HEALIX MEDICAL an emergency service?",
+        "a": "No. In an urgent or emergency situation, contact your local emergency services immediately."
+      }
+    ]
+  },
+  "servicesPage": {
+    "metaTitle": "Services – Medical Coordination in Türkiye",
+    "metaDescription": "Explore the twelve service areas in which HEALIX MEDICAL coordinates enquiries for international patients in Türkiye, including liver and kidney transplantation.",
+    "title": "Services",
+    "lead": "The service areas below follow the HEALIX MEDICAL brochure. For each one, we coordinate communication with medical providers; the medical team makes every clinical decision.",
+    "descriptionTitle": "About this service",
+    "coordinationTitle": "What HEALIX MEDICAL coordinates",
+    "stepsTitle": "General steps",
+    "faqTitle": "Questions about this service",
+    "relatedTitle": "Other services",
+    "noticeTitle": "Medical notice",
+    "notice": "This page provides general information only and is not a substitute for consultation with a doctor. HEALIX MEDICAL does not diagnose, treat or guarantee eligibility, results, costs or durations. All medical decisions are made by the licensed hospital and medical team.",
+    "ctaTitle": "Have a question about this service?",
+    "ctaText": "Send a short enquiry. Please do not include medical reports or diagnoses."
+  },
+  "contact": {
+    "metaTitle": "Contact HEALIX MEDICAL – Start Your Enquiry",
+    "metaDescription": "Send a short, privacy-conscious enquiry to HEALIX MEDICAL. No medical files are requested through the website.",
+    "title": "Start your enquiry",
+    "lead": "Share a few contact details and the service you are asking about. A coordinator will contact you using your preferred method.",
+    "beforeTitle": "Before you send",
+    "before": [
+      "Do not include diagnoses, reports, images or medical history.",
+      "If medical files are needed later, a separate secure channel will be explained to you.",
+      "In an emergency, contact your local emergency services."
+    ],
+    "socialTitle": "Follow HEALIX MEDICAL",
+    "form": {
+      "name": "Full name",
+      "country": "Country of residence",
+      "language": "Preferred language",
+      "contactMethod": "Preferred contact method",
+      "contactValue": "Your contact details",
+      "contactValueHint": "Phone number, WhatsApp number or email address, according to the method you selected.",
+      "service": "Service you are asking about",
+      "servicePlaceholder": "Select a service",
+      "serviceGeneral": "General question / not sure yet",
+      "select": "Select",
+      "methods": {
+        "phone": "Phone call",
+        "whatsapp": "WhatsApp",
+        "email": "Email"
+      },
+      "consent": "I agree that HEALIX MEDICAL may contact me about my enquiry as described in the privacy policy.",
+      "consentLink": "Read the privacy policy",
+      "noMedical": "Please do not include medical information in this form.",
+      "required": "Required",
+      "submit": "Send enquiry",
+      "sending": "Sending…",
+      "success": "Thank you. Your enquiry has been received. A coordinator will contact you using your preferred method.",
+      "unavailable": "Online submission is not active yet. Please contact us through our official social media accounts for now.",
+      "error": "Something went wrong. Please try again later.",
+      "errors": {
+        "name": "Please enter your name (2–100 characters).",
+        "country": "Please enter your country.",
+        "language": "Please choose a language.",
+        "contactMethod": "Please choose a contact method.",
+        "contactValue": "Please enter valid contact details for the selected method.",
+        "service": "Please choose a service or ‘General question’.",
+        "consent": "Please confirm your consent to be contacted."
+      },
+      "errorSummary": "Please correct the highlighted fields."
+    }
+  },
+  "legal": {
+    "updated": "Last updated",
+    "reviewNotice": "This text is published as an initial version and is subject to legal review.",
+    "privacy": {
+      "metaTitle": "Privacy & Cookies – HEALIX MEDICAL",
+      "metaDescription": "How HEALIX MEDICAL handles contact enquiries, what data the website collects, and our approach to cookies and advertising tools.",
+      "title": "Privacy & cookie policy",
+      "sections": [
+        {
+          "h": "Who we are",
+          "p": [
+            "This website is operated by HEALIX MEDICAL, a company that coordinates the journey of international patients seeking medical services in Türkiye."
+          ]
+        },
+        {
+          "h": "What we collect through the website",
+          "p": [
+            "The contact form collects only: your name, country, preferred language, preferred contact method and contact details, the service area you are asking about, and your consent to be contacted.",
+            "The form does not ask for diagnoses, medical reports, images or medical history, and it does not allow file uploads. Please do not include such information in the form."
+          ]
+        },
+        {
+          "h": "Why we use it",
+          "p": [
+            "We use these details only to respond to your enquiry and to coordinate the next steps you request. We do not sell your data."
+          ]
+        },
+        {
+          "h": "Medical information",
+          "p": [
+            "If a medical provider later needs your medical records, they will be shared through a separate secure channel, only after your consent and after we explain who can access them."
+          ]
+        },
+        {
+          "h": "Cookies and advertising tools",
+          "p": [
+            "This website does not currently use analytics or advertising cookies, and it does not use the Meta Pixel or similar tracking tools. Links to Instagram and Facebook are simple links; those platforms apply their own policies when you visit them.",
+            "If analytics or advertising tools are introduced in the future, this policy will be updated first and any required consent will be requested. Health-related information, form contents and the service you ask about will never be sent to advertising platforms."
+          ]
+        },
+        {
+          "h": "Retention and sharing",
+          "p": [
+            "Enquiry details are kept only as long as needed to handle your request and meet legal obligations. They are shared with a medical provider only when needed to coordinate your request and with your agreement."
+          ]
+        },
+        {
+          "h": "Your rights",
+          "p": [
+            "Depending on the applicable law, including the Turkish Personal Data Protection Law No. 6698 (KVKK) where relevant, you may have the right to request access to, correction or deletion of your personal data. You can make such a request through our official contact channels."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Terms of Use – HEALIX MEDICAL",
+      "metaDescription": "Terms for using the HEALIX MEDICAL website, including the nature of our coordination service and the limits of website information.",
+      "title": "Terms of use",
+      "sections": [
+        {
+          "h": "Purpose of the website",
+          "p": [
+            "This website introduces HEALIX MEDICAL and allows visitors to send a first enquiry. It is not a hospital website, a booking platform or an online shop."
+          ]
+        },
+        {
+          "h": "Nature of our service",
+          "p": [
+            "HEALIX MEDICAL coordinates communication and the patient journey. Diagnosis, eligibility, treatment decisions and medical care are the responsibility of licensed hospitals and medical teams."
+          ]
+        },
+        {
+          "h": "No guarantees",
+          "p": [
+            "Sending an enquiry does not create a medical relationship and does not guarantee acceptance by any medical provider, treatment results, costs or durations."
+          ]
+        },
+        {
+          "h": "Website content",
+          "p": [
+            "Content on this website is general information and may be updated. It is not medical advice and must not replace consultation with a qualified doctor."
+          ]
+        },
+        {
+          "h": "Third-party links",
+          "p": [
+            "Links to external platforms such as Instagram or Facebook are provided for convenience. We are not responsible for the content or policies of those platforms."
+          ]
+        },
+        {
+          "h": "Changes",
+          "p": [
+            "We may update these terms. The version published on this page applies from its publication date."
+          ]
+        }
+      ]
+    },
+    "disclaimer": {
+      "metaTitle": "Medical Disclaimer – HEALIX MEDICAL",
+      "metaDescription": "HEALIX MEDICAL is a patient coordination company. Website content is general information and not a substitute for medical advice.",
+      "title": "Medical disclaimer",
+      "sections": [
+        {
+          "h": "Coordination, not medical care",
+          "p": [
+            "HEALIX MEDICAL is not a hospital or a medical provider. We do not diagnose, treat, prescribe or perform procedures."
+          ]
+        },
+        {
+          "h": "General information only",
+          "p": [
+            "Service descriptions on this website are general and educational. They are not a diagnosis or a recommendation and are not a substitute for consultation with a doctor."
+          ]
+        },
+        {
+          "h": "Decisions by licensed professionals",
+          "p": [
+            "Diagnosis, eligibility, treatment plans, risks and follow-up are determined only by licensed hospitals and medical teams after their own evaluation."
+          ]
+        },
+        {
+          "h": "No promised outcomes",
+          "p": [
+            "We do not guarantee acceptance of a case, treatment success, final costs or treatment duration."
+          ]
+        },
+        {
+          "h": "Transplantation",
+          "p": [
+            "Questions about organ donation, donor eligibility and related legal requirements are answered exclusively by the medical provider and competent authorities under applicable law."
+          ]
+        },
+        {
+          "h": "Emergencies",
+          "p": [
+            "HEALIX MEDICAL is not an emergency service. In an emergency, contact your local emergency services immediately."
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "International patient coordination in Türkiye.",
+    "pages": "Pages",
+    "legal": "Legal",
+    "languages": "Languages",
+    "follow": "Follow us",
+    "rights": "All rights reserved.",
+    "disclaimerShort": "HEALIX MEDICAL coordinates the patient journey and does not provide medical care. Medical decisions are made by licensed hospitals and doctors."
+  },
+  "legalNav": {
+    "privacy": "Privacy & cookies",
+    "terms": "Terms of use",
+    "disclaimer": "Medical disclaimer"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has moved.",
+    "back": "Back to home"
+  }
+}

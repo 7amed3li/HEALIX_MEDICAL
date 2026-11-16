@@ -1,0 +1,447 @@
+{
+  "meta": {
+    "siteName": "HEALIX MEDICAL",
+    "defaultTitle": "HEALIX MEDICAL – Coordination de patients internationaux en Turquie",
+    "defaultDescription": "HEALIX MEDICAL coordonne le parcours des patients internationaux à la recherche de services médicaux en Turquie. Les décisions médicales relèvent d’hôpitaux et de médecins agréés.",
+    "ogImageAlt": "Un coordinateur de soins s’entretenant avec un patient adulte dans un salon de consultation calme"
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu principal",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mainNav": "Navigation principale",
+    "footerNav": "Navigation du pied de page",
+    "languageSwitcher": "Choisir la langue",
+    "breadcrumb": "Fil d’Ariane",
+    "homeLink": "HEALIX MEDICAL – accueil",
+    "externalLink": "s’ouvre dans un nouvel onglet"
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "journey": "Parcours patient",
+    "about": "À propos",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "common": {
+    "ctaPrimary": "Faire une demande",
+    "ctaSecondary": "Découvrir le parcours",
+    "learnMore": "En savoir plus",
+    "allServices": "Voir tous les services",
+    "backToServices": "Tous les services",
+    "readPrivacy": "Politique de confidentialité",
+    "coordinationNotice": "HEALIX MEDICAL coordonne la communication et le parcours du patient. Le diagnostic, l’éligibilité, les décisions thérapeutiques et les soins médicaux relèvent de la responsabilité de l’hôpital et de l’équipe médicale agréés.",
+    "featured": "Mis en avant dans nos supports",
+    "step": "Étape"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Coordination de patients internationaux · Turquie",
+      "title": "Votre parcours de soins commence par une étape claire",
+      "lead": "HEALIX MEDICAL aide les patients internationaux et leurs familles à organiser leur premier contact et à coordonner la communication avec les prestataires médicaux en Turquie. Chaque décision médicale reste du ressort de l’équipe médicale agréée.",
+      "imageAlt": "Un coordinateur muni d’une tablette écoute un patient adulte dans un salon lumineux et calme"
+    },
+    "strip": [
+      {
+        "title": "Site disponible en cinq langues",
+        "text": "Arabe, anglais, français, russe et turc."
+      },
+      {
+        "title": "Coordination en Turquie",
+        "text": "Nous organisons la communication entre vous et les prestataires médicaux."
+      },
+      {
+        "title": "Décisions médicales par les médecins",
+        "text": "Le diagnostic et le traitement sont décidés par des équipes agréées."
+      },
+      {
+        "title": "Confidentialité avant tout",
+        "text": "Aucun dossier médical n’est demandé via ce site."
+      }
+    ],
+    "services": {
+      "eyebrow": "Services",
+      "title": "Douze domaines dans lesquels nous coordonnons les demandes",
+      "lead": "La transplantation hépatique et la transplantation rénale sont mises en avant, car elles occupent une place importante dans nos supports. Les douze services sont tous accessibles de la même manière.",
+      "othersTitle": "Autres services"
+    },
+    "journey": {
+      "eyebrow": "Parcours patient",
+      "title": "Quatre étapes claires, sans promesses que nous ne pouvons pas tenir",
+      "lead": "Chaque situation est unique. Les délais, l’éligibilité et les résultats sont déterminés uniquement par le prestataire médical."
+    },
+    "help": {
+      "eyebrow": "Rôles",
+      "title": "Ce que fait HEALIX MEDICAL — et ce qui relève de l’hôpital",
+      "oursTitle": "Ce que HEALIX MEDICAL coordonne",
+      "ours": [
+        "Recevoir votre première demande et vous expliquer la démarche",
+        "Préciser votre demande en termes non médicaux",
+        "Coordonner la communication avec le prestataire médical",
+        "Vous expliquer comment les dossiers médicaux sont transmis de manière sécurisée, lorsqu’ils sont demandés",
+        "Aborder l’organisation du voyage uniquement dans un périmètre confirmé"
+      ],
+      "theirsTitle": "Ce que décident l’hôpital et les médecins agréés",
+      "theirs": [
+        "Le diagnostic et l’évaluation médicale",
+        "L’éligibilité et l’acceptation d’un dossier",
+        "Le plan de traitement, les interventions et les risques",
+        "Les coûts médicaux et la durée du traitement",
+        "Les soins cliniques et le suivi médical"
+      ]
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Questions fréquentes avant de commencer",
+      "more": "Voir toutes les questions"
+    },
+    "cta": {
+      "title": "Prêt à faire le premier pas ?",
+      "text": "Envoyez une courte demande avec vos coordonnées. Merci de ne joindre aucun rapport médical.",
+      "privacyNote": "Nous traitons vos données conformément à notre"
+    }
+  },
+  "journey": {
+    "metaTitle": "Parcours patient – Fonctionnement de la coordination",
+    "metaDescription": "Découvrez les quatre étapes de la coordination avec HEALIX MEDICAL, du premier contact à l’organisation du voyage, et les décisions qui relèvent de l’équipe médicale.",
+    "title": "Le parcours patient",
+    "lead": "Un aperçu transparent du fonctionnement de la coordination. Ces étapes décrivent notre démarche ; elles ne garantissent ni délais, ni acceptation, ni résultats.",
+    "steps": [
+      {
+        "title": "Premier contact",
+        "text": "Vous envoyez une courte demande indiquant votre nom, votre pays, votre langue préférée, votre moyen de contact et le service qui vous intéresse. Nous ne demandons aucun document médical à ce stade."
+      },
+      {
+        "title": "Préciser le besoin",
+        "text": "Un coordinateur vous contacte pour comprendre votre demande en termes non médicaux : qui est le patient, qui l’accompagne et ce que vous souhaitez savoir."
+      },
+      {
+        "title": "Coordination avec le prestataire médical",
+        "text": "Si vous choisissez de poursuivre, nous coordonnons la communication avec un prestataire médical approprié. Lorsque des dossiers médicaux sont demandés, ils sont transmis par un canal sécurisé distinct, avec votre consentement."
+      },
+      {
+        "title": "Organisation du voyage et suivi",
+        "text": "Une fois que le prestataire médical a donné ses indications, l’organisation du voyage et du suivi est abordée en fonction du service disponible et du périmètre confirmé pour votre dossier."
+      }
+    ],
+    "principlesTitle": "Les principes que nous suivons à chaque étape",
+    "principles": [
+      {
+        "title": "Des rôles clairs",
+        "text": "Nous coordonnons ; l’hôpital et les médecins posent le diagnostic, décident et traitent."
+      },
+      {
+        "title": "Aucune garantie",
+        "text": "Nous ne promettons jamais d’acceptation, de résultats, de coûts ni de durées."
+      },
+      {
+        "title": "Le consentement d’abord",
+        "text": "Les informations médicales ne sont transmises qu’avec votre consentement et par un canal sécurisé."
+      },
+      {
+        "title": "Une communication honnête",
+        "text": "Si quelque chose n’est pas disponible, nous vous le disons."
+      }
+    ]
+  },
+  "about": {
+    "metaTitle": "À propos de HEALIX MEDICAL – Coordination de patients",
+    "metaDescription": "HEALIX MEDICAL est une société de coordination au service des patients internationaux recherchant des services médicaux en Turquie. Notre rôle et nos principes.",
+    "title": "À propos de HEALIX MEDICAL",
+    "lead": "HEALIX MEDICAL coordonne le parcours des patients internationaux qui envisagent des services médicaux en Turquie.",
+    "imageAlt": "Un coordinateur au téléphone, assis à un bureau dans un espace lumineux",
+    "roleTitle": "Notre rôle",
+    "role": [
+      "Se rendre à l’étranger pour des soins médicaux soulève de nombreuses questions : par où commencer, qui contacter et comment transmettre ses informations en toute sécurité. Notre rôle est de rendre cette première partie du parcours plus claire et mieux organisée.",
+      "Nous sommes une société de coordination, et non un hôpital. Le diagnostic, l’éligibilité, les décisions thérapeutiques et les soins médicaux relèvent de la responsabilité d’hôpitaux et d’équipes médicales agréés. Nous ne promettons ni résultats, ni acceptation, ni coûts, ni durées."
+    ],
+    "valuesTitle": "Ce qui guide notre travail",
+    "values": [
+      {
+        "title": "Précision",
+        "text": "Des étapes claires, des responsabilités définies et une communication organisée."
+      },
+      {
+        "title": "Respect",
+        "text": "Chaque patient et chaque famille sont accueillis avec patience et dignité."
+      },
+      {
+        "title": "Transparence",
+        "text": "Nous expliquons ce que nous coordonnons et ce que nous ne coordonnons pas."
+      },
+      {
+        "title": "Confidentialité",
+        "text": "Les informations de santé sont tenues à l’écart des outils marketing et ne sont transmises qu’avec consentement."
+      }
+    ]
+  },
+  "faqPage": {
+    "metaTitle": "Questions fréquentes – HEALIX MEDICAL",
+    "metaDescription": "Réponses aux questions générales sur la prise de contact avec HEALIX MEDICAL, notre rôle de coordination, les langues du site, la confidentialité et le voyage en Turquie.",
+    "title": "Questions fréquentes",
+    "lead": "Informations générales, non médicales. Les questions relatives au diagnostic, à l’éligibilité, au traitement ou à la législation sur le don d’organes doivent être adressées à l’équipe médicale et aux autorités compétentes.",
+    "items": [
+      {
+        "q": "Que fait HEALIX MEDICAL ?",
+        "a": "HEALIX MEDICAL coordonne la communication et le parcours des patients internationaux recherchant des services médicaux en Turquie. Nous ne sommes pas un hôpital et ne dispensons pas de soins médicaux."
+      },
+      {
+        "q": "Comment commencer ?",
+        "a": "Utilisez le court formulaire de contact pour indiquer votre nom, votre pays, votre langue préférée, votre moyen de contact et le service qui vous intéresse. Un coordinateur vous contactera par le moyen choisi."
+      },
+      {
+        "q": "Dois-je envoyer mes rapports médicaux via le site ?",
+        "a": "Non. Le formulaire du site est réservé à une première demande. Si un prestataire médical a besoin de dossiers par la suite, un canal sécurisé distinct vous sera expliqué, y compris les personnes pouvant accéder aux fichiers."
+      },
+      {
+        "q": "Qui décide si je peux être traité ?",
+        "a": "Seuls l’hôpital et l’équipe médicale agréés peuvent se prononcer sur le diagnostic, l’éligibilité et le traitement, après leur propre évaluation."
+      },
+      {
+        "q": "Pouvez-vous m’indiquer le coût ou la durée du traitement ?",
+        "a": "Les coûts et les durées dépendent de l’évaluation du prestataire médical. Nous ne publions ni ne garantissons de coûts ou de délais définitifs."
+      },
+      {
+        "q": "Dans quelles langues le site est-il disponible ?",
+        "a": "Le site est disponible en arabe, anglais, français, russe et turc. Demandez-nous quelles langues sont disponibles pour communiquer directement dans votre cas."
+      },
+      {
+        "q": "Un membre de la famille peut-il vous contacter au nom d’un patient ?",
+        "a": "Oui. Un membre de la famille peut envoyer la première demande. Les informations médicales concernant le patient ne doivent être transmises que plus tard, avec le consentement du patient."
+      },
+      {
+        "q": "Organisez-vous le voyage et l’hébergement ?",
+        "a": "Les aspects liés au voyage ne sont abordés que s’ils font partie du périmètre de coordination confirmé pour un dossier donné. Nous vous indiquerons clairement ce qui est inclus et ce qui ne l’est pas."
+      },
+      {
+        "q": "HEALIX MEDICAL est-il un service d’urgence ?",
+        "a": "Non. En cas de situation urgente, contactez immédiatement les services d’urgence de votre pays."
+      }
+    ]
+  },
+  "servicesPage": {
+    "metaTitle": "Services – Coordination médicale en Turquie",
+    "metaDescription": "Découvrez les douze domaines dans lesquels HEALIX MEDICAL coordonne les demandes de patients internationaux en Turquie, dont la transplantation hépatique et rénale.",
+    "title": "Services",
+    "lead": "Les domaines ci-dessous reprennent ceux de la brochure HEALIX MEDICAL. Pour chacun, nous coordonnons la communication avec les prestataires médicaux ; l’équipe médicale prend toutes les décisions cliniques.",
+    "descriptionTitle": "À propos de ce service",
+    "coordinationTitle": "Ce que HEALIX MEDICAL coordonne",
+    "stepsTitle": "Étapes générales",
+    "faqTitle": "Questions sur ce service",
+    "relatedTitle": "Autres services",
+    "noticeTitle": "Avertissement médical",
+    "notice": "Cette page fournit uniquement des informations générales et ne remplace pas une consultation médicale. HEALIX MEDICAL ne pose pas de diagnostic, ne traite pas et ne garantit ni l’éligibilité, ni les résultats, ni les coûts, ni les durées. Toutes les décisions médicales sont prises par l’hôpital et l’équipe médicale agréés.",
+    "ctaTitle": "Une question sur ce service ?",
+    "ctaText": "Envoyez une courte demande. Merci de ne joindre ni rapport médical ni diagnostic."
+  },
+  "contact": {
+    "metaTitle": "Contacter HEALIX MEDICAL – Faire une demande",
+    "metaDescription": "Envoyez à HEALIX MEDICAL une courte demande, respectueuse de votre vie privée. Aucun dossier médical n’est demandé via le site.",
+    "title": "Faire une demande",
+    "lead": "Indiquez quelques coordonnées et le service qui vous intéresse. Un coordinateur vous contactera par le moyen de votre choix.",
+    "beforeTitle": "Avant d’envoyer",
+    "before": [
+      "N’indiquez ni diagnostic, ni rapport, ni image, ni antécédents médicaux.",
+      "Si des dossiers médicaux sont nécessaires par la suite, un canal sécurisé distinct vous sera expliqué.",
+      "En cas d’urgence, contactez les services d’urgence de votre pays."
+    ],
+    "socialTitle": "Suivre HEALIX MEDICAL",
+    "form": {
+      "name": "Nom complet",
+      "country": "Pays de résidence",
+      "language": "Langue préférée",
+      "contactMethod": "Moyen de contact préféré",
+      "contactValue": "Vos coordonnées",
+      "contactValueHint": "Numéro de téléphone, numéro WhatsApp ou adresse e-mail, selon le moyen choisi.",
+      "service": "Service qui vous intéresse",
+      "servicePlaceholder": "Sélectionnez un service",
+      "serviceGeneral": "Question générale / je ne sais pas encore",
+      "select": "Sélectionner",
+      "methods": {
+        "phone": "Appel téléphonique",
+        "whatsapp": "WhatsApp",
+        "email": "E-mail"
+      },
+      "consent": "J’accepte que HEALIX MEDICAL me contacte au sujet de ma demande, comme décrit dans la politique de confidentialité.",
+      "consentLink": "Lire la politique de confidentialité",
+      "noMedical": "Merci de ne pas indiquer d’informations médicales dans ce formulaire.",
+      "required": "Obligatoire",
+      "submit": "Envoyer la demande",
+      "sending": "Envoi en cours…",
+      "success": "Merci. Votre demande a bien été reçue. Un coordinateur vous contactera par le moyen de votre choix.",
+      "unavailable": "L’envoi en ligne n’est pas encore actif. Pour le moment, merci de nous contacter via nos comptes officiels sur les réseaux sociaux.",
+      "error": "Une erreur s’est produite. Veuillez réessayer plus tard.",
+      "errors": {
+        "name": "Veuillez saisir votre nom (2 à 100 caractères).",
+        "country": "Veuillez indiquer votre pays.",
+        "language": "Veuillez choisir une langue.",
+        "contactMethod": "Veuillez choisir un moyen de contact.",
+        "contactValue": "Veuillez saisir des coordonnées valides pour le moyen choisi.",
+        "service": "Veuillez choisir un service ou « Question générale ».",
+        "consent": "Veuillez confirmer votre consentement à être contacté."
+      },
+      "errorSummary": "Veuillez corriger les champs signalés."
+    }
+  },
+  "legal": {
+    "updated": "Dernière mise à jour",
+    "reviewNotice": "Ce texte est publié en version initiale et fait l’objet d’une vérification juridique.",
+    "privacy": {
+      "metaTitle": "Confidentialité et cookies – HEALIX MEDICAL",
+      "metaDescription": "Comment HEALIX MEDICAL traite les demandes de contact, quelles données le site collecte et notre approche des cookies et des outils publicitaires.",
+      "title": "Politique de confidentialité et de cookies",
+      "sections": [
+        {
+          "h": "Qui sommes-nous",
+          "p": [
+            "Ce site est exploité par HEALIX MEDICAL, une société qui coordonne le parcours des patients internationaux recherchant des services médicaux en Turquie."
+          ]
+        },
+        {
+          "h": "Ce que nous collectons via le site",
+          "p": [
+            "Le formulaire de contact collecte uniquement : votre nom, votre pays, votre langue préférée, votre moyen de contact préféré et vos coordonnées, le domaine de service qui vous intéresse et votre consentement à être contacté.",
+            "Le formulaire ne demande ni diagnostic, ni rapport médical, ni image, ni antécédents médicaux, et ne permet pas l’envoi de fichiers. Merci de ne pas inclure ce type d’informations dans le formulaire."
+          ]
+        },
+        {
+          "h": "Pourquoi nous les utilisons",
+          "p": [
+            "Nous utilisons ces données uniquement pour répondre à votre demande et coordonner les étapes suivantes que vous sollicitez. Nous ne vendons pas vos données."
+          ]
+        },
+        {
+          "h": "Informations médicales",
+          "p": [
+            "Si un prestataire médical a besoin de votre dossier médical par la suite, celui-ci sera transmis par un canal sécurisé distinct, uniquement après votre consentement et après que nous vous aurons expliqué qui peut y accéder."
+          ]
+        },
+        {
+          "h": "Cookies et outils publicitaires",
+          "p": [
+            "Ce site n’utilise actuellement aucun cookie analytique ou publicitaire, ni le Meta Pixel ou d’autres outils de suivi similaires. Les liens vers Instagram et Facebook sont de simples liens ; ces plateformes appliquent leurs propres politiques lorsque vous les consultez.",
+            "Si des outils analytiques ou publicitaires sont introduits à l’avenir, cette politique sera d’abord mise à jour et tout consentement requis sera demandé. Les informations relatives à la santé, le contenu des formulaires et le service qui vous intéresse ne seront jamais transmis aux plateformes publicitaires."
+          ]
+        },
+        {
+          "h": "Conservation et partage",
+          "p": [
+            "Les données des demandes ne sont conservées que le temps nécessaire au traitement de votre demande et au respect des obligations légales. Elles ne sont transmises à un prestataire médical que lorsque cela est nécessaire pour coordonner votre demande, et avec votre accord."
+          ]
+        },
+        {
+          "h": "Vos droits",
+          "p": [
+            "Selon la législation applicable, y compris, le cas échéant, la loi turque n° 6698 relative à la protection des données personnelles (KVKK), vous pouvez avoir le droit de demander l’accès à vos données personnelles, leur rectification ou leur suppression. Vous pouvez formuler une telle demande via nos canaux de contact officiels."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Conditions d’utilisation – HEALIX MEDICAL",
+      "metaDescription": "Conditions d’utilisation du site HEALIX MEDICAL, notamment la nature de notre service de coordination et les limites des informations publiées sur le site.",
+      "title": "Conditions d’utilisation",
+      "sections": [
+        {
+          "h": "Objet du site",
+          "p": [
+            "Ce site présente HEALIX MEDICAL et permet aux visiteurs d’envoyer une première demande. Il ne s’agit ni du site d’un hôpital, ni d’une plateforme de réservation, ni d’une boutique en ligne."
+          ]
+        },
+        {
+          "h": "Nature de notre service",
+          "p": [
+            "HEALIX MEDICAL coordonne la communication et le parcours du patient. Le diagnostic, l’éligibilité, les décisions thérapeutiques et les soins médicaux relèvent de la responsabilité d’hôpitaux et d’équipes médicales agréés."
+          ]
+        },
+        {
+          "h": "Aucune garantie",
+          "p": [
+            "L’envoi d’une demande ne crée aucune relation médicale et ne garantit ni l’acceptation par un prestataire médical, ni les résultats du traitement, ni les coûts, ni les durées."
+          ]
+        },
+        {
+          "h": "Contenu du site",
+          "p": [
+            "Le contenu de ce site constitue une information générale et peut être mis à jour. Il ne constitue pas un avis médical et ne doit pas remplacer une consultation auprès d’un médecin qualifié."
+          ]
+        },
+        {
+          "h": "Liens vers des tiers",
+          "p": [
+            "Les liens vers des plateformes externes telles qu’Instagram ou Facebook sont fournis pour votre commodité. Nous ne sommes pas responsables du contenu ni des politiques de ces plateformes."
+          ]
+        },
+        {
+          "h": "Modifications",
+          "p": [
+            "Nous pouvons mettre à jour ces conditions. La version publiée sur cette page s’applique à compter de sa date de publication."
+          ]
+        }
+      ]
+    },
+    "disclaimer": {
+      "metaTitle": "Avertissement médical – HEALIX MEDICAL",
+      "metaDescription": "HEALIX MEDICAL est une société de coordination de patients. Le contenu du site est une information générale et ne remplace pas un avis médical.",
+      "title": "Avertissement médical",
+      "sections": [
+        {
+          "h": "Coordination, et non soins médicaux",
+          "p": [
+            "HEALIX MEDICAL n’est ni un hôpital ni un prestataire médical. Nous ne posons pas de diagnostic, ne traitons pas, ne prescrivons pas et ne réalisons aucune intervention."
+          ]
+        },
+        {
+          "h": "Informations générales uniquement",
+          "p": [
+            "Les descriptions de services présentées sur ce site sont générales et informatives. Elles ne constituent ni un diagnostic ni une recommandation et ne remplacent pas une consultation médicale."
+          ]
+        },
+        {
+          "h": "Décisions prises par des professionnels agréés",
+          "p": [
+            "Le diagnostic, l’éligibilité, les plans de traitement, les risques et le suivi sont déterminés uniquement par des hôpitaux et des équipes médicales agréés, après leur propre évaluation."
+          ]
+        },
+        {
+          "h": "Aucun résultat promis",
+          "p": [
+            "Nous ne garantissons ni l’acceptation d’un dossier, ni le succès d’un traitement, ni les coûts définitifs, ni la durée du traitement."
+          ]
+        },
+        {
+          "h": "Transplantation",
+          "p": [
+            "Les questions relatives au don d’organes, à l’éligibilité des donneurs et aux exigences légales associées relèvent exclusivement du prestataire médical et des autorités compétentes, conformément à la législation applicable."
+          ]
+        },
+        {
+          "h": "Urgences",
+          "p": [
+            "HEALIX MEDICAL n’est pas un service d’urgence. En cas d’urgence, contactez immédiatement les services d’urgence de votre pays."
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Coordination de patients internationaux en Turquie.",
+    "pages": "Pages",
+    "legal": "Mentions légales",
+    "languages": "Langues",
+    "follow": "Suivez-nous",
+    "rights": "Tous droits réservés.",
+    "disclaimerShort": "HEALIX MEDICAL coordonne le parcours du patient et ne dispense pas de soins médicaux. Les décisions médicales relèvent d’hôpitaux et de médecins agréés."
+  },
+  "legalNav": {
+    "privacy": "Confidentialité et cookies",
+    "terms": "Conditions d’utilisation",
+    "disclaimer": "Avertissement médical"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous recherchez n’existe pas ou a été déplacée.",
+    "back": "Retour à l’accueil"
+  }
+}

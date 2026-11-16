@@ -1,0 +1,614 @@
+{
+  "liver-transplantation": {
+    "name": "Transplantation hépatique",
+    "short": "Coordination des échanges avec des centres de transplantation agréés en Turquie pour les patients internationaux et leurs familles.",
+    "metaTitle": "Transplantation hépatique en Turquie – Coordination",
+    "metaDescription": "HEALIX MEDICAL aide les patients internationaux et leurs proches à engager une demande structurée auprès d’équipes de transplantation hépatique agréées en Turquie.",
+    "intro": "La transplantation hépatique est un parcours médical complexe décidé et réalisé exclusivement par des équipes de transplantation agréées. HEALIX MEDICAL aide les patients internationaux et leurs familles à organiser cette première démarche avec clarté.",
+    "overview": [
+      "Une greffe du foie consiste à remplacer un foie gravement atteint par un foie sain, ou une partie de foie, provenant d’un donneur. L’indication médicale, le choix de la procédure et le bilan pré-greffe relèvent uniquement de l’équipe hospitalière de transplantation après évaluation.",
+      "Les parcours de greffe impliquent également des règles médicales, éthiques et juridiques appliquées par l’hôpital et les autorités compétentes. HEALIX MEDICAL n’évalue ni l’éligibilité du patient ni celle d’un donneur et ne fournit pas d’avis juridique sur le don d’organes."
+    ],
+    "coordination": [
+      "Recevoir votre première demande et vous expliquer le fonctionnement de la coordination.",
+      "Clarifier en termes généraux les informations que l’établissement pourra demander, sans recueillir de dossier médical sur le site.",
+      "Coordonner la communication entre vous et le bureau international du centre de transplantation.",
+      "Vous aider à préparer une liste claire de questions destinées à l’équipe médicale.",
+      "Aborder les modalités de déplacement uniquement lorsqu’elles font partie du périmètre confirmé pour votre dossier."
+    ],
+    "steps": [
+      {
+        "title": "Premier contact",
+        "text": "Vous envoyez une courte demande avec vos coordonnées, votre pays et votre langue préférée, sans joindre de documents médicaux."
+      },
+      {
+        "title": "Compréhension de la demande",
+        "text": "Un coordinateur vous contacte pour comprendre le cadre général de votre démarche et les personnes impliquées."
+      },
+      {
+        "title": "Mise en relation avec l’équipe",
+        "text": "Si vous souhaitez poursuivre, nous coordonnons l’échange avec le centre. Les dossiers médicaux sont transmis par un canal sécurisé distinct avec votre accord."
+      },
+      {
+        "title": "Décision médicale et organisation",
+        "text": "L’équipe de transplantation décide de l’évaluation et du plan éventuel. Les déplacements sont organisés selon le périmètre confirmé."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "HEALIX MEDICAL peut-elle me dire si je suis éligible à une greffe du foie ?",
+        "a": "Non. Seule l’équipe de transplantation agréée peut se prononcer après son propre bilan médical."
+      },
+      {
+        "q": "Qui répond aux questions sur les donneurs et les conditions légales ?",
+        "a": "Les questions relatives aux donneurs, au consentement et au cadre légal relèvent de l’hôpital et des autorités compétentes."
+      },
+      {
+        "q": "Dois-je envoyer mes examens via le formulaire ?",
+        "a": "Non. Le formulaire sert uniquement au premier contact. Si des documents médicaux sont nécessaires ensuite, un canal sécurisé distinct vous sera expliqué."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "kidney-transplantation": {
+    "name": "Transplantation rénale",
+    "short": "Premier contact structuré et coordination avec des équipes de transplantation rénale en Turquie pour les patients internationaux.",
+    "metaTitle": "Transplantation rénale en Turquie – Coordination",
+    "metaDescription": "Engagez une demande organisée concernant la transplantation rénale en Turquie avec HEALIX MEDICAL. Toute décision médicale appartient à l’équipe agréée.",
+    "intro": "Pour les personnes atteintes d’insuffisance rénale avancée, envisager une transplantation rénale à l’étranger soulève de nombreuses questions pratiques. HEALIX MEDICAL vous aide à structurer les premières étapes auprès des équipes internationales en Turquie.",
+    "overview": [
+      "La transplantation rénale consiste à greffer un rein sain chez un patient dont les reins ne fonctionnent plus suffisamment. L’équipe de transplantation détermine seule si un dossier peut être évalué, quels examens sont requis et comment s’organisent la préparation et le suivi.",
+      "Les règles médicales, éthiques et légales encadrant le don sont appliquées par l’hôpital et les autorités compétentes. HEALIX MEDICAL n’évalue pas la compatibilité d’un donneur et ne donne aucun conseil juridique."
+    ],
+    "coordination": [
+      "Expliquer le déroulement du traitement de votre demande et le rôle de la coordination.",
+      "Vous aider à formuler clairement votre demande sans saisir de diagnostic sur le site.",
+      "Coordonner la communication avec le service international d’un centre de transplantation rénale.",
+      "Assurer un suivi organisé dans votre langue préférée lorsque celle-ci est disponible.",
+      "Discuter des aspects pratiques du voyage uniquement dans le cadre confirmé pour votre dossier."
+    ],
+    "steps": [
+      {
+        "title": "Demande initiale",
+        "text": "Transmettez vos coordonnées et le service concerné, sans résultats d’analyses ni diagnostics."
+      },
+      {
+        "title": "Échange avec un coordinateur",
+        "text": "Nous précisons votre demande, les personnes impliquées et votre mode de communication préféré."
+      },
+      {
+        "title": "Partage sécurisé des documents",
+        "text": "Lorsque le centre demande un dossier médical, un canal sécurisé distinct vous est indiqué avec l’identité des destinataires autorisés."
+      },
+      {
+        "title": "Évaluation par l’hôpital",
+        "text": "L’équipe de transplantation examine le dossier et décide de la suite. Tout coût ou délai émane exclusivement de l’établissement médical."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Un proche peut-il effectuer la première démarche pour le patient ?",
+        "a": "Oui, un membre de la famille peut envoyer la demande initiale. Le partage ultérieur d’informations médicales nécessite le consentement du patient."
+      },
+      {
+        "q": "HEALIX MEDICAL évalue-t-elle la compatibilité du donneur ?",
+        "a": "Non. La compatibilité et l’éligibilité sont évaluées exclusivement par l’équipe de transplantation et les autorités compétentes."
+      },
+      {
+        "q": "Recevrai-je un tarif dès le premier contact ?",
+        "a": "Les informations tarifaires proviennent uniquement de l’établissement médical après étude du dossier. Nous ne garantissons aucun coût final."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "parkinsons-disease": {
+    "name": "Maladie de Parkinson",
+    "short": "Coordination des échanges avec des équipes de neurologie et des troubles du mouvement en Turquie.",
+    "metaTitle": "Maladie de Parkinson en Turquie – Coordination Patients",
+    "metaDescription": "HEALIX MEDICAL aide les personnes vivant avec la maladie de Parkinson et leurs proches à contacter des équipes de neurologie agréées en Turquie.",
+    "intro": "Vivre avec la maladie de Parkinson implique souvent un suivi pluridisciplinaire au long cours. HEALIX MEDICAL accompagne les patients et leurs familles souhaitant s’informer sur une prise en charge en Turquie pour organiser un premier échange clair avec les équipes concernées.",
+    "overview": [
+      "La maladie de Parkinson est une affection neurologique évolutive touchant le mouvement et d’autres aspects du quotidien. La prise en charge est définie par des neurologues et, selon les cas, par des neurochirurgiens et des spécialistes de la rééducation.",
+      "Les bilans ou traitements appropriés sont décidés uniquement par l’équipe médicale après évaluation. HEALIX MEDICAL ne recommande aucun traitement et ne se prononce pas sur l’indication d’une intervention."
+    ],
+    "coordination": [
+      "Écouter avec attention ce que le patient et sa famille souhaitent explorer.",
+      "Identifier avec vous l’équipe spécialisée à laquelle adresser votre demande.",
+      "Coordonner la communication avec le service international de l’hôpital.",
+      "Tenir les proches ou aidants informés des étapes de coordination avec l’accord du patient.",
+      "Aborder les besoins d’accessibilité liés au déplacement dans le périmètre confirmé."
+    ],
+    "steps": [
+      {
+        "title": "Demande initiale",
+        "text": "Le patient ou un proche envoie un court formulaire sans détailler les symptômes ni les traitements."
+      },
+      {
+        "title": "Clarification de l’objectif",
+        "text": "Nous échangeons sur votre demande — par exemple un avis spécialisé ou une rééducation — sans avis médical."
+      },
+      {
+        "title": "Lien avec l’équipe spécialisée",
+        "text": "Nous coordonnons le contact avec une équipe de neurologie qui pourra demander des documents via un canal sécurisé."
+      },
+      {
+        "title": "Orientation médicale",
+        "text": "Les spécialistes définissent le bilan ou le suivi adapté. L’organisation du déplacement suit leurs recommandations."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Un aidant peut-il gérer les échanges ?",
+        "a": "Oui, un proche peut initier et suivre la demande. Le partage de données médicales requiert le consentement du patient ou une habilitation légale."
+      },
+      {
+        "q": "Recommandez-vous un traitement particulier pour la maladie de Parkinson ?",
+        "a": "Non. Seule l’équipe médicale agréée peut formuler des recommandations thérapeutiques."
+      },
+      {
+        "q": "Pourquoi ce service porte-t-il le nom de la maladie ?",
+        "a": "Cet intitulé reprend la brochure officielle de HEALIX MEDICAL. En pratique, votre demande est orientée vers l’équipe de neurologie compétente."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "orthopedic-surgery": {
+    "name": "Chirurgie orthopédique",
+    "short": "Coordination de votre demande auprès d’équipes d’orthopédie en Turquie pour les os, les articulations et le rachis.",
+    "metaTitle": "Chirurgie orthopédique en Turquie – Coordination",
+    "metaDescription": "Vous envisagez une consultation orthopédique en Turquie ? HEALIX MEDICAL coordonne vos échanges avec des équipes agréées. Les décisions restent au chirurgien.",
+    "intro": "Les affections articulaires, osseuses ou rachidiennes peuvent limiter la vie quotidienne. Si vous envisagez une consultation spécialisée en Turquie, HEALIX MEDICAL vous aide à contacter l’équipe orthopédique appropriée de façon structurée.",
+    "overview": [
+      "La chirurgie orthopédique couvre l’évaluation et le traitement chirurgical ou non chirurgical des os, des articulations, des ligaments, des tendons et de la colonne vertébrale.",
+      "L’indication d’une intervention, le choix technique et les modalités de récupération appartiennent exclusivement au chirurgien orthopédiste. HEALIX MEDICAL n’interprète pas d’imagerie et ne suggère aucune opération."
+    ],
+    "coordination": [
+      "Comprendre l’objet général de votre demande sans collecter de données médicales sur le site.",
+      "Coordonner la communication avec le bureau international d’un service d’orthopédie.",
+      "Vous aider à préparer vos questions pour le chirurgien concernant le bilan et la récupération.",
+      "Organiser la transmission sécurisée des examens lorsque l’hôpital les demande.",
+      "Discuter des besoins de mobilité liés au voyage dans le cadre du périmètre confirmé."
+    ],
+    "steps": [
+      {
+        "title": "Prise de contact",
+        "text": "Envoyez vos coordonnées et sélectionnez la chirurgie orthopédique."
+      },
+      {
+        "title": "Échange avec un coordinateur",
+        "text": "Nous précisons votre demande, votre langue et votre moyen de contact préféré."
+      },
+      {
+        "title": "Examen par l’équipe",
+        "text": "L’équipe orthopédique peut demander des examens d’imagerie transmis uniquement par voie sécurisée."
+      },
+      {
+        "title": "Avis du chirurgien",
+        "text": "Le spécialiste décide de la suite, chirurgicale ou non. Tout déplacement suit ses indications médicales."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Pouvez-vous me dire si une opération est nécessaire ?",
+        "a": "Non. Seul le chirurgien orthopédiste peut poser une indication après examen de votre dossier."
+      },
+      {
+        "q": "Dois-je envoyer mes radiographies ou IRM dès maintenant ?",
+        "a": "Non, merci de ne pas envoyer d’images via le site. Un canal sécurisé vous sera communiqué si l’équipe médicale les demande."
+      },
+      {
+        "q": "La rééducation est-elle incluse ?",
+        "a": "La rééducation figure comme un service distinct. L’équipe médicale détermine si elle fait partie de votre parcours."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "neurosurgery": {
+    "name": "Neurochirurgie",
+    "short": "Coordination rigoureuse des échanges avec des équipes de neurochirurgie en Turquie pour le cerveau, la colonne et les nerfs.",
+    "metaTitle": "Neurochirurgie en Turquie – Coordination Patients",
+    "metaDescription": "HEALIX MEDICAL aide les patients internationaux à engager une démarche structurée auprès de services de neurochirurgie agréés en Turquie.",
+    "intro": "Les questions touchant au cerveau, à la moelle épinière ou aux nerfs exigent une communication calme et rigoureuse. HEALIX MEDICAL aide les patients internationaux et leurs familles à joindre des équipes de neurochirurgie en Turquie.",
+    "overview": [
+      "La neurochirurgie concerne les affections du cerveau, de la moelle épinière, du rachis et des nerfs périphériques pouvant nécessiter une évaluation chirurgicale, souvent en lien avec la neurologie et la neuroradiologie.",
+      "La décision d’opérer ou non et la planification de tout geste appartiennent entièrement au neurochirurgien. HEALIX MEDICAL ne donne aucun avis sur l’imagerie, l’urgence ou les risques."
+    ],
+    "coordination": [
+      "Recevoir votre demande et expliquer clairement les étapes de coordination.",
+      "Coordonner la communication avec le service international d’un département de neurochirurgie.",
+      "Vous aider à structurer vos questions pour le spécialiste.",
+      "Organiser le partage sécurisé des examens lorsque l’hôpital en fait la demande, avec votre accord.",
+      "Informer les proches de l’avancement des démarches lorsque le patient y consent."
+    ],
+    "steps": [
+      {
+        "title": "Demande initiale",
+        "text": "Indiquez vos coordonnées et le service souhaité. En cas d’urgence, contactez immédiatement les secours locaux."
+      },
+      {
+        "title": "Clarification",
+        "text": "Un coordinateur fait le point avec vous sur votre demande et vos besoins de communication."
+      },
+      {
+        "title": "Contact spécialisé",
+        "text": "Nous coordonnons l’échange avec l’équipe de neurochirurgie, qui précise les documents nécessaires."
+      },
+      {
+        "title": "Recommandation médicale",
+        "text": "Le neurochirurgien indique la conduite à tenir. Tout voyage dépend de son avis et du périmètre confirmé."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Que faire en cas de situation urgente ?",
+        "a": "En cas d’urgence médicale, appelez immédiatement les services d’urgence locaux. HEALIX MEDICAL n’est pas un service d’urgence."
+      },
+      {
+        "q": "Pouvez-vous examiner mon IRM ?",
+        "a": "Non. Les images médicales sont examinées uniquement par l’équipe médicale via un canal sécurisé."
+      },
+      {
+        "q": "Comment se passe la communication linguistique avec le médecin ?",
+        "a": "L’accompagnement linguistique dépend de l’établissement. Nous vous indiquons clairement ce qui est disponible pour votre dossier."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "urology-prostate": {
+    "name": "Urologie et soins de la prostate",
+    "short": "Coordination discrète avec des équipes d’urologie en Turquie pour les demandes concernant l’appareil urinaire et la prostate.",
+    "metaTitle": "Urologie et prostate en Turquie – Coordination",
+    "metaDescription": "Coordination discrète et structurée avec des équipes d’urologie agréées en Turquie. HEALIX MEDICAL ne pose aucun diagnostic et protège votre vie privée.",
+    "intro": "Les questions urologiques et prostatiques touchent à l’intimité. HEALIX MEDICAL propose un premier contact discret pour joindre des équipes d’urologie en Turquie, sans recueillir d’informations médicales sensibles sur le site.",
+    "overview": [
+      "L’urologie prend en charge les affections des voies urinaires — reins, uretères, vessie — ainsi que de la prostate et de l’appareil reproducteur masculin.",
+      "Tout diagnostic, bilan ou choix thérapeutique relève de l’urologue. HEALIX MEDICAL respecte votre confidentialité et ne demande ni symptômes ni résultats dans le formulaire de contact."
+    ],
+    "coordination": [
+      "Offrir un premier contact simple et confidentiel.",
+      "Coordonner la communication avec le bureau international d’un service d’urologie.",
+      "Expliquer comment transmettre vos examens de façon sécurisée si l’hôpital les demande.",
+      "Vous aider à préparer vos questions pratiques en vue de la consultation.",
+      "Aborder l’organisation du déplacement uniquement dans le cadre confirmé."
+    ],
+    "steps": [
+      {
+        "title": "Demande confidentielle",
+        "text": "Indiquez uniquement vos coordonnées et le service concerné, sans détails médicaux."
+      },
+      {
+        "title": "Échange respectueux",
+        "text": "Un coordinateur précise votre demande selon le mode de contact choisi."
+      },
+      {
+        "title": "Lien avec l’équipe d’urologie",
+        "text": "Nous coordonnons l’échange avec le service d’urologie, qui indique les éléments nécessaires."
+      },
+      {
+        "title": "Plan de consultation",
+        "text": "L’urologue détermine les examens ou soins adaptés. Nous poursuivons la coordination selon le périmètre convenu."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Mes informations restent-elles confidentielles ?",
+        "a": "Le formulaire se limite aux coordonnées et ne transmet aucune donnée de santé à des outils publicitaires. Consultez notre politique de confidentialité."
+      },
+      {
+        "q": "Réalisez-vous des dépistages de la prostate ?",
+        "a": "Non. HEALIX MEDICAL n’est pas un établissement de soins ; les examens sont prescrits et réalisés par l’équipe médicale."
+      },
+      {
+        "q": "Puis-je choisir comment être recontacté ?",
+        "a": "Oui, vous choisissez votre mode de contact préféré dans le formulaire."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "endocrinology": {
+    "name": "Endocrinologie",
+    "short": "Coordination avec des équipes d’endocrinologie en Turquie pour les demandes liées aux hormones, à la thyroïde et au métabolisme.",
+    "metaTitle": "Endocrinologie en Turquie – Coordination Patients",
+    "metaDescription": "Contactez des équipes d’endocrinologie agréées en Turquie grâce à la coordination organisée de HEALIX MEDICAL. Les décisions médicales restent aux spécialistes.",
+    "intro": "Les troubles hormonaux et métaboliques demandent une évaluation attentive et un suivi régulier. HEALIX MEDICAL aide les patients internationaux souhaitant consulter un endocrinologue en Turquie à engager cette démarche simplement.",
+    "overview": [
+      "L’endocrinologie concerne les glandes et les hormones de l’organisme, notamment la thyroïde, l’hypophyse, les glandes surrénales, le diabète et le métabolisme.",
+      "L’endocrinologue définit les analyses, le traitement et les modalités de suivi, y compris après le retour dans votre pays. HEALIX MEDICAL n’interprète aucun résultat biologique."
+    ],
+    "coordination": [
+      "Clarifier le type de consultation spécialisée que vous recherchez.",
+      "Coordonner les échanges avec le service international d’un département d’endocrinologie.",
+      "Vous aider à préparer vos questions sur l’organisation du suivi ultérieur.",
+      "Coordonner l’envoi sécurisé d’analyses antérieures lorsqu’elles sont demandées par l’hôpital.",
+      "Assurer un suivi clair et structuré des étapes de coordination."
+    ],
+    "steps": [
+      {
+        "title": "Prendre contact",
+        "text": "Envoyez vos coordonnées et sélectionnez l’endocrinologie dans le formulaire."
+      },
+      {
+        "title": "Préciser la demande",
+        "text": "Nous clarifions s’il s’agit d’une première consultation ou d’une demande de second avis."
+      },
+      {
+        "title": "Coordination spécialisée",
+        "text": "Nous coordonnons l’échange avec l’équipe d’endocrinologie, qui peut demander des bilans via un canal sécurisé."
+      },
+      {
+        "title": "Orientation et suivi",
+        "text": "Le spécialiste formule ses recommandations. La coordination se poursuit selon le périmètre confirmé."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Pouvez-vous expliquer mes résultats d’analyses ?",
+        "a": "Non. Seuls des médecins qualifiés peuvent interpréter des résultats biologiques."
+      },
+      {
+        "q": "Comment s’organise le suivi après mon retour ?",
+        "a": "Le suivi est défini par l’équipe médicale. Demandez au spécialiste comment articuler la suite avec votre médecin traitant."
+      },
+      {
+        "q": "Le diabète relève-t-il de ce service ?",
+        "a": "Le diabète est généralement suivi en endocrinologie ; l’établissement médical confirme le spécialiste approprié."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "gastroenterology": {
+    "name": "Gastro-entérologie",
+    "short": "Contact organisé avec des équipes de gastro-entérologie en Turquie pour les demandes concernant l’appareil digestif.",
+    "metaTitle": "Gastro-entérologie en Turquie – Coordination Patients",
+    "metaDescription": "HEALIX MEDICAL coordonne la communication entre les patients internationaux et des services de gastro-entérologie agréés en Turquie.",
+    "intro": "Les demandes concernant l’appareil digestif vont de la consultation spécialisée aux questions sur des examens endoscopiques. HEALIX MEDICAL vous aide à joindre des équipes de gastro-entérologie en Turquie de manière claire et structurée.",
+    "overview": [
+      "La gastro-entérologie couvre l’œsophage, l’estomac, l’intestin, le foie, la vésicule biliaire et le pancréas, à travers des consultations, des analyses, de l’imagerie et des examens endoscopiques.",
+      "Le gastro-entérologue décide seul des examens nécessaires et de leur déroulement. HEALIX MEDICAL ne propose aucun acte médical et n’évalue pas les symptômes."
+    ],
+    "coordination": [
+      "Recevoir votre demande et vous expliquer les étapes suivantes.",
+      "Coordonner la communication avec le service international d’un département de gastro-entérologie.",
+      "Vous aider à préparer vos questions pratiques avant une consultation.",
+      "Organiser le transfert sécurisé des comptes rendus si le spécialiste les demande.",
+      "Discuter du calendrier de déplacement selon les indications médicales et le périmètre confirmé."
+    ],
+    "steps": [
+      {
+        "title": "Envoyer une demande",
+        "text": "Remplissez le court formulaire sans mentionner de symptômes ni d’antécédents médicaux."
+      },
+      {
+        "title": "Définir l’objectif",
+        "text": "Nous précisons si vous cherchez une consultation, un examen demandé par votre médecin ou des informations générales."
+      },
+      {
+        "title": "Coordination avec l’équipe",
+        "text": "L’équipe de gastro-entérologie indique quels éléments elle souhaite examiner."
+      },
+      {
+        "title": "Suite donnée par le médecin",
+        "text": "Tout programme d’examen ou de soins émane du spécialiste ; nous coordonnons les échanges autour de celui-ci."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Puis-je réserver directement une endoscopie sur ce site ?",
+        "a": "Non, ce site n’est pas une plateforme de réservation. Tout examen est décidé et planifié par l’établissement médical après évaluation."
+      },
+      {
+        "q": "Les maladies du foie relèvent-elles de ce service ou de la transplantation ?",
+        "a": "Les affections hépatiques générales relèvent souvent de l’hépato-gastro-entérologie, tandis que le bilan de greffe dépend d’une équipe de transplantation. L’établissement oriente le parcours."
+      },
+      {
+        "q": "Ai-je besoin d’un courrier d’adressage ?",
+        "a": "Les exigences varient selon les hôpitaux ; nous vous préciserons ce que demande l’établissement lors de la coordination."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "oncology": {
+    "name": "Oncologie",
+    "short": "Coordination attentive et structurée avec des équipes d’oncologie en Turquie pour les patients et leurs proches.",
+    "metaTitle": "Oncologie en Turquie – Coordination Patients",
+    "metaDescription": "HEALIX MEDICAL aide les patients et leurs familles à engager une démarche organisée auprès d’équipes d’oncologie agréées en Turquie.",
+    "intro": "Un diagnostic ou une suspicion de cancer soulève des questions difficiles pour le patient et ses proches. HEALIX MEDICAL s’efforce de rendre la première prise de contact avec une équipe d’oncologie en Turquie plus claire et plus apaisée, sans jamais promettre ce qui relève uniquement des médecins.",
+    "overview": [
+      "L’oncologie est la spécialité médicale dédiée aux cancers. Les propositions thérapeutiques sont habituellement discutées en réunion de concertation pluridisciplinaire réunissant oncologues médicaux, chirurgiens, radiothérapeutes, radiologues et pathologistes.",
+      "Les options de traitement, les résultats attendus et les délais ne peuvent être abordés que par l’équipe d’oncologie après étude du dossier. HEALIX MEDICAL ne formule aucun pronostic et ne publie aucun taux de réussite."
+    ],
+    "coordination": [
+      "Offrir un premier interlocuteur calme et respectueux aux patients et à leurs familles.",
+      "Coordonner la communication avec le service international d’un département d’oncologie.",
+      "Expliquer le canal sécurisé utilisé lorsque l’hôpital demande des comptes rendus d’anatomopathologie ou d’imagerie.",
+      "Aider la famille à organiser ses questions pour l’équipe médicale.",
+      "Maintenir une distinction claire entre notre rôle de coordination et les décisions médicales."
+    ],
+    "steps": [
+      {
+        "title": "Premier message",
+        "text": "Le patient ou un proche envoie une demande courte, sans joindre de compte rendu médical sur le site."
+      },
+      {
+        "title": "Écoute et clarification",
+        "text": "Un coordinateur échange avec vous sur votre demande et vos préférences de communication."
+      },
+      {
+        "title": "Coordination avec l’oncologie",
+        "text": "Nous coordonnons l’échange avec l’équipe d’oncologie, qui consulte les dossiers via un canal sécurisé distinct avec consentement."
+      },
+      {
+        "title": "Avis de l’équipe médicale",
+        "text": "L’équipe médicale partage son avis et toute proposition de prise en charge. Les décisions restent entre le patient et ses médecins."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Annoncez-vous des taux de réussite ?",
+        "a": "Non. HEALIX MEDICAL ne publie ni ne promet de taux de réussite. Les questions relatives au pronostic se discutent directement avec l’équipe d’oncologie."
+      },
+      {
+        "q": "Puis-je demander un second avis médical ?",
+        "a": "Vous pouvez nous indiquer que vous recherchez un second avis. L’établissement médical décide des modalités selon lesquelles il peut le fournir."
+      },
+      {
+        "q": "Comment les comptes rendus de biopsie sont-ils transmis ?",
+        "a": "Uniquement par un canal sécurisé distinct après votre consentement et information sur les personnes autorisées à y accéder."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "cardiology": {
+    "name": "Cardiologie",
+    "short": "Coordination non urgente avec des équipes de cardiologie en Turquie pour les demandes cardiovasculaires.",
+    "metaTitle": "Cardiologie en Turquie – Coordination Patients",
+    "metaDescription": "Coordination organisée avec des équipes de cardiologie agréées en Turquie. HEALIX MEDICAL n’est pas un service d’urgence et ne pose aucun diagnostic.",
+    "intro": "Les questions touchant au cœur appellent une évaluation médicale attentive. HEALIX MEDICAL aide les patients internationaux à organiser une demande non urgente auprès d’équipes de cardiologie en Turquie.",
+    "overview": [
+      "La cardiologie prend en charge les affections du cœur et des vaisseaux — troubles du rythme, maladie coronarienne, valvulopathies, insuffisance cardiaque — parfois en lien avec la chirurgie cardiovasculaire.",
+      "Les examens, actes et traitements sont décidés par l’équipe de cardiologie. HEALIX MEDICAL ne donne aucun avis médical et n’intervient pas pour les urgences."
+    ],
+    "coordination": [
+      "Traiter les demandes non urgentes et expliquer le processus de coordination.",
+      "Coordonner la communication avec le bureau international d’un service de cardiologie.",
+      "Vous aider à préparer les questions destinées à vos médecins concernant le bilan et l’aptitude au voyage.",
+      "Organiser le partage sécurisé des examens antérieurs lorsqu’ils sont demandés.",
+      "Discuter des modalités de déplacement uniquement après avis médical et dans le périmètre confirmé."
+    ],
+    "steps": [
+      {
+        "title": "Demande non urgente",
+        "text": "Envoyez vos coordonnées. En cas de douleur thoracique ou de symptôme aigu, appelez immédiatement les secours locaux."
+      },
+      {
+        "title": "Clarification",
+        "text": "Nous précisons l’objet de votre démarche et vos préférences de contact."
+      },
+      {
+        "title": "Examen par la cardiologie",
+        "text": "L’équipe de cardiologie indique les documents requis et les consulte via un canal sécurisé."
+      },
+      {
+        "title": "Avis du cardiologue",
+        "text": "Le cardiologue se prononce sur le bilan, la prise en charge et l’aptitude à voyager."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "HEALIX MEDICAL est-elle un service d’urgence cardiaque ?",
+        "a": "Non. Devant tout symptôme cardiaque urgent, contactez immédiatement les services d’urgence locaux."
+      },
+      {
+        "q": "Qui décide si je peux prendre l’avion ?",
+        "a": "L’aptitude au voyage est une décision médicale prise par votre médecin traitant et l’équipe médicale d’accueil."
+      },
+      {
+        "q": "Travaillez-vous aussi pour des demandes de chirurgie cardiaque ?",
+        "a": "Si l’équipe de cardiologie estime qu’un avis chirurgical est pertinent, l’établissement médical l’organise ; nous coordonnons uniquement la communication."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "rehabilitation-physiotherapy": {
+    "name": "Rééducation et physiothérapie",
+    "short": "Coordination des échanges avec des équipes de médecine physique, de rééducation et de physiothérapie en Turquie.",
+    "metaTitle": "Rééducation et physiothérapie en Turquie – Coordination",
+    "metaDescription": "HEALIX MEDICAL coordonne la communication avec des équipes agréées de rééducation et de physiothérapie en Turquie. Les programmes sont définis par les médecins.",
+    "intro": "La rééducation occupe souvent une place essentielle après une intervention, un traumatisme ou une affection neurologique. HEALIX MEDICAL vous aide à contacter des équipes de rééducation en Turquie et à comprendre comment s’organisent les programmes.",
+    "overview": [
+      "La médecine physique et de réadaptation ainsi que la physiothérapie visent à soutenir la mobilité, les capacités fonctionnelles et l’autonomie, avec l’intervention coordonnée de médecins rééducateurs, kinésithérapeutes, ergothérapeutes et orthophonistes.",
+      "Le contenu, l’intensité et la durée d’un programme sont fixés par l’équipe de rééducation après bilan. HEALIX MEDICAL ne conçoit aucun programme et ne prédit aucun résultat."
+    ],
+    "coordination": [
+      "Comprendre l’objectif général de votre demande, par exemple une rééducation post-opératoire.",
+      "Coordonner la communication avec le service international d’un centre de rééducation.",
+      "Vous aider à préparer vos questions pratiques pour l’équipe spécialisée.",
+      "Organiser le partage sécurisé des comptes rendus d’hospitalisation lorsqu’ils sont demandés.",
+      "Aborder les besoins d’accessibilité pour le transport et le séjour lorsqu’ils font partie du périmètre confirmé."
+    ],
+    "steps": [
+      {
+        "title": "Formulaire initial",
+        "text": "Indiquez vos coordonnées et sélectionnez la rééducation et physiothérapie."
+      },
+      {
+        "title": "Préciser vos attentes",
+        "text": "Nous échangeons sur ce que vous souhaitez explorer, sans évaluer votre état de santé."
+      },
+      {
+        "title": "Bilan par l’équipe",
+        "text": "L’équipe de rééducation indique les informations nécessaires et si une évaluation sur place est requise."
+      },
+      {
+        "title": "Programme proposé par les spécialistes",
+        "text": "L’équipe médicale propose un programme le cas échéant ; nous coordonnons la communication et les modalités convenues."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quelle est la durée d’un programme de rééducation ?",
+        "a": "La durée dépend exclusivement du bilan médical. Nous ne publions ni ne garantissons de durée fixe."
+      },
+      {
+        "q": "Un proche peut-il accompagner le patient ?",
+        "a": "De nombreux patients voyagent avec un accompagnant. Les modalités pratiques sont abordées selon le périmètre confirmé."
+      },
+      {
+        "q": "Dispensez-vous vous-mêmes les séances de physiothérapie ?",
+        "a": "Non. Les séances sont réalisées par des professionnels agréés au sein de l’établissement médical."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  },
+  "hematology": {
+    "name": "Hématologie",
+    "short": "Coordination avec des équipes d’hématologie en Turquie pour les demandes liées aux maladies du sang.",
+    "metaTitle": "Hématologie en Turquie – Coordination Patients",
+    "metaDescription": "Engagez une demande organisée auprès d’équipes d’hématologie agréées en Turquie avec HEALIX MEDICAL. Les décisions médicales appartiennent aux spécialistes.",
+    "intro": "Les affections hématologiques nécessitent souvent un bilan spécialisé et un suivi rigoureux. HEALIX MEDICAL aide les patients internationaux et leurs familles à contacter des équipes d’hématologie en Turquie de manière claire et structurée.",
+    "overview": [
+      "L’hématologie traite des maladies du sang, de la moelle osseuse et du système lymphatique — anémies, troubles de la coagulation, hémopathies — parfois en concertation avec l’oncologie.",
+      "Le bilan, le traitement et toute thérapie spécialisée sont décidés par l’équipe d’hématologie. HEALIX MEDICAL n’interprète aucun examen sanguin et ne se prononce pas sur l’éligibilité à un traitement."
+    ],
+    "coordination": [
+      "Proposer un premier contact clair aux patients et à leurs proches.",
+      "Coordonner la communication avec le service international d’un département d’hématologie.",
+      "Expliquer comment transmettre vos résultats d’analyses de façon sécurisée lorsque l’hôpital les demande.",
+      "Aider les familles à préparer des questions structurées pour le spécialiste.",
+      "Maintenir une transparence complète sur chaque étape de coordination."
+    ],
+    "steps": [
+      {
+        "title": "Demande initiale",
+        "text": "Envoyez une courte demande contenant uniquement vos coordonnées."
+      },
+      {
+        "title": "Échange avec un coordinateur",
+        "text": "Nous précisons le type de contact spécialisé que vous recherchez."
+      },
+      {
+        "title": "Lien avec l’équipe d’hématologie",
+        "text": "Nous coordonnons l’échange avec le service, qui peut demander des bilans par un canal sécurisé."
+      },
+      {
+        "title": "Recommandation du spécialiste",
+        "text": "L’hématologue décide du bilan et de la prise en charge. Nous accompagnons la communication dans le cadre convenu."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Pouvez-vous interpréter ma prise de sang ?",
+        "a": "Non. Seuls des médecins qualifiés peuvent interpréter des analyses biologiques."
+      },
+      {
+        "q": "Les demandes concernant la greffe de moelle osseuse sont-elles traitées ?",
+        "a": "Les questions sur les thérapies avancées relèvent uniquement de l’équipe d’hématologie après étude du dossier."
+      },
+      {
+        "q": "Mon médecin local peut-il échanger avec l’équipe ?",
+        "a": "Les échanges entre médecins sont organisés par l’établissement médical ; nous pouvons aider à coordonner la mise en relation."
+      }
+    ],
+    "cta": "Demander une coordination pour ce service"
+  }
+}

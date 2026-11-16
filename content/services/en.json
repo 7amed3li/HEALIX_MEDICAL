@@ -1,0 +1,614 @@
+{
+  "liver-transplantation": {
+    "name": "Liver Transplantation",
+    "short": "Coordination of communication with transplant centres in Türkiye for patients and families exploring liver transplantation.",
+    "metaTitle": "Liver Transplantation in Türkiye – Patient Coordination",
+    "metaDescription": "HEALIX MEDICAL helps international patients and families start a clear, organised enquiry about liver transplantation with licensed transplant teams in Türkiye.",
+    "intro": "Liver transplantation is a complex treatment pathway that is decided and carried out only by specialised, licensed transplant teams. HEALIX MEDICAL helps international patients and their families start that conversation in an organised way.",
+    "overview": [
+      "A liver transplant replaces a severely damaged liver with a healthy liver, or part of one, from a donor. Whether transplantation is suitable, which type is considered, and how the patient is prepared are medical decisions made by the hospital's transplant team after its own evaluation.",
+      "Transplant pathways also involve donor-related, ethical and legal requirements that are defined by the hospital and the competent authorities under applicable law. HEALIX MEDICAL does not assess eligibility or donor suitability and does not answer legal questions about organ donation; these are directed to the medical and legal parties responsible."
+    ],
+    "coordination": [
+      "Receiving your first enquiry and explaining how the coordination process works.",
+      "Clarifying, in general terms, what kind of information the medical provider will ask you to share — without collecting medical files through the website.",
+      "Coordinating communication between you and the transplant centre's international patient team.",
+      "Helping you prepare a clear list of questions for the transplant team about evaluation and next steps.",
+      "Discussing travel-related arrangements only where they are part of the coordination scope confirmed for your case."
+    ],
+    "steps": [
+      {
+        "title": "First contact",
+        "text": "You send a short enquiry with your name, country, preferred language and contact method. No medical documents are requested at this stage."
+      },
+      {
+        "title": "Understanding the request",
+        "text": "A coordinator contacts you to understand who the patient is, who is supporting them and what kind of information you are looking for."
+      },
+      {
+        "title": "Connection with the transplant team",
+        "text": "If you decide to continue, we coordinate communication with a transplant centre. Medical records are shared only through a separate, secure channel and with your consent."
+      },
+      {
+        "title": "Medical decision and planning",
+        "text": "The transplant team decides on evaluation, eligibility and any treatment plan. Travel arrangements are discussed according to the confirmed scope of service."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can HEALIX MEDICAL tell me whether a liver transplant is right for me?",
+        "a": "No. Only the licensed transplant team can decide this after its own medical evaluation. Our role is to help you reach the right team and organise communication."
+      },
+      {
+        "q": "Who answers questions about donors and legal requirements?",
+        "a": "Questions about donors, consent and legal procedures are answered by the hospital and the competent authorities. We direct these questions to them and do not give legal or medical opinions."
+      },
+      {
+        "q": "Should I send my medical reports through the contact form?",
+        "a": "No. The contact form is only for a first enquiry. If medical records are needed later, a separate secure channel will be explained to you, including who can access the files."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "kidney-transplantation": {
+    "name": "Kidney Transplantation",
+    "short": "Organised first contact and communication with kidney transplant teams in Türkiye for international patients.",
+    "metaTitle": "Kidney Transplantation in Türkiye – Patient Coordination",
+    "metaDescription": "Start an organised enquiry about kidney transplantation in Türkiye. HEALIX MEDICAL coordinates communication; the licensed transplant team makes every medical decision.",
+    "intro": "For people living with advanced kidney disease, exploring kidney transplantation abroad raises many practical questions. HEALIX MEDICAL helps you organise the first steps and reach the right international patient team in Türkiye.",
+    "overview": [
+      "A kidney transplant places a healthy kidney from a donor into a person whose kidneys no longer work adequately. The transplant team decides whether a patient may be considered, which tests are needed and how preparation and follow-up are organised.",
+      "Living-donor and deceased-donor pathways are governed by medical, ethical and legal rules that the hospital and the competent authorities apply. HEALIX MEDICAL does not evaluate donors, does not decide on compatibility and does not provide legal advice about donation."
+    ],
+    "coordination": [
+      "Explaining how an enquiry is handled and what you can expect from the coordination process.",
+      "Helping you describe your request clearly, without asking for diagnoses or reports through the website.",
+      "Coordinating communication with the international patient office of a kidney transplant centre.",
+      "Keeping communication organised in your preferred language where this is available.",
+      "Discussing travel and stay arrangements only within the scope confirmed for your case."
+    ],
+    "steps": [
+      {
+        "title": "Short enquiry",
+        "text": "Share basic contact details and the service you are asking about. Please do not include diagnoses or test results."
+      },
+      {
+        "title": "Coordinator call",
+        "text": "We clarify your request, the people involved — for example a family member who may wish to ask about donation — and your preferred way of communicating."
+      },
+      {
+        "title": "Secure information sharing",
+        "text": "When the transplant centre needs medical information, you are given a separate secure channel and an explanation of who will access your files."
+      },
+      {
+        "title": "Hospital evaluation",
+        "text": "The transplant team reviews the information and decides on next steps. Any timeline, cost or plan comes only from the medical provider."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can a family member ask on behalf of the patient?",
+        "a": "Yes, a family member can start the first enquiry. Medical information about the patient should be shared later only with the patient's consent and through the secure channel provided."
+      },
+      {
+        "q": "Does HEALIX MEDICAL decide on donor compatibility?",
+        "a": "No. Compatibility and donor eligibility are assessed exclusively by the transplant team and the responsible authorities."
+      },
+      {
+        "q": "Will I receive a price on the first contact?",
+        "a": "Any cost information comes from the medical provider after its own review. We do not publish or guarantee final treatment costs."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "parkinsons-disease": {
+    "name": "Parkinson’s Disease",
+    "short": "Coordination of contact with neurology and movement-disorder teams in Türkiye for people living with Parkinson’s disease.",
+    "metaTitle": "Parkinson’s Disease Care in Türkiye – Patient Coordination",
+    "metaDescription": "HEALIX MEDICAL helps people living with Parkinson’s disease and their families reach specialised neurology teams in Türkiye through an organised, private enquiry.",
+    "intro": "Living with Parkinson’s disease often involves long-term care from several specialists. HEALIX MEDICAL helps patients and families who want to explore care options in Türkiye to start a clear, respectful conversation with the relevant medical teams.",
+    "overview": [
+      "Parkinson’s disease is a progressive neurological condition that affects movement and can also affect other aspects of daily life. Care is planned by neurologists and, where relevant, by other specialists such as neurosurgeons, physiotherapists and speech therapists.",
+      "Which assessments or treatments may be appropriate is decided by the medical team after its own evaluation. HEALIX MEDICAL does not recommend therapies and does not comment on a patient's suitability for any procedure."
+    ],
+    "coordination": [
+      "Listening to what the patient and family hope to learn, in plain language.",
+      "Identifying, together with you, which type of specialist team your question should go to.",
+      "Coordinating communication with the hospital's international patient team.",
+      "Helping family members and caregivers stay informed about each coordination step, with the patient's agreement.",
+      "Discussing accessibility needs for travel where these are part of the confirmed scope."
+    ],
+    "steps": [
+      {
+        "title": "Initial enquiry",
+        "text": "The patient or a caregiver sends a short request. The form does not ask about symptoms or medication."
+      },
+      {
+        "title": "Clarifying the question",
+        "text": "We talk about what you would like to explore — for example a specialist opinion or a rehabilitation-focused programme — without giving medical advice."
+      },
+      {
+        "title": "Contact with the specialist team",
+        "text": "We coordinate communication with a neurology or movement-disorder team, which may request records through a secure channel."
+      },
+      {
+        "title": "Plan from the medical team",
+        "text": "The specialists decide which evaluation or care is appropriate. Travel planning follows their guidance and the confirmed service scope."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can a caregiver manage the communication?",
+        "a": "A caregiver can start and support the enquiry. Sharing medical information requires the patient's consent or appropriate legal authority."
+      },
+      {
+        "q": "Do you recommend a specific treatment for Parkinson’s disease?",
+        "a": "No. Treatment recommendations come only from the licensed medical team after evaluation."
+      },
+      {
+        "q": "Why is this listed as a separate service?",
+        "a": "This service name follows the HEALIX MEDICAL brochure. In practice, your enquiry is directed to the appropriate neurology-related team chosen by the medical provider."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "orthopedic-surgery": {
+    "name": "Orthopedic Surgery",
+    "short": "Coordinating your enquiry with orthopaedic teams in Türkiye for questions about bones, joints and the spine.",
+    "metaTitle": "Orthopedic Surgery in Türkiye – Patient Coordination",
+    "metaDescription": "Planning an orthopaedic consultation in Türkiye? HEALIX MEDICAL coordinates communication with licensed orthopaedic teams. Medical decisions remain with the surgeon.",
+    "intro": "Joint, bone and musculoskeletal problems can limit everyday life. If you are considering an orthopaedic consultation in Türkiye, HEALIX MEDICAL helps you approach the right team in an organised and transparent way.",
+    "overview": [
+      "Orthopaedic surgery covers the diagnosis and surgical or non-surgical treatment of conditions affecting bones, joints, ligaments, tendons and the spine. Many orthopaedic questions are first answered with examinations and imaging rather than surgery.",
+      "Whether surgery is advisable, which technique could be used and what recovery may involve are decided by the orthopaedic surgeon. HEALIX MEDICAL does not interpret images or suggest procedures."
+    ],
+    "coordination": [
+      "Understanding the general area of your question, such as a joint or spine-related concern, without collecting medical details on the website.",
+      "Coordinating communication with an orthopaedic team's international patient office.",
+      "Helping you prepare questions to ask the surgeon about evaluation, recovery and follow-up.",
+      "Coordinating the exchange of information through a secure channel once the hospital requests it.",
+      "Discussing mobility-related travel needs where they fall within the confirmed scope."
+    ],
+    "steps": [
+      {
+        "title": "Reach out",
+        "text": "Send a first enquiry with your contact details and the service of interest."
+      },
+      {
+        "title": "Talk with a coordinator",
+        "text": "We clarify what you are looking for and your preferred language and contact method."
+      },
+      {
+        "title": "Orthopaedic team review",
+        "text": "The orthopaedic team may ask for images or reports, shared only through a secure channel with your consent."
+      },
+      {
+        "title": "Surgeon’s recommendation",
+        "text": "The surgeon decides on the next step, which may or may not include surgery. Travel is planned only after medical guidance."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you tell me if I need surgery?",
+        "a": "No. Only the orthopaedic surgeon can make that judgement after reviewing your case."
+      },
+      {
+        "q": "Should I send my X-ray or MRI images now?",
+        "a": "Please do not send images through the website. If the medical team requests them, a separate secure method will be provided."
+      },
+      {
+        "q": "Is physiotherapy part of this service?",
+        "a": "Rehabilitation is listed as a separate service. The medical team decides whether rehabilitation is part of your plan."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "neurosurgery": {
+    "name": "Neurosurgery",
+    "short": "Careful coordination of communication with neurosurgical teams in Türkiye for brain, spine and nerve-related enquiries.",
+    "metaTitle": "Neurosurgery in Türkiye – Patient Coordination",
+    "metaDescription": "HEALIX MEDICAL helps international patients start an organised enquiry with licensed neurosurgery teams in Türkiye. No diagnoses or outcomes are promised.",
+    "intro": "Questions about the brain, spine or nerves deserve calm and precise communication. HEALIX MEDICAL helps international patients and families reach neurosurgical teams in Türkiye and keep that communication organised.",
+    "overview": [
+      "Neurosurgery deals with conditions of the brain, spinal cord, spine and peripheral nerves that may require surgical assessment. Neurosurgeons often work together with neurologists, radiologists and rehabilitation specialists.",
+      "The decision whether surgery is needed — and the planning of any procedure — belongs entirely to the neurosurgical team. HEALIX MEDICAL does not provide opinions on imaging, urgency or risk."
+    ],
+    "coordination": [
+      "Receiving your enquiry and explaining the coordination steps clearly.",
+      "Coordinating communication with a neurosurgery department's international patient team.",
+      "Helping you organise your questions for the specialist in a clear order.",
+      "Coordinating secure sharing of records when the hospital asks for them, with your consent.",
+      "Keeping family members informed of coordination steps when the patient agrees."
+    ],
+    "steps": [
+      {
+        "title": "Enquiry",
+        "text": "Share your contact details and the service you are asking about. Urgent medical situations should be handled by local emergency services."
+      },
+      {
+        "title": "Clarification",
+        "text": "A coordinator speaks with you about your request and the support you need for communication."
+      },
+      {
+        "title": "Specialist contact",
+        "text": "We coordinate communication with a neurosurgical team, which decides what information it needs to review."
+      },
+      {
+        "title": "Medical guidance",
+        "text": "The neurosurgeon advises on next steps. Any travel is arranged only according to medical guidance and confirmed scope."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What should I do in an urgent situation?",
+        "a": "In any urgent or emergency situation, contact local emergency services immediately. HEALIX MEDICAL is not an emergency service."
+      },
+      {
+        "q": "Can you review my MRI?",
+        "a": "No. Medical images are reviewed only by the medical team, through a secure channel and with your consent."
+      },
+      {
+        "q": "Will the surgeon speak my language?",
+        "a": "Language support depends on the hospital. We will tell you honestly what communication support is available for your case."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "urology-prostate": {
+    "name": "Urology and Prostate Care",
+    "short": "Discreet coordination with urology teams in Türkiye for kidney, bladder and prostate-related enquiries.",
+    "metaTitle": "Urology and Prostate Care in Türkiye – Patient Coordination",
+    "metaDescription": "Discreet, organised coordination with licensed urology teams in Türkiye for international patients. HEALIX MEDICAL does not diagnose or recommend treatment.",
+    "intro": "Urological and prostate-related questions are personal. HEALIX MEDICAL offers a discreet way to start an enquiry and reach urology teams in Türkiye, while keeping sensitive details out of the website.",
+    "overview": [
+      "Urology covers conditions of the urinary tract — including the kidneys, ureters and bladder — and the male reproductive organs, including the prostate. Assessment often begins with consultation and tests chosen by the urologist.",
+      "Any diagnosis, test plan or treatment option is determined by the urology team. HEALIX MEDICAL respects your privacy and does not ask for symptoms or results through the contact form."
+    ],
+    "coordination": [
+      "Providing a private, simple first-contact process.",
+      "Coordinating communication with a urology department's international patient team.",
+      "Explaining how and where medical information is shared securely if the hospital requests it.",
+      "Helping you prepare general questions for your consultation.",
+      "Discussing travel arrangements only within the confirmed scope of service."
+    ],
+    "steps": [
+      {
+        "title": "Private enquiry",
+        "text": "Send only your contact details and the service name. Personal health details are not needed at this point."
+      },
+      {
+        "title": "Respectful conversation",
+        "text": "A coordinator clarifies your request and how you prefer to be contacted."
+      },
+      {
+        "title": "Urology team contact",
+        "text": "We coordinate communication with the urology team, which decides which information it needs."
+      },
+      {
+        "title": "Consultation plan",
+        "text": "The urologist determines any assessments or treatment. We continue coordinating communication according to the agreed scope."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Will my information be kept private?",
+        "a": "We keep the website form limited to contact details and never pass health information to advertising tools. Please read our privacy policy for details."
+      },
+      {
+        "q": "Do you provide prostate screening?",
+        "a": "No. HEALIX MEDICAL is not a medical provider. Screening and tests are decided and performed by the medical team."
+      },
+      {
+        "q": "Can I choose the contact method?",
+        "a": "Yes. You can select your preferred contact method in the form."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "endocrinology": {
+    "name": "Endocrinology",
+    "short": "Coordination with endocrinology teams in Türkiye for enquiries related to hormones, thyroid and metabolism.",
+    "metaTitle": "Endocrinology in Türkiye – Patient Coordination",
+    "metaDescription": "Reach licensed endocrinology teams in Türkiye with organised coordination from HEALIX MEDICAL. Medical assessment and treatment remain with the specialists.",
+    "intro": "Hormonal and metabolic conditions usually need careful assessment and long-term follow-up. HEALIX MEDICAL helps international patients who want a specialist consultation in Türkiye to start that process clearly.",
+    "overview": [
+      "Endocrinology focuses on the glands and hormones that regulate the body, including conditions related to the thyroid, adrenal glands, pituitary gland, diabetes and metabolism.",
+      "Endocrinologists decide which tests and treatments are appropriate and how follow-up should continue, including after you return home. HEALIX MEDICAL does not interpret laboratory results or adjust treatment."
+    ],
+    "coordination": [
+      "Clarifying what kind of specialist consultation you are looking for.",
+      "Coordinating communication with an endocrinology department's international patient team.",
+      "Helping you prepare questions about follow-up arrangements to ask the specialist.",
+      "Coordinating secure sharing of previous results when requested by the hospital.",
+      "Keeping coordination steps transparent and documented for you."
+    ],
+    "steps": [
+      {
+        "title": "Get in touch",
+        "text": "Send your contact details and the service of interest through the short form."
+      },
+      {
+        "title": "Define the request",
+        "text": "We clarify whether you are seeking a consultation, a second opinion or another type of contact with the specialist."
+      },
+      {
+        "title": "Specialist coordination",
+        "text": "We coordinate communication with the endocrinology team, which may request previous results through a secure channel."
+      },
+      {
+        "title": "Follow-up guidance",
+        "text": "The specialist advises on assessment and follow-up. Coordination continues within the confirmed service scope."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you explain my lab results?",
+        "a": "No. Laboratory results are interpreted only by qualified doctors."
+      },
+      {
+        "q": "How is follow-up handled after I return home?",
+        "a": "Follow-up is planned by the medical team. Ask the specialist how continued care with your local doctor should be organised."
+      },
+      {
+        "q": "Is diabetes included?",
+        "a": "Diabetes is generally managed within endocrinology. The medical team decides which specialist is most suitable for your situation."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "gastroenterology": {
+    "name": "Gastroenterology",
+    "short": "Organised contact with gastroenterology teams in Türkiye for digestive system enquiries.",
+    "metaTitle": "Gastroenterology in Türkiye – Patient Coordination",
+    "metaDescription": "HEALIX MEDICAL coordinates communication between international patients and licensed gastroenterology teams in Türkiye. No diagnosis or outcome is promised.",
+    "intro": "Digestive health concerns can range from long-standing symptoms to questions about specialised procedures. HEALIX MEDICAL helps you reach gastroenterology teams in Türkiye with a clear and organised enquiry.",
+    "overview": [
+      "Gastroenterology covers the oesophagus, stomach, intestines, liver, gallbladder and pancreas. Specialists may use consultations, laboratory tests, imaging and endoscopic examinations to assess a condition.",
+      "Which examinations are needed and how they are performed is decided by the gastroenterologist. HEALIX MEDICAL does not suggest procedures or assess symptoms."
+    ],
+    "coordination": [
+      "Receiving your enquiry and explaining what happens next.",
+      "Coordinating communication with a gastroenterology department's international patient team.",
+      "Helping you prepare the practical questions you may want to ask before a consultation.",
+      "Coordinating secure transfer of records if the specialist requests them.",
+      "Discussing travel timing according to the medical team's guidance and the confirmed scope."
+    ],
+    "steps": [
+      {
+        "title": "Send an enquiry",
+        "text": "Complete the short form. Do not include symptoms, results or medical history."
+      },
+      {
+        "title": "Understand your goal",
+        "text": "We discuss whether you are looking for a consultation, a specific examination asked about by your doctor, or general information about the process."
+      },
+      {
+        "title": "Coordinate with the team",
+        "text": "The gastroenterology team decides what information it needs and how it will review it."
+      },
+      {
+        "title": "Next steps from the doctor",
+        "text": "Any examination or treatment plan comes from the specialist. We coordinate communication around it."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you book an endoscopy for me?",
+        "a": "This website is not a booking system. Any examination is decided and scheduled by the medical provider after its own review."
+      },
+      {
+        "q": "Is liver disease handled here or under liver transplantation?",
+        "a": "General liver conditions are usually assessed in gastroenterology or hepatology. Transplant evaluation is handled by a transplant team. The medical provider decides the right pathway."
+      },
+      {
+        "q": "Do I need a referral?",
+        "a": "Requirements differ by hospital. We will clarify what the medical provider asks for during coordination."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "oncology": {
+    "name": "Oncology",
+    "short": "Sensitive, organised coordination with oncology teams in Türkiye for patients and families facing cancer-related questions.",
+    "metaTitle": "Oncology in Türkiye – Patient Coordination",
+    "metaDescription": "HEALIX MEDICAL helps patients and families start an organised enquiry with licensed oncology teams in Türkiye. Treatment decisions remain with the medical team.",
+    "intro": "A cancer-related diagnosis brings difficult questions for patients and families. HEALIX MEDICAL aims to make the first step of reaching an oncology team in Türkiye clearer and calmer, without making promises that only doctors can address.",
+    "overview": [
+      "Oncology is the field of medicine that deals with cancer. Treatment planning is usually discussed by multidisciplinary teams that may include medical oncologists, surgeons, radiation oncologists, radiologists and pathologists.",
+      "Treatment options, expected results and timelines can only be discussed by the oncology team after its review. HEALIX MEDICAL does not comment on prognosis, survival or the suitability of any therapy."
+    ],
+    "coordination": [
+      "Providing a calm, respectful first point of contact for patients and families.",
+      "Coordinating communication with an oncology department's international patient team.",
+      "Explaining the secure channel used if pathology reports or imaging are requested by the hospital.",
+      "Helping families organise their questions for the medical team.",
+      "Keeping coordination steps clear so that families know who is responsible for what."
+    ],
+    "steps": [
+      {
+        "title": "First message",
+        "text": "A patient or family member sends a short enquiry. No reports or diagnoses are requested through the form."
+      },
+      {
+        "title": "Listening first",
+        "text": "A coordinator speaks with you about your request and how you prefer to communicate."
+      },
+      {
+        "title": "Oncology team coordination",
+        "text": "We coordinate communication with an oncology team, which reviews records only through a secure channel with consent."
+      },
+      {
+        "title": "Team’s opinion",
+        "text": "The medical team shares its opinion and any proposed plan. Decisions remain between the patient and the doctors."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you tell me about success rates?",
+        "a": "No. HEALIX MEDICAL does not publish or promise success rates. Questions about outcomes should be discussed directly with the oncology team."
+      },
+      {
+        "q": "Can I ask for a second opinion?",
+        "a": "You can tell us that you are seeking a second opinion. Whether and how it is provided is decided by the medical provider."
+      },
+      {
+        "q": "How are pathology reports shared?",
+        "a": "Only through a separate secure channel after your consent, with a clear explanation of who will access them. Never through the website form."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "cardiology": {
+    "name": "Cardiology",
+    "short": "Coordination with cardiology teams in Türkiye for heart and cardiovascular enquiries.",
+    "metaTitle": "Cardiology in Türkiye – Patient Coordination",
+    "metaDescription": "Organised coordination with licensed cardiology teams in Türkiye for international patients. HEALIX MEDICAL is not an emergency service and does not diagnose.",
+    "intro": "Heart-related questions call for careful medical assessment. HEALIX MEDICAL helps international patients plan a non-urgent enquiry with cardiology teams in Türkiye and keeps communication organised.",
+    "overview": [
+      "Cardiology deals with the heart and blood vessels, including rhythm problems, coronary artery disease, heart valve conditions and heart failure. Cardiologists may work with cardiovascular surgeons when surgical assessment is needed.",
+      "Tests, procedures and treatment plans are decided by the cardiology team. HEALIX MEDICAL does not provide medical opinions, and it is not suitable for urgent or emergency situations."
+    ],
+    "coordination": [
+      "Handling non-urgent enquiries and explaining the coordination process.",
+      "Coordinating communication with a cardiology department's international patient team.",
+      "Helping you prepare questions about evaluation and fitness to travel, to be answered by your doctors.",
+      "Coordinating secure sharing of records when requested.",
+      "Discussing travel arrangements only after medical guidance and within the confirmed scope."
+    ],
+    "steps": [
+      {
+        "title": "Non-urgent enquiry",
+        "text": "Send your contact details. If you have chest pain or other urgent symptoms, contact local emergency services now."
+      },
+      {
+        "title": "Clarify the request",
+        "text": "We clarify the type of cardiology contact you are seeking and your communication preferences."
+      },
+      {
+        "title": "Cardiology team review",
+        "text": "The cardiology team decides which records it needs and reviews them through a secure channel."
+      },
+      {
+        "title": "Medical advice on next steps",
+        "text": "The cardiologist decides on assessment, treatment and whether travel is advisable."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is HEALIX MEDICAL an emergency service?",
+        "a": "No. For any urgent heart symptoms, contact local emergency services immediately."
+      },
+      {
+        "q": "Who decides if I can travel?",
+        "a": "Fitness to travel is a medical decision. Ask your treating doctor and the receiving medical team."
+      },
+      {
+        "q": "Do you work with heart surgeons?",
+        "a": "If the cardiology team considers surgical assessment, it is arranged by the medical provider. We coordinate communication only."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "rehabilitation-physiotherapy": {
+    "name": "Rehabilitation and Physiotherapy",
+    "short": "Coordinating contact with rehabilitation and physiotherapy teams in Türkiye to support recovery-focused enquiries.",
+    "metaTitle": "Rehabilitation and Physiotherapy in Türkiye – Patient Coordination",
+    "metaDescription": "HEALIX MEDICAL coordinates communication with licensed rehabilitation and physiotherapy teams in Türkiye. Programmes are designed by the medical team.",
+    "intro": "Rehabilitation can be an important part of recovery after injury, surgery or neurological illness. HEALIX MEDICAL helps you reach rehabilitation teams in Türkiye and understand how programmes are planned.",
+    "overview": [
+      "Rehabilitation medicine and physiotherapy aim to support movement, function and independence. Programmes may involve physical medicine and rehabilitation physicians, physiotherapists, occupational therapists and speech therapists.",
+      "The content, intensity and duration of a programme are set by the rehabilitation team after assessment. HEALIX MEDICAL does not design programmes or predict progress."
+    ],
+    "coordination": [
+      "Understanding the general purpose of your enquiry, for example rehabilitation after surgery.",
+      "Coordinating communication with a rehabilitation centre's international patient team.",
+      "Helping you prepare practical questions about the programme for the team.",
+      "Coordinating secure sharing of discharge summaries when requested.",
+      "Discussing accessibility needs for travel and stay where included in the confirmed scope."
+    ],
+    "steps": [
+      {
+        "title": "Start with a short form",
+        "text": "Share your contact details and indicate interest in rehabilitation."
+      },
+      {
+        "title": "Discuss your goals",
+        "text": "We talk about what you hope to explore, without assessing your condition."
+      },
+      {
+        "title": "Team assessment",
+        "text": "The rehabilitation team decides what information it needs and whether an in-person assessment is required."
+      },
+      {
+        "title": "Programme from the specialists",
+        "text": "The team proposes a programme if appropriate. We coordinate communication and agreed arrangements."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How long is a rehabilitation programme?",
+        "a": "Duration depends on the medical assessment. We do not publish or guarantee programme lengths."
+      },
+      {
+        "q": "Can a family member accompany the patient?",
+        "a": "Many patients travel with a companion. Practical arrangements are discussed within the confirmed scope of service."
+      },
+      {
+        "q": "Do you provide the physiotherapy sessions?",
+        "a": "No. Sessions are provided by licensed professionals at the medical provider."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  },
+  "hematology": {
+    "name": "Hematology",
+    "short": "Coordination with haematology teams in Türkiye for blood-related enquiries.",
+    "metaTitle": "Hematology in Türkiye – Patient Coordination",
+    "metaDescription": "Start an organised enquiry with licensed haematology teams in Türkiye. HEALIX MEDICAL coordinates communication; specialists make all medical decisions.",
+    "intro": "Blood disorders often require specialised assessment and long-term care. HEALIX MEDICAL helps international patients and families reach haematology teams in Türkiye through clear and organised communication.",
+    "overview": [
+      "Haematology deals with the blood, bone marrow and lymphatic system, including anaemias, clotting disorders and blood cancers. Some conditions are managed jointly with oncology teams.",
+      "Assessment, treatment and any advanced therapies are decided by the haematology team. HEALIX MEDICAL does not interpret blood tests or comment on treatment suitability."
+    ],
+    "coordination": [
+      "Providing a clear first-contact process for patients and families.",
+      "Coordinating communication with a haematology department's international patient team.",
+      "Explaining how results and reports are shared securely when requested by the hospital.",
+      "Helping families prepare organised questions for the specialist.",
+      "Keeping coordination steps transparent throughout the process."
+    ],
+    "steps": [
+      {
+        "title": "Enquiry",
+        "text": "Send a short request with contact details only."
+      },
+      {
+        "title": "Coordinator conversation",
+        "text": "We clarify the kind of specialist contact you are looking for."
+      },
+      {
+        "title": "Haematology team contact",
+        "text": "We coordinate communication with the team, which may request results through a secure channel."
+      },
+      {
+        "title": "Specialist guidance",
+        "text": "The haematologist decides on assessment and care. We support communication within the agreed scope."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you explain my blood test results?",
+        "a": "No. Only qualified doctors can interpret blood test results."
+      },
+      {
+        "q": "Is bone marrow transplantation included?",
+        "a": "Questions about advanced therapies are answered only by the haematology team after review. We do not assess eligibility."
+      },
+      {
+        "q": "Can my local doctor communicate with the team?",
+        "a": "Communication between doctors is arranged by the medical provider. We can help coordinate the contact."
+      }
+    ],
+    "cta": "Enquire about coordination for this service"
+  }
+}
