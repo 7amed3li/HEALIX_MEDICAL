@@ -28,10 +28,10 @@ export default async function TermsPage({ params }: Props) {
 
   return (
     <>
-      <section className="border-b border-line bg-mist py-12 sm:py-16">
+      <section className="page-hero">
         <div className="container-page">
           <div className="max-w-3xl">
-            <h1 className="text-3xl font-bold text-navy sm:text-4xl">
+            <h1 className="text-4xl font-semibold leading-[1.12] text-navy sm:text-5xl">
               {page.title}
             </h1>
             <p className="mt-3 text-xs text-slate-strong">{dict.legal.reviewNotice}</p>
@@ -39,7 +39,7 @@ export default async function TermsPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-white py-14 sm:py-18">
+      <section className="bg-white py-20 sm:py-24">
         <div className="container-page">
           <div className="prose-legal max-w-3xl space-y-8">
             {page.sections.map((sec) => (
