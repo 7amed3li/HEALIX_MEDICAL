@@ -96,9 +96,9 @@ export function ContactForm({
     <form
       onSubmit={handleSubmit}
       noValidate
-      className="rounded-2xl border border-line bg-white p-6 shadow-soft sm:p-8"
+      className="rounded-[1.75rem] border border-line-soft bg-white p-7 shadow-card sm:p-10"
     >
-      <div className="mb-6 flex items-start gap-2.5 rounded-xl border border-line bg-mist/70 p-3.5 text-xs leading-relaxed text-slate-strong">
+      <div className="mb-7 flex items-start gap-2.5 rounded-2xl border border-line-soft bg-mist-soft p-4 text-xs leading-relaxed text-slate-strong">
         <Info className="mt-0.5 h-4 w-4 shrink-0 text-action" aria-hidden="true" />
         <p>{f.noMedical}</p>
       </div>
@@ -144,7 +144,7 @@ export function ContactForm({
             onChange={(e) => setName(e.target.value)}
             aria-invalid={hasError("name")}
             aria-describedby={hasError("name") ? "err-name" : undefined}
-            className={`mt-1.5 w-full rounded-lg border px-3.5 py-2.5 text-sm text-navy transition-colors ${
+            className={`mt-1.5 w-full rounded-xl border px-4 py-3 text-sm text-navy transition-colors ${
               hasError("name") ? "border-brand-red" : "border-line focus:border-action"
             }`}
           />
@@ -170,7 +170,7 @@ export function ContactForm({
             onChange={(e) => setCountry(e.target.value)}
             aria-invalid={hasError("country")}
             aria-describedby={hasError("country") ? "err-country" : undefined}
-            className={`mt-1.5 w-full rounded-lg border px-3.5 py-2.5 text-sm text-navy transition-colors ${
+            className={`mt-1.5 w-full rounded-xl border px-4 py-3 text-sm text-navy transition-colors ${
               hasError("country") ? "border-brand-red" : "border-line focus:border-action"
             }`}
           />
@@ -192,7 +192,7 @@ export function ContactForm({
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
             aria-invalid={hasError("language")}
-            className="mt-1.5 w-full rounded-lg border border-line bg-white px-3.5 py-2.5 text-sm text-navy focus:border-action"
+            className="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-navy focus:border-action"
           >
             {locales.map((loc) => (
               <option key={loc} value={loc}>
@@ -212,7 +212,7 @@ export function ContactForm({
             value={contactMethod}
             onChange={(e) => setContactMethod(e.target.value)}
             aria-invalid={hasError("contactMethod")}
-            className="mt-1.5 w-full rounded-lg border border-line bg-white px-3.5 py-2.5 text-sm text-navy focus:border-action"
+            className="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-navy focus:border-action"
           >
             {CONTACT_METHODS.map((m) => (
               <option key={m} value={m}>
@@ -236,7 +236,7 @@ export function ContactForm({
             onChange={(e) => setContactValue(e.target.value)}
             aria-invalid={hasError("contactValue")}
             aria-describedby="hint-contact-value"
-            className={`mt-1.5 w-full rounded-lg border px-3.5 py-2.5 text-sm text-navy transition-colors ${
+            className={`mt-1.5 w-full rounded-xl border px-4 py-3 text-sm text-navy transition-colors ${
               hasError("contactValue") ? "border-brand-red" : "border-line focus:border-action"
             }`}
           />
@@ -263,7 +263,7 @@ export function ContactForm({
             onChange={(e) => setService(e.target.value)}
             aria-invalid={hasError("service")}
             aria-describedby={hasError("service") ? "err-service" : undefined}
-            className={`mt-1.5 w-full rounded-lg border bg-white px-3.5 py-2.5 text-sm text-navy transition-colors ${
+            className={`mt-1.5 w-full rounded-xl border bg-white px-4 py-3 text-sm text-navy transition-colors ${
               hasError("service") ? "border-brand-red" : "border-line focus:border-action"
             }`}
           >
@@ -315,7 +315,7 @@ export function ContactForm({
         <button
           type="submit"
           disabled={status === "sending"}
-          className="inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-action px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-action-hover disabled:opacity-60 sm:w-auto"
+          className="btn-primary min-h-12 w-full px-8 py-3 text-base disabled:opacity-60 sm:w-auto"
         >
           {status === "sending" ? f.sending : f.submit}
         </button>
