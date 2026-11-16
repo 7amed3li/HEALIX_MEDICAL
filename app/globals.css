@@ -1,34 +1,52 @@
 @import "tailwindcss";
 
 /*
- * HEALIX MEDICAL – design tokens ("International Precision")
- * white 48% · mist 20% · navy 20% · ice 8% · brand red 2% · cool greys 2%
+ * HEALIX MEDICAL – design tokens ("International Precision, Elevated")
+ * A premium medical-concierge system: deep layered ink-navy, luminous ice,
+ * restrained champagne-gold accents, editorial serif display type.
  */
 @theme {
   --color-white: #ffffff;
   --color-mist: #eff5f7;
+  --color-mist-soft: #f7fafb;
+  --color-ink: #081a29; /* deepest navy – gradient base / footer depths */
   --color-navy: #10283e;
   --color-navy-800: #163450;
+  --color-navy-700: #1e4266;
   --color-ice: #69b7d1;
-  --color-brand-red: #d63a45;
+  --color-ice-soft: #a9d5e5;
+  /* Champagne gold – decorative hairlines, eyebrows on dark, large numerals.
+     Never used for small body text on light backgrounds. */
+  --color-gold: #c9a45c;
+  --color-gold-soft: #e7d5a8;
+  --color-gold-deep: #96762e; /* AA for large text on white */
+  --color-brand-red: #d63a45; /* functional form-error colour only */
   --color-slate: #66768a; /* secondary text on white (4.6:1) */
   --color-slate-strong: #263746; /* dark neutral body text */
   --color-line: #d7e1e8;
+  --color-line-soft: #e7edf1;
   /* Primary action blue: readable with white text (≈5.5:1), derived from the ice tone */
   --color-action: #1f6f99;
   --color-action-hover: #185a7e;
+  /* Vivid azure for primary buttons (Design v2 reference): white text ≈4.9:1 (AA) */
+  --color-bright: #0a72c6;
+  --color-bright-hover: #095fa5;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
   --font-arabic: var(--font-noto-arabic), var(--font-inter), "Segoe UI", Tahoma, sans-serif;
+  --font-display: var(--font-playfair), "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-display-ar: var(--font-kufi-arabic), var(--font-noto-arabic), "Segoe UI", Tahoma, sans-serif;
 
-  --shadow-soft: 0 1px 2px rgb(16 40 62 / 0.04), 0 4px 16px rgb(16 40 62 / 0.05);
-  --radius-card: 1rem;
+  --shadow-soft: 0 1px 2px rgb(8 26 41 / 0.04), 0 4px 16px rgb(8 26 41 / 0.05);
+  --shadow-card: 0 1px 2px rgb(8 26 41 / 0.04), 0 12px 32px -14px rgb(8 26 41 / 0.14);
+  --shadow-lift: 0 2px 4px rgb(8 26 41 / 0.05), 0 20px 44px -14px rgb(8 26 41 / 0.22);
+  --radius-card: 1.25rem;
 }
 
 @keyframes hero-fade-up {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -39,7 +57,7 @@
 @keyframes hero-image-in {
   from {
     opacity: 0;
-    transform: scale(0.985);
+    transform: scale(1.045);
   }
   to {
     opacity: 1;
@@ -51,7 +69,7 @@
   html {
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-    scroll-padding-top: 5rem;
+    scroll-padding-top: 6rem;
   }
   body {
     @apply overflow-x-hidden bg-white text-navy antialiased;
@@ -67,8 +85,18 @@
   :is([lang="ar"], [lang="ru"]) *:not([dir="ltr"]):not([dir="ltr"] *) {
     letter-spacing: 0 !important;
   }
+  /* Editorial display type for headlines – serif in Latin/Cyrillic, Kufi in Arabic */
   h1,
-  h2,
+  h2 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  html[lang="ar"] :is(h1, h2),
+  [lang="ar"] :is(h1, h2) {
+    font-family: var(--font-display-ar);
+  }
   h3 {
     text-wrap: balance;
     overflow-wrap: break-word;
@@ -76,12 +104,15 @@
   }
   html[lang="ar"] :is(h1, h2, h3),
   [lang="ar"] :is(h1, h2, h3) {
-    line-height: 1.42;
+    line-height: 1.38;
     hyphens: none;
   }
   p {
     text-wrap: pretty;
     overflow-wrap: break-word;
+  }
+  ::selection {
+    background: rgb(105 183 209 / 0.35);
   }
   :focus-visible {
     outline: 3px solid var(--color-action);
@@ -96,30 +127,33 @@
       scroll-behavior: smooth;
     }
     .anim-hero-1 {
-      animation: hero-fade-up 220ms cubic-bezier(0.22, 1, 0.36, 1) 0ms both;
+      animation: hero-fade-up 800ms cubic-bezier(0.22, 1, 0.36, 1) 0ms both;
     }
     .anim-hero-2 {
-      animation: hero-fade-up 240ms cubic-bezier(0.22, 1, 0.36, 1) 45ms both;
+      animation: hero-fade-up 850ms cubic-bezier(0.22, 1, 0.36, 1) 110ms both;
     }
     .anim-hero-3 {
-      animation: hero-fade-up 250ms cubic-bezier(0.22, 1, 0.36, 1) 90ms both;
+      animation: hero-fade-up 900ms cubic-bezier(0.22, 1, 0.36, 1) 220ms both;
     }
     .anim-hero-4 {
-      animation: hero-fade-up 260ms cubic-bezier(0.22, 1, 0.36, 1) 135ms both;
+      animation: hero-fade-up 950ms cubic-bezier(0.22, 1, 0.36, 1) 330ms both;
+    }
+    .anim-hero-5 {
+      animation: hero-fade-up 1000ms cubic-bezier(0.22, 1, 0.36, 1) 460ms both;
     }
     .anim-hero-img {
-      animation: hero-image-in 280ms cubic-bezier(0.22, 1, 0.36, 1) 50ms both;
+      animation: hero-image-in 1400ms cubic-bezier(0.22, 1, 0.36, 1) 80ms both;
     }
     .reveal-section[data-reveal="pending"] {
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(14px);
     }
     .reveal-section[data-reveal="shown"] {
       opacity: 1;
       transform: translateY(0);
       transition:
-        opacity 240ms cubic-bezier(0.22, 1, 0.36, 1),
-        transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+        opacity 600ms cubic-bezier(0.22, 1, 0.36, 1),
+        transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
     }
   }
   @media (prefers-reduced-motion: reduce) {
@@ -142,12 +176,150 @@
   .container-page {
     @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
   }
+
+  /* Display type helper for card titles, numerals and questions */
+  .display-type {
+    font-family: var(--font-display);
+  }
+  html[lang="ar"] .display-type,
+  [lang="ar"] .display-type {
+    font-family: var(--font-display-ar);
+  }
+
+  /* Eyebrow label – small caps with a champagne hairline (Latin locales letterspace;
+     Arabic/Russian are protected by the letter-spacing reset above) */
   .eyebrow {
-    @apply inline-block text-xs font-semibold text-action;
+    @apply inline-flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-action;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply block h-px w-9 shrink-0 bg-gold;
   }
   .on-dark .eyebrow {
-    @apply text-ice;
+    @apply text-gold-soft;
   }
+
+  /* Layered deep-navy surface with luminous ice + champagne gradient depth */
+  .surface-dark {
+    background:
+      radial-gradient(1100px 540px at 88% -10%, rgb(105 183 209 / 0.17), transparent 62%),
+      radial-gradient(840px 500px at -8% 108%, rgb(201 164 92 / 0.11), transparent 58%),
+      linear-gradient(155deg, #14324e 0%, #10283e 46%, #081a29 100%);
+  }
+  /* Subtle film grain over dark surfaces */
+  .grain {
+    position: relative;
+    isolation: isolate;
+  }
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  }
+  .grain > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Light editorial page header (inner pages) with a champagne foot-hairline */
+  .page-hero {
+    @apply relative overflow-hidden border-b border-line-soft py-16 sm:py-20;
+    background:
+      radial-gradient(900px 380px at 100% 0%, rgb(105 183 209 / 0.1), transparent 60%),
+      linear-gradient(180deg, #f4f9fb 0%, #ffffff 92%);
+  }
+  .page-hero::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgb(105 183 209 / 0.6) 30%,
+      rgb(105 183 209 / 0.6) 70%,
+      transparent
+    );
+  }
+
+  /* Centered section heading flanked by hairlines (v2 reference: "خدماتنا" style) */
+  .section-heading {
+    @apply flex items-center justify-center gap-4 text-center sm:gap-6;
+  }
+  .section-heading::before,
+  .section-heading::after {
+    content: "";
+    @apply h-px w-10 shrink-0 sm:w-16 lg:w-24;
+  }
+  .section-heading::before {
+    background: linear-gradient(to right, transparent, var(--color-line));
+  }
+  .section-heading::after {
+    background: linear-gradient(to left, transparent, var(--color-line));
+  }
+
+  /* Footer world-map motif: the dotted network map at very low opacity,
+     rising from the footer's base and dissolving upward */
+  .footer-scene::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 58%;
+    background: url("/images/hero-world-map.jpg") center 32% / cover no-repeat;
+    opacity: 0.09;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to top, black 52%, transparent 98%);
+    mask-image: linear-gradient(to top, black 52%, transparent 98%);
+  }
+
+  /* Buttons — primary is the vivid azure pill from the v2 reference */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-bright font-semibold text-white shadow-card transition-all duration-300 hover:bg-bright-hover hover:shadow-lift active:translate-y-px;
+  }
+  .btn-bright {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-bright font-semibold text-white shadow-card transition-all duration-300 hover:bg-bright-hover hover:shadow-lift active:translate-y-px;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold font-semibold text-ink shadow-card transition-all duration-300 hover:bg-gold-soft hover:shadow-lift active:translate-y-px;
+  }
+  .btn-ghost-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:border-ice/70 hover:bg-white/10 active:translate-y-px;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-line bg-white font-medium text-navy transition-all duration-300 hover:border-gold-deep/50 hover:shadow-soft active:translate-y-px;
+  }
+
+  /* Hero image gradient masks – fade the photo into the navy from the text side */
+  .hero-shade-x {
+    background-image: linear-gradient(
+      to right,
+      rgb(8 26 41 / 0.95) 0%,
+      rgb(8 26 41 / 0.55) 42%,
+      rgb(8 26 41 / 0) 78%
+    );
+  }
+  [dir="rtl"] .hero-shade-x {
+    background-image: linear-gradient(
+      to left,
+      rgb(8 26 41 / 0.95) 0%,
+      rgb(8 26 41 / 0.55) 42%,
+      rgb(8 26 41 / 0) 78%
+    );
+  }
+  .hero-shade-b {
+    background-image: linear-gradient(
+      to top,
+      rgb(8 26 41 / 0.9) 0%,
+      rgb(8 26 41 / 0) 52%
+    );
+  }
+
   .prose-legal p {
     @apply mt-3 leading-relaxed text-slate;
   }
