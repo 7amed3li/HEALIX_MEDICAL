@@ -19,10 +19,10 @@ export function NavLinks({ items }: { items: NavItem[] }) {
             key={item.href}
             href={item.href}
             aria-current={active ? "page" : undefined}
-            className={`rounded-lg px-3 py-2 text-sm transition-colors duration-200 ${
+            className={`rounded-full px-3.5 py-2 text-sm underline-offset-8 transition-all duration-300 ${
               active
-                ? "bg-mist font-semibold text-action"
-                : "font-medium text-navy hover:bg-mist hover:text-action"
+                ? "font-semibold text-action underline decoration-brand-red decoration-2"
+                : "font-medium text-navy hover:text-action hover:underline hover:decoration-brand-red/50 hover:decoration-2"
             }`}
           >
             {item.label}

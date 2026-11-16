@@ -42,7 +42,7 @@ export function LocaleSwitcher({ currentLocale, label }: Props) {
       <details className="group">
         <summary
           aria-label={label}
-          className="inline-flex min-h-10 cursor-pointer list-none items-center gap-1.5 rounded-lg border border-line bg-white px-3 py-1.5 text-sm font-medium text-navy transition-colors hover:border-ice hover:bg-mist"
+          className="inline-flex min-h-10 cursor-pointer list-none items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-sm font-medium text-navy transition-all duration-300 hover:border-gold/60 hover:bg-mist-soft"
         >
           <Globe className="h-4 w-4 text-action" aria-hidden="true" />
           <span>{localeConfig[currentLocale].nativeName}</span>
@@ -61,7 +61,7 @@ export function LocaleSwitcher({ currentLocale, label }: Props) {
         </summary>
         <ul
           role="list"
-          className="absolute end-0 z-50 mt-2 w-40 rounded-xl border border-line bg-white p-1.5 shadow-lg"
+          className="absolute end-0 z-50 mt-2 w-44 rounded-2xl border border-line-soft bg-white p-1.5 shadow-lift"
         >
           {locales.map((loc) => {
             const active = loc === currentLocale;

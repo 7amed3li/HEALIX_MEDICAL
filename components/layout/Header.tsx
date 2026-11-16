@@ -25,8 +25,8 @@ export function Header({ locale, dict }: Props) {
   const ctaHref = pagePath(locale, "contact");
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur-sm">
-      <div className="container-page relative flex h-18 items-center justify-between gap-4">
+    <header className="sticky top-0 z-40 border-b border-line-soft bg-white/90 shadow-[0_1px_0_rgb(105_183_209/0.22)] backdrop-blur-md">
+      <div className="container-page relative flex h-20 items-center justify-between gap-4">
         <BrandLogo
           href={pagePath(locale, "home")}
           ariaLabel={dict.a11y.homeLink}
@@ -45,10 +45,7 @@ export function Header({ locale, dict }: Props) {
             currentLocale={locale}
             label={dict.a11y.languageSwitcher}
           />
-          <Link
-            href={ctaHref}
-            className="inline-flex min-h-10 items-center justify-center rounded-lg bg-action px-4 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-action-hover active:translate-y-px"
-          >
+          <Link href={ctaHref} className="btn-primary min-h-11 px-5 py-2.5 text-sm">
             {dict.common.ctaPrimary}
           </Link>
         </div>

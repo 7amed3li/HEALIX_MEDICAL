@@ -117,7 +117,7 @@ export function MobileMenu({
             <Link
               href={ctaHref}
               onClick={() => setOpen(false)}
-              className="flex min-h-11 w-full items-center justify-center rounded-lg bg-action px-4 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-action-hover active:translate-y-px"
+              className="btn-primary min-h-11 w-full px-4 py-2.5 text-sm"
             >
               {ctaLabel}
             </Link>

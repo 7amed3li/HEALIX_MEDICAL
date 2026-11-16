@@ -33,8 +33,8 @@ export function Footer({ locale, dict }: Props) {
   const hasWhatsApp = isValidWhatsAppUrl(siteConfig.contact.whatsapp);
 
   return (
-    <footer className="on-dark border-t border-navy-800 bg-navy text-white">
-      <div className="container-page py-14">
+    <footer className="on-dark surface-dark grain footer-scene relative overflow-hidden text-white">
+      <div className="container-page pb-10 pt-16 sm:pt-20">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <BrandLogo
@@ -42,7 +42,7 @@ export function Footer({ locale, dict }: Props) {
               ariaLabel={dict.a11y.homeLink}
               variant="dark"
             />
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/80">
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/75">
               {dict.footer.tagline}
             </p>
 
@@ -51,14 +51,14 @@ export function Footer({ locale, dict }: Props) {
               <div className="mt-4 space-y-1.5 text-sm text-white/85">
                 {siteConfig.contact.phone && (
                   <p>
-                    <a href={`tel:${siteConfig.contact.phone}`} dir="ltr" className="hover:text-ice">
+                    <a href={`tel:${siteConfig.contact.phone}`} dir="ltr" className="transition-colors duration-300 hover:text-gold-soft">
                       {siteConfig.contact.phone}
                     </a>
                   </p>
                 )}
                 {siteConfig.contact.email && (
                   <p>
-                    <a href={`mailto:${siteConfig.contact.email}`} dir="ltr" className="hover:text-ice">
+                    <a href={`mailto:${siteConfig.contact.email}`} dir="ltr" className="transition-colors duration-300 hover:text-gold-soft">
                       {siteConfig.contact.email}
                     </a>
                   </p>
@@ -69,7 +69,7 @@ export function Footer({ locale, dict }: Props) {
                       href={siteConfig.contact.whatsapp}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-ice"
+                      className="transition-colors duration-300 hover:text-gold-soft"
                     >
                       WhatsApp
                     </a>
@@ -78,18 +78,18 @@ export function Footer({ locale, dict }: Props) {
               </div>
             )}
 
-            <div className="mt-5">
-              <p className="text-xs font-semibold uppercase tracking-wider text-ice">
+            <div className="mt-7">
+              <p className="text-xs font-semibold uppercase tracking-wider text-gold-soft">
                 {dict.footer.follow}
               </p>
-              <div className="mt-2.5 flex items-center gap-3">
+              <div className="mt-3 flex items-center gap-3">
                 {siteConfig.social.instagram && (
                   <a
                     href={siteConfig.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Instagram (${dict.a11y.externalLink})`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-white/5 text-white transition-colors hover:border-ice hover:text-ice"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-gold/60 hover:text-gold-soft"
                   >
                     <InstagramIcon className="h-4 w-4" />
                   </a>
@@ -100,7 +100,7 @@ export function Footer({ locale, dict }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Facebook (${dict.a11y.externalLink})`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-white/5 text-white transition-colors hover:border-ice hover:text-ice"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-gold/60 hover:text-gold-soft"
                   >
                     <FacebookIcon className="h-4 w-4" />
                   </a>
@@ -110,13 +110,13 @@ export function Footer({ locale, dict }: Props) {
           </div>
 
           <nav aria-label={dict.footer.pages} className="lg:col-span-3">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ice">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-gold-soft">
               {dict.footer.pages}
             </h2>
-            <ul className="mt-3 space-y-2 text-sm text-white/85">
+            <ul className="mt-4 space-y-2.5 text-sm text-white/80">
               {pageLinks.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="transition-colors hover:text-ice">
+                  <Link href={item.href} className="transition-colors duration-300 hover:text-gold-soft">
                     {item.label}
                   </Link>
                 </li>
@@ -125,13 +125,13 @@ export function Footer({ locale, dict }: Props) {
           </nav>
 
           <nav aria-label={dict.footer.legal} className="lg:col-span-3">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ice">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-gold-soft">
               {dict.footer.legal}
             </h2>
-            <ul className="mt-3 space-y-2 text-sm text-white/85">
+            <ul className="mt-4 space-y-2.5 text-sm text-white/80">
               {legalLinks.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="transition-colors hover:text-ice">
+                  <Link href={item.href} className="transition-colors duration-300 hover:text-gold-soft">
                     {item.label}
                   </Link>
                 </li>
@@ -140,10 +140,10 @@ export function Footer({ locale, dict }: Props) {
           </nav>
 
           <div className="lg:col-span-2">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ice">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-gold-soft">
               {dict.footer.languages}
             </h2>
-            <ul className="mt-3 space-y-2 text-sm text-white/85">
+            <ul className="mt-4 space-y-2.5 text-sm text-white/80">
               {locales.map((loc) => {
                 const cfg = localeConfig[loc];
                 return (
@@ -152,7 +152,7 @@ export function Footer({ locale, dict }: Props) {
                       href={`/${loc}`}
                       lang={cfg.htmlLang}
                       dir={cfg.dir}
-                      className={`transition-colors hover:text-ice ${
+                      className={`transition-colors duration-300 hover:text-gold-soft ${
                         loc === locale ? "font-semibold text-white" : ""
                       }`}
                     >
@@ -165,11 +165,20 @@ export function Footer({ locale, dict }: Props) {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/15 pt-6 text-xs leading-relaxed text-white/75">
+        {/* Oversized quiet wordmark – the footer's premium signature */}
+        <div
+          dir="ltr"
+          aria-hidden="true"
+          className="pointer-events-none mt-16 select-none text-center text-[clamp(3.8rem,13.5vw,11.5rem)] font-extrabold leading-[0.95] tracking-[0.08em] text-white/[0.045]"
+        >
+          HEALIX
+        </div>
+
+        <div className="mt-4 border-t border-white/10 pt-7 text-xs leading-relaxed text-white/70">
           <p>
             <BdiText text={dict.footer.disclaimerShort} />
           </p>
-          <p className="mt-3 text-white/65">
+          <p className="mt-3 text-white/55">
             © {year} <bdi dir="ltr">{siteConfig.brand}</bdi>. {dict.footer.rights}
           </p>
         </div>
