@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import type { Locale } from "@/lib/i18n/config";
 import type { ServiceContent } from "@/lib/i18n/dictionaries";
 import type { ServiceId } from "@/content/services";
 import { servicePath } from "@/lib/i18n/routes";
-import { ServiceIcon } from "@/components/ui/ServiceIcon";
+import { serviceImage } from "@/lib/service-images";
 
 type Props = {
   locale: Locale;
@@ -14,6 +15,13 @@ type Props = {
   learnMoreLabel: string;
 };
 
+/**
+ * Image-led specialty card (Design v2):
+ * the anatomical render fills the top of the card on its soft light-blue
+ * background; below it the navy title carries a short red underline accent,
+ * followed by the summary and a learn-more affordance. Hover lifts the card
+ * and gently zooms the render.
+ */
 export function ServiceCard({
   locale,
   id,
@@ -22,115 +30,101 @@ export function ServiceCard({
   learnMoreLabel,
 }: Props) {
   const href = servicePath(locale, id);
+  const image = serviceImage(id);
 
   if (featured) {
     const previewPoints = content.coordination.slice(0, 3);
-    const isLiver = id === "liver-transplantation";
 
     return (
-      <article className="group flex flex-col justify-between rounded-2xl border border-line bg-mist p-6 transition-colors duration-200 hover:border-ice sm:p-7">
-        <div>
-          <div className="flex items-center justify-between gap-4 rounded-xl border border-line bg-white p-4">
-            <div className="flex items-center gap-3.5">
-              <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-ice/45 bg-mist text-action">
-                <ServiceIcon id={id} className="h-6 w-6" />
-              </span>
-              <h3 className="text-xl font-bold text-navy sm:text-2xl">
-                <Link href={href} className="hover:text-action">
-                  {content.name}
-                </Link>
-              </h3>
-            </div>
+      <article className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-line-soft bg-white shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lift">
+        <div className="relative aspect-[16/8] overflow-hidden sm:aspect-[16/7]">
+          <Image
+            src={image}
+            alt={content.name}
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+          />
+        </div>
 
-            <div className="shrink-0" aria-hidden="true">
-              {isLiver ? (
-                <svg viewBox="0 0 96 60" className="h-12 w-20" fill="none">
-                  <path
-                    d="M14 24C14 13 27 7 46 7c19 0 36 6 36 17 0 10-9 16-21 19-10 2.5-19 7-27 12-9 2.5-20-2-20-11V24Z"
-                    stroke="#10283E"
-                    strokeWidth="1.75"
-                    fill="#EFF5F7"
-                  />
-                  <path d="M48 9v34" stroke="#69B7D1" strokeWidth="1.5" />
-                  <path d="M48 26c7 1.5 13 4.5 18 9" stroke="#10283E" strokeWidth="1.4" />
-                </svg>
-              ) : (
-                <svg viewBox="0 0 96 60" className="h-12 w-20" fill="none">
-                  <path
-                    d="M30 8c-10 0-17 9-17 21 0 14 8 23 19 23 7 0 11-5 11-11 0-5-3-8-6-10-2.5-3-2.5-7 0-10 3-3 6-6 6-10 0-6-4-13-13-13Z"
-                    stroke="#10283E"
-                    strokeWidth="1.75"
-                    fill="#EFF5F7"
-                  />
-                  <path
-                    d="M66 8c10 0 17 9 17 21 0 14-8 23-19 23-7 0-11-5-11-11 0-5 3-8 6-10 2.5-3 2.5-7 0-10-3-3-6-6-6-10 0-6 4-13 13-13Z"
-                    stroke="#69B7D1"
-                    strokeWidth="1.75"
-                    fill="#EFF5F7"
-                  />
-                  <path d="M40 30h16" stroke="#10283E" strokeWidth="1.5" />
-                </svg>
-              )}
-            </div>
-          </div>
+        <div className="flex flex-1 flex-col p-7 sm:p-8">
+          <h3 className="display-type text-[1.6rem] font-semibold leading-tight text-navy sm:text-[1.75rem]">
+            <Link href={href} className="transition-colors duration-300 hover:text-bright">
+              {content.name}
+            </Link>
+          </h3>
+          <span
+            aria-hidden="true"
+            className="mt-3.5 h-[3px] w-11 rounded-full bg-brand-red"
+          />
 
-          <p className="mt-4 text-sm leading-relaxed text-slate-strong">
+          <p className="mt-4 text-[15px] leading-relaxed text-slate-strong">
             {content.short}
           </p>
 
-          <ul className="mt-4 space-y-2 border-t border-line pt-4 text-xs leading-relaxed text-navy">
+          <ul className="mt-5 space-y-2.5 border-t border-line-soft pt-5 text-[13px] leading-relaxed text-navy">
             {previewPoints.map((pt) => (
-              <li key={pt} className="flex items-start gap-2">
+              <li key={pt} className="flex items-start gap-2.5">
                 <Check
-                  className="mt-0.5 h-3.5 w-3.5 shrink-0 text-action"
-                  strokeWidth={1.75}
+                  className="mt-0.5 h-4 w-4 shrink-0 text-bright"
+                  strokeWidth={2}
                   aria-hidden="true"
                 />
                 <span>{pt}</span>
               </li>
             ))}
           </ul>
-        </div>
 
-        <div className="mt-6 pt-2">
-          <Link
-            href={href}
-            className="inline-flex min-h-10 items-center gap-2 rounded-lg bg-action px-4 py-2 text-xs font-semibold text-white transition-all duration-200 hover:bg-action-hover active:translate-y-px"
-          >
-            <span>{learnMoreLabel}</span>
-            <ArrowRight className="flip-rtl h-3.5 w-3.5" strokeWidth={1.75} aria-hidden="true" />
-          </Link>
+          <div className="mt-auto pt-7">
+            <Link href={href} className="btn-primary min-h-11 px-5 py-2.5 text-sm">
+              <span>{learnMoreLabel}</span>
+              <ArrowRight className="flip-rtl h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+            </Link>
+          </div>
         </div>
       </article>
     );
   }
 
   return (
-    <article className="group flex flex-col justify-between rounded-xl border border-line bg-white p-5 transition-colors duration-200 hover:border-ice hover:bg-mist/35">
-      <div>
-        <div className="flex items-center gap-3">
-          <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-ice/40 bg-mist text-action transition-colors duration-200 group-hover:bg-ice/25">
-            <ServiceIcon id={id} className="h-5 w-5" />
-          </span>
-          <h3 className="text-base font-bold text-navy">
-            <Link href={href} className="hover:text-action">
-              {content.name}
-            </Link>
-          </h3>
-        </div>
-        <p className="mt-3 text-xs leading-relaxed text-slate sm:text-sm">
-          {content.short}
-        </p>
+    <article className="group flex flex-col overflow-hidden rounded-[1.5rem] border border-line-soft bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
+      <div className="relative aspect-[16/9] overflow-hidden">
+        <Image
+          src={image}
+          alt={content.name}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+        />
       </div>
 
-      <div className="mt-4 border-t border-line/60 pt-3">
-        <Link
-          href={href}
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-action group-hover:text-action-hover"
-        >
-          <span>{learnMoreLabel}</span>
-          <ArrowRight className="flip-rtl h-3.5 w-3.5" strokeWidth={1.75} aria-hidden="true" />
-        </Link>
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
+        <h3 className="display-type text-[1.2rem] font-semibold leading-snug text-navy">
+          <Link href={href} className="transition-colors duration-300 hover:text-bright">
+            {content.name}
+          </Link>
+        </h3>
+        <span
+          aria-hidden="true"
+          className="mt-2.5 h-[3px] w-9 rounded-full bg-brand-red"
+        />
+        <p className="mt-3.5 flex-1 text-sm leading-relaxed text-slate">
+          {content.short}
+        </p>
+
+        <div className="mt-5 border-t border-line-soft pt-4">
+          <Link
+            href={href}
+            className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-bright transition-colors hover:text-bright-hover"
+          >
+            <span>{learnMoreLabel}</span>
+            <ArrowRight
+              className="flip-rtl h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5"
+              strokeWidth={1.75}
+              aria-hidden="true"
+            />
+          </Link>
+        </div>
       </div>
     </article>
   );
