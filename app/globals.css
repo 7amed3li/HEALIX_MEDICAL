@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+/*
+ * HEALIX MEDICAL – design tokens ("International Precision")
+ * white 48% · mist 20% · navy 20% · ice 8% · brand red 2% · cool greys 2%
+ */
+@theme {
+  --color-white: #ffffff;
+  --color-mist: #eff5f7;
+  --color-navy: #10283e;
+  --color-navy-800: #163450;
+  --color-ice: #69b7d1;
+  --color-brand-red: #d63a45;
+  --color-slate: #66768a; /* secondary text on white (4.6:1) */
+  --color-slate-strong: #263746; /* dark neutral body text */
+  --color-line: #d7e1e8;
+  /* Primary action blue: readable with white text (≈5.5:1), derived from the ice tone */
+  --color-action: #1f6f99;
+  --color-action-hover: #185a7e;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-arabic: var(--font-noto-arabic), var(--font-inter), "Segoe UI", Tahoma, sans-serif;
+
+  --shadow-soft: 0 1px 2px rgb(16 40 62 / 0.04), 0 4px 16px rgb(16 40 62 / 0.05);
+  --radius-card: 1rem;
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-image-in {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply overflow-x-hidden bg-white text-navy antialiased;
+    font-family: var(--font-sans);
+  }
+  html[lang="ar"] body,
+  [lang="ar"] {
+    font-family: var(--font-arabic);
+    line-height: 1.8;
+    letter-spacing: 0;
+  }
+  /* Never apply artificial letter-spacing to Arabic or Russian text (except explicit LTR brand wordmark) */
+  :is([lang="ar"], [lang="ru"]) *:not([dir="ltr"]):not([dir="ltr"] *) {
+    letter-spacing: 0 !important;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  html[lang="ar"] :is(h1, h2, h3),
+  [lang="ar"] :is(h1, h2, h3) {
+    line-height: 1.42;
+    hyphens: none;
+  }
+  p {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-action);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  .on-dark :focus-visible {
+    outline-color: var(--color-ice);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+    .anim-hero-1 {
+      animation: hero-fade-up 220ms cubic-bezier(0.22, 1, 0.36, 1) 0ms both;
+    }
+    .anim-hero-2 {
+      animation: hero-fade-up 240ms cubic-bezier(0.22, 1, 0.36, 1) 45ms both;
+    }
+    .anim-hero-3 {
+      animation: hero-fade-up 250ms cubic-bezier(0.22, 1, 0.36, 1) 90ms both;
+    }
+    .anim-hero-4 {
+      animation: hero-fade-up 260ms cubic-bezier(0.22, 1, 0.36, 1) 135ms both;
+    }
+    .anim-hero-img {
+      animation: hero-image-in 280ms cubic-bezier(0.22, 1, 0.36, 1) 50ms both;
+    }
+    .reveal-section[data-reveal="pending"] {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    .reveal-section[data-reveal="shown"] {
+      opacity: 1;
+      transform: translateY(0);
+      transition:
+        opacity 240ms cubic-bezier(0.22, 1, 0.36, 1),
+        transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .reveal-section[data-reveal="pending"],
+    .reveal-section[data-reveal="shown"] {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+  .eyebrow {
+    @apply inline-block text-xs font-semibold text-action;
+  }
+  .on-dark .eyebrow {
+    @apply text-ice;
+  }
+  .prose-legal p {
+    @apply mt-3 leading-relaxed text-slate;
+  }
+  /* Directional icons flip in RTL */
+  [dir="rtl"] .flip-rtl {
+    transform: scaleX(-1);
+  }
+}
