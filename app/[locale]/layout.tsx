@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Inter, Noto_Sans_Arabic } from "next/font/google";
+import { Inter, Noto_Sans_Arabic, Noto_Kufi_Arabic, Playfair_Display } from "next/font/google";
 import "../globals.css";
 import { isLocale, localeConfig, locales } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -21,6 +21,22 @@ const notoSansArabic = Noto_Sans_Arabic({
   weight: ["400", "500", "600", "700"],
   display: "swap",
   variable: "--font-noto-arabic",
+});
+
+/* Editorial display serif for Latin / Cyrillic headlines (premium concierge voice) */
+const playfair = Playfair_Display({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-playfair",
+});
+
+/* Refined Arabic display face for Arabic headlines */
+const notoKufiArabic = Noto_Kufi_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-kufi-arabic",
 });
 
 export const metadata: Metadata = {
@@ -53,7 +69,7 @@ export default async function LocaleRootLayout({
     <html
       lang={cfg.htmlLang}
       dir={cfg.dir}
-      className={`${inter.variable} ${notoSansArabic.variable}`}
+      className={`${inter.variable} ${notoSansArabic.variable} ${playfair.variable} ${notoKufiArabic.variable}`}
     >
       <body className="flex min-h-screen flex-col">
         <script
