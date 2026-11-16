@@ -16,66 +16,80 @@ function firstSentence(text: string): string {
 }
 
 /**
- * Connected 4-stage Patient Journey timeline:
- * - Desktop: horizontal connected route with ice-blue line and numbered nodes.
- * - Mobile: vertical connected route on the start side.
+ * Patient Journey timeline (Design v2 – reference style):
+ * - Large pale serif numerals (01–04) lead each step; a bright dot sits on a
+ *   connecting hairline beneath them, with the step title and text below.
+ * - Desktop: horizontal route across four columns. Mobile: the same elements
+ *   stack into a vertical route on the start side.
  */
 export function JourneySteps({ locale, dict }: Props) {
   return (
-    <section className="border-y border-line bg-mist py-16 sm:py-20">
+    <section className="border-y border-line-soft bg-mist-soft py-20 sm:py-24 lg:py-28">
       <div className="container-page">
-        <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-          <div className="max-w-2xl">
-            <h2 className="text-2xl font-bold text-navy sm:text-3xl">
+        <div className="mx-auto max-w-2xl text-center">
+          <p>
+            <span className="eyebrow">{dict.home.journey.eyebrow}</span>
+          </p>
+          <div className="section-heading mt-5">
+            <h2 className="text-3xl font-semibold text-navy sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
               {dict.home.journey.title}
             </h2>
-            <p className="mt-3 text-base leading-relaxed text-slate-strong">
-              {dict.home.journey.lead}
-            </p>
           </div>
+          <p className="mt-4 text-base leading-relaxed text-slate-strong">
+            {dict.home.journey.lead}
+          </p>
           <Link
             href={pagePath(locale, "journey")}
-            className="inline-flex items-center gap-1.5 self-start text-sm font-semibold text-action hover:text-action-hover sm:self-auto"
+            className="group mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-action transition-colors hover:text-action-hover"
           >
-            <span>{dict.common.ctaSecondary}</span>
-            <ArrowRight className="flip-rtl h-4 w-4" aria-hidden="true" />
+            <span className="underline decoration-brand-red/70 decoration-2 underline-offset-8">
+              {dict.common.ctaSecondary}
+            </span>
+            <ArrowRight
+              className="flip-rtl h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5"
+              aria-hidden="true"
+            />
           </Link>
         </div>
 
-        <div className="relative mt-12">
-          {/* Desktop horizontal connecting line */}
+        <div className="relative mt-16">
+          {/* Desktop connecting hairline – passes through the dots, fading at both ends */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-10 top-6 hidden h-0.5 bg-ice/60 lg:block"
+            className="pointer-events-none absolute inset-x-10 top-[81px] hidden h-px bg-gradient-to-r from-transparent via-ice/70 to-transparent lg:block"
           />
 
-          <ol className="relative grid gap-6 lg:grid-cols-4">
+          <ol className="relative grid gap-10 lg:grid-cols-4 lg:gap-8">
             {dict.journey.steps.map((step, index) => (
               <li
                 key={step.title}
-                className="relative flex gap-4 lg:flex-col lg:gap-0"
+                className="relative flex gap-5 lg:flex-col lg:items-center lg:gap-0 lg:text-center"
               >
-                {/* Node + mobile vertical connector */}
-                <div className="flex flex-col items-center lg:flex-row lg:items-center lg:gap-3">
-                  <span className="relative z-10 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-ice bg-navy text-sm font-bold text-white shadow-soft">
-                    {index + 1}
+                {/* Numeral + dot rail (collapses into the column flow on desktop) */}
+                <div className="flex flex-col items-center lg:contents">
+                  <span
+                    aria-hidden="true"
+                    className="display-type text-[2.6rem] font-semibold leading-none text-navy/10 lg:text-6xl"
+                  >
+                    {String(index + 1).padStart(2, "0")}
                   </span>
+                  <span
+                    aria-hidden="true"
+                    className="relative z-10 mt-3.5 inline-block h-3.5 w-3.5 shrink-0 rounded-full bg-bright shadow-soft ring-4 ring-white"
+                  />
                   {index < dict.journey.steps.length - 1 && (
                     <span
                       aria-hidden="true"
-                      className="my-1 w-0.5 flex-1 bg-ice/60 lg:hidden"
+                      className="mt-3 w-px flex-1 bg-gradient-to-b from-ice/60 to-line-soft lg:hidden"
                     />
                   )}
                 </div>
 
-                <div className="flex-1 rounded-2xl border border-line bg-white p-5 lg:mt-4">
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-action">
-                    {dict.common.step} {index + 1}
-                  </span>
-                  <h3 className="mt-1 text-base font-bold text-navy">
+                <div className="flex-1 lg:mt-6 lg:flex-none">
+                  <h3 className="display-type text-[1.3rem] font-semibold leading-snug text-navy">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate">
+                  <p className="mt-2.5 text-sm leading-relaxed text-slate lg:mx-auto lg:max-w-[17rem]">
                     {firstSentence(step.text)}
                   </p>
                 </div>

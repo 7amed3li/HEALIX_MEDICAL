@@ -17,28 +17,36 @@ export function FeaturedServices({ locale, dict, serviceDict }: Props) {
   const others = services.filter((s) => !s.featured);
 
   return (
-    <section className="bg-white py-14 sm:py-18">
+    <section className="bg-white py-20 sm:py-24 lg:py-28">
       <div className="container-page">
-        <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-          <div className="max-w-2xl">
-            <h2 className="text-2xl font-bold text-navy sm:text-3xl">
+        <div className="mx-auto max-w-2xl text-center">
+          <p>
+            <span className="eyebrow">{dict.home.services.eyebrow}</span>
+          </p>
+          <div className="section-heading mt-5">
+            <h2 className="text-3xl font-semibold text-navy sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
               {dict.home.services.title}
             </h2>
-            <p className="mt-2.5 text-sm leading-relaxed text-slate sm:text-base">
-              {dict.home.services.lead}
-            </p>
           </div>
+          <p className="mt-4 text-base leading-relaxed text-slate">
+            {dict.home.services.lead}
+          </p>
           <Link
             href={pagePath(locale, "services")}
-            className="inline-flex items-center gap-1.5 self-start rounded-lg border border-line bg-white px-4 py-2 text-xs font-semibold text-action transition-colors hover:border-ice hover:bg-mist sm:self-auto"
+            className="group mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-action transition-colors hover:text-action-hover"
           >
-            <span>{dict.common.allServices}</span>
-            <ArrowRight className="flip-rtl h-3.5 w-3.5" aria-hidden="true" />
+            <span className="underline decoration-brand-red/70 decoration-2 underline-offset-8">
+              {dict.common.allServices}
+            </span>
+            <ArrowRight
+              className="flip-rtl h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5"
+              aria-hidden="true"
+            />
           </Link>
         </div>
 
-        {/* Two prominent #EFF5F7 (mist) showcase cards for Liver & Kidney Transplantation */}
-        <div className="mt-8 grid gap-6 lg:grid-cols-2">
+        {/* Two prominent showcase cards for Liver & Kidney Transplantation */}
+        <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:gap-8">
           {featured.map((svc) => (
             <ServiceCard
               key={svc.id}
@@ -51,15 +59,16 @@ export function FeaturedServices({ locale, dict, serviceDict }: Props) {
           ))}
         </div>
 
-        {/* Clean #FFFFFF grid for the remaining 10 specialties */}
-        <div className="mt-12 border-t border-line pt-10">
+        {/* Clean grid for the remaining 10 specialties */}
+        <div className="mt-16 border-t border-line-soft pt-12">
           <div className="flex items-center justify-between gap-4">
             <h3 className="text-sm font-bold uppercase tracking-wider text-navy">
               {dict.home.services.othersTitle}
             </h3>
-            <span className="h-px flex-1 bg-line" aria-hidden="true" />
+            <span className="h-px w-10 bg-brand-red" aria-hidden="true" />
+            <span className="h-px flex-1 bg-line-soft" aria-hidden="true" />
           </div>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {others.map((svc) => (
               <ServiceCard
                 key={svc.id}

@@ -19,22 +19,30 @@ export function HomeFaq({ locale, dict }: Props) {
   const preview = dict.faqPage.items.slice(0, 4);
 
   return (
-    <section className="border-t border-line bg-mist/55 py-16 sm:py-20">
+    <section className="border-t border-line-soft bg-mist-soft py-20 sm:py-24 lg:py-28">
       <div className="container-page">
-        <div className="grid items-start gap-10 lg:grid-cols-12">
+        <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-5">
-            <h2 className="text-2xl font-bold text-navy sm:text-3xl">
+            <p>
+              <span className="eyebrow">{dict.home.faq.eyebrow}</span>
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold text-navy sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
               {dict.home.faq.title}
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-slate-strong">
+            <p className="mt-4 text-base leading-relaxed text-slate-strong">
               {dict.faqPage.lead}
             </p>
             <Link
               href={pagePath(locale, "faq")}
-              className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-action hover:text-action-hover"
+              className="group mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-action transition-colors hover:text-action-hover"
             >
-              <span>{dict.home.faq.more}</span>
-              <ArrowRight className="flip-rtl h-4 w-4" aria-hidden="true" />
+              <span className="underline decoration-brand-red/70 decoration-2 underline-offset-8">
+                {dict.home.faq.more}
+              </span>
+              <ArrowRight
+                className="flip-rtl h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5"
+                aria-hidden="true"
+              />
             </Link>
           </div>
 

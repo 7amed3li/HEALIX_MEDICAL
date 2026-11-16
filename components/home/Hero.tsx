@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Compass, Languages, Shield, Stethoscope } from "lucide-react";
 import { getDir, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
@@ -11,70 +11,89 @@ type Props = {
   dict: Dictionary;
 };
 
+const stripIcons = [Languages, Compass, Stethoscope, Shield];
+
 /**
- * Hero ("International Precision"):
- * - Clean, flat #10283E (Deep Navy) canvas without artificial dot-grids or AI-style badges.
- * - Desktop asymmetric composition: Text block on the LEFT, Consultation image on the RIGHT
- *   integrated via a smooth curved ice-blue (#69B7D1) & mist (#EFF5F7) arc.
+ * Hero (Design v2 – "global healthcare" reference):
+ * - Deep-navy scene built on the dotted world-map artwork: luminous arcs from
+ *   every continent converge on Türkiye, veiled by navy gradients so the
+ *   display headline stays perfectly legible.
+ * - The consultation photograph keeps its curved composition at the inline-end
+ *   and melts into the scene through gradient masks (mirrored in RTL).
+ * - One vivid azure pill CTA; a quiet trust strip along the bottom reuses the
+ *   overview facts verbatim.
  */
 export function Hero({ locale, dict }: Props) {
-  const textDir = getDir(locale);
+  const isRtl = getDir(locale) === "rtl";
 
   return (
-    <section className="on-dark relative overflow-hidden bg-navy text-white">
-      {/* Desktop full-bleed consultation image on the RIGHT with curved ice-blue transition */}
-      <div className="anim-hero-img hidden lg:pointer-events-none lg:absolute lg:inset-y-0 lg:right-0 lg:block lg:w-[50%]">
+    <section className="on-dark grain relative overflow-hidden bg-ink text-white">
+      {/* Global network backdrop – dotted world map, arcs converging on Türkiye */}
+      <div className="absolute inset-0" aria-hidden="true">
         <Image
-          src="/images/hero-seamless-ltr.jpg"
+          src="/images/hero-world-map.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/80 via-navy/60 to-ink/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/55 via-transparent to-transparent rtl:bg-gradient-to-l" />
+        {/* Extra legibility veil where no photo covers the map (mobile / text side) */}
+        <div className="absolute inset-0 bg-ink/25 lg:bg-ink/10" />
+      </div>
+
+      {/* Full-bleed consultation image at the inline-end, blended into the navy */}
+      <div className="anim-hero-img pointer-events-none absolute inset-y-0 end-0 hidden w-[58%] lg:block">
+        <Image
+          src={isRtl ? "/images/hero-coordination-rtl.jpg" : "/images/hero-seamless-ltr.jpg"}
           alt={dict.home.hero.imageAlt}
           fill
           priority
-          sizes="50vw"
-          className="object-cover object-left"
+          sizes="58vw"
+          className={`object-cover ${isRtl ? "object-center" : "object-left"}`}
         />
+        <div className="hero-shade-x absolute inset-0" aria-hidden="true" />
+        <div className="hero-shade-b absolute inset-0" aria-hidden="true" />
       </div>
 
-      {/* Content container: LTR outer wrapper keeps text block on the LEFT on desktop */}
-      <div
-        dir="ltr"
-        className="container-page relative z-10 flex min-h-[540px] items-center py-12 sm:py-16 lg:min-h-[580px] lg:py-20"
-      >
-        <div
-          dir={textDir}
-          className={`w-full lg:w-[50%] xl:w-[48%] ${
-            textDir === "rtl" ? "text-right" : "text-left"
-          }`}
-        >
-          <h1 className="anim-hero-1 text-3xl font-bold tracking-tight text-white sm:text-4xl xl:text-[2.65rem] xl:leading-[1.25]">
+      <div className="container-page relative">
+        <div className="max-w-2xl pt-16 sm:pt-20 lg:pt-24">
+          <p className="anim-hero-1">
+            <span className="eyebrow">{dict.home.hero.eyebrow}</span>
+          </p>
+
+          <h1 className="anim-hero-2 mt-6 text-[clamp(2.6rem,5.4vw,4.4rem)] font-medium leading-[1.08] text-white">
             {dict.home.hero.title}
           </h1>
 
-          <p className="anim-hero-2 mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
+          <p className="anim-hero-3 mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
             <BdiText text={dict.home.hero.lead} />
           </p>
 
-          <div className="anim-hero-3 mt-8 flex flex-wrap items-center gap-3.5">
+          <div className="anim-hero-4 mt-9 flex flex-wrap items-center gap-3.5">
             <Link
               href={pagePath(locale, "contact")}
-              className="inline-flex min-h-12 items-center gap-2.5 rounded-lg bg-action px-6 py-3 text-base font-semibold text-white transition-all duration-200 hover:bg-action-hover active:translate-y-px"
+              className="btn-primary min-h-12 px-7 py-3 text-base"
             >
               <span>{dict.common.ctaPrimary}</span>
               <ArrowRight className="flip-rtl h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
             </Link>
             <Link
               href={pagePath(locale, "journey")}
-              className="inline-flex min-h-12 items-center rounded-lg border border-ice/45 bg-white/5 px-5 py-3 text-base font-medium text-white transition-all duration-200 hover:border-ice hover:bg-white/10 active:translate-y-px"
+              className="btn-ghost-light min-h-12 px-6 py-3 text-base"
             >
               {dict.common.ctaSecondary}
             </Link>
           </div>
 
-          <p className="anim-hero-4 mt-7 border-s-2 border-ice/50 ps-3.5 text-xs leading-relaxed text-white/75">
+          <p className="anim-hero-4 mt-8 max-w-md border-s-2 border-ice/70 ps-4 text-[13px] leading-relaxed text-white/70">
             <BdiText text={dict.common.coordinationNotice} />
           </p>
 
           {/* Mobile consultation image */}
-          <div className="anim-hero-img mt-8 overflow-hidden rounded-xl border border-ice/35 lg:hidden">
+          <div className="anim-hero-img relative mt-10 overflow-hidden rounded-[1.75rem] border border-white/15 shadow-lift lg:hidden">
             <Image
               src="/images/hero-closeup.jpg"
               alt={dict.home.hero.imageAlt}
@@ -84,7 +103,30 @@ export function Hero({ locale, dict }: Props) {
               sizes="100vw"
               className="h-auto w-full object-cover"
             />
+            <div
+              className="absolute inset-0 bg-gradient-to-t from-ink/45 via-transparent to-transparent"
+              aria-hidden="true"
+            />
           </div>
+        </div>
+
+        {/* Trust strip – the overview facts, set quietly along the hero's foot */}
+        <div className="anim-hero-5 mt-14 border-t border-white/12 lg:mt-20">
+          <ul className="grid grid-cols-2 gap-x-6 gap-y-5 py-7 lg:grid-cols-4">
+            {dict.home.strip.map((item, idx) => {
+              const Icon = stripIcons[idx % stripIcons.length];
+              return (
+                <li key={item.title} className="flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ice/40 bg-white/5 text-ice-soft">
+                    <Icon className="h-[18px] w-[18px]" strokeWidth={1.6} aria-hidden="true" />
+                  </span>
+                  <span className="text-sm font-semibold leading-snug text-white/90">
+                    {item.title}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </section>
