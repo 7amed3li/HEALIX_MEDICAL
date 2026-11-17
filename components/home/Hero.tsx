@@ -99,17 +99,17 @@ export function Hero({ locale, dict }: Props) {
           </p>
         </div>
 
-        {/* Trust strip – compact 1-col/2-col on mobile, 4-col on desktop */}
+        {/* Trust strip – 2x2 on mobile, 4-col on desktop */}
         <div className="anim-hero-5 mt-8 border-t border-white/12 sm:mt-12 lg:mt-20">
-          <ul className="grid grid-cols-1 gap-x-6 gap-y-3.5 py-6 sm:grid-cols-2 sm:py-7 lg:grid-cols-4">
+          <ul className="grid grid-cols-2 gap-x-4 gap-y-4 py-5 sm:gap-x-6 sm:py-7 lg:grid-cols-4">
             {dict.home.strip.map((item, idx) => {
               const Icon = stripIcons[idx % stripIcons.length];
               return (
-                <li key={item.title} className="flex items-center gap-3">
-                  <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ice/40 bg-white/5 text-ice-soft sm:h-10 sm:w-10">
-                    <Icon className="h-4 w-4 sm:h-[18px] sm:w-[18px]" strokeWidth={1.6} aria-hidden="true" />
+                <li key={item.title} className="flex items-center gap-2.5 sm:gap-3">
+                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-ice/40 bg-white/5 text-ice-soft sm:h-10 sm:w-10">
+                    <Icon className="h-3.5 w-3.5 sm:h-[18px] sm:w-[18px]" strokeWidth={1.6} aria-hidden="true" />
                   </span>
-                  <span className="text-xs font-semibold leading-snug text-white/90 sm:text-sm">
+                  <span className="text-[11.5px] font-semibold leading-snug text-white/90 sm:text-sm">
                     {item.title}
                   </span>
                 </li>
