@@ -33,7 +33,7 @@
     "backToServices": "Tous les services",
     "readPrivacy": "Politique de confidentialité",
     "coordinationNotice": "HEALIX MEDICAL coordonne la communication et le parcours du patient. Le diagnostic, l’éligibilité, les décisions thérapeutiques et les soins médicaux relèvent de la responsabilité de l’hôpital et de l’équipe médicale agréés.",
-    "featured": "Mis en avant dans nos supports",
+    "featured": "Spécialité phare",
     "step": "Étape"
   },
   "home": {
@@ -45,8 +45,8 @@
     },
     "strip": [
       {
-        "title": "Site disponible en cinq langues",
-        "text": "Arabe, anglais, français, russe et turc."
+        "title": "Accompagnement dans votre langue",
+        "text": "Une communication claire dans votre langue tout au long de votre parcours en Turquie."
       },
       {
         "title": "Coordination en Turquie",
@@ -64,7 +64,7 @@
     "services": {
       "eyebrow": "Services",
       "title": "Douze domaines dans lesquels nous coordonnons les demandes",
-      "lead": "La transplantation hépatique et la transplantation rénale sont mises en avant, car elles occupent une place importante dans nos supports. Les douze services sont tous accessibles de la même manière.",
+      "lead": "Nous coordonnons vos échanges avec des hôpitaux spécialisés en transplantation, oncologie, chirurgie de précision et rééducation, dès votre première demande.",
       "othersTitle": "Autres services"
     },
     "journey": {

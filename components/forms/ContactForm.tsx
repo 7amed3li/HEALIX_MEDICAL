@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AlertCircle, CheckCircle2, Info } from "lucide-react";
+import { AlertCircle, CheckCircle2, Info, Mail, Phone } from "lucide-react";
 import { TactileButton } from "@/components/ui/TactileButton";
 import { localeConfig, locales, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
+import { siteConfig, formatPhoneDisplay } from "@/lib/config/site";
 import {
   CONTACT_METHODS,
   validateContact,
@@ -41,8 +42,31 @@ export function ContactForm({
 
   const [errors, setErrors] = useState<ContactField[]>([]);
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "unavailable" | "error">("idle");
+  const [mailtoHref, setMailtoHref] = useState<string | null>(null);
 
   const hasError = (field: ContactField) => errors.includes(field);
+
+  function buildMailtoUrl(data: {
+    name: string;
+    country: string;
+    language: string;
+    contactMethod: string;
+    contactValue: string;
+    service: string;
+  }) {
+    if (!siteConfig.contact.email) return null;
+    const serviceLabel = serviceOptions.find((s) => s.id === data.service)?.name ?? data.service;
+    const subject = `HEALIX MEDICAL – ${serviceLabel}`;
+    const body = [
+      `Name: ${data.name}`,
+      `Country: ${data.country}`,
+      `Preferred language: ${data.language}`,
+      `Contact method: ${data.contactMethod}`,
+      `Contact value: ${data.contactValue}`,
+      `Service: ${serviceLabel}`,
+    ].join("\n");
+    return `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -65,8 +89,12 @@ export function ContactForm({
     setErrors([]);
 
     if (!receiverConfigured) {
-      // Do NOT fake a submission when no authorized receiving endpoint is configured.
+      const url = buildMailtoUrl(check.data);
+      setMailtoHref(url);
       setStatus("unavailable");
+      if (url) {
+        window.location.href = url;
+      }
       return;
     }
 
@@ -82,7 +110,12 @@ export function ContactForm({
         }),
       });
       if (res.status === 503) {
+        const url = buildMailtoUrl(check.data);
+        setMailtoHref(url);
         setStatus("unavailable");
+        if (url) {
+          window.location.href = url;
+        }
       } else if (res.ok) {
         setStatus("success");
       } else {
@@ -336,10 +369,34 @@ export function ContactForm({
       {status === "unavailable" && (
         <div
           role="status"
-          className="mt-5 flex items-start gap-2.5 rounded-xl border border-ice bg-mist p-4 text-sm text-navy"
+          className="mt-5 space-y-3 rounded-xl border border-ice bg-mist p-4 text-sm text-navy"
         >
-          <Info className="mt-0.5 h-5 w-5 shrink-0 text-action" aria-hidden="true" />
-          <p>{f.unavailable}</p>
+          <div className="flex items-start gap-2.5">
+            <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-action" aria-hidden="true" />
+            <p>{mailtoHref ? f.success : f.unavailable}</p>
+          </div>
+          {(mailtoHref || siteConfig.contact.phone) && (
+            <div className="flex flex-wrap gap-2.5 pt-1">
+              {mailtoHref && siteConfig.contact.email && (
+                <a
+                  href={mailtoHref}
+                  className="inline-flex min-h-10 items-center gap-2 rounded-full bg-action px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-action-hover"
+                >
+                  <Mail className="h-3.5 w-3.5" strokeWidth={1.75} aria-hidden="true" />
+                  <span dir="ltr">{siteConfig.contact.email}</span>
+                </a>
+              )}
+              {siteConfig.contact.phone && (
+                <a
+                  href={`tel:${siteConfig.contact.phone}`}
+                  className="inline-flex min-h-10 items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-xs font-semibold text-navy transition-colors hover:border-ice hover:bg-mist-soft"
+                >
+                  <Phone className="h-3.5 w-3.5 text-action" strokeWidth={1.75} aria-hidden="true" />
+                  <span dir="ltr">{formatPhoneDisplay(siteConfig.contact.phone)}</span>
+                </a>
+              )}
+            </div>
+          )}
         </div>
       )}
 

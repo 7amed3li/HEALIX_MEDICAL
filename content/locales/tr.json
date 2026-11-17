@@ -33,7 +33,7 @@
     "backToServices": "Tüm hizmetler",
     "readPrivacy": "Gizlilik politikası",
     "coordinationNotice": "HEALIX MEDICAL, hasta yolculuğunu ve iletişimi koordine eder. Tanı, uygunluk, tedavi kararı ve tıbbi uygulama lisanslı hastane ve sağlık ekibinin sorumluluğundadır.",
-    "featured": "Tanıtım materyallerinde öne çıkan",
+    "featured": "Öne Çıkan Branş",
     "step": "Adım"
   },
   "home": {
@@ -45,8 +45,8 @@
     },
     "strip": [
       {
-        "title": "Beş dilde web sitesi",
-        "text": "Arapça, İngilizce, Fransızca, Rusça ve Türkçe."
+        "title": "Kendi dilinizde koordinasyon",
+        "text": "Türkiye'deki süreciniz boyunca tercih ettiğiniz dilde kesintisiz iletişim."
       },
       {
         "title": "Türkiye’de koordinasyon",
@@ -64,7 +64,7 @@
     "services": {
       "eyebrow": "Hizmetler",
       "title": "Başvuruları koordine ettiğimiz on iki alan",
-      "lead": "Karaciğer ve böbrek nakli, şirket materyallerinde öne çıktığı için vurgulanmıştır. On iki hizmetin tamamına eşit ve kolay biçimde ulaşabilirsiniz.",
+      "lead": "Organ nakli, onkoloji, ileri cerrahi ve rehabilitasyon alanlarında uzman hastanelerle ilk başvurunuzdan itibaren tüm iletişiminizi düzenliyoruz.",
       "othersTitle": "Diğer hizmetler"
     },
     "journey": {

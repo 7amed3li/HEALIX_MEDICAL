@@ -33,7 +33,7 @@
     "backToServices": "All services",
     "readPrivacy": "Privacy policy",
     "coordinationNotice": "HEALIX MEDICAL coordinates communication and the patient journey. Diagnosis, eligibility, treatment decisions and medical care are the responsibility of the licensed hospital and medical team.",
-    "featured": "Featured in our materials",
+    "featured": "Key Specialty",
     "step": "Step"
   },
   "home": {
@@ -45,8 +45,8 @@
     },
     "strip": [
       {
-        "title": "Five website languages",
-        "text": "Arabic, English, French, Russian and Turkish."
+        "title": "Support in your language",
+        "text": "Clear communication in your preferred language throughout your journey in Türkiye."
       },
       {
         "title": "Coordination in Türkiye",
@@ -64,7 +64,7 @@
     "services": {
       "eyebrow": "Services",
       "title": "Twelve areas in which we coordinate enquiries",
-      "lead": "Liver and kidney transplantation are highlighted because they are prominent in our materials. All twelve services are equally accessible.",
+      "lead": "We coordinate your communication with specialised hospitals across organ transplantation, oncology, precision surgery, and rehabilitation—supporting every step from your first enquiry.",
       "othersTitle": "Other services"
     },
     "journey": {

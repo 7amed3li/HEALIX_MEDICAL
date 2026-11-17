@@ -39,7 +39,9 @@ export default async function ContactPage({ params }: Props) {
     name: serviceDict[s.id].name,
   }));
 
-  const receiverConfigured = Boolean(process.env.CONTACT_RECEIVER_URL);
+  const receiverConfigured = Boolean(
+    process.env.CONTACT_RECEIVER_URL || process.env.RESEND_API_KEY
+  );
   const hasWhatsApp = isValidWhatsAppUrl(siteConfig.contact.whatsapp);
 
   return (
