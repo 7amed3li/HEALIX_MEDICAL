@@ -100,6 +100,15 @@
       "title": "Ready to take the first step?",
       "text": "Send a short enquiry with your contact details. Please do not include medical reports.",
       "privacyNote": "We handle your details according to our"
+    },
+    "partners": {
+      "eyebrow": "Contracted Healthcare Facilities",
+      "title": "33 contracted healthcare facilities in Türkiye",
+      "lead": "HEALIX MEDICAL coordinates communication with these facilities under existing agreements covering Medical Park, Liv Hospital, and affiliated university centers (including one dental center). Clinical decisions remain with the licensed medical teams at each facility.",
+      "showAll": "View all 33 contracted facilities",
+      "hideAll": "Show fewer facilities",
+      "groupMlp": "Medical Park & Affiliated University Facilities",
+      "groupLiv": "Liv Hospital Ulus & Liv Hospital Vadistanbul"
     }
   },
   "journey": {

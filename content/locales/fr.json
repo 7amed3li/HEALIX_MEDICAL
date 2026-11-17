@@ -100,6 +100,15 @@
       "title": "Prêt à faire le premier pas ?",
       "text": "Envoyez une courte demande avec vos coordonnées. Merci de ne joindre aucun rapport médical.",
       "privacyNote": "Nous traitons vos données conformément à notre"
+    },
+    "partners": {
+      "eyebrow": "Établissements conventionnés",
+      "title": "33 établissements de santé conventionnés en Turquie",
+      "lead": "HEALIX MEDICAL coordonne la communication avec ces établissements dans le cadre d’accords couvrant Medical Park, Liv Hospital et des centres universitaires affiliés (dont un centre dentaire). Les décisions médicales appartiennent aux équipes agréées de chaque établissement.",
+      "showAll": "Afficher les 33 établissements",
+      "hideAll": "Réduire la liste",
+      "groupMlp": "Réseau Medical Park et centres universitaires affiliés",
+      "groupLiv": "Liv Hospital Ulus et Liv Hospital Vadistanbul"
     }
   },
   "journey": {

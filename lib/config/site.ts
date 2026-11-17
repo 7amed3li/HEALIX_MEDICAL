@@ -27,22 +27,56 @@ export const siteConfig = {
   },
 
   contact: {
-    /** PENDING – confirmed phone number (E.164, e.g. "+90..."). Hidden while null. */
-    phone: null as string | null,
-    /** PENDING – confirmed public email. Hidden while null. */
-    email: null as string | null,
+    /** Confirmed official contact phone number (E.164). */
+    phone: "+905521389721" as string | null,
+    /** Confirmed official public email. */
+    email: "healixtr@gmail.com" as string | null,
     /**
-     * PENDING – only a valid https://wa.me/<number> link is accepted.
-     * The handle "@Dr.Abdulrahman.ja" is NOT a WhatsApp link, so the button stays hidden.
+     * PENDING – only a valid https://wa.me/<number> link is accepted once explicitly confirmed for WhatsApp.
      */
     whatsapp: null as string | null,
   },
 
   /**
-   * PENDING – hospitals / partner centres. The section is hidden while this list is empty.
-   * Add an entry only after the owner confirms the relationship AND written permission to use the name/logo.
+   * Confirmed contracted healthcare facilities (33 facilities across two agreements,
+   * including 1 dental research & application center). No external logos are shown without
+   * separate logo-usage assets; facilities are displayed by their official contract names.
    */
-  partners: [] as { name: string; logo?: string; url?: string }[],
+  partners: [
+    { name: "MEDICAL PARK İSTANBUL ONKOLOJİ HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK GÖZTEPE HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK TEM HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK GEBZE VM HASTANESİ", group: "mlp" },
+    { name: "VM MEDICAL PARK PENDİK HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK BAHÇELİEVLER HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK BURSA HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK ANTALYA HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK ORDU HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK TRABZON HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK KARADENİZ HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK ANKARA HASTANESİ", group: "mlp" },
+    { name: "VM MEDICAL PARK MERSİN HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK ATAŞEHİR HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK İZMİR HASTANESİ", group: "mlp" },
+    { name: "LIV HOSPITAL ANKARA HASTANESİ", group: "mlp" },
+    { name: "LIV HOSPITAL GAZİANTEP HASTANESİ", group: "mlp" },
+    { name: "VM MEDICAL PARK ANKARA HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK TOKAT HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK SAMSUN HASTANESİ", group: "mlp" },
+    { name: "LIV HOSPITAL SAMSUN HASTANESİ", group: "mlp" },
+    { name: "VM MEDICAL PARK MALTEPE HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK ADANA HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK SEYHAN HASTANESİ", group: "mlp" },
+    { name: "MEDICAL PARK GEBZE HASTANESİ", group: "mlp" },
+    { name: "VM MEDICAL PARK KOCAELİ HASTANESİ", group: "mlp" },
+    { name: "İSTİNYE ÜNİVERSİTESİ TIP FAKÜLTESİ HASTANESİ – ESENYURT EK BİNASI", group: "mlp" },
+    { name: "İSTİNYE ÜNİVERSİTESİ TIP FAKÜLTESİ HASTANESİ – TOPKAPI EK BİNASI", group: "mlp" },
+    { name: "İSTİNYE ÜNİVERSİTESİ TIP FAKÜLTESİ HASTANESİ – GAZİOSMANPAŞA EK BİNASI", group: "mlp" },
+    { name: "İSTİNYE ÜNİVERSİTESİ AĞIZ VE DİŞ SAĞLIĞI ARAŞTIRMA VE UYGULAMA MERKEZİ", group: "mlp" },
+    { name: "İSTANBUL AYDIN ÜNİVERSİTESİ SAĞLIK UYGULAMA VE ARAŞTIRMA MERKEZİ", group: "mlp" },
+    { name: "LIV HOSPITAL ULUS", group: "liv" },
+    { name: "LIV HOSPITAL VADİSTANBUL", group: "liv" },
+  ] as { name: string; group: "mlp" | "liv"; logo?: string; url?: string }[],
 
   analytics: {
     /**

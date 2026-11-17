@@ -100,6 +100,15 @@
       "title": "İlk adımı atmaya hazır mısınız?",
       "text": "İletişim bilgilerinizi içeren kısa bir başvuru gönderin. Lütfen tıbbi rapor eklemeyin.",
       "privacyNote": "Bilgilerinizi şu metne uygun olarak işliyoruz:"
+    },
+    "partners": {
+      "eyebrow": "Anlaşmalı Sağlık Kuruluşları",
+      "title": "Türkiye’de 33 anlaşmalı sağlık kuruluşu",
+      "lead": "HEALIX MEDICAL; Medical Park, Liv Hospital ve bağlı üniversite merkezlerini (bir ağız ve diş sağlığı merkezi dahil) kapsayan mevcut sözleşmeler çerçevesinde bu kuruluşlarla iletişimi koordine eder. Tüm tıbbi kararlar ilgili kuruluşun lisanslı hekimlerine aittir.",
+      "showAll": "33 kuruluşun tamamını görüntüle",
+      "hideAll": "Listeyi daralt",
+      "groupMlp": "Medical Park ve Bağlı Üniversite Kuruluşları",
+      "groupLiv": "Liv Hospital Ulus ve Liv Hospital Vadistanbul"
     }
   },
   "journey": {

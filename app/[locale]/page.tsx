@@ -10,6 +10,7 @@ import { JourneySteps } from "@/components/home/JourneySteps";
 import { HowHealixHelps } from "@/components/home/HowHealixHelps";
 import { HomeFaq } from "@/components/home/HomeFaq";
 import { ContactCta } from "@/components/home/ContactCta";
+import { ContractedFacilities } from "@/components/home/ContractedFacilities";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -49,6 +50,9 @@ export default async function HomePage({ params }: Props) {
       </RevealOnScroll>
       <RevealOnScroll>
         <HowHealixHelps dict={dict} />
+      </RevealOnScroll>
+      <RevealOnScroll>
+        <ContractedFacilities locale={locale} dict={dict} />
       </RevealOnScroll>
       <RevealOnScroll>
         <HomeFaq locale={locale} dict={dict} />
