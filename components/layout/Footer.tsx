@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Phone, Mail, MessageCircle } from "lucide-react";
 import { InstagramIcon, FacebookIcon } from "@/components/ui/SocialIcons";
 import { formatNumber, localeConfig, locales, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
@@ -49,32 +50,45 @@ export function Footer({ locale, dict }: Props) {
 
             {/* Confirmed contact channels only — unconfirmed phone/email/WhatsApp stay hidden */}
             {(siteConfig.contact.phone || siteConfig.contact.email || hasWhatsApp) && (
-              <div className="mt-4 space-y-1.5 text-sm text-white/85">
+              <div className="mt-5 space-y-2.5 text-sm text-white/85">
                 {siteConfig.contact.phone && (
-                  <p>
-                    <a href={`tel:${siteConfig.contact.phone}`} dir="ltr" className="transition-colors duration-300 hover:text-ice-soft">
+                  <a
+                    href={`tel:${siteConfig.contact.phone}`}
+                    className="group flex items-center gap-3 transition-colors duration-300 hover:text-ice-soft"
+                  >
+                    <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 text-ice-soft transition-colors group-hover:border-ice/50 group-hover:bg-white/10">
+                      <Phone className="h-3.5 w-3.5" strokeWidth={1.75} aria-hidden="true" />
+                    </span>
+                    <span dir="ltr" className="font-medium tracking-wide">
                       {siteConfig.contact.phone}
-                    </a>
-                  </p>
+                    </span>
+                  </a>
                 )}
                 {siteConfig.contact.email && (
-                  <p>
-                    <a href={`mailto:${siteConfig.contact.email}`} dir="ltr" className="transition-colors duration-300 hover:text-ice-soft">
+                  <a
+                    href={`mailto:${siteConfig.contact.email}`}
+                    className="group flex items-center gap-3 transition-colors duration-300 hover:text-ice-soft"
+                  >
+                    <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 text-ice-soft transition-colors group-hover:border-ice/50 group-hover:bg-white/10">
+                      <Mail className="h-3.5 w-3.5" strokeWidth={1.75} aria-hidden="true" />
+                    </span>
+                    <span dir="ltr" className="font-medium">
                       {siteConfig.contact.email}
-                    </a>
-                  </p>
+                    </span>
+                  </a>
                 )}
                 {hasWhatsApp && siteConfig.contact.whatsapp && (
-                  <p>
-                    <a
-                      href={siteConfig.contact.whatsapp}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="transition-colors duration-300 hover:text-ice-soft"
-                    >
-                      WhatsApp
-                    </a>
-                  </p>
+                  <a
+                    href={siteConfig.contact.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-3 transition-colors duration-300 hover:text-ice-soft"
+                  >
+                    <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 text-ice-soft transition-colors group-hover:border-ice/50 group-hover:bg-white/10">
+                      <MessageCircle className="h-3.5 w-3.5" strokeWidth={1.75} aria-hidden="true" />
+                    </span>
+                    <span className="font-medium">WhatsApp</span>
+                  </a>
                 )}
               </div>
             )}

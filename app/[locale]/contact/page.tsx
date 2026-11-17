@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, Phone, Mail, MessageCircle } from "lucide-react";
 import { InstagramIcon, FacebookIcon } from "@/components/ui/SocialIcons";
 import { isLocale } from "@/lib/i18n/config";
 import { getDictionary, getServiceDictionary } from "@/lib/i18n/dictionaries";
@@ -113,32 +113,43 @@ export default async function ContactPage({ params }: Props) {
 
             {/* Confirmed direct channels appear only when configured */}
             {(siteConfig.contact.phone || siteConfig.contact.email || hasWhatsApp) && (
-              <div className="rounded-2xl border border-line bg-white p-6 space-y-2 text-sm text-navy">
+              <div className="space-y-3 rounded-[1.5rem] border border-line-soft bg-white p-6 text-sm text-navy shadow-soft">
                 {siteConfig.contact.phone && (
-                  <p>
-                    <a href={`tel:${siteConfig.contact.phone}`} dir="ltr" className="font-semibold text-action hover:underline">
+                  <a
+                    href={`tel:${siteConfig.contact.phone}`}
+                    className="group flex items-center gap-3.5 rounded-xl p-2 transition-colors hover:bg-mist/70"
+                  >
+                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ice/45 bg-mist-soft text-action transition-colors group-hover:bg-action group-hover:text-white">
+                      <Phone className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+                    </span>
+                    <span dir="ltr" className="font-semibold text-navy group-hover:text-action">
                       {siteConfig.contact.phone}
-                    </a>
-                  </p>
+                    </span>
+                  </a>
                 )}
                 {siteConfig.contact.email && (
-                  <p>
-                    <a href={`mailto:${siteConfig.contact.email}`} dir="ltr" className="font-semibold text-action hover:underline">
+                  <a
+                    href={`mailto:${siteConfig.contact.email}`}
+                    className="group flex items-center gap-3.5 rounded-xl p-2 transition-colors hover:bg-mist/70"
+                  >
+                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ice/45 bg-mist-soft text-action transition-colors group-hover:bg-action group-hover:text-white">
+                      <Mail className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+                    </span>
+                    <span dir="ltr" className="font-semibold text-navy group-hover:text-action">
                       {siteConfig.contact.email}
-                    </a>
-                  </p>
+                    </span>
+                  </a>
                 )}
                 {hasWhatsApp && siteConfig.contact.whatsapp && (
-                  <p>
-                    <a
-                      href={siteConfig.contact.whatsapp}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex min-h-10 items-center rounded-lg bg-action px-4 py-2 text-xs font-semibold text-white hover:bg-action-hover"
-                    >
-                      WhatsApp
-                    </a>
-                  </p>
+                  <a
+                    href={siteConfig.contact.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex min-h-10 w-full items-center justify-center gap-2 rounded-xl bg-action px-4 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-action-hover"
+                  >
+                    <MessageCircle className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+                    <span>WhatsApp</span>
+                  </a>
                 )}
               </div>
             )}
