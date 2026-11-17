@@ -7,6 +7,7 @@ import type { ServiceId } from "@/content/services";
 import { servicePath } from "@/lib/i18n/routes";
 import { serviceImage } from "@/lib/service-images";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
+import { TactileButton } from "@/components/ui/TactileButton";
 
 type Props = {
   locale: Locale;
@@ -78,10 +79,14 @@ export function ServiceCard({
           </ul>
 
           <div className="mt-auto pt-7">
-            <Link href={href} className="btn-primary min-h-11 px-5 py-2.5 text-sm">
+            <TactileButton
+              href={href}
+              variant="primary"
+              className="min-h-11 px-5 py-2.5 text-sm"
+            >
               <span>{learnMoreLabel}</span>
               <ArrowRight className="flip-rtl h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
-            </Link>
+            </TactileButton>
           </div>
         </div>
       </article>

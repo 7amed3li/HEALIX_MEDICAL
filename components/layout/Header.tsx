@@ -1,8 +1,8 @@
-import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
 import { BrandLogo } from "@/components/ui/BrandLogo";
+import { TactileButton } from "@/components/ui/TactileButton";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { MobileMenu } from "./MobileMenu";
 import { NavLinks, type NavItem } from "./NavLinks";
@@ -45,9 +45,13 @@ export function Header({ locale, dict }: Props) {
             currentLocale={locale}
             label={dict.a11y.languageSwitcher}
           />
-          <Link href={ctaHref} className="btn-primary min-h-11 px-5 py-2.5 text-sm">
+          <TactileButton
+            href={ctaHref}
+            variant="primary"
+            className="min-h-11 px-5 py-2.5 text-sm"
+          >
             {dict.common.ctaPrimary}
-          </Link>
+          </TactileButton>
         </div>
 
         <MobileMenu

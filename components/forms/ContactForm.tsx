@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { AlertCircle, CheckCircle2, Info } from "lucide-react";
+import { TactileButton } from "@/components/ui/TactileButton";
 import { localeConfig, locales, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
@@ -312,13 +313,14 @@ export function ContactForm({
       </div>
 
       <div className="mt-6">
-        <button
+        <TactileButton
           type="submit"
           disabled={status === "sending"}
-          className="btn-primary min-h-12 w-full px-8 py-3 text-base disabled:opacity-60 sm:w-auto"
+          variant="primary"
+          className="min-h-12 w-full px-8 py-3 text-base sm:w-auto"
         >
           {status === "sending" ? f.sending : f.submit}
-        </button>
+        </TactileButton>
       </div>
 
       {status === "success" && (

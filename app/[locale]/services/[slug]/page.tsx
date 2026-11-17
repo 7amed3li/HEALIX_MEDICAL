@@ -12,6 +12,7 @@ import { serviceImage } from "@/lib/service-images";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { FaqAccordion } from "@/components/ui/FaqAccordion";
 import { BdiText } from "@/components/ui/BdiText";
+import { TactileButton } from "@/components/ui/TactileButton";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -91,19 +92,21 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <BdiText text={content.intro} />
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3.5">
-                <Link
+                <TactileButton
                   href={pagePath(locale as Locale, "contact")}
-                  className="btn-primary min-h-12 px-6 py-3 text-sm"
+                  variant="primary"
+                  className="min-h-12 px-6 py-3 text-sm"
                 >
                   <span>{content.cta}</span>
-                  <ArrowRight className="flip-rtl h-4 w-4" aria-hidden="true" />
-                </Link>
-                <Link
+                  <ArrowRight className="flip-rtl h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+                </TactileButton>
+                <TactileButton
                   href={pagePath(locale as Locale, "journey")}
-                  className="btn-ghost min-h-12 px-5 py-3 text-sm"
+                  variant="secondary"
+                  className="min-h-12 px-5 py-3 text-sm"
                 >
                   {dict.common.ctaSecondary}
-                </Link>
+                </TactileButton>
               </div>
             </div>
 

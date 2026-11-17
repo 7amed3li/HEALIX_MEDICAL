@@ -8,6 +8,7 @@ import { siteConfig } from "@/lib/config/site";
 import { organizationJsonLd } from "@/lib/seo/jsonld";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { MotionProvider } from "@/components/ui/MotionProvider";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext", "cyrillic"],
@@ -82,11 +83,13 @@ export default async function LocaleRootLayout({
         >
           {dict.a11y.skipToContent}
         </a>
-        <Header locale={locale} dict={dict} />
-        <main id="main-content" className="flex-1">
-          {children}
-        </main>
-        <Footer locale={locale} dict={dict} />
+        <MotionProvider>
+          <Header locale={locale} dict={dict} />
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
+          <Footer locale={locale} dict={dict} />
+        </MotionProvider>
       </body>
     </html>
   );

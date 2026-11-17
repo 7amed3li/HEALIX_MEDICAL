@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
+import { TactileButton } from "@/components/ui/TactileButton";
 
 type Props = {
   locale: Locale;
@@ -42,10 +43,10 @@ export function ContactCta({ locale, dict }: Props) {
           </div>
 
           <div className="mt-8 shrink-0 lg:mt-0">
-            <Link href={pagePath(locale, "contact")} className="btn-primary min-h-12 px-7 py-3 text-base">
+            <TactileButton href={pagePath(locale, "contact")} variant="primary" className="min-h-12 px-7 py-3 text-base">
               <span>{dict.common.ctaPrimary}</span>
               <ArrowRight className="flip-rtl h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
-            </Link>
+            </TactileButton>
           </div>
         </div>
       </div>

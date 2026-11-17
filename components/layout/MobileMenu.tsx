@@ -3,10 +3,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { localeConfig, locales, type Locale } from "@/lib/i18n/config";
 import { resolveLocalePath } from "./LocaleSwitcher";
 import type { NavItem } from "./NavLinks";
+import { TactileButton } from "@/components/ui/TactileButton";
 
 type Props = {
   currentLocale: Locale;
@@ -58,11 +60,16 @@ export function MobileMenu({
         )}
       </button>
 
-      {open && (
-        <div
-          id="mobile-nav-panel"
-          className="anim-hero-1 absolute inset-x-0 top-full z-50 border-b border-line bg-white px-5 py-5 shadow-lg"
-        >
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            id="mobile-nav-panel"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute inset-x-0 top-full z-50 border-b border-line bg-white px-5 py-5 shadow-lg"
+          >
           <nav aria-label={navLabel} className="flex flex-col gap-1">
             {items.map((item) => {
               const active = item.exact
@@ -114,16 +121,18 @@ export function MobileMenu({
           </div>
 
           <div className="mt-4 px-2">
-            <Link
+            <TactileButton
               href={ctaHref}
               onClick={() => setOpen(false)}
-              className="btn-primary min-h-11 w-full px-4 py-2.5 text-sm"
+              variant="primary"
+              className="min-h-11 w-full px-4 py-2.5 text-sm"
             >
               {ctaLabel}
-            </Link>
+            </TactileButton>
           </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

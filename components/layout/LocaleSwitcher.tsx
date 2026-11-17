@@ -1,8 +1,10 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { Check, Globe } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+import { Check, ChevronDown, Globe } from "lucide-react";
 import { localeConfig, locales, type Locale } from "@/lib/i18n/config";
 import { findServiceByAnySlug } from "@/content/services";
 
@@ -11,17 +13,10 @@ type Props = {
   label: string;
 };
 
-/**
- * Resolves the target URL when switching languages:
- * - On `/[locale]/services/[slug]`, navigates to the same service's translated slug in the target language.
- * - On all other pages, preserves the sub-path.
- * - Shows native language names only (العربية, English, Français, Русский, Türkçe) — never country flags.
- */
 export function resolveLocalePath(pathname: string, targetLocale: Locale): string {
   const segments = pathname.split("/").filter(Boolean);
   if (segments.length === 0) return `/${targetLocale}`;
 
-  // Service detail page: /[locale]/services/[slug]
   if (segments[1] === "services" && segments[2]) {
     const svc = findServiceByAnySlug(segments[2]);
     if (svc) {
@@ -36,64 +31,91 @@ export function resolveLocalePath(pathname: string, targetLocale: Locale): strin
 
 export function LocaleSwitcher({ currentLocale, label }: Props) {
   const pathname = usePathname() || `/${currentLocale}`;
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onPointerDown = (e: MouseEvent) => {
+      if (!containerRef.current?.contains(e.target as Node)) setOpen(false);
+    };
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("mousedown", onPointerDown);
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("mousedown", onPointerDown);
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
 
   return (
-    <div className="relative inline-block">
-      <details className="group">
-        <summary
-          aria-label={label}
-          className="inline-flex min-h-10 cursor-pointer list-none items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-sm font-medium text-navy transition-all duration-300 hover:border-gold/60 hover:bg-mist-soft"
-        >
-          <Globe className="h-4 w-4 text-action" aria-hidden="true" />
-          <span>{localeConfig[currentLocale].nativeName}</span>
-          <svg
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-            className="h-4 w-4 text-slate transition-transform group-open:rotate-180"
+    <div ref={containerRef} className="relative inline-block">
+      <motion.button
+        type="button"
+        aria-expanded={open}
+        aria-haspopup="listbox"
+        aria-label={label}
+        onClick={() => setOpen((v) => !v)}
+        whileTap={{ scale: 0.975 }}
+        transition={{ type: "spring", stiffness: 460, damping: 32 }}
+        className="inline-flex min-h-10 cursor-pointer items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-sm font-medium text-navy shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_1px_2px_rgba(16,40,62,0.05)] transition-colors hover:border-ice hover:bg-mist/60"
+      >
+        <Globe className="h-4 w-4 text-action" strokeWidth={1.75} aria-hidden="true" />
+        <span>{localeConfig[currentLocale].nativeName}</span>
+        <ChevronDown
+          className={`h-3.5 w-3.5 text-slate transition-transform duration-200 ${
+            open ? "rotate-180" : ""
+          }`}
+          strokeWidth={1.75}
+          aria-hidden="true"
+        />
+      </motion.button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.ul
+            role="listbox"
+            initial={{ opacity: 0, y: 6, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 4, scale: 0.97 }}
+            transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute end-0 z-50 mt-2 w-44 origin-top rounded-2xl border border-line bg-white p-1.5 shadow-lift"
           >
-            <path
-              fillRule="evenodd"
-              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </summary>
-        <ul
-          role="list"
-          className="absolute end-0 z-50 mt-2 w-44 rounded-2xl border border-line-soft bg-white p-1.5 shadow-lift"
-        >
-          {locales.map((loc) => {
-            const active = loc === currentLocale;
-            const cfg = localeConfig[loc];
-            return (
-              <li key={loc}>
-                <Link
-                  href={resolveLocalePath(pathname, loc)}
-                  hrefLang={cfg.htmlLang}
-                  lang={cfg.htmlLang}
-                  dir={cfg.dir}
-                  aria-current={active ? "page" : undefined}
-                  className={`flex items-center justify-between rounded-lg px-3 py-2 text-sm transition-colors ${
-                    active
-                      ? "bg-mist font-semibold text-navy"
-                      : "text-navy hover:bg-mist/70"
-                  }`}
-                >
-                  <span>{cfg.nativeName}</span>
-                  {active && (
-                    <Check
-                      className="h-4 w-4 text-action"
-                      strokeWidth={1.75}
-                      aria-hidden="true"
-                    />
-                  )}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </details>
+            {locales.map((loc) => {
+              const active = loc === currentLocale;
+              const cfg = localeConfig[loc];
+              return (
+                <li key={loc}>
+                  <Link
+                    href={resolveLocalePath(pathname, loc)}
+                    hrefLang={cfg.htmlLang}
+                    lang={cfg.htmlLang}
+                    dir={cfg.dir}
+                    aria-current={active ? "page" : undefined}
+                    onClick={() => setOpen(false)}
+                    className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm transition-colors ${
+                      active
+                        ? "bg-mist font-semibold text-navy"
+                        : "text-navy hover:bg-mist/70"
+                    }`}
+                  >
+                    <span>{cfg.nativeName}</span>
+                    {active && (
+                      <Check
+                        className="h-4 w-4 text-action"
+                        strokeWidth={1.75}
+                        aria-hidden="true"
+                      />
+                    )}
+                  </Link>
+                </li>
+              );
+            })}
+          </motion.ul>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

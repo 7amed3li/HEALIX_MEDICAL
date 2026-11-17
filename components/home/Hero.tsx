@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, Compass, Globe2, Languages, Shield, Stethoscope } from "lucide-react";
 import { getDir, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
 import { BdiText } from "@/components/ui/BdiText";
+import { TactileButton } from "@/components/ui/TactileButton";
 
 type Props = {
   locale: Locale;
@@ -76,19 +76,21 @@ export function Hero({ locale, dict }: Props) {
           </p>
 
           <div className="anim-hero-4 mt-9 flex flex-wrap items-center gap-3.5">
-            <Link
+            <TactileButton
               href={pagePath(locale, "contact")}
-              className="btn-primary min-h-12 px-7 py-3 text-base"
+              variant="primary"
+              className="min-h-12 px-7 py-3 text-base"
             >
               <span>{dict.common.ctaPrimary}</span>
               <ArrowRight className="flip-rtl h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
-            </Link>
-            <Link
+            </TactileButton>
+            <TactileButton
               href={pagePath(locale, "journey")}
-              className="btn-ghost-light min-h-12 px-6 py-3 text-base"
+              variant="ghost-dark"
+              className="min-h-12 px-6 py-3 text-base"
             >
               {dict.common.ctaSecondary}
-            </Link>
+            </TactileButton>
           </div>
 
           <p className="anim-hero-4 mt-8 max-w-md border-s-2 border-ice/70 ps-4 text-[13px] leading-relaxed text-white/70">
