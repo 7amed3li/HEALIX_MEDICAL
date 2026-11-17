@@ -2,7 +2,7 @@ import { ArrowRight, Building2, MapPin } from "lucide-react";
 import { type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
-import { facilities } from "@/content/facilities";
+import { facilities, formatFacilityName } from "@/content/facilities";
 import { BdiText } from "@/components/ui/BdiText";
 import { FacilityBadge } from "@/components/ui/FacilityBadge";
 import { TactileButton } from "@/components/ui/TactileButton";
@@ -68,8 +68,8 @@ export function ContractedFacilities({ locale, dict }: Props) {
                   <MapPin className="h-3 w-3 shrink-0" strokeWidth={1.75} aria-hidden="true" />
                   <span>{facility.city}</span>
                 </span>
-                <p dir="ltr" className="mt-1 text-xs font-bold leading-snug text-navy sm:text-[13px]">
-                  {facility.name}
+                <p dir="ltr" className="mt-1 text-xs font-semibold leading-snug text-navy sm:text-[13px]">
+                  {formatFacilityName(facility.name)}
                 </p>
               </div>
             </div>

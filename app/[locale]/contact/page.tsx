@@ -7,7 +7,7 @@ import { isLocale } from "@/lib/i18n/config";
 import { getDictionary, getServiceDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, samePathForAllLocales } from "@/lib/seo/metadata";
 import { services } from "@/content/services";
-import { siteConfig, isValidWhatsAppUrl } from "@/lib/config/site";
+import { siteConfig, isValidWhatsAppUrl, formatPhoneDisplay } from "@/lib/config/site";
 import { ContactForm } from "@/components/forms/ContactForm";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -123,7 +123,7 @@ export default async function ContactPage({ params }: Props) {
                       <Phone className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
                     </span>
                     <span dir="ltr" className="font-semibold text-navy group-hover:text-action">
-                      {siteConfig.contact.phone}
+                      {formatPhoneDisplay(siteConfig.contact.phone)}
                     </span>
                   </a>
                 )}

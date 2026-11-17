@@ -224,7 +224,7 @@
 
   /* Light editorial page header (inner pages) with a champagne foot-hairline */
   .page-hero {
-    @apply relative overflow-hidden border-b border-line-soft py-16 sm:py-20;
+    @apply relative overflow-hidden border-b border-line-soft py-11 sm:py-20;
     background:
       radial-gradient(900px 380px at 100% 0%, rgb(105 183 209 / 0.1), transparent 60%),
       linear-gradient(180deg, #f4f9fb 0%, #ffffff 92%);

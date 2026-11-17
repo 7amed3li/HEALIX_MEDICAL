@@ -59,3 +59,29 @@ export const facilities: Facility[] = [
   { id: "istinye-dental", name: "İSTİNYE ÜNİVERSİTESİ AĞIZ VE DİŞ SAĞLIĞI ARAŞTIRMA VE UYGULAMA MERKEZİ", brand: "istinye-university", agreement: "mlp", city: "İstanbul", type: "dental" },
   { id: "aydin-suam", name: "İSTANBUL AYDIN ÜNİVERSİTESİ SAĞLIK UYGULAMA VE ARAŞTIRMA MERKEZİ", brand: "istanbul-aydin", agreement: "mlp", city: "İstanbul", type: "hospital" },
 ];
+
+const EXACT_WORDS: Record<string, string> = {
+  MEDICAL: "Medical",
+  PARK: "Park",
+  HOSPITAL: "Hospital",
+  LIV: "Liv",
+  VM: "VM",
+  TEM: "TEM",
+  VE: "ve",
+};
+
+/**
+ * Converts uppercase contract registry titles into clean, readable Turkish/English
+ * title case while preserving exact brand casing (`Liv`, `VM`, `TEM`, `Medical Park`).
+ */
+export function formatFacilityName(raw: string): string {
+  return raw
+    .split(" ")
+    .map((word) => {
+      if (word === "–" || word === "-") return word;
+      if (EXACT_WORDS[word]) return EXACT_WORDS[word];
+      const lower = word.toLocaleLowerCase("tr-TR");
+      return lower.charAt(0).toLocaleUpperCase("tr-TR") + lower.slice(1);
+    })
+    .join(" ");
+}

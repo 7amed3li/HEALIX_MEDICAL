@@ -91,3 +91,9 @@ export const siteConfig = {
 export function isValidWhatsAppUrl(url: string | null): url is string {
   return !!url && /^https:\/\/wa\.me\/\d{8,15}(\?.*)?$/.test(url);
 }
+
+/** Formats Turkish E.164 numbers (`+905521389721`) as `+90 552 138 97 21` for clean display. */
+export function formatPhoneDisplay(phone: string): string {
+  const m = phone.match(/^\+90(\d{3})(\d{3})(\d{2})(\d{2})$/);
+  return m ? `+90 ${m[1]} ${m[2]} ${m[3]} ${m[4]}` : phone;
+}

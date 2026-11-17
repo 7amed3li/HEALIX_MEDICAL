@@ -4,7 +4,7 @@ import { InstagramIcon, FacebookIcon } from "@/components/ui/SocialIcons";
 import { formatNumber, localeConfig, locales, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
-import { siteConfig, isValidWhatsAppUrl } from "@/lib/config/site";
+import { siteConfig, isValidWhatsAppUrl, formatPhoneDisplay } from "@/lib/config/site";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { BdiText } from "@/components/ui/BdiText";
 
@@ -36,8 +36,8 @@ export function Footer({ locale, dict }: Props) {
 
   return (
     <footer className="on-dark surface-dark grain footer-scene relative overflow-hidden text-white">
-      <div className="container-page pb-10 pt-16 sm:pt-20">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-12">
+      <div className="container-page pb-8 pt-12 sm:pb-10 sm:pt-20">
+        <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <BrandLogo
               href={pagePath(locale, "home")}
@@ -60,7 +60,7 @@ export function Footer({ locale, dict }: Props) {
                       <Phone className="h-3.5 w-3.5" strokeWidth={1.75} aria-hidden="true" />
                     </span>
                     <span dir="ltr" className="font-medium tracking-wide">
-                      {siteConfig.contact.phone}
+                      {formatPhoneDisplay(siteConfig.contact.phone)}
                     </span>
                   </a>
                 )}
@@ -124,59 +124,61 @@ export function Footer({ locale, dict }: Props) {
             </div>
           </div>
 
-          <nav aria-label={dict.footer.pages} className="lg:col-span-3">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
-              {dict.footer.pages}
-            </h2>
-            <ul className="mt-4 space-y-2.5 text-sm text-white/80">
-              {pageLinks.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="transition-colors duration-300 hover:text-ice-soft">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <nav aria-label={dict.footer.legal} className="lg:col-span-3">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
-              {dict.footer.legal}
-            </h2>
-            <ul className="mt-4 space-y-2.5 text-sm text-white/80">
-              {legalLinks.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="transition-colors duration-300 hover:text-ice-soft">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <div className="lg:col-span-2">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
-              {dict.footer.languages}
-            </h2>
-            <ul className="mt-4 space-y-2.5 text-sm text-white/80">
-              {locales.map((loc) => {
-                const cfg = localeConfig[loc];
-                return (
-                  <li key={loc}>
-                    <Link
-                      href={`/${loc}`}
-                      lang={cfg.htmlLang}
-                      dir={cfg.dir}
-                      className={`transition-colors duration-300 hover:text-ice-soft ${
-                        loc === locale ? "font-semibold text-white" : ""
-                      }`}
-                    >
-                      {cfg.nativeName}
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8">
+            <nav aria-label={dict.footer.pages}>
+              <h2 className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
+                {dict.footer.pages}
+              </h2>
+              <ul className="mt-4 space-y-2.5 text-sm text-white/80">
+                {pageLinks.map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="transition-colors duration-300 hover:text-ice-soft">
+                      {item.label}
                     </Link>
                   </li>
-                );
-              })}
-            </ul>
+                ))}
+              </ul>
+            </nav>
+
+            <nav aria-label={dict.footer.legal}>
+              <h2 className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
+                {dict.footer.legal}
+              </h2>
+              <ul className="mt-4 space-y-2.5 text-sm text-white/80">
+                {legalLinks.map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="transition-colors duration-300 hover:text-ice-soft">
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            <div className="col-span-2 sm:col-span-1">
+              <h2 className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
+                {dict.footer.languages}
+              </h2>
+              <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2.5 text-sm text-white/80 sm:block sm:space-y-2.5">
+                {locales.map((loc) => {
+                  const cfg = localeConfig[loc];
+                  return (
+                    <li key={loc}>
+                      <Link
+                        href={`/${loc}`}
+                        lang={cfg.htmlLang}
+                        dir={cfg.dir}
+                        className={`transition-colors duration-300 hover:text-ice-soft ${
+                          loc === locale ? "font-semibold text-white" : ""
+                        }`}
+                      >
+                        {cfg.nativeName}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -184,7 +186,7 @@ export function Footer({ locale, dict }: Props) {
         <div
           dir="ltr"
           aria-hidden="true"
-          className="pointer-events-none mt-16 select-none text-center text-[clamp(3.8rem,13.5vw,11.5rem)] font-extrabold leading-[0.95] tracking-[0.08em] text-white/[0.045]"
+          className="pointer-events-none mt-10 select-none text-center text-[clamp(3.2rem,14vw,11.5rem)] font-extrabold leading-[0.95] tracking-[0.08em] text-white/[0.045] sm:mt-16"
         >
           HEALIX
         </div>
