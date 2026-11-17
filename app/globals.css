@@ -70,9 +70,11 @@
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     scroll-padding-top: 6rem;
+    overflow-x: clip;
   }
   body {
-    @apply overflow-x-hidden bg-white text-navy antialiased;
+    @apply bg-white text-navy antialiased;
+    overflow-x: clip;
     font-family: var(--font-sans);
   }
   html[lang="ar"] body,

@@ -47,12 +47,12 @@ export function Hero({ locale, dict }: Props) {
       {/* Full-bleed consultation image at the inline-end, blended into the navy */}
       <div className="anim-hero-img pointer-events-none absolute inset-y-0 end-0 hidden w-[58%] lg:block">
         <Image
-          src={isRtl ? "/images/hero-coordination-rtl.jpg" : "/images/hero-seamless-ltr.jpg"}
+          src={isRtl ? "/images/hero-coordination-rtl.jpg" : "/images/hero-coordination.jpg"}
           alt={dict.home.hero.imageAlt}
           fill
           priority
           sizes="58vw"
-          className={`object-cover ${isRtl ? "object-center" : "object-left"}`}
+          className="object-cover object-center"
         />
         <div className="hero-shade-x absolute inset-0" aria-hidden="true" />
         <div className="hero-shade-b absolute inset-0" aria-hidden="true" />
