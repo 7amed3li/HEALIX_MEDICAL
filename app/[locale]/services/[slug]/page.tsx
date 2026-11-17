@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowLeft, ArrowRight, CheckCircle2, Info, ShieldAlert } from "lucide-react";
-import { isLocale, locales, type Locale } from "@/lib/i18n/config";
+import { formatNumber, isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { getDictionary, getServiceDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, type LocalizedPaths } from "@/lib/seo/metadata";
 import { getServiceBySlug, services } from "@/content/services";
@@ -161,7 +161,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                     className="rounded-2xl border border-line-soft bg-white p-6 text-sm leading-relaxed text-navy shadow-soft"
                   >
                     <span className="display-type inline-block text-[1.6rem] font-semibold leading-none text-bright">
-                      0{idx + 1}
+                      {formatNumber(idx + 1, locale as Locale, 2)}
                     </span>
                     <p className="mt-2.5 text-slate-strong">
                       <BdiText text={paragraph} />
@@ -206,7 +206,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 >
                   <div className="flex items-baseline gap-3">
                     <span className="display-type text-[2rem] font-semibold leading-none text-bright">
-                      {i + 1}
+                      {formatNumber(i + 1, locale as Locale)}
                     </span>
                     <span
                       className="h-px flex-1 self-center bg-gradient-to-r from-bright/50 to-ice/30 rtl:bg-gradient-to-l"

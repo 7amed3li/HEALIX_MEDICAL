@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Route } from "lucide-react";
-import type { Locale } from "@/lib/i18n/config";
+import { formatNumber, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
 
@@ -75,7 +75,7 @@ export function JourneySteps({ locale, dict }: Props) {
                     aria-hidden="true"
                     className="display-type text-[2.6rem] font-semibold leading-none text-navy/10 lg:text-6xl"
                   >
-                    {String(index + 1).padStart(2, "0")}
+                    {formatNumber(index + 1, locale, 2)}
                   </span>
                   <span
                     aria-hidden="true"

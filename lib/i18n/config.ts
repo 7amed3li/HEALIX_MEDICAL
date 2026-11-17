@@ -22,3 +22,17 @@ export function isLocale(value: string): value is Locale {
 export function getDir(locale: Locale) {
   return localeConfig[locale].dir;
 }
+
+/**
+ * Formats numbers using Arabic-Indic numerals (٠١، ٠٢، ...) when `locale === "ar"`,
+ * and Western digits (01, 02, ...) for all other locales.
+ */
+export function formatNumber(value: number, locale: Locale, minDigits = 1): string {
+  if (locale === "ar") {
+    return value.toLocaleString("ar-EG", {
+      minimumIntegerDigits: minDigits,
+      useGrouping: false,
+    });
+  }
+  return String(value).padStart(minDigits, "0");
+}

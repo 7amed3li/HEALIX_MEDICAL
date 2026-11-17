@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { isLocale } from "@/lib/i18n/config";
+import { formatNumber, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, samePathForAllLocales } from "@/lib/seo/metadata";
 import { HowHealixHelps } from "@/components/home/HowHealixHelps";
@@ -53,14 +53,14 @@ export default async function PatientJourneyPage({ params }: Props) {
                   aria-hidden="true"
                   className="display-type pointer-events-none absolute -top-4 end-5 text-[5.5rem] font-semibold leading-none text-navy/[0.05]"
                 >
-                  {i + 1}
+                  {formatNumber(i + 1, locale as Locale)}
                 </span>
                 <div className="flex items-center gap-3.5">
                   <span className="display-type inline-flex h-13 w-13 items-center justify-center rounded-full border border-bright/50 bg-white text-[1.25rem] font-semibold text-navy shadow-soft">
-                    {i + 1}
+                    {formatNumber(i + 1, locale as Locale)}
                   </span>
                   <span className="text-xs font-semibold uppercase tracking-wider text-action">
-                    {dict.common.step} {i + 1}
+                    {dict.common.step} {formatNumber(i + 1, locale as Locale)}
                   </span>
                 </div>
                 <h2 className="mt-5 text-[1.45rem] font-semibold text-navy">{step.title}</h2>

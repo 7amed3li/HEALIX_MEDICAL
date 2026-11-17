@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
-import { isLocale, type Locale } from "@/lib/i18n/config";
+import { formatNumber, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, samePathForAllLocales } from "@/lib/seo/metadata";
 import { pagePath } from "@/lib/i18n/routes";
@@ -90,7 +90,7 @@ export default async function AboutPage({ params }: Props) {
                   className="rounded-[1.5rem] border border-line-soft bg-mist-soft p-7"
                 >
                   <span className="display-type inline-block text-[1.6rem] font-semibold leading-none text-gold-deep">
-                    0{i + 1}
+                    {formatNumber(i + 1, locale as Locale, 2)}
                   </span>
                   <h3 className="display-type mt-3 text-[1.1rem] font-semibold text-navy">{v.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-slate-strong">
