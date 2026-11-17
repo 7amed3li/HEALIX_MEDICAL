@@ -478,6 +478,13 @@
       "agreementLiv": "Accord Liv Ulus & Vadistanbul"
     },
     "noticeTitle": "Précision réglementaire",
-    "notice": "Ce répertoire présente les 33 établissements conventionnés selon les contrats en vigueur (dont un centre universitaire dentaire). Les équipes médicales agréées décident seules de l’évaluation et des soins."
+    "notice": "Ce répertoire présente les 33 établissements conventionnés selon les contrats en vigueur (dont un centre universitaire dentaire). Les équipes médicales agréées décident seules de l’évaluation et des soins.",
+    "searchPlaceholder": "Rechercher par établissement ou ville (ex. İstanbul, Ankara)...",
+    "allCities": "Toutes les villes",
+    "flagshipTitle": "Accord dédié Liv Hospital",
+    "directoryTitle": "Répertoire des établissements conventionnés",
+    "enquireAction": "Coordonner",
+    "noResults": "Aucun établissement ne correspond à votre recherche.",
+    "resetFilters": "Afficher tout"
   }
 }

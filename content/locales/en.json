@@ -478,6 +478,13 @@
       "agreementLiv": "Liv Ulus & Vadistanbul Agreement"
     },
     "noticeTitle": "Coordination notice",
-    "notice": "This directory lists all 33 contracted healthcare facilities under the current agreements (including one dental research and application center). Each licensed medical team makes all clinical decisions."
+    "notice": "This directory lists all 33 contracted healthcare facilities under the current agreements (including one dental research and application center). Each licensed medical team makes all clinical decisions.",
+    "searchPlaceholder": "Search by facility name or city (e.g. İstanbul, Ankara)...",
+    "allCities": "All cities",
+    "flagshipTitle": "Dedicated Liv Hospital Agreement",
+    "directoryTitle": "Contracted Facilities Directory",
+    "enquireAction": "Enquire",
+    "noResults": "No facilities match your current filter.",
+    "resetFilters": "Show all facilities"
   }
 }

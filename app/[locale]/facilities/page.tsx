@@ -33,50 +33,65 @@ export default async function FacilitiesPage({ params }: Props) {
 
   return (
     <>
-      <section className="page-hero">
-        <div className="container-page">
+      <section className="surface-dark grain relative overflow-hidden py-14 text-white sm:py-20">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -end-24 -top-24 h-80 w-80 rounded-full bg-bright/15 blur-3xl"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-24 start-1/4 h-72 w-72 rounded-full bg-ice/10 blur-3xl"
+        />
+
+        <div className="container-page relative z-10">
           <div className="grid items-end gap-8 lg:grid-cols-12">
             <div className="lg:col-span-7">
               <p>
-                <span className="eyebrow">
-                  <Building2 className="h-3.5 w-3.5 text-action" strokeWidth={1.75} aria-hidden="true" />
+                <span className="eyebrow-dark">
+                  <Building2 className="h-3.5 w-3.5 text-ice-soft" strokeWidth={1.75} aria-hidden="true" />
                   <span>{t.eyebrow}</span>
                 </span>
               </p>
-              <h1 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl lg:text-5xl">
+              <h1 className="mt-4 text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
                 {t.title}
               </h1>
-              <p className="mt-4 text-base leading-relaxed text-slate sm:text-lg">
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base lg:text-lg">
                 <BdiText text={t.lead} />
               </p>
             </div>
 
             {/* Verified contract summary metrics (exact numbers from the two signed agreements) */}
-            <div className="grid grid-cols-3 gap-3 lg:col-span-5">
-              <div className="rounded-2xl border border-line bg-white p-4 text-center shadow-soft">
-                <p className="display-type text-2xl font-bold text-navy sm:text-3xl">
+            <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 lg:col-span-5">
+              <div className="rounded-2xl border border-white/15 bg-white/[0.06] p-3.5 text-center backdrop-blur-md sm:p-5">
+                <p className="display-type text-2xl font-bold tabular-nums text-white sm:text-3xl">
                   {formatNumber(facilities.length, locale as Locale)}
                 </p>
-                <p className="mt-1 text-xs font-medium text-slate">{t.stats.totalLabel}</p>
+                <p className="mt-1 text-[11px] font-medium leading-tight text-ice-soft sm:text-xs">
+                  {t.stats.totalLabel}
+                </p>
               </div>
-              <div className="rounded-2xl border border-line bg-white p-4 text-center shadow-soft">
-                <p className="display-type text-2xl font-bold text-navy sm:text-3xl">
+              <div className="rounded-2xl border border-white/15 bg-white/[0.06] p-3.5 text-center backdrop-blur-md sm:p-5">
+                <p className="display-type text-2xl font-bold tabular-nums text-white sm:text-3xl">
                   {formatNumber(uniqueCities, locale as Locale)}
                 </p>
-                <p className="mt-1 text-xs font-medium text-slate">{t.stats.citiesLabel}</p>
+                <p className="mt-1 text-[11px] font-medium leading-tight text-ice-soft sm:text-xs">
+                  {t.stats.citiesLabel}
+                </p>
               </div>
-              <div className="rounded-2xl border border-line bg-white p-4 text-center shadow-soft">
-                <p className="display-type text-2xl font-bold text-navy sm:text-3xl">
+              <div className="rounded-2xl border border-white/15 bg-white/[0.06] p-3.5 text-center backdrop-blur-md sm:p-5">
+                <p className="display-type text-2xl font-bold tabular-nums text-white sm:text-3xl">
                   {formatNumber(2, locale as Locale)}
                 </p>
-                <p className="mt-1 text-xs font-medium text-slate">{t.stats.agreementsLabel}</p>
+                <p className="mt-1 text-[11px] font-medium leading-tight text-ice-soft sm:text-xs">
+                  {t.stats.agreementsLabel}
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-14 sm:py-18">
+      <section className="bg-white py-12 sm:py-16">
         <div className="container-page">
           <FacilitiesDirectory locale={locale as Locale} dict={dict} />
 

@@ -478,6 +478,13 @@
       "agreementLiv": "Liv Ulus ve Vadistanbul Sözleşmesi"
     },
     "noticeTitle": "Koordinasyon notu",
-    "notice": "Bu rehber mevcut sözleşmeler kapsamındaki 33 sağlık kuruluşunun tamamını (bir ağız ve diş sağlığı uygulama merkezi dahil) listeler. Tıbbi değerlendirme ve tedavi kararları yalnızca ilgili kuruluşun lisanslı ekibine aittir."
+    "notice": "Bu rehber mevcut sözleşmeler kapsamındaki 33 sağlık kuruluşunun tamamını (bir ağız ve diş sağlığı uygulama merkezi dahil) listeler. Tıbbi değerlendirme ve tedavi kararları yalnızca ilgili kuruluşun lisanslı ekibine aittir.",
+    "searchPlaceholder": "Kurum adı veya şehir ile arayın (ör. İstanbul, Ankara)...",
+    "allCities": "Tüm şehirler",
+    "flagshipTitle": "Özel Liv Hospital Sözleşmesi",
+    "directoryTitle": "Anlaşmalı Sağlık Kurumları Dizini",
+    "enquireAction": "İletişime geç",
+    "noResults": "Aramanızla eşleşen kurum bulunamadı.",
+    "resetFilters": "Tümünü göster"
   }
 }
