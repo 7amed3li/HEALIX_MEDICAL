@@ -168,9 +168,8 @@ export function Footer({ locale, dict }: Props) {
                         href={`/${loc}`}
                         lang={cfg.htmlLang}
                         dir={cfg.dir}
-                        className={`transition-colors duration-300 hover:text-ice-soft ${
-                          loc === locale ? "font-semibold text-white" : ""
-                        }`}
+                        className={`transition-colors duration-300 hover:text-ice-soft ${loc === locale ? "font-semibold text-white" : ""
+                          }`}
                       >
                         {cfg.nativeName}
                       </Link>
@@ -191,12 +190,12 @@ export function Footer({ locale, dict }: Props) {
           HEALIX
         </div>
 
-        <div className="mt-4 border-t border-white/10 pt-7 text-xs leading-relaxed text-white/70">
-          <p>
-            <BdiText text={dict.footer.disclaimerShort} />
-          </p>
-          <p className="mt-3 text-white/55">
+        <div className="mt-4 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/65 md:flex-row md:items-center md:justify-between md:gap-8">
+          <p className="shrink-0 text-white/60">
             © {formatNumber(year, locale)} <bdi dir="ltr">{siteConfig.brand}</bdi>. {dict.footer.rights}
+          </p>
+          <p className="max-w-2xl md:text-end">
+            <BdiText text={dict.footer.disclaimerShort} />
           </p>
         </div>
       </div>
