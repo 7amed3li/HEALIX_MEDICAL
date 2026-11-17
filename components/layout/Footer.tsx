@@ -51,14 +51,14 @@ export function Footer({ locale, dict }: Props) {
               <div className="mt-4 space-y-1.5 text-sm text-white/85">
                 {siteConfig.contact.phone && (
                   <p>
-                    <a href={`tel:${siteConfig.contact.phone}`} dir="ltr" className="transition-colors duration-300 hover:text-gold-soft">
+                    <a href={`tel:${siteConfig.contact.phone}`} dir="ltr" className="transition-colors duration-300 hover:text-ice-soft">
                       {siteConfig.contact.phone}
                     </a>
                   </p>
                 )}
                 {siteConfig.contact.email && (
                   <p>
-                    <a href={`mailto:${siteConfig.contact.email}`} dir="ltr" className="transition-colors duration-300 hover:text-gold-soft">
+                    <a href={`mailto:${siteConfig.contact.email}`} dir="ltr" className="transition-colors duration-300 hover:text-ice-soft">
                       {siteConfig.contact.email}
                     </a>
                   </p>
@@ -69,7 +69,7 @@ export function Footer({ locale, dict }: Props) {
                       href={siteConfig.contact.whatsapp}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="transition-colors duration-300 hover:text-gold-soft"
+                      className="transition-colors duration-300 hover:text-ice-soft"
                     >
                       WhatsApp
                     </a>
@@ -79,7 +79,7 @@ export function Footer({ locale, dict }: Props) {
             )}
 
             <div className="mt-7">
-              <p className="text-xs font-semibold uppercase tracking-wider text-gold-soft">
+              <p className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
                 {dict.footer.follow}
               </p>
               <div className="mt-3 flex items-center gap-3">
@@ -89,7 +89,7 @@ export function Footer({ locale, dict }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Instagram (${dict.a11y.externalLink})`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-gold/60 hover:text-gold-soft"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-gold/60 hover:text-ice-soft"
                   >
                     <InstagramIcon className="h-4 w-4" />
                   </a>
@@ -100,7 +100,7 @@ export function Footer({ locale, dict }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Facebook (${dict.a11y.externalLink})`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-gold/60 hover:text-gold-soft"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-gold/60 hover:text-ice-soft"
                   >
                     <FacebookIcon className="h-4 w-4" />
                   </a>
@@ -110,13 +110,13 @@ export function Footer({ locale, dict }: Props) {
           </div>
 
           <nav aria-label={dict.footer.pages} className="lg:col-span-3">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-gold-soft">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
               {dict.footer.pages}
             </h2>
             <ul className="mt-4 space-y-2.5 text-sm text-white/80">
               {pageLinks.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="transition-colors duration-300 hover:text-gold-soft">
+                  <Link href={item.href} className="transition-colors duration-300 hover:text-ice-soft">
                     {item.label}
                   </Link>
                 </li>
@@ -125,13 +125,13 @@ export function Footer({ locale, dict }: Props) {
           </nav>
 
           <nav aria-label={dict.footer.legal} className="lg:col-span-3">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-gold-soft">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
               {dict.footer.legal}
             </h2>
             <ul className="mt-4 space-y-2.5 text-sm text-white/80">
               {legalLinks.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="transition-colors duration-300 hover:text-gold-soft">
+                  <Link href={item.href} className="transition-colors duration-300 hover:text-ice-soft">
                     {item.label}
                   </Link>
                 </li>
@@ -140,7 +140,7 @@ export function Footer({ locale, dict }: Props) {
           </nav>
 
           <div className="lg:col-span-2">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-gold-soft">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-ice-soft">
               {dict.footer.languages}
             </h2>
             <ul className="mt-4 space-y-2.5 text-sm text-white/80">
@@ -152,7 +152,7 @@ export function Footer({ locale, dict }: Props) {
                       href={`/${loc}`}
                       lang={cfg.htmlLang}
                       dir={cfg.dir}
-                      className={`transition-colors duration-300 hover:text-gold-soft ${
+                      className={`transition-colors duration-300 hover:text-ice-soft ${
                         loc === locale ? "font-semibold text-white" : ""
                       }`}
                     >

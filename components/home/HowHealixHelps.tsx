@@ -1,4 +1,4 @@
-import { Check, Stethoscope } from "lucide-react";
+import { Check, ShieldCheck, Stethoscope } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { BdiText } from "@/components/ui/BdiText";
 
@@ -12,7 +12,10 @@ export function HowHealixHelps({ dict }: Props) {
       <div className="container-page">
         <div className="max-w-2xl">
           <p>
-            <span className="eyebrow">{dict.home.help.eyebrow}</span>
+            <span className="eyebrow">
+              <ShieldCheck className="h-3.5 w-3.5 text-action" strokeWidth={1.75} aria-hidden="true" />
+              <span>{dict.home.help.eyebrow}</span>
+            </span>
           </p>
           <h2 className="mt-4 text-3xl font-semibold text-navy sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
             <BdiText text={dict.home.help.title} />

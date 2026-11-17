@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, HelpCircle } from "lucide-react";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
@@ -24,7 +24,10 @@ export function HomeFaq({ locale, dict }: Props) {
         <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-5">
             <p>
-              <span className="eyebrow">{dict.home.faq.eyebrow}</span>
+              <span className="eyebrow">
+                <HelpCircle className="h-3.5 w-3.5 text-action" strokeWidth={1.75} aria-hidden="true" />
+                <span>{dict.home.faq.eyebrow}</span>
+              </span>
             </p>
             <h2 className="mt-4 text-3xl font-semibold text-navy sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
               {dict.home.faq.title}

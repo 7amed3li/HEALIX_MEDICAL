@@ -42,11 +42,11 @@ export function BrandLogo({ href, ariaLabel, variant = "light", size = "md" }: P
             isDark ? "text-white" : "text-navy"
           }`}
         >
-          HEALI<span className={isDark ? "text-gold" : "text-gold-deep"}>X</span>
+          HEALI<span className="text-brand-red">X</span>
         </span>
         <span
           className={`mt-1 text-[10px] font-semibold tracking-[0.28em] ${
-            isDark ? "text-gold-soft" : "text-slate"
+            isDark ? "text-ice-soft" : "text-slate"
           }`}
         >
           MEDICAL

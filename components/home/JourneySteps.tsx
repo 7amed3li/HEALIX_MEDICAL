@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Route } from "lucide-react";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
@@ -28,7 +28,10 @@ export function JourneySteps({ locale, dict }: Props) {
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
           <p>
-            <span className="eyebrow">{dict.home.journey.eyebrow}</span>
+            <span className="eyebrow">
+              <Route className="h-3.5 w-3.5 text-action" strokeWidth={1.75} aria-hidden="true" />
+              <span>{dict.home.journey.eyebrow}</span>
+            </span>
           </p>
           <div className="section-heading mt-5">
             <h2 className="text-3xl font-semibold text-navy sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">

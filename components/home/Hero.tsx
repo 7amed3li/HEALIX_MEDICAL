@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Compass, Languages, Shield, Stethoscope } from "lucide-react";
+import { ArrowRight, Compass, Globe2, Languages, Shield, Stethoscope } from "lucide-react";
 import { getDir, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
@@ -61,7 +61,10 @@ export function Hero({ locale, dict }: Props) {
       <div className="container-page relative">
         <div className="max-w-2xl pt-16 sm:pt-20 lg:pt-24">
           <p className="anim-hero-1">
-            <span className="eyebrow">{dict.home.hero.eyebrow}</span>
+            <span className="eyebrow">
+              <Globe2 className="h-3.5 w-3.5 text-ice" strokeWidth={1.75} aria-hidden="true" />
+              <span>{dict.home.hero.eyebrow}</span>
+            </span>
           </p>
 
           <h1 className="anim-hero-2 mt-6 text-[clamp(2.6rem,5.4vw,4.4rem)] font-medium leading-[1.08] text-white">

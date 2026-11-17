@@ -6,6 +6,7 @@ import type { ServiceContent } from "@/lib/i18n/dictionaries";
 import type { ServiceId } from "@/content/services";
 import { servicePath } from "@/lib/i18n/routes";
 import { serviceImage } from "@/lib/service-images";
+import { ServiceIcon } from "@/components/ui/ServiceIcon";
 
 type Props = {
   locale: Locale;
@@ -48,15 +49,16 @@ export function ServiceCard({
         </div>
 
         <div className="flex flex-1 flex-col p-7 sm:p-8">
-          <h3 className="display-type text-[1.6rem] font-semibold leading-tight text-navy sm:text-[1.75rem]">
-            <Link href={href} className="transition-colors duration-300 hover:text-bright">
-              {content.name}
-            </Link>
-          </h3>
-          <span
-            aria-hidden="true"
-            className="mt-3.5 h-[3px] w-11 rounded-full bg-brand-red"
-          />
+          <div className="flex items-center gap-3.5">
+            <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-ice/45 bg-mist text-action">
+              <ServiceIcon id={id} className="h-5 w-5" />
+            </span>
+            <h3 className="display-type text-[1.5rem] font-semibold leading-tight text-navy sm:text-[1.7rem]">
+              <Link href={href} className="transition-colors duration-300 hover:text-bright">
+                {content.name}
+              </Link>
+            </h3>
+          </div>
 
           <p className="mt-4 text-[15px] leading-relaxed text-slate-strong">
             {content.short}
@@ -99,15 +101,16 @@ export function ServiceCard({
       </div>
 
       <div className="flex flex-1 flex-col p-5 sm:p-6">
-        <h3 className="display-type text-[1.2rem] font-semibold leading-snug text-navy">
-          <Link href={href} className="transition-colors duration-300 hover:text-bright">
-            {content.name}
-          </Link>
-        </h3>
-        <span
-          aria-hidden="true"
-          className="mt-2.5 h-[3px] w-9 rounded-full bg-brand-red"
-        />
+        <div className="flex items-center gap-3">
+          <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-ice/40 bg-mist text-action transition-colors duration-300 group-hover:bg-navy group-hover:text-ice-soft">
+            <ServiceIcon id={id} className="h-4 w-4" />
+          </span>
+          <h3 className="display-type text-[1.15rem] font-semibold leading-snug text-navy">
+            <Link href={href} className="transition-colors duration-300 hover:text-bright">
+              {content.name}
+            </Link>
+          </h3>
+        </div>
         <p className="mt-3.5 flex-1 text-sm leading-relaxed text-slate">
           {content.short}
         </p>

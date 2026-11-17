@@ -188,24 +188,19 @@
     font-family: var(--font-display-ar);
   }
 
-  /* Eyebrow label – small caps with a champagne hairline (Latin locales letterspace;
-     Arabic/Russian are protected by the letter-spacing reset above) */
+  /* Eyebrow label – paired with a crisp lucide-react icon (no plain CSS line) */
   .eyebrow {
-    @apply inline-flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-action;
-  }
-  .eyebrow::before {
-    content: "";
-    @apply block h-px w-9 shrink-0 bg-gold;
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-action;
   }
   .on-dark .eyebrow {
-    @apply text-gold-soft;
+    @apply text-ice-soft;
   }
 
-  /* Layered deep-navy surface with luminous ice + champagne gradient depth */
+  /* Layered deep-navy surface with subtle luminous ice depth */
   .surface-dark {
     background:
-      radial-gradient(1100px 540px at 88% -10%, rgb(105 183 209 / 0.17), transparent 62%),
-      radial-gradient(840px 500px at -8% 108%, rgb(201 164 92 / 0.11), transparent 58%),
+      radial-gradient(1100px 540px at 88% -10%, rgb(105 183 209 / 0.16), transparent 62%),
+      radial-gradient(840px 500px at -8% 108%, rgb(31 111 153 / 0.14), transparent 58%),
       linear-gradient(155deg, #14324e 0%, #10283e 46%, #081a29 100%);
   }
   /* Subtle film grain over dark surfaces */

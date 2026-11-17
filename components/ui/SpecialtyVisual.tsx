@@ -37,7 +37,7 @@ export function SpecialtyVisual({ id, steps, stepsTitle }: Props) {
               key={step.title}
               className="flex items-center gap-3 rounded-xl bg-mist-soft px-4 py-3"
             >
-              <span className="display-type w-6 shrink-0 text-center text-[1.15rem] font-semibold text-gold-deep">
+              <span className="display-type w-6 shrink-0 text-center text-[1.15rem] font-semibold text-action">
                 {idx + 1}
               </span>
               <span className="text-[13px] font-semibold leading-snug text-navy">

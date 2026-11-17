@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Stethoscope } from "lucide-react";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary, ServiceDictionary } from "@/lib/i18n/dictionaries";
 import { services } from "@/content/services";
@@ -21,7 +21,10 @@ export function FeaturedServices({ locale, dict, serviceDict }: Props) {
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
           <p>
-            <span className="eyebrow">{dict.home.services.eyebrow}</span>
+            <span className="eyebrow">
+              <Stethoscope className="h-3.5 w-3.5 text-action" strokeWidth={1.75} aria-hidden="true" />
+              <span>{dict.home.services.eyebrow}</span>
+            </span>
           </p>
           <div className="section-heading mt-5">
             <h2 className="text-3xl font-semibold text-navy sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
@@ -61,11 +64,13 @@ export function FeaturedServices({ locale, dict, serviceDict }: Props) {
 
         {/* Clean grid for the remaining 10 specialties */}
         <div className="mt-16 border-t border-line-soft pt-12">
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-mist text-action">
+              <Stethoscope className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+            </span>
             <h3 className="text-sm font-bold uppercase tracking-wider text-navy">
               {dict.home.services.othersTitle}
             </h3>
-            <span className="h-px w-10 bg-brand-red" aria-hidden="true" />
             <span className="h-px flex-1 bg-line-soft" aria-hidden="true" />
           </div>
           <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
