@@ -1,12 +1,10 @@
-"use client";
-
-import { useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
-import { Building2, ChevronDown } from "lucide-react";
-import { formatNumber, type Locale } from "@/lib/i18n/config";
+import { ArrowRight, Building2, MapPin } from "lucide-react";
+import { type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
-import { siteConfig } from "@/lib/config/site";
+import { pagePath } from "@/lib/i18n/routes";
+import { facilities } from "@/content/facilities";
 import { BdiText } from "@/components/ui/BdiText";
+import { FacilityBadge } from "@/components/ui/FacilityBadge";
 import { TactileButton } from "@/components/ui/TactileButton";
 
 type Props = {
@@ -15,25 +13,26 @@ type Props = {
 };
 
 /**
- * Displays the 33 confirmed contracted healthcare facilities (31 MLP/Medical Park/University
- * facilities + 2 Liv Hospital Ulus & Vadistanbul facilities).
- * - Renders nothing if `siteConfig.partners` is empty.
- * - Shows a curated preview of 6 facilities by default with a smooth Motion expand/collapse
- *   to view all 33 facilities without overwhelming the page height.
- * - Uses official contract names only (no unverified logos or ratings).
+ * Home page preview of the 33 contracted healthcare facilities:
+ * Showcases 6 flagship facilities across Liv Hospital, Medical Park, VM Medical Park,
+ * and University Centers with architectural monogram badges, linking to the dedicated
+ * `/[locale]/facilities` directory page.
  */
 export function ContractedFacilities({ locale, dict }: Props) {
-  const [expanded, setExpanded] = useState(false);
-
-  if (!siteConfig.partners.length) return null;
+  if (!facilities.length) return null;
 
   const t = dict.home.partners;
-  const livFacilities = siteConfig.partners.filter((p) => p.group === "liv");
-  const mlpFacilities = siteConfig.partners.filter((p) => p.group === "mlp");
-  const preview = [...livFacilities, ...mlpFacilities.slice(0, 4)];
+  const preview = [
+    facilities[0], // LIV HOSPITAL ULUS
+    facilities[1], // LIV HOSPITAL VADİSTANBUL
+    facilities[2], // MEDICAL PARK İSTANBUL ONKOLOJİ HASTANESİ
+    facilities[3], // MEDICAL PARK GÖZTEPE HASTANESİ
+    facilities[6], // VM MEDICAL PARK PENDİK HASTANESİ
+    facilities[28], // İSTİNYE ÜNİVERSİTESİ TIP FAKÜLTESİ HASTANESİ
+  ].filter(Boolean);
 
   return (
-    <section className="border-t border-line-soft bg-mist-soft py-20 sm:py-24">
+    <section className="border-t border-line-soft bg-mist-soft py-14 sm:py-20 lg:py-24">
       <div className="container-page">
         <div className="mx-auto max-w-3xl text-center">
           <p>
@@ -52,97 +51,39 @@ export function ContractedFacilities({ locale, dict }: Props) {
           </p>
         </div>
 
-        {/* Curated preview grid (6 facilities) */}
-        {!expanded && (
-          <div className="mt-10 grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
-            {preview.map((facility, idx) => (
-              <div
-                key={facility.name}
-                data-gsap-item
-                className="flex items-center gap-3 rounded-2xl border border-line-soft bg-white px-4 py-3.5 shadow-soft transition-colors duration-200 hover:border-ice"
-              >
-                <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-mist text-xs font-bold text-action">
-                  {formatNumber(idx + 1, locale, 2)}
-                </span>
-                <span dir="ltr" className="text-xs font-semibold leading-snug text-navy sm:text-[13px]">
-                  {facility.name}
-                </span>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Full 33-facility list grouped by agreement */}
-        <AnimatePresence initial={false}>
-          {expanded && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-              className="overflow-hidden"
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {preview.map((facility) => (
+            <div
+              key={facility.id}
+              data-gsap-item
+              className="flex items-center gap-3.5 rounded-2xl border border-line-soft bg-white p-4 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-ice hover:shadow-card"
             >
-              <div className="mt-10 space-y-8">
-                <div>
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-action">
-                    {t.groupLiv} ({formatNumber(livFacilities.length, locale)})
-                  </h3>
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                    {livFacilities.map((facility, idx) => (
-                      <div
-                        key={facility.name}
-                        className="flex items-center gap-3 rounded-xl border border-ice/50 bg-white px-4 py-3 shadow-soft"
-                      >
-                        <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-mist text-xs font-bold text-action">
-                          {formatNumber(idx + 1, locale, 2)}
-                        </span>
-                        <span dir="ltr" className="text-xs font-semibold text-navy sm:text-[13px]">
-                          {facility.name}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-action">
-                    {t.groupMlp} ({formatNumber(mlpFacilities.length, locale)})
-                  </h3>
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {mlpFacilities.map((facility, idx) => (
-                      <div
-                        key={facility.name}
-                        className="flex items-center gap-3 rounded-xl border border-line-soft bg-white px-4 py-3 shadow-soft"
-                      >
-                        <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-mist text-xs font-bold text-action">
-                          {formatNumber(idx + 1, locale, 2)}
-                        </span>
-                        <span dir="ltr" className="text-xs font-semibold leading-snug text-navy sm:text-[13px]">
-                          {facility.name}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              <FacilityBadge
+                brand={facility.brand}
+                name={facility.name}
+                logo={facility.logo}
+              />
+              <div className="min-w-0 flex-1">
+                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-action">
+                  <MapPin className="h-3 w-3 shrink-0" strokeWidth={1.75} aria-hidden="true" />
+                  <span>{facility.city}</span>
+                </span>
+                <p dir="ltr" className="mt-1 text-xs font-bold leading-snug text-navy sm:text-[13px]">
+                  {facility.name}
+                </p>
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            </div>
+          ))}
+        </div>
 
-        <div className="mt-8 flex justify-center">
+        <div className="mt-9 flex justify-center">
           <TactileButton
-            variant="secondary"
-            onClick={() => setExpanded((v) => !v)}
+            href={pagePath(locale, "facilities")}
+            variant="primary"
             className="min-h-11 px-6 py-2.5 text-sm"
           >
-            <span>{expanded ? t.hideAll : t.showAll}</span>
-            <ChevronDown
-              className={`h-4 w-4 transition-transform duration-200 ${
-                expanded ? "rotate-180" : ""
-              }`}
-              strokeWidth={1.75}
-              aria-hidden="true"
-            />
+            <span>{t.showAll}</span>
+            <ArrowRight className="flip-rtl h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
           </TactileButton>
         </div>
       </div>

@@ -22,7 +22,8 @@
     "journey": "Patient Journey",
     "about": "About",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "facilities": "Facilities"
   },
   "common": {
     "ctaPrimary": "Start your enquiry",
@@ -452,5 +453,31 @@
     "title": "Page not found",
     "text": "The page you are looking for does not exist or has moved.",
     "back": "Back to home"
+  },
+  "facilitiesPage": {
+    "metaTitle": "Contracted Healthcare Facilities – HEALIX MEDICAL",
+    "metaDescription": "Explore the 33 contracted healthcare facilities in Türkiye covered under agreements with Medical Park, Liv Hospital, and affiliated university centers.",
+    "eyebrow": "Contracted Network",
+    "title": "33 contracted healthcare facilities across Türkiye",
+    "lead": "HEALIX MEDICAL coordinates communication with 33 named facilities under two agreements covering Medical Park, Liv Hospital, affiliated university hospitals, and one dental center. Clinical decisions remain with the licensed medical teams at each facility.",
+    "stats": {
+      "totalLabel": "Contracted facilities",
+      "citiesLabel": "Cities in Türkiye",
+      "agreementsLabel": "Active agreements"
+    },
+    "filters": {
+      "all": "All",
+      "liv": "Liv Hospital",
+      "mp": "Medical Park & VM",
+      "university": "University Centers"
+    },
+    "badges": {
+      "hospital": "Hospital",
+      "dental": "Dental Center",
+      "agreementMlp": "MLP / Medical Park Agreement",
+      "agreementLiv": "Liv Ulus & Vadistanbul Agreement"
+    },
+    "noticeTitle": "Coordination notice",
+    "notice": "This directory lists all 33 contracted healthcare facilities under the current agreements (including one dental research and application center). Each licensed medical team makes all clinical decisions."
   }
 }

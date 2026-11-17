@@ -22,7 +22,8 @@
     "journey": "Hasta Yolculuğu",
     "about": "Hakkımızda",
     "faq": "SSS",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "facilities": "Kuruluşlar"
   },
   "common": {
     "ctaPrimary": "İletişime geçin",
@@ -452,5 +453,31 @@
     "title": "Sayfa bulunamadı",
     "text": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
     "back": "Ana sayfaya dön"
+  },
+  "facilitiesPage": {
+    "metaTitle": "Anlaşmalı Sağlık Kuruluşları – HEALIX MEDICAL",
+    "metaDescription": "Medical Park, Liv Hospital ve bağlı üniversite merkezlerini kapsayan Türkiye’deki 33 anlaşmalı sağlık kuruluşunu inceleyin.",
+    "eyebrow": "Anlaşmalı Ağ",
+    "title": "Türkiye’de 33 anlaşmalı sağlık kuruluşu",
+    "lead": "HEALIX MEDICAL; Medical Park, Liv Hospital, bağlı üniversite hastaneleri ve bir ağız ve diş sağlığı merkezini kapsayan iki sözleşme altındaki 33 kuruluşla iletişimi koordine eder. Tüm tıbbi kararlar ilgili kuruluşun lisanslı hekimlerine aittir.",
+    "stats": {
+      "totalLabel": "Anlaşmalı kuruluş",
+      "citiesLabel": "Türkiye’de şehir",
+      "agreementsLabel": "Geçerli sözleşme"
+    },
+    "filters": {
+      "all": "Tümü",
+      "liv": "Liv Hospital",
+      "mp": "Medical Park & VM",
+      "university": "Üniversite Merkezleri"
+    },
+    "badges": {
+      "hospital": "Hastane",
+      "dental": "Diş Sağlığı Merkezi",
+      "agreementMlp": "MLP / Medical Park Sözleşmesi",
+      "agreementLiv": "Liv Ulus ve Vadistanbul Sözleşmesi"
+    },
+    "noticeTitle": "Koordinasyon notu",
+    "notice": "Bu rehber mevcut sözleşmeler kapsamındaki 33 sağlık kuruluşunun tamamını (bir ağız ve diş sağlığı uygulama merkezi dahil) listeler. Tıbbi değerlendirme ve tedavi kararları yalnızca ilgili kuruluşun lisanslı ekibine aittir."
   }
 }

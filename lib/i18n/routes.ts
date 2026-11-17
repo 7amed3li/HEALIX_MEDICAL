@@ -8,6 +8,7 @@ import { getServiceById, type ServiceId } from "@/content/services";
 export const staticPages = {
   home: "",
   services: "/services",
+  facilities: "/facilities",
   journey: "/patient-journey",
   about: "/about",
   faq: "/faq",

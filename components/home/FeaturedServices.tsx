@@ -17,7 +17,7 @@ export function FeaturedServices({ locale, dict, serviceDict }: Props) {
   const others = services.filter((s) => !s.featured);
 
   return (
-    <section className="bg-white py-20 sm:py-24 lg:py-28">
+    <section className="bg-white py-14 sm:py-20 lg:py-28">
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
           <p>

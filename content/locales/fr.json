@@ -22,7 +22,8 @@
     "journey": "Parcours patient",
     "about": "À propos",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "facilities": "Établissements"
   },
   "common": {
     "ctaPrimary": "Faire une demande",
@@ -452,5 +453,31 @@
     "title": "Page introuvable",
     "text": "La page que vous recherchez n’existe pas ou a été déplacée.",
     "back": "Retour à l’accueil"
+  },
+  "facilitiesPage": {
+    "metaTitle": "Établissements conventionnés – HEALIX MEDICAL",
+    "metaDescription": "Découvrez les 33 établissements de santé conventionnés en Turquie dans le cadre des accords Medical Park, Liv Hospital et centres universitaires.",
+    "eyebrow": "Réseau conventionné",
+    "title": "33 établissements de santé conventionnés en Turquie",
+    "lead": "HEALIX MEDICAL coordonne la communication avec 33 établissements désignés dans le cadre de deux accords couvrant Medical Park, Liv Hospital, des hôpitaux universitaires et un centre dentaire. Toute décision médicale appartient aux équipes agréées.",
+    "stats": {
+      "totalLabel": "Établissements conventionnés",
+      "citiesLabel": "Villes en Turquie",
+      "agreementsLabel": "Accords en vigueur"
+    },
+    "filters": {
+      "all": "Tous",
+      "liv": "Liv Hospital",
+      "mp": "Medical Park & VM",
+      "university": "Centres universitaires"
+    },
+    "badges": {
+      "hospital": "Hôpital",
+      "dental": "Centre dentaire",
+      "agreementMlp": "Accord MLP / Medical Park",
+      "agreementLiv": "Accord Liv Ulus & Vadistanbul"
+    },
+    "noticeTitle": "Précision réglementaire",
+    "notice": "Ce répertoire présente les 33 établissements conventionnés selon les contrats en vigueur (dont un centre universitaire dentaire). Les équipes médicales agréées décident seules de l’évaluation et des soins."
   }
 }

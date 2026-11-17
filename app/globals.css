@@ -301,6 +301,11 @@
     -webkit-mask-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.35) 24%, black 58%);
     mask-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.35) 24%, black 58%);
   }
+  /* Mobile top hero photo soft bottom fade into ink-navy */
+  .hero-mobile-mask {
+    -webkit-mask-image: linear-gradient(to bottom, black 52%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 52%, transparent 100%);
+  }
   .hero-shade-b {
     background-image: linear-gradient(
       to top,

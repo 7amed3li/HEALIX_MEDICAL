@@ -24,7 +24,7 @@ function firstSentence(text: string): string {
  */
 export function JourneySteps({ locale, dict }: Props) {
   return (
-    <section className="border-y border-line-soft bg-mist-soft py-20 sm:py-24 lg:py-28">
+    <section className="border-y border-line-soft bg-mist-soft py-14 sm:py-20 lg:py-28">
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
           <p>

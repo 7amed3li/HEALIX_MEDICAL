@@ -19,7 +19,7 @@ export function HomeFaq({ locale, dict }: Props) {
   const preview = dict.faqPage.items.slice(0, 4);
 
   return (
-    <section className="border-t border-line-soft bg-mist-soft py-20 sm:py-24 lg:py-28">
+    <section className="border-t border-line-soft bg-mist-soft py-14 sm:py-20 lg:py-28">
       <div className="container-page">
         <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-5">

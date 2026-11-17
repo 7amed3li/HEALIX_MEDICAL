@@ -58,12 +58,13 @@ export function TactileButton({
     ) : null;
 
   if ("href" in rest && rest.href) {
+    const isFull = className.includes("w-full");
     return (
       <motion.div
         whileHover={{ y: -1 }}
         whileTap={{ scale: 0.975, y: 0.5 }}
         transition={SPRING}
-        className="inline-flex"
+        className={isFull ? "flex w-full" : "inline-flex"}
       >
         <Link href={rest.href} onClick={rest.onClick} className={base}>
           {sheen}

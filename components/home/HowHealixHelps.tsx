@@ -8,7 +8,7 @@ type Props = {
 
 export function HowHealixHelps({ dict }: Props) {
   return (
-    <section className="bg-white py-20 sm:py-24 lg:py-28">
+    <section className="bg-white py-14 sm:py-20 lg:py-28">
       <div className="container-page">
         <div className="max-w-2xl">
           <p>

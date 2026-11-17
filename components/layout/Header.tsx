@@ -16,6 +16,7 @@ export function Header({ locale, dict }: Props) {
   const navItems: NavItem[] = [
     { href: pagePath(locale, "home"), label: dict.nav.home, exact: true },
     { href: pagePath(locale, "services"), label: dict.nav.services },
+    { href: pagePath(locale, "facilities"), label: dict.nav.facilities },
     { href: pagePath(locale, "journey"), label: dict.nav.journey },
     { href: pagePath(locale, "about"), label: dict.nav.about },
     { href: pagePath(locale, "faq"), label: dict.nav.faq },
@@ -26,7 +27,7 @@ export function Header({ locale, dict }: Props) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line-soft bg-white/90 shadow-[0_1px_0_rgb(105_183_209/0.22)] backdrop-blur-md">
-      <div className="container-page relative flex h-20 items-center justify-between gap-4">
+      <div className="container-page relative flex h-16 items-center justify-between gap-4 lg:h-20">
         <BrandLogo
           href={pagePath(locale, "home")}
           ariaLabel={dict.a11y.homeLink}

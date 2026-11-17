@@ -18,6 +18,7 @@ export function Footer({ locale, dict }: Props) {
   const pageLinks = [
     { href: pagePath(locale, "home"), label: dict.nav.home },
     { href: pagePath(locale, "services"), label: dict.nav.services },
+    { href: pagePath(locale, "facilities"), label: dict.nav.facilities },
     { href: pagePath(locale, "journey"), label: dict.nav.journey },
     { href: pagePath(locale, "about"), label: dict.nav.about },
     { href: pagePath(locale, "faq"), label: dict.nav.faq },

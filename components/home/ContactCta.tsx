@@ -16,7 +16,7 @@ type Props = {
  */
 export function ContactCta({ locale, dict }: Props) {
   return (
-    <section className="bg-white py-20 sm:py-24 lg:py-28">
+    <section className="bg-white py-14 sm:py-20 lg:py-28">
       <div className="container-page">
         <div className="on-dark surface-dark grain relative overflow-hidden rounded-[2rem] px-7 py-12 shadow-lift sm:px-12 sm:py-14 lg:flex lg:items-center lg:justify-between lg:gap-12">
           <span
