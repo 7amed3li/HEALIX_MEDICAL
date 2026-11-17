@@ -37,9 +37,9 @@ const variantClasses: Record<Variant, string> = {
 };
 
 /**
- * Kitchen-inspired Tactile Button:
- * Features crisp 1px inner top highlight, subtle resting depth, and calibrated
- * spring press physics (`scale: 0.975`) without bouncy excess.
+ * Tactile + React Bits Shiny Button:
+ * Combines Kitchen's inner highlight & spring press physics with a subtle
+ * React Bits light sheen sweep on hover.
  */
 export function TactileButton({
   children,
@@ -47,7 +47,15 @@ export function TactileButton({
   className = "",
   ...rest
 }: Props) {
-  const base = `inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-colors duration-200 disabled:pointer-events-none disabled:opacity-60 ${variantClasses[variant]} ${className}`;
+  const base = `group relative overflow-hidden inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-colors duration-200 disabled:pointer-events-none disabled:opacity-60 ${variantClasses[variant]} ${className}`;
+
+  const sheen =
+    variant === "primary" ? (
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
+      />
+    ) : null;
 
   if ("href" in rest && rest.href) {
     return (
@@ -58,7 +66,8 @@ export function TactileButton({
         className="inline-flex"
       >
         <Link href={rest.href} onClick={rest.onClick} className={base}>
-          {children}
+          {sheen}
+          <span className="relative z-10 inline-flex items-center gap-2">{children}</span>
         </Link>
       </motion.div>
     );
@@ -75,7 +84,8 @@ export function TactileButton({
       transition={SPRING}
       className={base}
     >
-      {children}
+      {sheen}
+      <span className="relative z-10 inline-flex items-center gap-2">{children}</span>
     </motion.button>
   );
 }

@@ -8,6 +8,7 @@ import { servicePath } from "@/lib/i18n/routes";
 import { serviceImage } from "@/lib/service-images";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { TactileButton } from "@/components/ui/TactileButton";
+import { SpotlightCard } from "@/components/ui/SpotlightCard";
 
 type Props = {
   locale: Locale;
@@ -38,7 +39,10 @@ export function ServiceCard({
     const previewPoints = content.coordination.slice(0, 3);
 
     return (
-      <article className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-line-soft bg-white shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lift">
+      <SpotlightCard
+        className="group flex flex-col rounded-[1.75rem] border border-line-soft bg-white shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lift"
+      >
+        <article data-gsap-item className="flex flex-1 flex-col">
         <div className="relative aspect-[16/8] overflow-hidden sm:aspect-[16/7]">
           <Image
             src={image}
@@ -89,12 +93,14 @@ export function ServiceCard({
             </TactileButton>
           </div>
         </div>
-      </article>
+        </article>
+      </SpotlightCard>
     );
   }
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-[1.5rem] border border-line-soft bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
+    <SpotlightCard className="group flex flex-col rounded-[1.5rem] border border-line-soft bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
+      <article data-gsap-item className="flex flex-1 flex-col">
       <div className="relative aspect-[16/9] overflow-hidden">
         <Image
           src={image}
@@ -134,6 +140,7 @@ export function ServiceCard({
           </Link>
         </div>
       </div>
-    </article>
+      </article>
+    </SpotlightCard>
   );
 }

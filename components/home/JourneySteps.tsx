@@ -66,6 +66,7 @@ export function JourneySteps({ locale, dict }: Props) {
             {dict.journey.steps.map((step, index) => (
               <li
                 key={step.title}
+                data-gsap-item
                 className="relative flex gap-5 lg:flex-col lg:items-center lg:gap-0 lg:text-center"
               >
                 {/* Numeral + dot rail (collapses into the column flow on desktop) */}

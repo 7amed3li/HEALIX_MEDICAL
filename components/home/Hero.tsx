@@ -5,6 +5,7 @@ import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
 import { BdiText } from "@/components/ui/BdiText";
 import { TactileButton } from "@/components/ui/TactileButton";
+import { BlurText } from "@/components/ui/BlurText";
 
 type Props = {
   locale: Locale;
@@ -44,8 +45,8 @@ export function Hero({ locale, dict }: Props) {
         <div className="absolute inset-0 bg-ink/25 lg:bg-ink/10" />
       </div>
 
-      {/* Full-bleed consultation image at the inline-end, blended into the navy */}
-      <div className="anim-hero-img pointer-events-none absolute inset-y-0 end-0 hidden w-[58%] lg:block">
+      {/* Full-bleed consultation image at the inline-end, dissolved seamlessly via alpha mask */}
+      <div className="anim-hero-img hero-photo-mask pointer-events-none absolute inset-y-0 end-0 hidden w-[58%] lg:block">
         <Image
           src={isRtl ? "/images/hero-coordination-rtl.jpg" : "/images/hero-coordination.jpg"}
           alt={dict.home.hero.imageAlt}
@@ -54,7 +55,6 @@ export function Hero({ locale, dict }: Props) {
           sizes="58vw"
           className="object-cover object-center"
         />
-        <div className="hero-shade-x absolute inset-0" aria-hidden="true" />
         <div className="hero-shade-b absolute inset-0" aria-hidden="true" />
       </div>
 
@@ -67,8 +67,8 @@ export function Hero({ locale, dict }: Props) {
             </span>
           </p>
 
-          <h1 className="anim-hero-2 mt-6 text-[clamp(2.6rem,5.4vw,4.4rem)] font-medium leading-[1.08] text-white">
-            {dict.home.hero.title}
+          <h1 className="mt-6 text-[clamp(2.6rem,5.4vw,4.4rem)] font-medium leading-[1.08] text-white">
+            <BlurText text={dict.home.hero.title} delay={0.05} />
           </h1>
 
           <p className="anim-hero-3 mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">

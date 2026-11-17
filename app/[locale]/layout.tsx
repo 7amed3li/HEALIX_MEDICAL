@@ -9,6 +9,7 @@ import { organizationJsonLd } from "@/lib/seo/jsonld";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MotionProvider } from "@/components/ui/MotionProvider";
+import { SmoothScrollProvider } from "@/components/ui/SmoothScrollProvider";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext", "cyrillic"],
@@ -84,11 +85,13 @@ export default async function LocaleRootLayout({
           {dict.a11y.skipToContent}
         </a>
         <MotionProvider>
-          <Header locale={locale} dict={dict} />
-          <main id="main-content" className="flex-1">
-            {children}
-          </main>
-          <Footer locale={locale} dict={dict} />
+          <SmoothScrollProvider>
+            <Header locale={locale} dict={dict} />
+            <main id="main-content" className="flex-1">
+              {children}
+            </main>
+            <Footer locale={locale} dict={dict} />
+          </SmoothScrollProvider>
         </MotionProvider>
       </body>
     </html>

@@ -292,27 +292,19 @@
     @apply inline-flex items-center justify-center gap-2 rounded-full border border-line bg-white font-medium text-navy transition-all duration-300 hover:border-gold-deep/50 hover:shadow-soft active:translate-y-px;
   }
 
-  /* Hero image gradient masks – fade the photo into the navy from the text side */
-  .hero-shade-x {
-    background-image: linear-gradient(
-      to right,
-      rgb(8 26 41 / 0.95) 0%,
-      rgb(8 26 41 / 0.55) 42%,
-      rgb(8 26 41 / 0) 78%
-    );
+  /* Seamless alpha mask dissolving the Hero photo 100% into the navy & world map (zero seam) */
+  .hero-photo-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.35) 24%, black 58%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.35) 24%, black 58%);
   }
-  [dir="rtl"] .hero-shade-x {
-    background-image: linear-gradient(
-      to left,
-      rgb(8 26 41 / 0.95) 0%,
-      rgb(8 26 41 / 0.55) 42%,
-      rgb(8 26 41 / 0) 78%
-    );
+  [dir="rtl"] .hero-photo-mask {
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.35) 24%, black 58%);
+    mask-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.35) 24%, black 58%);
   }
   .hero-shade-b {
     background-image: linear-gradient(
       to top,
-      rgb(8 26 41 / 0.9) 0%,
+      rgb(8 26 41 / 0.92) 0%,
       rgb(8 26 41 / 0) 52%
     );
   }

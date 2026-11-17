@@ -1,6 +1,10 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 type Props = {
   children: React.ReactNode;
@@ -8,11 +12,10 @@ type Props = {
 };
 
 /**
- * Scroll-once subtle section reveal (240ms):
- * - Content renders 100% visible in SSR HTML and when JavaScript is disabled.
- * - On client mount, only if the element is below the initial viewport AND
- *   `prefers-reduced-motion` is not enabled, it prepares a subtle fade+translate (6px)
- *   and reveals once when entering the viewport.
+ * GSAP + ScrollTrigger section reveal (runs once when entering the viewport):
+ * - SSR HTML is 100% visible by default (no hidden content if JS fails).
+ * - Respects `prefers-reduced-motion` automatically.
+ * - If child elements have `data-gsap-item`, they stagger in cleanly; otherwise the block animates as a whole.
  */
 export function RevealOnScroll({ children, className = "" }: Props) {
   const ref = useRef<HTMLDivElement>(null);
@@ -20,38 +23,35 @@ export function RevealOnScroll({ children, className = "" }: Props) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      return;
-    }
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const rect = el.getBoundingClientRect();
-    // If already visible in viewport on load, keep visible without re-animating
-    if (rect.top < window.innerHeight * 0.95) {
-      return;
-    }
+    if (rect.top < window.innerHeight * 0.92) return;
 
-    el.setAttribute("data-reveal", "pending");
+    const ctx = gsap.context(() => {
+      const items = el.querySelectorAll("[data-gsap-item]");
+      const targets = items.length > 0 ? items : el;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            el.setAttribute("data-reveal", "shown");
-            observer.disconnect();
-            break;
-          }
-        }
-      },
-      { threshold: 0.08, rootMargin: "0px 0px -24px 0px" }
-    );
+      gsap.from(targets, {
+        y: 16,
+        opacity: 0,
+        duration: 0.45,
+        stagger: items.length > 0 ? 0.06 : 0,
+        ease: "power2.out",
+        clearProps: "transform,opacity",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 88%",
+          once: true,
+        },
+      });
+    }, el);
 
-    observer.observe(el);
-    return () => observer.disconnect();
+    return () => ctx.revert();
   }, []);
 
   return (
-    <div ref={ref} className={`reveal-section ${className}`}>
+    <div ref={ref} className={className}>
       {children}
     </div>
   );
