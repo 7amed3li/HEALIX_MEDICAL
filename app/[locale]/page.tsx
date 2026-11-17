@@ -4,7 +4,6 @@ import { isLocale } from "@/lib/i18n/config";
 import { getDictionary, getServiceDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, samePathForAllLocales } from "@/lib/seo/metadata";
 import { Hero } from "@/components/home/Hero";
-import { InfoStrip } from "@/components/home/InfoStrip";
 import { FeaturedServices } from "@/components/home/FeaturedServices";
 import { JourneySteps } from "@/components/home/JourneySteps";
 import { HowHealixHelps } from "@/components/home/HowHealixHelps";
@@ -41,7 +40,6 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <Hero locale={locale} dict={dict} />
-      <InfoStrip dict={dict} />
       <RevealOnScroll>
         <FeaturedServices locale={locale} dict={dict} serviceDict={serviceDict} />
       </RevealOnScroll>
