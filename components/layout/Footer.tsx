@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { InstagramIcon, FacebookIcon } from "@/components/ui/SocialIcons";
-import { localeConfig, locales, type Locale } from "@/lib/i18n/config";
+import { formatNumber, localeConfig, locales, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { pagePath } from "@/lib/i18n/routes";
 import { siteConfig, isValidWhatsAppUrl } from "@/lib/config/site";
@@ -180,7 +180,7 @@ export function Footer({ locale, dict }: Props) {
             <BdiText text={dict.footer.disclaimerShort} />
           </p>
           <p className="mt-3 text-white/55">
-            © {year} <bdi dir="ltr">{siteConfig.brand}</bdi>. {dict.footer.rights}
+            © {formatNumber(year, locale)} <bdi dir="ltr">{siteConfig.brand}</bdi>. {dict.footer.rights}
           </p>
         </div>
       </div>
