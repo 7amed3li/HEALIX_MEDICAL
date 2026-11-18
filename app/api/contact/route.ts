@@ -35,7 +35,7 @@ export async function POST(request: Request) {
 
   const receiverUrl = process.env.CONTACT_RECEIVER_URL;
   const resendKey = process.env.RESEND_API_KEY;
-  const targetEmail = siteConfig.contact.email;
+  const targetEmail = process.env.RESEND_TO_EMAIL || siteConfig.contact.email;
 
   if (!receiverUrl && !(resendKey && targetEmail)) {
     return NextResponse.json({ ok: false, reason: "not_configured" }, { status: 503 });
