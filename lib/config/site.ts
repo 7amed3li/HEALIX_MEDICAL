@@ -8,7 +8,7 @@ export const siteConfig = {
   brand: "HEALIX MEDICAL",
 
   /** Public site URL (used for canonical, hreflang, sitemap, Open Graph). Set NEXT_PUBLIC_SITE_URL in production. */
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://healixistanbul.com.tr").replace(/\/$/, ""),
 
   /**
    * Official extracted emblem from the HEALIX MEDICAL reference card (transparent PNG).
@@ -31,10 +31,8 @@ export const siteConfig = {
     phone: "+905521389721" as string | null,
     /** Confirmed official public email. */
     email: "healixtr@gmail.com" as string | null,
-    /**
-     * PENDING – only a valid https://wa.me/<number> link is accepted once explicitly confirmed for WhatsApp.
-     */
-    whatsapp: null as string | null,
+    /** Confirmed official WhatsApp direct link. */
+    whatsapp: "https://wa.me/905521389721" as string | null,
   },
 
   /**

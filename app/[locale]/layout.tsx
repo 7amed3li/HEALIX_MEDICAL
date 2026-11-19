@@ -10,6 +10,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MotionProvider } from "@/components/ui/MotionProvider";
 import { SmoothScrollProvider } from "@/components/ui/SmoothScrollProvider";
+import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext", "cyrillic"],
@@ -91,6 +92,7 @@ export default async function LocaleRootLayout({
               {children}
             </main>
             <Footer locale={locale} dict={dict} />
+            <FloatingWhatsApp locale={locale} />
           </SmoothScrollProvider>
         </MotionProvider>
       </body>
