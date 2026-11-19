@@ -32,7 +32,7 @@ export function FloatingWhatsApp({ locale }: Props) {
       initial={{ opacity: 0, scale: 0.72, y: 24 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ type: "spring", stiffness: 320, damping: 24, delay: 0.4 }}
-      className="fixed bottom-5 end-5 z-40 sm:bottom-7 sm:end-7"
+      className="fixed bottom-5 right-5 z-40 sm:bottom-7 sm:right-7"
     >
       <motion.a
         href={url}
