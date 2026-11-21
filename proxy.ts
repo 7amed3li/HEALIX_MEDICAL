@@ -30,10 +30,10 @@ export function proxy(request: NextRequest) {
   const userAgent = request.headers.get("user-agent") || "";
   const url = request.nextUrl.clone();
 
-  // Serve full 200 OK SSR HTML directly on `/` for AI agents (Manus, ChatGPT, Perplexity)
-  // and search crawlers so lightweight fetchers never stall on a 307 redirect.
-  if (pathname === "/" && CRAWLER_UA.test(userAgent)) {
-    url.pathname = `/${defaultLocale}`;
+  // Serve full 200 OK SSR HTML directly for AI agents (Manus, ChatGPT, Perplexity)
+  // and search crawlers on unprefixed paths so fetchers never stall on 307 redirects.
+  if (CRAWLER_UA.test(userAgent)) {
+    url.pathname = pathname === "/" ? `/${defaultLocale}` : `/${defaultLocale}${pathname}`;
     return NextResponse.rewrite(url);
   }
 
@@ -44,6 +44,6 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|images|icons|favicon\\.ico|icon\\.png|sitemap\\.xml|robots\\.txt|llms\\.txt|llms-full\\.txt|google25a857f9c98e0560\\.html).*)",
+    "/((?!api|_next/static|_next/image|images|icons|favicon\\.ico|icon\\.png|manifest\\.webmanifest|sitemap\\.xml|robots\\.txt|llms\\.txt|llms-full\\.txt|google25a857f9c98e0560\\.html).*)",
   ],
 };

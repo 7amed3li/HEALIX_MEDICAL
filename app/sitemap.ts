@@ -3,6 +3,7 @@ import { defaultLocale, localeConfig, locales } from "@/lib/i18n/config";
 import { staticPages } from "@/lib/i18n/routes";
 import { services } from "@/content/services";
 import { siteConfig } from "@/lib/config/site";
+import { serviceImage } from "@/lib/service-images";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -24,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: key === "home" || key === "services" ? "weekly" : "monthly",
         priority: key === "home" ? 1 : key === "services" ? 0.9 : 0.7,
         alternates: { languages },
+        ...(key === "home" ? { images: [`${siteConfig.url}/images/og-healix.jpg`] } : {}),
       });
     }
   }
@@ -43,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly",
         priority: svc.featured ? 0.85 : 0.8,
         alternates: { languages },
+        images: [`${siteConfig.url}${serviceImage(svc.id)}`],
       });
     }
   }
