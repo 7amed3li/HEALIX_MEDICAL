@@ -1,6 +1,9 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { defaultLocale, isLocale, locales, type Locale } from "@/lib/i18n/config";
 
+const CRAWLER_UA =
+  /bot|crawl|spider|slurp|gpt|openai|chatgpt|claude|anthropic|perplexity|manus|applebot|yandex|bing|google|facebookexternalhit|twitterbot|whatsapp|telegram|curl|wget|python/i;
+
 function detectLocale(request: NextRequest): Locale {
   const header = request.headers.get("accept-language");
   if (!header) return defaultLocale;
@@ -24,8 +27,17 @@ export function proxy(request: NextRequest) {
   );
   if (hasLocalePrefix) return;
 
-  const locale = detectLocale(request);
+  const userAgent = request.headers.get("user-agent") || "";
   const url = request.nextUrl.clone();
+
+  // Serve full 200 OK SSR HTML directly on `/` for AI agents (Manus, ChatGPT, Perplexity)
+  // and search crawlers so lightweight fetchers never stall on a 307 redirect.
+  if (pathname === "/" && CRAWLER_UA.test(userAgent)) {
+    url.pathname = `/${defaultLocale}`;
+    return NextResponse.rewrite(url);
+  }
+
+  const locale = detectLocale(request);
   url.pathname = pathname === "/" ? `/${locale}` : `/${locale}${pathname}`;
   return NextResponse.redirect(url);
 }

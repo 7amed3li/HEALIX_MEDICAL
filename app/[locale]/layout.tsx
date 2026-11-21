@@ -48,6 +48,17 @@ export const metadata: Metadata = {
     default: `${siteConfig.brand} – International Patient Coordination`,
     template: `%s | ${siteConfig.brand}`,
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export function generateStaticParams() {
