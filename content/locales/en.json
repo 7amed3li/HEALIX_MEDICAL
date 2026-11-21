@@ -19,6 +19,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "guides": "Guides",
     "journey": "Patient Journey",
     "about": "About",
     "faq": "FAQ",
@@ -243,6 +244,20 @@
     "noticeTitle": "Medical notice",
     "notice": "This page provides general information only and is not a substitute for consultation with a doctor. HEALIX MEDICAL does not diagnose, treat or guarantee eligibility, results, costs or durations. All medical decisions are made by the licensed hospital and medical team.",
     "ctaTitle": "Have a question about this service?",
+    "ctaText": "Send a short enquiry. Please do not include medical reports or diagnoses."
+  },
+  "guidesPage": {
+    "metaTitle": "Guides – Transplant Law & Donor Rules in Türkiye",
+    "metaDescription": "Plain-language guides to organ transplant law in Türkiye for foreign patients: living-donor rules, the ethics commission, and the documents you will need.",
+    "title": "Guides for patients and families",
+    "lead": "Clear, general information about the legal framework that governs organ transplantation in Türkiye — written for international patients and their families. These guides explain the rules; the transplant centre and the competent authorities apply them to each case.",
+    "backLabel": "All guides",
+    "faqTitle": "Questions about this guide",
+    "sourcesTitle": "Sources",
+    "relatedTitle": "Related transplant services",
+    "relatedGuidesTitle": "Other guides",
+    "noticeTitle": "Important note",
+    "ctaTitle": "Have a question about your case?",
     "ctaText": "Send a short enquiry. Please do not include medical reports or diagnoses."
   },
   "contact": {

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { defaultLocale, localeConfig, locales } from "@/lib/i18n/config";
 import { staticPages } from "@/lib/i18n/routes";
 import { services } from "@/content/services";
+import { guides } from "@/content/guides";
 import { siteConfig } from "@/lib/config/site";
 import { serviceImage } from "@/lib/service-images";
 
@@ -46,6 +47,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: svc.featured ? 0.85 : 0.8,
         alternates: { languages },
         images: [`${siteConfig.url}${serviceImage(svc.id)}`],
+      });
+    }
+  }
+
+  // 3. All 3 guide detail pages across all 5 locales (15 localized guide URLs).
+  //    The guides index itself is covered by the staticPages loop above.
+  for (const guide of guides) {
+    const languages: Record<string, string> = {};
+    for (const loc of locales) {
+      languages[localeConfig[loc].htmlLang] = `${siteConfig.url}/${loc}/guides/${guide.slugs[loc]}`;
+    }
+    languages["x-default"] = `${siteConfig.url}/${defaultLocale}/guides/${guide.slugs[defaultLocale]}`;
+
+    for (const loc of locales) {
+      entries.push({
+        url: `${siteConfig.url}/${loc}/guides/${guide.slugs[loc]}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.8,
+        alternates: { languages },
       });
     }
   }

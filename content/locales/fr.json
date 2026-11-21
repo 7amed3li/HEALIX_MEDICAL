@@ -19,6 +19,7 @@
   "nav": {
     "home": "Accueil",
     "services": "Services",
+    "guides": "Guides",
     "journey": "Parcours patient",
     "about": "À propos",
     "faq": "FAQ",
@@ -243,6 +244,20 @@
     "noticeTitle": "Avertissement médical",
     "notice": "Cette page fournit uniquement des informations générales et ne remplace pas une consultation médicale. HEALIX MEDICAL ne pose pas de diagnostic, ne traite pas et ne garantit ni l’éligibilité, ni les résultats, ni les coûts, ni les durées. Toutes les décisions médicales sont prises par l’hôpital et l’équipe médicale agréés.",
     "ctaTitle": "Une question sur ce service ?",
+    "ctaText": "Envoyez une courte demande. Merci de ne joindre ni rapport médical ni diagnostic."
+  },
+  "guidesPage": {
+    "metaTitle": "Guides – Droit de la transplantation et règles du don en Turquie",
+    "metaDescription": "Des guides en langage clair sur le droit turc de la transplantation pour les patients étrangers : règles du donneur vivant, commission d'éthique et documents à préparer.",
+    "title": "Guides pour les patients et leurs familles",
+    "lead": "Des informations générales et claires sur le cadre juridique qui régit la transplantation d'organes en Turquie, rédigées pour les patients internationaux et leurs familles. Ces guides expliquent les règles en vigueur ; le centre de transplantation et les autorités compétentes les appliquent à chaque cas.",
+    "backLabel": "Tous les guides",
+    "faqTitle": "Questions sur ce guide",
+    "sourcesTitle": "Sources",
+    "relatedTitle": "Services de transplantation associés",
+    "relatedGuidesTitle": "Autres guides",
+    "noticeTitle": "Note importante",
+    "ctaTitle": "Une question sur votre situation ?",
     "ctaText": "Envoyez une courte demande. Merci de ne joindre ni rapport médical ni diagnostic."
   },
   "contact": {

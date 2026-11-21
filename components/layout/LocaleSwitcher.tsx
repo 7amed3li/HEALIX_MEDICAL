@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { Check, ChevronDown, Globe } from "lucide-react";
 import { localeConfig, locales, type Locale } from "@/lib/i18n/config";
 import { findServiceByAnySlug } from "@/content/services";
+import { findGuideByAnySlug } from "@/content/guides";
 
 type Props = {
   currentLocale: Locale;
@@ -23,6 +24,14 @@ export function resolveLocalePath(pathname: string, targetLocale: Locale): strin
       return `/${targetLocale}/services/${svc.slugs[targetLocale]}`;
     }
     return `/${targetLocale}/services`;
+  }
+
+  if (segments[1] === "guides" && segments[2]) {
+    const guide = findGuideByAnySlug(segments[2]);
+    if (guide) {
+      return `/${targetLocale}/guides/${guide.slugs[targetLocale]}`;
+    }
+    return `/${targetLocale}/guides`;
   }
 
   const rest = segments.slice(1).join("/");

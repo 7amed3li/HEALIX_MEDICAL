@@ -19,6 +19,7 @@
   "nav": {
     "home": "Ana Sayfa",
     "services": "Hizmetler",
+    "guides": "Rehberler",
     "journey": "Hasta Yolculuğu",
     "about": "Hakkımızda",
     "faq": "SSS",
@@ -243,6 +244,20 @@
     "noticeTitle": "Tıbbi uyarı",
     "notice": "Bu sayfadaki bilgiler yalnızca genel bilgilendirme amaçlıdır ve hekim muayenesinin yerini tutmaz. HEALIX MEDICAL tanı koymaz, tedavi uygulamaz; uygunluk, sonuç, maliyet veya süre garantisi vermez. Tüm tıbbi kararlar lisanslı hastane ve sağlık ekibine aittir.",
     "ctaTitle": "Bu hizmet hakkında sorunuz mu var?",
+    "ctaText": "Kısa bir başvuru gönderin. Lütfen tıbbi rapor veya tanı bilgisi eklemeyin."
+  },
+  "guidesPage": {
+    "metaTitle": "Rehberler – Türkiye'de Organ Nakli Hukuku ve Verici Kuralları",
+    "metaDescription": "Yabancı hastalar için Türkiye'de organ nakli hukukuna dair sade dilli rehberler: canlı verici kuralları, Etik Komisyonu ve ihtiyaç duyacağınız belgeler.",
+    "title": "Hastalar ve aileleri için rehberler",
+    "lead": "Türkiye'de organ naklini düzenleyen yasal çerçeveye dair, yabancı hastalar ve aileleri için hazırlanmış açık ve genel bilgiler. Bu rehberler yürürlükteki kuralları açıklar; kuralları her bir vakaya nakil merkezi ve yetkili makamlar uygular.",
+    "backLabel": "Tüm rehberler",
+    "faqTitle": "Bu rehberle ilgili sorular",
+    "sourcesTitle": "Kaynaklar",
+    "relatedTitle": "İlgili nakil hizmetleri",
+    "relatedGuidesTitle": "Diğer rehberler",
+    "noticeTitle": "Önemli not",
+    "ctaTitle": "Durumunuzla ilgili sorunuz mu var?",
     "ctaText": "Kısa bir başvuru gönderin. Lütfen tıbbi rapor veya tanı bilgisi eklemeyin."
   },
   "contact": {

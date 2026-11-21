@@ -16,6 +16,7 @@ export function Header({ locale, dict }: Props) {
   const navItems: NavItem[] = [
     { href: pagePath(locale, "home"), label: dict.nav.home, exact: true },
     { href: pagePath(locale, "services"), label: dict.nav.services },
+    { href: pagePath(locale, "guides"), label: dict.nav.guides },
     { href: pagePath(locale, "facilities"), label: dict.nav.facilities },
     { href: pagePath(locale, "journey"), label: dict.nav.journey },
     { href: pagePath(locale, "about"), label: dict.nav.about },

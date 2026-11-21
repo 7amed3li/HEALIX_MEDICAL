@@ -17,6 +17,12 @@ const SERVICE_IDS = [
   "hematology",
 ];
 
+const GUIDE_IDS = [
+  "transplant-law-foreign-patients",
+  "who-can-be-a-living-donor",
+  "ethics-commission-documents-approval",
+];
+
 // Decorative emoji regex (excludes standard © ® ™ symbols)
 const EMOJI_RE = /(?!©|®|™)\p{Extended_Pictographic}/gu;
 
@@ -50,16 +56,23 @@ function collectPaths(obj, prefix = "", out = new Map()) {
 
 const enLocale = JSON.parse(fs.readFileSync("content/locales/en.json", "utf8"));
 const enServices = JSON.parse(fs.readFileSync("content/services/en.json", "utf8"));
+const enGuides = JSON.parse(fs.readFileSync("content/guides/en.json", "utf8"));
 const enLocalePaths = collectPaths(enLocale);
 const enServicePaths = collectPaths(enServices);
+const enGuidePaths = collectPaths(enGuides);
 
 for (const id of SERVICE_IDS) {
   if (!(id in enServices)) fail(`Missing service ID "${id}" in content/services/en.json`);
 }
 
+for (const id of GUIDE_IDS) {
+  if (!(id in enGuides)) fail(`Missing guide ID "${id}" in content/guides/en.json`);
+}
+
 for (const loc of LOCALES) {
   const locFile = `content/locales/${loc}.json`;
   const srvFile = `content/services/${loc}.json`;
+  const guideFile = `content/guides/${loc}.json`;
   if (!fs.existsSync(locFile)) {
     fail(`Missing file ${locFile}`);
     continue;
@@ -68,12 +81,18 @@ for (const loc of LOCALES) {
     fail(`Missing file ${srvFile}`);
     continue;
   }
+  if (!fs.existsSync(guideFile)) {
+    fail(`Missing file ${guideFile}`);
+    continue;
+  }
 
   const locData = JSON.parse(fs.readFileSync(locFile, "utf8"));
   const srvData = JSON.parse(fs.readFileSync(srvFile, "utf8"));
+  const guideData = JSON.parse(fs.readFileSync(guideFile, "utf8"));
 
   const locPaths = collectPaths(locData);
   const srvPaths = collectPaths(srvData);
+  const guidePaths = collectPaths(guideData);
 
   for (const [k, t] of enLocalePaths.entries()) {
     if (!locPaths.has(k)) fail(`${locFile}: missing key "${k}"`);
@@ -93,6 +112,16 @@ for (const loc of LOCALES) {
   }
   for (const k of srvPaths.keys()) {
     if (!enServicePaths.has(k)) fail(`${srvFile}: extra key "${k}" not in en.json`);
+  }
+
+  for (const [k, t] of enGuidePaths.entries()) {
+    if (!guidePaths.has(k)) fail(`${guideFile}: missing key "${k}"`);
+    else if (guidePaths.get(k) !== t) {
+      fail(`${guideFile}: type/length mismatch at "${k}" (expected ${t}, got ${guidePaths.get(k)})`);
+    }
+  }
+  for (const k of guidePaths.keys()) {
+    if (!enGuidePaths.has(k)) fail(`${guideFile}: extra key "${k}" not in en.json`);
   }
 }
 
@@ -118,5 +147,5 @@ if (errors > 0) {
   process.exit(1);
 }
 console.log(
-  `[i18n-check] OK — validated ${LOCALES.length} locales (${enLocalePaths.size} UI keys + ${enServicePaths.size} service keys each) & zero decorative emojis.`
+  `[i18n-check] OK — validated ${LOCALES.length} locales (${enLocalePaths.size} UI keys + ${enServicePaths.size} service keys + ${enGuidePaths.size} guide keys each) & zero decorative emojis.`
 );
