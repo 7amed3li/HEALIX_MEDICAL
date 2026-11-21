@@ -21,7 +21,7 @@ export function BlurText({ text, className = "", delay = 0 }: Props) {
       {words.map((word, idx) => (
         <motion.span
           key={`${word}-${idx}`}
-          initial={{ opacity: 0, y: 10, filter: "blur(5px)" }}
+          initial={{ opacity: 0.92, y: 6, filter: "blur(2px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{
             duration: 0.36,

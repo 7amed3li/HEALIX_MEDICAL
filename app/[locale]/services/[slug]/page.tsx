@@ -5,7 +5,8 @@ import type { Metadata } from "next";
 import { ArrowLeft, ArrowRight, CheckCircle2, Info, ShieldAlert } from "lucide-react";
 import { formatNumber, isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { getDictionary, getServiceDictionary } from "@/lib/i18n/dictionaries";
-import { buildMetadata, type LocalizedPaths } from "@/lib/seo/metadata";
+import { buildMetadata, absoluteUrl, type LocalizedPaths } from "@/lib/seo/metadata";
+import { serviceJsonLd } from "@/lib/seo/jsonld";
 import { getServiceBySlug, services } from "@/content/services";
 import { pagePath, servicePath } from "@/lib/i18n/routes";
 import { serviceImage } from "@/lib/service-images";
@@ -67,9 +68,21 @@ export default async function ServiceDetailPage({ params }: Props) {
   const isTransplant =
     svc.id === "liver-transplantation" || svc.id === "kidney-transplantation";
   const related = services.filter((s) => s.id !== svc.id).slice(0, 4);
+  const jsonLd = serviceJsonLd({
+    locale,
+    name: content.name,
+    description: content.metaDescription,
+    url: absoluteUrl(`/${locale}/services/${svc.slugs[locale]}`),
+    homeLabel: dict.nav.home,
+    servicesLabel: dict.nav.services,
+  });
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* 1. Specialty Hero on light #EFF5F7 (mist) with #10283E headings & SpecialtyVisual */}
       <section className="page-hero">
         <div className="container-page">

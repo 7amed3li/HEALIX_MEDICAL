@@ -4,6 +4,7 @@ import { Building2, Info } from "lucide-react";
 import { formatNumber, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, samePathForAllLocales } from "@/lib/seo/metadata";
+import { facilitiesItemListJsonLd } from "@/lib/seo/jsonld";
 import { facilities } from "@/content/facilities";
 import { FacilitiesDirectory } from "@/components/facilities/FacilitiesDirectory";
 import { ContactCta } from "@/components/home/ContactCta";
@@ -30,9 +31,18 @@ export default async function FacilitiesPage({ params }: Props) {
   const dict = await getDictionary(locale);
   const t = dict.facilitiesPage;
   const uniqueCities = new Set(facilities.map((f) => f.city)).size;
+  const jsonLd = facilitiesItemListJsonLd({
+    locale: locale as Locale,
+    title: t.title,
+    items: facilities.map((f) => ({ name: f.name, city: f.city })),
+  });
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="surface-dark grain relative overflow-hidden py-14 text-white sm:py-20">
         <div
           aria-hidden="true"
