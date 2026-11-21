@@ -31,7 +31,7 @@ Update confirmed company details in a single file: [`lib/config/site.ts`](lib/co
 The form UI and validation (`components/forms/ContactForm.tsx` and `lib/validation/contact.ts`) are separated from delivery (`app/api/contact/route.ts`). Until `CONTACT_RECEIVER_URL` is set in `.env.local`, the form does **not** fake a submission; it informs the visitor cleanly.
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://healixistanbul.com.tr
+NEXT_PUBLIC_SITE_URL=https://www.healixistanbul.com.tr
 CONTACT_RECEIVER_URL=https://your-authorized-webhook-endpoint
 CONTACT_RECEIVER_TOKEN=optional-bearer-token
 ```

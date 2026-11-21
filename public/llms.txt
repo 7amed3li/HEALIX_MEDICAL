@@ -3,19 +3,19 @@
 > International patient coordination and communication services in Türkiye. HEALIX MEDICAL coordinates first contact, travel/hospital communication, and multilingual support across 33 contracted healthcare facilities in Türkiye. All medical diagnosis, eligibility, and treatment decisions remain exclusively with licensed hospitals and medical teams.
 
 ## Official Website & Languages
-- Arabic: https://healixistanbul.com.tr/ar
-- English: https://healixistanbul.com.tr/en
-- French: https://healixistanbul.com.tr/fr
-- Russian: https://healixistanbul.com.tr/ru
-- Turkish: https://healixistanbul.com.tr/tr
+- Arabic: https://www.healixistanbul.com.tr/ar
+- English: https://www.healixistanbul.com.tr/en
+- French: https://www.healixistanbul.com.tr/fr
+- Russian: https://www.healixistanbul.com.tr/ru
+- Turkish: https://www.healixistanbul.com.tr/tr
 
 ## Key Pages
-- Contracted Healthcare Facilities (33 facilities): https://healixistanbul.com.tr/en/facilities
-- Medical Coordination Services (12 specialties): https://healixistanbul.com.tr/en/services
-- Patient Journey: https://healixistanbul.com.tr/en/patient-journey
-- About HEALIX MEDICAL: https://healixistanbul.com.tr/en/about
-- Frequently Asked Questions: https://healixistanbul.com.tr/en/faq
-- Contact & First Enquiry: https://healixistanbul.com.tr/en/contact
+- Contracted Healthcare Facilities (33 facilities): https://www.healixistanbul.com.tr/en/facilities
+- Medical Coordination Services (12 specialties): https://www.healixistanbul.com.tr/en/services
+- Patient Journey: https://www.healixistanbul.com.tr/en/patient-journey
+- About HEALIX MEDICAL: https://www.healixistanbul.com.tr/en/about
+- Frequently Asked Questions: https://www.healixistanbul.com.tr/en/faq
+- Contact & First Enquiry: https://www.healixistanbul.com.tr/en/contact
 
 ## Contracted Healthcare Network (33 Facilities)
 - Dedicated agreement (2 facilities): Liv Hospital Ulus, Liv Hospital Vadistanbul
@@ -24,5 +24,5 @@
 ## Official Contact Channels
 - Phone & WhatsApp: +90 552 138 97 21 (https://wa.me/905521389721)
 - Email: healixtr@gmail.com
-- Sitemap: https://healixistanbul.com.tr/sitemap.xml
-- Full AI Catalog: https://healixistanbul.com.tr/llms-full.txt
+- Sitemap: https://www.healixistanbul.com.tr/sitemap.xml
+- Full AI Catalog: https://www.healixistanbul.com.tr/llms-full.txt

@@ -8,7 +8,7 @@ export const siteConfig = {
   brand: "HEALIX MEDICAL",
 
   /** Public site URL (used for canonical, hreflang, sitemap, Open Graph). Set NEXT_PUBLIC_SITE_URL in production. */
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://healixistanbul.com.tr").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.healixistanbul.com.tr").replace(/\/$/, ""),
 
   /**
    * Official extracted emblem from the HEALIX MEDICAL reference card (transparent PNG).
