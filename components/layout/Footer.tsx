@@ -191,9 +191,16 @@ export function Footer({ locale, dict }: Props) {
           HEALIX
         </div>
 
-        {/* Single hairline divider anchoring the bottom sub-footer */}
-        <div id="site-footer-bottom" className="mt-6 border-t border-white/[0.08] pt-6">
-          <div className="flex flex-col items-start justify-between gap-2 text-xs text-white/55 sm:flex-row sm:items-center">
+        {/* Sub-footer anatomy (top-to-bottom):
+            1. Regulatory / Medical Coordination Disclaimer (unboxed, above the final bar)
+            2. Single hairline divider
+            3. Final terminal anchor: Copyright + Developer Attribution */}
+        <div id="site-footer-bottom" className="mt-8">
+          <p className="max-w-3xl text-start text-[11.5px] leading-[1.65] text-white/50 sm:text-xs">
+            <BdiText text={dict.footer.disclaimerShort} />
+          </p>
+
+          <div className="mt-5 flex flex-col items-start justify-between gap-2 border-t border-white/[0.08] pt-5 text-xs text-white/55 sm:flex-row sm:items-center">
             <p>
               {locale === "ar" ? (
                 <>
@@ -220,10 +227,6 @@ export function Footer({ locale, dict }: Props) {
               </Link>
             </p>
           </div>
-
-          <p className="mt-3 max-w-3xl text-start text-[11px] leading-[1.65] text-white/40 sm:text-[11.5px]">
-            <BdiText text={dict.footer.disclaimerShort} />
-          </p>
         </div>
       </div>
     </footer>
