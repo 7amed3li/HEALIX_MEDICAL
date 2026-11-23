@@ -18,6 +18,7 @@ import { getDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, samePathForAllLocales } from "@/lib/seo/metadata";
 import { pagePath } from "@/lib/i18n/routes";
 import { siteConfig } from "@/lib/config/site";
+import { BdiText } from "@/components/ui/BdiText";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -30,11 +31,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     locale,
     title: isAr
-      ? "دراسة الحالة وهندسة المنصة — HEALIX MEDICAL | Hamed Mohamed"
-      : "Case Study & Platform Architecture — HEALIX MEDICAL | Hamed Mohamed",
+      ? "تصميم وبرمجة المنصة — HEALIX MEDICAL | Hamed Mohamed"
+      : "Design & Development — HEALIX MEDICAL | Hamed Mohamed",
     description: isAr
-      ? "دراسة حالة هندسية لبناء منصة HEALIX MEDICAL بـ ٥ لغات (١٤٢ صفحة ثابتة، ٣٣ منشأة صحية متعاقدة، وتحسين SEO ووكلاء الذكاء الاصطناعي)."
-      : "Full-stack engineering case study for HEALIX MEDICAL: 5 languages with native Arabic RTL, 142 static pages, 33 contracted facilities, and technical SEO + GEO.",
+      ? "تصميم وبرمجة منصة HEALIX MEDICAL بـ ٥ لغات (١٤٢ صفحة ثابتة، ٣٣ منشأة صحية متعاقدة، وتحسين SEO ووكلاء الذكاء الاصطناعي)."
+      : "End-to-end design and full-stack development of HEALIX MEDICAL: 5 languages with native Arabic RTL, 142 static pages, 33 contracted facilities, and technical SEO + GEO.",
     paths: samePathForAllLocales("/tasarim-gelistirme"),
     ogImageAlt: dict.meta.ogImageAlt,
   });
@@ -128,15 +129,28 @@ export default async function CaseStudyPage({ params }: Props) {
         <div className="container-page flex h-12 items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <Code2 className="h-4 w-4 text-gold" aria-hidden="true" />
-            <span>
-              <strong className="font-semibold text-white">Hamed Mohamed</strong> ·{" "}
-              {isAr ? "مهندس برمجيات متكامل (Full-Stack Engineer)" : "Full-Stack Engineer"}
-            </span>
+            <a
+              href="https://hamedmohamed.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-gold-soft"
+            >
+              <strong className="font-semibold text-white">
+                {isAr ? "حامد محمد (Hamed Mohamed)" : "Hamed Mohamed"}
+              </strong>{" "}
+              · {isAr ? "مهندس برمجيات متكامل (Full-Stack Engineer)" : "Full-Stack Engineer"}
+            </a>
           </div>
           <div className="flex items-center gap-4">
-            <span className="hidden rounded-full border border-gold/40 bg-gold/10 px-2.5 py-0.5 text-[11px] font-semibold text-gold-soft sm:inline-block">
-              {isAr ? "دراسة حالة هندسية — ٢٠٢٦" : "Engineering Case Study · 2026"}
-            </span>
+            <a
+              href="https://hamedmohamed.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              dir="ltr"
+              className="hidden rounded-full border border-gold/40 bg-gold/10 px-2.5 py-0.5 text-[11px] font-semibold text-gold-soft transition-colors hover:bg-gold/20 sm:inline-block"
+            >
+              hamedmohamed.dev
+            </a>
             <Link
               href={pagePath(locale as Locale, "home")}
               className="font-semibold text-ice-soft transition-colors hover:text-white"
@@ -152,8 +166,8 @@ export default async function CaseStudyPage({ params }: Props) {
         <div className="container-page relative z-10">
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-gold-soft">
             {isAr
-              ? "دراسة حالة — HEALIX MEDICAL · إسطنبول"
-              : "Case Study — Healix Medical · Istanbul"}
+              ? "تصميم وبرمجة — HEALIX MEDICAL · إسطنبول"
+              : "Design & Development — Healix Medical · Istanbul"}
           </p>
 
           <h1 className="display-type mt-3 max-w-3xl text-3xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-[3.4rem]">
@@ -508,8 +522,12 @@ export default async function CaseStudyPage({ params }: Props) {
                 key={d.title}
                 className="rounded-2xl border border-line bg-white p-6 shadow-soft"
               >
-                <h3 className="text-base font-bold text-navy">{d.title}</h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-slate-strong">{d.body}</p>
+                <h3 className="text-base font-bold text-navy">
+                  <BdiText text={d.title} />
+                </h3>
+                <p className="mt-2.5 text-sm leading-relaxed text-slate-strong">
+                  <BdiText text={d.body} />
+                </p>
               </div>
             ))}
           </div>
@@ -622,14 +640,25 @@ export default async function CaseStudyPage({ params }: Props) {
                 : "HEALIX MEDICAL was designed and engineered end-to-end by Hamed Mohamed."}
             </p>
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3.5">
+              <a
+                href="https://hamedmohamed.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full bg-gold px-6 py-2.5 text-sm font-bold text-[#231a06] transition-transform hover:-translate-y-0.5"
+              >
+                <Globe2 className="h-4 w-4" aria-hidden="true" />
+                <span>
+                  {isAr ? "زيارة موقع المهندس: hamedmohamed.dev" : "Visit Engineer Portfolio: hamedmohamed.dev"}
+                </span>
+              </a>
               {siteConfig.contact.whatsapp && (
                 <a
                   href={siteConfig.contact.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-11 items-center gap-2 rounded-full bg-gold px-6 py-2.5 text-sm font-bold text-[#231a06] transition-transform hover:-translate-y-0.5"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-white/5 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/15"
                 >
-                  <Smartphone className="h-4 w-4" aria-hidden="true" />
+                  <Smartphone className="h-4 w-4 text-ice-soft" aria-hidden="true" />
                   <span>{isAr ? "تواصل عبر واتساب" : "Chat on WhatsApp"}</span>
                 </a>
               )}
@@ -637,12 +666,19 @@ export default async function CaseStudyPage({ params }: Props) {
                 href={pagePath(locale as Locale, "contact")}
                 className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-white/5 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/15"
               >
-                <Globe2 className="h-4 w-4 text-ice-soft" aria-hidden="true" />
                 <span>{dict.common.ctaPrimary}</span>
               </Link>
             </div>
             <p className="mt-6 text-xs text-white/55">
-              Case Study Design v3 — HEALIX MEDICAL · Built by Hamed Mohamed
+              Tasarım ve Geliştirme:{" "}
+              <a
+                href="https://hamedmohamed.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-gold-soft underline underline-offset-4 hover:text-white"
+              >
+                {isAr ? "حامد محمد (hamedmohamed.dev)" : "Hamed Mohamed (hamedmohamed.dev)"}
+              </a>
             </p>
           </div>
         </div>

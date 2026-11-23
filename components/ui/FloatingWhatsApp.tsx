@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { siteConfig, isValidWhatsAppUrl } from "@/lib/config/site";
 import type { Locale } from "@/lib/i18n/config";
@@ -17,12 +18,31 @@ const LABELS: Record<Locale, string> = {
 };
 
 /**
- * Floating WhatsApp action button anchored to bottom-end (`fixed bottom-5 end-5`).
- * Uses Motion (`motion/react`) for spring entrance, subtle ambient pulse ring,
- * and tactile hover/press feedback.
+ * Floating WhatsApp action button anchored to bottom-right (`fixed bottom-5 right-5`).
+ * Uses IntersectionObserver to smoothly dock/hide when `#site-footer-bottom` enters
+ * the viewport so it never covers footer disclaimers, copyright, or attribution links.
  */
 export function FloatingWhatsApp({ locale }: Props) {
   const url = siteConfig.contact.whatsapp;
+  const [footerVisible, setFooterVisible] = useState(false);
+
+  useEffect(() => {
+    const target = document.getElementById("site-footer-bottom");
+    if (!target || typeof IntersectionObserver === "undefined") return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          setFooterVisible(entry.isIntersecting);
+        }
+      },
+      { root: null, threshold: 0.05 }
+    );
+
+    observer.observe(target);
+    return () => observer.disconnect();
+  }, []);
+
   if (!isValidWhatsAppUrl(url)) return null;
 
   const label = LABELS[locale];
@@ -30,15 +50,22 @@ export function FloatingWhatsApp({ locale }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.72, y: 24 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      transition={{ type: "spring", stiffness: 320, damping: 24, delay: 0.4 }}
-      className="fixed bottom-5 right-5 z-40 sm:bottom-7 sm:right-7"
+      animate={
+        footerVisible
+          ? { opacity: 0, scale: 0.85, y: 72 }
+          : { opacity: 1, scale: 1, y: 0 }
+      }
+      transition={{ type: "spring", stiffness: 320, damping: 26 }}
+      className={`fixed bottom-5 right-5 z-40 sm:bottom-7 sm:right-7 ${
+        footerVisible ? "pointer-events-none" : ""
+      }`}
     >
       <motion.a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={label}
+        tabIndex={footerVisible ? -1 : 0}
         whileHover={{ scale: 1.06, y: -2 }}
         whileTap={{ scale: 0.94 }}
         transition={{ type: "spring", stiffness: 420, damping: 24 }}

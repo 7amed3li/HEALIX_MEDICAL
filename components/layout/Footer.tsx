@@ -25,7 +25,6 @@ export function Footer({ locale, dict }: Props) {
     { href: pagePath(locale, "about"), label: dict.nav.about },
     { href: pagePath(locale, "faq"), label: dict.nav.faq },
     { href: pagePath(locale, "contact"), label: dict.nav.contact },
-    { href: pagePath(locale, "caseStudy"), label: dict.nav.caseStudy },
   ];
 
   const legalLinks = [
@@ -192,22 +191,31 @@ export function Footer({ locale, dict }: Props) {
           HEALIX
         </div>
 
-        <div className="mt-4 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/65 md:flex-row md:items-center md:justify-between md:gap-8">
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 shrink-0 text-white/60">
-            <span>
-              © {formatNumber(year, locale)} <bdi dir="ltr">{siteConfig.brand}</bdi>. {dict.footer.rights}
-            </span>
-            <span aria-hidden="true" className="text-white/25">·</span>
-            <Link
-              href={pagePath(locale, "caseStudy")}
-              className="font-medium text-ice-soft/85 underline decoration-ice/30 underline-offset-4 transition-colors hover:text-white"
-            >
-              {dict.nav.caseStudy}
-            </Link>
-          </div>
-          <p className="max-w-2xl md:text-end">
+        {/* Two-tier enterprise sub-footer:
+            Tier 1 — Medical Coordination Disclaimer callout
+            Tier 2 — Clean Copyright + Developer Attribution line */}
+        <div id="site-footer-bottom" className="mt-6 space-y-5">
+          <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-center text-xs leading-relaxed text-white/65 sm:text-start">
             <BdiText text={dict.footer.disclaimerShort} />
-          </p>
+          </div>
+
+          <div className="flex flex-col items-center justify-between gap-2.5 border-t border-white/10 pt-5 text-center text-xs text-white/55 sm:flex-row sm:text-start">
+            <p>
+              <span>© {formatNumber(year, locale)} </span>
+              <bdi dir="ltr">{siteConfig.brand}</bdi>
+              <span aria-hidden="true"> · </span>
+              <span>{dict.footer.rights}</span>
+            </p>
+            <p className="text-[11px] font-medium uppercase tracking-wider text-white/60">
+              <span>{dict.nav.caseStudy} </span>
+              <Link
+                href={pagePath(locale, "caseStudy")}
+                className="font-bold text-gold-soft underline decoration-gold/60 underline-offset-4 transition-colors hover:text-white"
+              >
+                {locale === "ar" ? "حامد محمد" : "HAMED MOHAMED"}
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
