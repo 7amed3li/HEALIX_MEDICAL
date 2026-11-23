@@ -14,7 +14,7 @@ export function NavLinks({ items }: { items: NavItem[] }) {
   const pathname = usePathname() || "";
 
   return (
-    <div className="flex items-center gap-1">
+    <div className="flex items-center gap-0.5 xl:gap-1">
       {items.map((item) => {
         const active = item.exact
           ? pathname === item.href
@@ -24,7 +24,7 @@ export function NavLinks({ items }: { items: NavItem[] }) {
             key={item.href}
             href={item.href}
             aria-current={active ? "page" : undefined}
-            className={`relative rounded-full px-3.5 py-2 text-sm transition-colors duration-200 ${
+            className={`relative whitespace-nowrap rounded-full px-2.5 py-1.5 text-[13px] transition-colors duration-200 xl:px-3.5 xl:py-2 xl:text-sm ${
               active
                 ? "font-semibold text-navy"
                 : "font-medium text-slate-strong hover:text-navy"

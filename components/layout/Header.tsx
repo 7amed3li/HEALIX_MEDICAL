@@ -13,14 +13,18 @@ type Props = {
 };
 
 export function Header({ locale, dict }: Props) {
-  const navItems: NavItem[] = [
-    { href: pagePath(locale, "home"), label: dict.nav.home, exact: true },
+  const desktopNavItems: NavItem[] = [
     { href: pagePath(locale, "services"), label: dict.nav.services },
-    { href: pagePath(locale, "guides"), label: dict.nav.guides },
     { href: pagePath(locale, "facilities"), label: dict.nav.facilities },
+    { href: pagePath(locale, "guides"), label: dict.nav.guides },
     { href: pagePath(locale, "journey"), label: dict.nav.journey },
     { href: pagePath(locale, "about"), label: dict.nav.about },
     { href: pagePath(locale, "faq"), label: dict.nav.faq },
+  ];
+
+  const mobileNavItems: NavItem[] = [
+    { href: pagePath(locale, "home"), label: dict.nav.home, exact: true },
+    ...desktopNavItems,
     { href: pagePath(locale, "contact"), label: dict.nav.contact },
   ];
 
@@ -28,44 +32,47 @@ export function Header({ locale, dict }: Props) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line-soft bg-white/90 shadow-[0_1px_0_rgb(105_183_209/0.22)] backdrop-blur-md">
-      <div className="container-page relative flex h-16 items-center justify-between gap-4 lg:h-20">
-        <BrandLogo
-          href={pagePath(locale, "home")}
-          ariaLabel={dict.a11y.homeLink}
-          variant="light"
-        />
+      <div className="container-page relative flex h-16 items-center justify-between gap-3 lg:h-20">
+        <div className="shrink-0">
+          <BrandLogo
+            href={pagePath(locale, "home")}
+            ariaLabel={dict.a11y.homeLink}
+            variant="light"
+          />
+        </div>
 
         <nav
           aria-label={dict.a11y.mainNav}
-          className="hidden items-center gap-1 lg:flex"
+          className="hidden items-center justify-center lg:flex"
         >
-          <NavLinks items={navItems} />
+          <NavLinks items={desktopNavItems} />
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="flex shrink-0 items-center gap-2 lg:gap-2.5">
           <LocaleSwitcher
             currentLocale={locale}
             label={dict.a11y.languageSwitcher}
           />
-          <TactileButton
-            href={ctaHref}
-            variant="primary"
-            className="min-h-11 px-5 py-2.5 text-sm"
-          >
-            {dict.common.ctaPrimary}
-          </TactileButton>
+          <div className="hidden lg:block">
+            <TactileButton
+              href={ctaHref}
+              variant="primary"
+              className="min-h-10 whitespace-nowrap px-4 py-2 text-[13px] xl:min-h-11 xl:px-5 xl:py-2.5 xl:text-sm"
+            >
+              {dict.common.ctaPrimary}
+            </TactileButton>
+          </div>
+          <MobileMenu
+            currentLocale={locale}
+            items={mobileNavItems}
+            ctaLabel={dict.common.ctaPrimary}
+            ctaHref={ctaHref}
+            openLabel={dict.a11y.openMenu}
+            closeLabel={dict.a11y.closeMenu}
+            navLabel={dict.a11y.mainNav}
+            langLabel={dict.a11y.languageSwitcher}
+          />
         </div>
-
-        <MobileMenu
-          currentLocale={locale}
-          items={navItems}
-          ctaLabel={dict.common.ctaPrimary}
-          ctaHref={ctaHref}
-          openLabel={dict.a11y.openMenu}
-          closeLabel={dict.a11y.closeMenu}
-          navLabel={dict.a11y.mainNav}
-          langLabel={dict.a11y.languageSwitcher}
-        />
       </div>
     </header>
   );
