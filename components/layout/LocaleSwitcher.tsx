@@ -69,10 +69,11 @@ export function LocaleSwitcher({ currentLocale, label }: Props) {
         onClick={() => setOpen((v) => !v)}
         whileTap={{ scale: 0.975 }}
         transition={{ type: "spring", stiffness: 460, damping: 32 }}
-        className="inline-flex min-h-10 cursor-pointer items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-sm font-medium text-navy shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_1px_2px_rgba(16,40,62,0.05)] transition-colors hover:border-ice hover:bg-mist/60"
+        className="inline-flex min-h-9 cursor-pointer items-center gap-1 rounded-full border border-line bg-white px-2.5 py-1.5 text-xs font-semibold text-navy shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_1px_2px_rgba(16,40,62,0.05)] transition-colors hover:border-ice hover:bg-mist/60 sm:min-h-10 sm:gap-1.5 sm:px-3.5 sm:text-sm sm:font-medium"
       >
-        <Globe className="h-4 w-4 text-action" strokeWidth={1.75} aria-hidden="true" />
-        <span>{localeConfig[currentLocale].nativeName}</span>
+        <Globe className="h-3.5 w-3.5 text-action sm:h-4 sm:w-4" strokeWidth={1.75} aria-hidden="true" />
+        <span className="uppercase sm:hidden">{currentLocale}</span>
+        <span className="hidden sm:inline">{localeConfig[currentLocale].nativeName}</span>
         <ChevronDown
           className={`h-3.5 w-3.5 text-slate transition-transform duration-200 ${
             open ? "rotate-180" : ""
