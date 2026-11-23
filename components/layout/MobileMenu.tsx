@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { localeConfig, locales, type Locale } from "@/lib/i18n/config";
-import { resolveLocalePath } from "./LocaleSwitcher";
+import { LocaleFlag, resolveLocalePath } from "./LocaleSwitcher";
 import type { NavItem } from "./NavLinks";
 import { TactileButton } from "@/components/ui/TactileButton";
 
@@ -51,7 +51,7 @@ export function MobileMenu({
         aria-expanded={open}
         aria-controls="mobile-nav-panel"
         aria-label={open ? closeLabel : openLabel}
-        className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-line bg-white text-navy transition-colors duration-200 hover:bg-mist active:translate-y-px"
+        className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line bg-white text-navy shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_1px_2px_rgba(16,40,62,0.05)] transition-colors duration-200 hover:border-ice hover:bg-mist active:translate-y-px"
       >
         {open ? (
           <X className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
@@ -95,7 +95,7 @@ export function MobileMenu({
 
           <div className="mt-4 border-t border-line pt-4">
             <p className="px-3 text-xs font-semibold text-slate">{langLabel}</p>
-            <div className="mt-2 flex flex-wrap gap-2 px-2">
+            <div className="mt-2 grid grid-cols-2 gap-2 px-2 sm:flex sm:flex-wrap">
               {locales.map((loc) => {
                 const cfg = localeConfig[loc];
                 const active = loc === currentLocale;
@@ -104,16 +104,19 @@ export function MobileMenu({
                     key={loc}
                     href={resolveLocalePath(pathname, loc)}
                     lang={cfg.htmlLang}
-                    dir={cfg.dir}
+                    dir="ltr"
                     aria-current={active ? "page" : undefined}
                     onClick={() => setOpen(false)}
-                    className={`rounded-lg border px-3 py-1.5 text-sm font-medium transition-colors duration-200 ${
+                    className={`inline-flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-medium transition-colors duration-200 ${
                       active
                         ? "border-action bg-mist font-semibold text-navy"
                         : "border-line bg-white text-navy hover:border-ice"
                     }`}
                   >
-                    {cfg.nativeName}
+                    <LocaleFlag locale={loc} className="h-3.5 w-5" />
+                    <span dir={cfg.dir} className="leading-none">
+                      {cfg.nativeName}
+                    </span>
                   </Link>
                 );
               })}

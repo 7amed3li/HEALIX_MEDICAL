@@ -7,17 +7,14 @@ import {
   CheckCircle2,
   Code2,
   Cpu,
-  Globe2,
   Layers,
   Monitor,
-  Smartphone,
   Sparkles,
 } from "lucide-react";
 import { formatNumber, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, samePathForAllLocales } from "@/lib/seo/metadata";
 import { pagePath } from "@/lib/i18n/routes";
-import { siteConfig } from "@/lib/config/site";
 import { BdiText } from "@/components/ui/BdiText";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -118,7 +115,6 @@ const PLATFORM_SPECS = [
 export default async function CaseStudyPage({ params }: Props) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  const dict = await getDictionary(locale);
   const isAr = locale === "ar";
   const decisions = isAr ? DECISIONS.ar : DECISIONS.en;
 
@@ -661,58 +657,39 @@ export default async function CaseStudyPage({ params }: Props) {
       {/* Bottom CTA */}
       <section className="py-10 sm:py-16">
         <div className="container-page">
-          <div className="surface-dark grain rounded-2xl p-6 text-center text-white shadow-card sm:rounded-3xl sm:p-12">
-            <h2 className="display-type text-xl font-bold text-white sm:text-4xl">
+          <div className="surface-dark grain relative overflow-hidden rounded-2xl border border-white/10 p-6 text-center text-white shadow-card sm:rounded-3xl sm:p-12">
+            <h2 className="display-type mx-auto max-w-2xl text-xl leading-[1.3] font-bold text-white sm:text-4xl">
               {isAr
-                ? "عملاؤك يبحثون بلغتهم الأم — وموقعك يجب أن يخاطبهم بها."
-                : "Your clients search in their language. So should your website."}
+                ? "هل لديك مشروع مشابه؟ دعنا نبنيه معاً."
+                : "Have a similar challenge? Let’s build it together."}
             </h2>
-            <p className="mx-auto mt-2.5 max-w-xl text-xs text-white/80 sm:mt-3 sm:text-base">
+
+            <p className="mx-auto mt-2.5 max-w-lg text-xs leading-relaxed text-white/75 sm:mt-3 sm:text-base">
               {isAr
-                ? "تم تصميم وتطوير منصة HEALIX MEDICAL بالكامل بواسطة المهندس حامد محمد."
-                : "HEALIX MEDICAL was designed and engineered end-to-end by Hamed Mohamed."}
+                ? "نطوّر منصات متعددة اللغات بسرعة فائقة، تجربة مستخدم متقنة، وتصدر في محركات البحث."
+                : "High-performance multilingual platforms engineered for speed, UX precision, and search visibility."}
             </p>
-            <div className="mt-6 flex flex-col items-stretch justify-center gap-2.5 sm:mt-7 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3.5">
+
+            <div className="mx-auto mt-6 flex max-w-xs flex-col items-stretch justify-center gap-2.5 sm:mt-8 sm:max-w-none sm:flex-row sm:items-center sm:gap-3.5">
+              {/* Primary Action: Start a Project / Portfolio */}
               <a
                 href="https://hamedmohamed.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-gold px-5 py-2.5 text-xs font-bold text-[#231a06] transition-transform hover:-translate-y-0.5 sm:px-6 sm:text-sm"
+                className="inline-flex h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-gold px-6 text-xs font-bold text-[#1d1504] shadow-soft transition-all hover:-translate-y-0.5 hover:bg-gold-soft sm:h-12 sm:px-7 sm:text-sm"
               >
-                <Globe2 className="h-4 w-4 shrink-0" aria-hidden="true" />
-                <span>
-                  {isAr ? "زيارة موقع المهندس: hamedmohamed.dev" : "Visit Portfolio: hamedmohamed.dev"}
-                </span>
+                <span>{isAr ? "ابدأ مشروعك" : "Start a Project"}</span>
+                <ArrowRight className="flip-rtl h-4 w-4 shrink-0" aria-hidden="true" />
               </a>
-              {siteConfig.contact.whatsapp && (
-                <a
-                  href={siteConfig.contact.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/25 bg-white/5 px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-white/15 sm:px-6 sm:text-sm"
-                >
-                  <Smartphone className="h-4 w-4 shrink-0 text-ice-soft" aria-hidden="true" />
-                  <span>{isAr ? "تواصل عبر واتساب" : "Chat on WhatsApp"}</span>
-                </a>
-              )}
+
+              {/* Secondary Action: Explore Live Project */}
               <Link
-                href={pagePath(locale as Locale, "contact")}
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-white/25 bg-white/5 px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-white/15 sm:px-6 sm:text-sm"
+                href={pagePath(locale as Locale, "home")}
+                className="inline-flex h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/20 bg-white/[0.07] px-6 text-xs font-semibold text-white transition-colors hover:border-white/35 hover:bg-white/15 sm:h-12 sm:px-7 sm:text-sm"
               >
-                <span>{dict.common.ctaPrimary}</span>
+                <span>{isAr ? "استكشف المنصة الحية" : "Explore Live Platform"}</span>
               </Link>
             </div>
-            <p className="mt-5 text-[11px] text-white/55 sm:mt-6 sm:text-xs">
-              {dict.nav.caseStudy}{" "}
-              <a
-                href="https://hamedmohamed.dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-bold text-gold-soft underline underline-offset-4 hover:text-white"
-              >
-                {isAr ? "حامد محمد (hamedmohamed.dev)" : "HAMED MOHAMED (hamedmohamed.dev)"}
-              </a>
-            </p>
           </div>
         </div>
       </section>

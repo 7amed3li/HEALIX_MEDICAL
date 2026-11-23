@@ -48,7 +48,7 @@ export function Header({ locale, dict }: Props) {
           <NavLinks items={desktopNavItems} />
         </nav>
 
-        <div className="flex shrink-0 items-center gap-2 lg:gap-2.5">
+        <div className="flex shrink-0 items-center gap-2.5 lg:gap-3">
           <LocaleSwitcher
             currentLocale={locale}
             label={dict.a11y.languageSwitcher}

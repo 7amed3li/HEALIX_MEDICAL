@@ -191,20 +191,24 @@ export function Footer({ locale, dict }: Props) {
           HEALIX
         </div>
 
-        {/* Two-tier enterprise sub-footer:
-            Tier 1 — Medical Coordination Disclaimer callout
-            Tier 2 — Clean Copyright + Developer Attribution line */}
-        <div id="site-footer-bottom" className="mt-6 space-y-5">
-          <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-center text-xs leading-relaxed text-white/65 sm:text-start">
-            <BdiText text={dict.footer.disclaimerShort} />
-          </div>
-
-          <div className="flex flex-col items-center justify-between gap-2.5 border-t border-white/10 pt-5 text-center text-xs text-white/55 sm:flex-row sm:text-start">
+        {/* Single hairline divider anchoring the bottom sub-footer */}
+        <div id="site-footer-bottom" className="mt-6 border-t border-white/[0.08] pt-6">
+          <div className="flex flex-col items-start justify-between gap-2 text-xs text-white/55 sm:flex-row sm:items-center">
             <p>
-              <span>© {formatNumber(year, locale)} </span>
-              <bdi dir="ltr">{siteConfig.brand}</bdi>
-              <span aria-hidden="true"> · </span>
-              <span>{dict.footer.rights}</span>
+              {locale === "ar" ? (
+                <>
+                  <span>© {formatNumber(year, locale)} {dict.footer.rights}</span>
+                  <span aria-hidden="true"> · </span>
+                  <bdi dir="ltr">{siteConfig.brand}</bdi>
+                </>
+              ) : (
+                <>
+                  <span>© {formatNumber(year, locale)} </span>
+                  <bdi dir="ltr">{siteConfig.brand}</bdi>
+                  <span aria-hidden="true"> · </span>
+                  <span>{dict.footer.rights}</span>
+                </>
+              )}
             </p>
             <p className="text-[11px] font-medium uppercase tracking-wider text-white/60">
               <span>{dict.nav.caseStudy} </span>
@@ -216,6 +220,10 @@ export function Footer({ locale, dict }: Props) {
               </Link>
             </p>
           </div>
+
+          <p className="mt-3 max-w-3xl text-start text-[11px] leading-[1.65] text-white/40 sm:text-[11.5px]">
+            <BdiText text={dict.footer.disclaimerShort} />
+          </p>
         </div>
       </div>
     </footer>
