@@ -18,6 +18,7 @@ export const staticPages = {
   privacy: "/privacy",
   terms: "/terms",
   disclaimer: "/medical-disclaimer",
+  caseStudy: "/tasarim-gelistirme",
 } as const;
 
 export type StaticPageKey = keyof typeof staticPages;

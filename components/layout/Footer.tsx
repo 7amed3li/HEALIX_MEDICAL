@@ -25,6 +25,7 @@ export function Footer({ locale, dict }: Props) {
     { href: pagePath(locale, "about"), label: dict.nav.about },
     { href: pagePath(locale, "faq"), label: dict.nav.faq },
     { href: pagePath(locale, "contact"), label: dict.nav.contact },
+    { href: pagePath(locale, "caseStudy"), label: dict.nav.caseStudy },
   ];
 
   const legalLinks = [
@@ -192,9 +193,18 @@ export function Footer({ locale, dict }: Props) {
         </div>
 
         <div className="mt-4 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/65 md:flex-row md:items-center md:justify-between md:gap-8">
-          <p className="shrink-0 text-white/60">
-            © {formatNumber(year, locale)} <bdi dir="ltr">{siteConfig.brand}</bdi>. {dict.footer.rights}
-          </p>
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 shrink-0 text-white/60">
+            <span>
+              © {formatNumber(year, locale)} <bdi dir="ltr">{siteConfig.brand}</bdi>. {dict.footer.rights}
+            </span>
+            <span aria-hidden="true" className="text-white/25">·</span>
+            <Link
+              href={pagePath(locale, "caseStudy")}
+              className="font-medium text-ice-soft/85 underline decoration-ice/30 underline-offset-4 transition-colors hover:text-white"
+            >
+              {dict.nav.caseStudy}
+            </Link>
+          </div>
           <p className="max-w-2xl md:text-end">
             <BdiText text={dict.footer.disclaimerShort} />
           </p>
