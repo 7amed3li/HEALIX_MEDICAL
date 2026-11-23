@@ -9,19 +9,19 @@ import type { ServiceId } from "@/content/services";
  * background, matching the owner's approved reference mockup.
  */
 export const serviceImages: Record<ServiceId, string> = {
-  "liver-transplantation": "/images/services/liver-transplantation.jpg",
-  "kidney-transplantation": "/images/services/kidney-transplantation.jpg",
-  "parkinsons-disease": "/images/services/parkinsons-disease.jpg",
-  "orthopedic-surgery": "/images/services/orthopedic-surgery.jpg",
-  neurosurgery: "/images/services/neurosurgery.jpg",
-  "urology-prostate": "/images/services/urology-prostate.jpg",
-  endocrinology: "/images/services/endocrinology.jpg",
-  gastroenterology: "/images/services/gastroenterology.jpg",
-  oncology: "/images/services/oncology.jpg",
-  cardiology: "/images/services/cardiology.jpg",
+  "liver-transplantation": "/images/services/liver-transplantation.webp",
+  "kidney-transplantation": "/images/services/kidney-transplantation.webp",
+  "parkinsons-disease": "/images/services/parkinsons-disease.webp",
+  "orthopedic-surgery": "/images/services/orthopedic-surgery.webp",
+  neurosurgery: "/images/services/neurosurgery.webp",
+  "urology-prostate": "/images/services/urology-prostate.webp",
+  endocrinology: "/images/services/endocrinology.webp",
+  gastroenterology: "/images/services/gastroenterology.webp",
+  oncology: "/images/services/oncology.webp",
+  cardiology: "/images/services/cardiology.webp",
   "rehabilitation-physiotherapy":
-    "/images/services/rehabilitation-physiotherapy.jpg",
-  hematology: "/images/services/hematology.jpg",
+    "/images/services/rehabilitation-physiotherapy.webp",
+  hematology: "/images/services/hematology.webp",
 };
 
 export function serviceImage(id: ServiceId): string {

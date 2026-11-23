@@ -23,22 +23,25 @@ const notoSansArabic = Noto_Sans_Arabic({
   subsets: ["arabic"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: false,
   variable: "--font-noto-arabic",
 });
 
 /* Editorial display serif for Latin / Cyrillic headlines (premium concierge voice) */
 const playfair = Playfair_Display({
   subsets: ["latin", "latin-ext", "cyrillic"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["600", "700"],
   display: "swap",
+  preload: false,
   variable: "--font-playfair",
 });
 
 /* Refined Arabic display face for Arabic headlines */
 const notoKufiArabic = Noto_Kufi_Arabic({
   subsets: ["arabic"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["600", "700"],
   display: "swap",
+  preload: false,
   variable: "--font-kufi-arabic",
 });
 
@@ -83,7 +86,11 @@ export default async function LocaleRootLayout({
     <html
       lang={cfg.htmlLang}
       dir={cfg.dir}
-      className={`${inter.variable} ${notoSansArabic.variable} ${playfair.variable} ${notoKufiArabic.variable}`}
+      className={
+        locale === "ar"
+          ? `${notoSansArabic.variable} ${notoKufiArabic.variable} ${inter.variable}`
+          : `${inter.variable} ${playfair.variable}`
+      }
     >
       <body className="flex min-h-screen flex-col">
         <script

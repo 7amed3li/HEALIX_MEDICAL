@@ -84,7 +84,7 @@ const PLATFORM_SPECS = [
     ratio: "1.91 : 1",
     tipAr: "استخدم لقطة الديسكتوب العريضة مع إبقاء الشعار والعنوان الرئيسي في منطقة الأمان الوسطى (1080×560).",
     tipEn: "Use the wide desktop hero frame keeping the brand mark and headline centered within the 1080×560 safe zone.",
-    asset: "/images/case-study/desktop-en.png",
+    asset: "/images/case-study/desktop-en.webp",
   },
   {
     platform: "LinkedIn Feed Post / Carousel Slide",
@@ -92,7 +92,7 @@ const PLATFORM_SPECS = [
     ratio: "4 : 5 Portrait",
     tipAr: "أفضل مقاس لمنشورات لينكدإن؛ اعرض لقطة الموبايل (العربي RTL وبجانبه الإنجليزي LTR) داخل إطار هاتف.",
     tipEn: "Highest feed real-estate on LinkedIn; pair the English LTR and Arabic RTL mobile frames side-by-side.",
-    asset: "/images/case-study/shot-3.jpg",
+    asset: "/images/case-study/shot-3.webp",
   },
   {
     platform: "Upwork Portfolio Cover & Project Gallery",
@@ -100,7 +100,7 @@ const PLATFORM_SPECS = [
     ratio: "4 : 3 & 16 : 10",
     tipAr: "لغلاف Upwork استخدم نسبة 4:3 متمركزة، ولصور المعرض الداخلية ارفع لقطات الديسكتوب الكاملة بدقة Retina 2x.",
     tipEn: "Use a centered 4:3 composition for the thumbnail grid and full 1440×900 Retina desktop captures inside the gallery.",
-    asset: "/images/case-study/desktop-ar.png",
+    asset: "/images/case-study/desktop-ar.webp",
   },
   {
     platform: "X (Twitter) Summary Large Image & GitHub Social Card",
@@ -108,7 +108,7 @@ const PLATFORM_SPECS = [
     ratio: "16 : 9",
     tipAr: "مقاس 16:9 قياسي يظهر بالكامل في بطاقات X ومعاينة مستودع GitHub بدون أي قص.",
     tipEn: "Native 16:9 widescreen card that renders uncropped across X timelines and GitHub repository social previews.",
-    asset: "/images/case-study/desktop-service-ar.png",
+    asset: "/images/case-study/desktop-service-ar.webp",
   },
 ];
 
@@ -221,11 +221,12 @@ export default async function CaseStudyPage({ params }: Props) {
                 AR · RTL
               </div>
               <Image
-                src="/images/case-study/shot-3.jpg"
+                src="/images/case-study/shot-3.webp"
                 alt="Arabic RTL mobile guide"
                 width={540}
                 height={960}
                 priority
+                sizes="(max-width: 639px) 46vw, 1px"
                 className="block h-auto w-full"
               />
             </div>
@@ -234,11 +235,12 @@ export default async function CaseStudyPage({ params }: Props) {
                 EN · LTR
               </div>
               <Image
-                src="/images/case-study/shot-1.jpg"
+                src="/images/case-study/shot-1.webp"
                 alt="English LTR mobile guide"
                 width={540}
                 height={960}
                 priority
+                sizes="(max-width: 639px) 46vw, 1px"
                 className="block h-auto w-full"
               />
             </div>
@@ -259,11 +261,12 @@ export default async function CaseStudyPage({ params }: Props) {
                 </span>
               </div>
               <Image
-                src={isAr ? "/images/case-study/desktop-ar.png" : "/images/case-study/desktop-en.png"}
+                src={isAr ? "/images/case-study/desktop-ar.webp" : "/images/case-study/desktop-en.webp"}
                 alt="HEALIX MEDICAL desktop platform preview"
                 width={1440}
                 height={900}
                 priority
+                sizes="(min-width: 640px) 92vw, 1px"
                 className="block h-auto w-full object-cover object-top"
               />
             </div>
@@ -274,10 +277,11 @@ export default async function CaseStudyPage({ params }: Props) {
                   MOBILE · 390×844
                 </div>
                 <Image
-                  src={isAr ? "/images/case-study/shot-3.jpg" : "/images/case-study/shot-1.jpg"}
+                  src={isAr ? "/images/case-study/shot-3.webp" : "/images/case-study/shot-1.webp"}
                   alt="HEALIX MEDICAL mobile guide preview"
                   width={540}
                   height={960}
+                  sizes="(min-width: 1024px) 260px, 1px"
                   className="block h-auto w-full"
                 />
               </div>
@@ -361,10 +365,11 @@ export default async function CaseStudyPage({ params }: Props) {
                 </span>
               </div>
               <Image
-                src="/images/case-study/desktop-en.png"
+                src="/images/case-study/desktop-en.webp"
                 alt="English desktop homepage"
                 width={1440}
                 height={900}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="h-auto w-full object-cover"
               />
               <figcaption className="flex items-center justify-between border-t border-line-soft px-3.5 py-2.5 text-xs font-semibold text-navy sm:px-4 sm:py-3">
@@ -383,10 +388,11 @@ export default async function CaseStudyPage({ params }: Props) {
                 </span>
               </div>
               <Image
-                src="/images/case-study/desktop-ar.png"
+                src="/images/case-study/desktop-ar.webp"
                 alt="Arabic RTL desktop homepage"
                 width={1440}
                 height={900}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="h-auto w-full object-cover"
               />
               <figcaption className="flex items-center justify-between border-t border-line-soft px-3.5 py-2.5 text-xs font-semibold text-navy sm:px-4 sm:py-3">
@@ -400,17 +406,17 @@ export default async function CaseStudyPage({ params }: Props) {
           <div className="mt-6 grid gap-4 sm:mt-10 sm:grid-cols-3 sm:gap-6">
             {[
               {
-                src: "/images/case-study/shot-2.jpg",
+                src: "/images/case-study/shot-2.webp",
                 title: isAr ? "دليل لجنة الأخلاقيات — إنجليزي" : "Ethics Commission Guide — English",
                 badge: "EN · Mobile",
               },
               {
-                src: "/images/case-study/shot-3.jpg",
+                src: "/images/case-study/shot-3.webp",
                 title: isAr ? "نفس الدليل — عربي RTL" : "Same Guide — Arabic Native RTL",
                 badge: "AR · RTL",
               },
               {
-                src: "/images/case-study/shot-4.jpg",
+                src: "/images/case-study/shot-4.webp",
                 title: isAr ? "مكتبة أدلة المرضى — عربي" : "Patient Guides Library — Arabic",
                 badge: "AR · Directory",
               },
@@ -425,6 +431,7 @@ export default async function CaseStudyPage({ params }: Props) {
                     alt={item.title}
                     width={540}
                     height={960}
+                    sizes="(max-width: 640px) 220px, 260px"
                     className="block h-auto w-full"
                   />
                 </div>

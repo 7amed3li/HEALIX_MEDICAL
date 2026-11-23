@@ -22,10 +22,11 @@ export function Hero({ locale, dict }: Props) {
       {/* Global network backdrop – dotted world map, arcs converging on Türkiye */}
       <div className="absolute inset-0" aria-hidden="true">
         <Image
-          src="/images/hero-world-map.jpg"
+          src="/images/hero-world-map.webp"
           alt=""
           fill
-          priority
+          loading="eager"
+          quality={72}
           sizes="100vw"
           className="object-cover object-center opacity-50 lg:opacity-60"
         />
@@ -37,11 +38,13 @@ export function Hero({ locale, dict }: Props) {
       {/* Mobile full-bleed top consultation image melting seamlessly into the navy hero */}
       <div className="anim-hero-img hero-mobile-mask relative h-52 w-full sm:h-64 lg:hidden">
         <Image
-          src="/images/hero-closeup.jpg"
+          src="/images/hero-closeup.webp"
           alt={dict.home.hero.imageAlt}
           fill
           priority
-          sizes="100vw"
+          fetchPriority="high"
+          quality={80}
+          sizes="(max-width: 1023px) 100vw, 1px"
           className="object-cover object-top"
         />
       </div>
@@ -49,11 +52,13 @@ export function Hero({ locale, dict }: Props) {
       {/* Desktop full-bleed consultation image at the inline-end, dissolved seamlessly via alpha mask */}
       <div className="anim-hero-img hero-photo-mask pointer-events-none absolute inset-y-0 end-0 hidden w-[58%] lg:block">
         <Image
-          src={isRtl ? "/images/hero-coordination-rtl.jpg" : "/images/hero-coordination.jpg"}
+          src={isRtl ? "/images/hero-coordination-rtl.webp" : "/images/hero-coordination.webp"}
           alt={dict.home.hero.imageAlt}
           fill
           priority
-          sizes="58vw"
+          fetchPriority="high"
+          quality={82}
+          sizes="(min-width: 1024px) 58vw, 1px"
           className="object-cover object-center"
         />
         <div className="hero-shade-b absolute inset-0" aria-hidden="true" />

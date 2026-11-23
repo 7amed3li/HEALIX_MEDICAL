@@ -75,7 +75,7 @@ export default async function ContactPage({ params }: Props) {
                 anchors the contact split opposite the form */}
             <div className="relative overflow-hidden rounded-[1.5rem] shadow-card ring-1 ring-line-soft">
               <Image
-                src="/images/istanbul-contact.jpg"
+                src="/images/istanbul-contact.webp"
                 alt=""
                 width={1400}
                 height={1000}

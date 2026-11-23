@@ -268,7 +268,7 @@
     inset-inline: 0;
     bottom: 0;
     height: 58%;
-    background: url("/images/hero-world-map.jpg") center 32% / cover no-repeat;
+    background: url("/images/hero-world-map.webp") center 32% / cover no-repeat;
     opacity: 0.09;
     pointer-events: none;
     -webkit-mask-image: linear-gradient(to top, black 52%, transparent 98%);

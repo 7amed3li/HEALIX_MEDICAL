@@ -70,7 +70,7 @@ export default async function AboutPage({ params }: Props) {
             <div className="lg:col-span-6">
               <div className="relative overflow-hidden rounded-[1.75rem] border border-line-soft bg-mist shadow-lift ring-1 ring-gold/25">
                 <Image
-                  src="/images/about-coordinator.jpg"
+                  src="/images/about-coordinator.webp"
                   alt={dict.about.imageAlt}
                   width={1200}
                   height={800}

@@ -15,7 +15,7 @@ export const siteConfig = {
    * Combined with the clean "HEALIX MEDICAL" wordmark in Header and Footer.
    */
   logo: {
-    src: "/images/brand/healix-emblem.png",
+    src: "/images/brand/healix-emblem.webp",
     width: 340,
     height: 321,
   },
