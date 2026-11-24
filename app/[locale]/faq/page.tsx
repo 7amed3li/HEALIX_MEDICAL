@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { isLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { buildMetadata, samePathForAllLocales } from "@/lib/seo/metadata";
+import { faqPageJsonLd } from "@/lib/seo/jsonld";
 import { ContactCta } from "@/components/home/ContactCta";
 import { FaqAccordion } from "@/components/ui/FaqAccordion";
 
@@ -28,9 +29,14 @@ export default async function FaqPage({ params }: Props) {
 
   const generalQuestions = dict.faqPage.items.slice(0, 5);
   const travelAndPrivacyQuestions = dict.faqPage.items.slice(5);
+  const jsonLd = faqPageJsonLd(dict.faqPage.items);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="page-hero">
         <div className="container-page">
           <div className="max-w-3xl">

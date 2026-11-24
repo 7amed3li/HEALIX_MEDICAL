@@ -8,7 +8,8 @@ import {
   getGuideDictionary,
   getServiceDictionary,
 } from "@/lib/i18n/dictionaries";
-import { buildMetadata, type LocalizedPaths } from "@/lib/seo/metadata";
+import { buildMetadata, absoluteUrl, type LocalizedPaths } from "@/lib/seo/metadata";
+import { guideJsonLd } from "@/lib/seo/jsonld";
 import { getGuideBySlug, guides } from "@/content/guides";
 import { guidePath, pagePath, servicePath } from "@/lib/i18n/routes";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
@@ -67,6 +68,16 @@ export default async function GuideDetailPage({ params }: Props) {
   ]);
 
   const content = guideDict[guide.id];
+  const jsonLd = guideJsonLd({
+    locale,
+    title: content.name,
+    description: content.metaDescription,
+    url: absoluteUrl(`/${locale}/guides/${guide.slugs[locale]}`),
+    updated: content.updated,
+    homeLabel: dict.nav.home,
+    guidesLabel: dict.nav.guides,
+    faqs: content.faqs,
+  });
   const otherGuides = guides.filter((g) => g.id !== guide.id);
   const transplantServices = ["kidney-transplantation", "liver-transplantation"] as const;
 
@@ -77,6 +88,10 @@ export default async function GuideDetailPage({ params }: Props) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* 1. Editorial hero on the light page-hero surface */}
       <section className="page-hero">
         <div className="container-page">
