@@ -22,8 +22,8 @@ export const siteConfig = {
 
   social: {
     instagram: "https://www.instagram.com/healix.medical.tr/",
-    /** Temporary share link from the owner. REPLACE with the direct official page URL when available. */
-    facebook: "https://www.facebook.com/share/1DyXtaGQcb/?mibextid=wwXIfr",
+    /** Canonical public page URL (replaces the temporary share link). */
+    facebook: "https://www.facebook.com/people/Healix-tur/61591058297124/",
   },
 
   contact: {
