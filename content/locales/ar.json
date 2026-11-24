@@ -502,5 +502,20 @@
     "enquireAction": "بدء تنسيق",
     "noResults": "لا توجد منشآت مطابقة لبحثك الحالي.",
     "resetFilters": "عرض جميع المنشآت"
+  },
+  "facilityPage": {
+    "backToFacilities": "العودة إلى جميع المنشآت",
+    "factsTitle": "بيانات المنشأة",
+    "brandLabel": "المجموعة / العلامة",
+    "cityLabel": "المدينة",
+    "districtLabel": "المنطقة",
+    "typeLabel": "نوع المنشأة",
+    "agreementLabel": "اتفاقية HEALIX",
+    "aboutTitle": "عن هذه المنشأة",
+    "servicesTitle": "خدمات HEALIX المرتبطة بهذه المنشأة",
+    "servicesText": "تنسّق HEALIX MEDICAL التواصل مع هذه المنشأة. تغطي خدمات التنسيق التالية استفسارات الزراعة التي تتولاها HEALIX للمنشآت المتعاقد معها؛ ويقيّم الفريق الطبي المرخص الخاص بالمنشأة كل حالة.",
+    "servicesTextDental": "تنسّق HEALIX MEDICAL التواصل مع هذا المركز. يمكنك تصفح جميع خدمات التنسيق أدناه وسؤال HEALIX عن ترتيب استفسار لدى هذا المركز.",
+    "otherTitle": "منشآت متعاقد معها أخرى",
+    "sourcesTitle": "المصادر"
   }
 }

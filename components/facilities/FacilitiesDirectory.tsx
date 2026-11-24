@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 import { ArrowRight, Building2, MapPin, Search, ShieldCheck, X } from "lucide-react";
 import { formatNumber, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
-import { pagePath } from "@/lib/i18n/routes";
+import { facilityPath, pagePath } from "@/lib/i18n/routes";
 import {
   facilities,
   formatFacilityName,
@@ -42,10 +42,12 @@ function FacilityCard({
   facility,
   dict,
   contactHref,
+  locale,
 }: {
   facility: Facility;
   dict: Dictionary;
   contactHref: string;
+  locale: Locale;
 }) {
   const t = dict.facilitiesPage;
   const displayName = formatFacilityName(facility.name);
@@ -74,7 +76,12 @@ function FacilityCard({
           </div>
 
           <h3 dir="ltr" className="mt-2.5 text-[14.5px] font-semibold leading-snug text-navy">
-            {displayName}
+            <Link
+              href={facilityPath(locale, facility.id)}
+              className="transition-colors hover:text-action"
+            >
+              {displayName}
+            </Link>
           </h3>
         </div>
       </div>
@@ -313,7 +320,12 @@ export function FacilitiesDirectory({ locale, dict }: Props) {
                           <span>{facility.city}</span>
                         </span>
                         <h3 dir="ltr" className="mt-2.5 text-base font-bold tracking-tight text-white sm:text-lg">
-                          {displayName}
+                          <Link
+                            href={facilityPath(locale, facility.id)}
+                            className="transition-colors hover:text-ice-soft"
+                          >
+                            {displayName}
+                          </Link>
                         </h3>
                       </div>
                     </div>
@@ -343,6 +355,7 @@ export function FacilitiesDirectory({ locale, dict }: Props) {
                   facility={facility}
                   dict={dict}
                   contactHref={contactHref}
+                  locale={locale}
                 />
               ))}
             </div>
@@ -368,6 +381,7 @@ export function FacilitiesDirectory({ locale, dict }: Props) {
                   facility={facility}
                   dict={dict}
                   contactHref={contactHref}
+                  locale={locale}
                 />
               ))}
             </div>
@@ -393,6 +407,7 @@ export function FacilitiesDirectory({ locale, dict }: Props) {
                   facility={facility}
                   dict={dict}
                   contactHref={contactHref}
+                  locale={locale}
                 />
               ))}
             </div>
@@ -418,6 +433,7 @@ export function FacilitiesDirectory({ locale, dict }: Props) {
                   facility={facility}
                   dict={dict}
                   contactHref={contactHref}
+                  locale={locale}
                 />
               ))}
             </div>
@@ -442,6 +458,7 @@ export function FacilitiesDirectory({ locale, dict }: Props) {
               facility={facility}
               dict={dict}
               contactHref={contactHref}
+              locale={locale}
             />
           ))}
         </div>

@@ -502,5 +502,20 @@
     "enquireAction": "İletişime geç",
     "noResults": "Aramanızla eşleşen kurum bulunamadı.",
     "resetFilters": "Tümünü göster"
+  },
+  "facilityPage": {
+    "backToFacilities": "Tüm tesislere dön",
+    "factsTitle": "Tesis bilgileri",
+    "brandLabel": "Grup / marka",
+    "cityLabel": "Şehir",
+    "districtLabel": "İlçe",
+    "typeLabel": "Tesis türü",
+    "agreementLabel": "HEALIX anlaşması",
+    "aboutTitle": "Bu tesis hakkında",
+    "servicesTitle": "Bu tesisle bağlantılı HEALIX hizmetleri",
+    "servicesText": "HEALIX MEDICAL, bu tesisle iletişimi koordine eder. Aşağıdaki koordinasyon hizmetleri, HEALIX'in anlaşmalı hastaneler için yürüttüğü nakil başvurularını kapsar; her vaka tesisin kendi lisanslı tıbbi ekibi tarafından değerlendirilir.",
+    "servicesTextDental": "HEALIX MEDICAL, bu merkezle iletişimi koordine eder. Aşağıdaki tüm koordinasyon hizmetlerine göz atabilir ve bu merkezle ilgili başvurunuzun düzenlenmesi hakkında HEALIX'e sorabilirsiniz.",
+    "otherTitle": "Diğer anlaşmalı tesisler",
+    "sourcesTitle": "Kaynaklar"
   }
 }

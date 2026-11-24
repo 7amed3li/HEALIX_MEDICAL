@@ -23,6 +23,42 @@ const GUIDE_IDS = [
   "ethics-commission-documents-approval",
 ];
 
+const FACILITY_IDS = [
+  "liv-ulus",
+  "liv-vadistanbul",
+  "mp-istanbul-onkoloji",
+  "mp-goztepe",
+  "mp-tem",
+  "vm-pendik",
+  "mp-bahcelievler",
+  "mp-atasehir",
+  "vm-maltepe",
+  "istinye-esenyurt",
+  "istinye-topkapi",
+  "istinye-gop",
+  "istinye-dental",
+  "aydin-suam",
+  "mp-gebze-vm",
+  "mp-gebze",
+  "vm-kocaeli",
+  "mp-bursa",
+  "mp-antalya",
+  "mp-ordu",
+  "mp-trabzon",
+  "mp-karadeniz",
+  "mp-ankara",
+  "liv-ankara",
+  "vm-ankara",
+  "vm-mersin",
+  "mp-izmir",
+  "liv-gaziantep",
+  "mp-tokat",
+  "mp-samsun",
+  "liv-samsun",
+  "mp-adana",
+  "mp-seyhan",
+];
+
 // Decorative emoji regex (excludes standard © ® ™ symbols)
 const EMOJI_RE = /(?!©|®|™)\p{Extended_Pictographic}/gu;
 
@@ -57,9 +93,11 @@ function collectPaths(obj, prefix = "", out = new Map()) {
 const enLocale = JSON.parse(fs.readFileSync("content/locales/en.json", "utf8"));
 const enServices = JSON.parse(fs.readFileSync("content/services/en.json", "utf8"));
 const enGuides = JSON.parse(fs.readFileSync("content/guides/en.json", "utf8"));
+const enFacilities = JSON.parse(fs.readFileSync("content/facilities/en.json", "utf8"));
 const enLocalePaths = collectPaths(enLocale);
 const enServicePaths = collectPaths(enServices);
 const enGuidePaths = collectPaths(enGuides);
+const enFacilityPaths = collectPaths(enFacilities);
 
 for (const id of SERVICE_IDS) {
   if (!(id in enServices)) fail(`Missing service ID "${id}" in content/services/en.json`);
@@ -69,10 +107,15 @@ for (const id of GUIDE_IDS) {
   if (!(id in enGuides)) fail(`Missing guide ID "${id}" in content/guides/en.json`);
 }
 
+for (const id of FACILITY_IDS) {
+  if (!(id in enFacilities)) fail(`Missing facility ID "${id}" in content/facilities/en.json`);
+}
+
 for (const loc of LOCALES) {
   const locFile = `content/locales/${loc}.json`;
   const srvFile = `content/services/${loc}.json`;
   const guideFile = `content/guides/${loc}.json`;
+  const facFile = `content/facilities/${loc}.json`;
   if (!fs.existsSync(locFile)) {
     fail(`Missing file ${locFile}`);
     continue;
@@ -85,14 +128,20 @@ for (const loc of LOCALES) {
     fail(`Missing file ${guideFile}`);
     continue;
   }
+  if (!fs.existsSync(facFile)) {
+    fail(`Missing file ${facFile}`);
+    continue;
+  }
 
   const locData = JSON.parse(fs.readFileSync(locFile, "utf8"));
   const srvData = JSON.parse(fs.readFileSync(srvFile, "utf8"));
   const guideData = JSON.parse(fs.readFileSync(guideFile, "utf8"));
+  const facData = JSON.parse(fs.readFileSync(facFile, "utf8"));
 
   const locPaths = collectPaths(locData);
   const srvPaths = collectPaths(srvData);
   const guidePaths = collectPaths(guideData);
+  const facPaths = collectPaths(facData);
 
   for (const [k, t] of enLocalePaths.entries()) {
     if (!locPaths.has(k)) fail(`${locFile}: missing key "${k}"`);
@@ -123,6 +172,16 @@ for (const loc of LOCALES) {
   for (const k of guidePaths.keys()) {
     if (!enGuidePaths.has(k)) fail(`${guideFile}: extra key "${k}" not in en.json`);
   }
+
+  for (const [k, t] of enFacilityPaths.entries()) {
+    if (!facPaths.has(k)) fail(`${facFile}: missing key "${k}"`);
+    else if (facPaths.get(k) !== t) {
+      fail(`${facFile}: type/length mismatch at "${k}" (expected ${t}, got ${facPaths.get(k)})`);
+    }
+  }
+  for (const k of facPaths.keys()) {
+    if (!enFacilityPaths.has(k)) fail(`${facFile}: extra key "${k}" not in en.json`);
+  }
 }
 
 // Scan source files for decorative emojis
@@ -147,5 +206,5 @@ if (errors > 0) {
   process.exit(1);
 }
 console.log(
-  `[i18n-check] OK — validated ${LOCALES.length} locales (${enLocalePaths.size} UI keys + ${enServicePaths.size} service keys + ${enGuidePaths.size} guide keys each) & zero decorative emojis.`
+  `[i18n-check] OK — validated ${LOCALES.length} locales (${enLocalePaths.size} UI keys + ${enServicePaths.size} service keys + ${enGuidePaths.size} guide keys + ${enFacilityPaths.size} facility keys each) & zero decorative emojis.`
 );

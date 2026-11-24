@@ -502,5 +502,20 @@
     "enquireAction": "Enquire",
     "noResults": "No facilities match your current filter.",
     "resetFilters": "Show all facilities"
+  },
+  "facilityPage": {
+    "backToFacilities": "Back to all facilities",
+    "factsTitle": "Facility facts",
+    "brandLabel": "Group / brand",
+    "cityLabel": "City",
+    "districtLabel": "District",
+    "typeLabel": "Facility type",
+    "agreementLabel": "HEALIX agreement",
+    "aboutTitle": "About this facility",
+    "servicesTitle": "HEALIX services connected to this facility",
+    "servicesText": "HEALIX MEDICAL coordinates communication with this facility. The coordination services below cover the transplant enquiries HEALIX handles for contracted hospitals; the facility's own licensed medical team assesses every case.",
+    "servicesTextDental": "HEALIX MEDICAL coordinates communication with this center. You can browse all coordination services below and ask HEALIX about arranging an enquiry with this center.",
+    "otherTitle": "Other contracted facilities",
+    "sourcesTitle": "Sources"
   }
 }

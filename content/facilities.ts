@@ -1,3 +1,5 @@
+import type { Locale } from "@/lib/i18n/config";
+
 export type FacilityBrand =
   | "medical-park"
   | "vm-medical-park"
@@ -85,3 +87,76 @@ export function formatFacilityName(raw: string): string {
     })
     .join(" ");
 }
+
+export function getFacilityById(id: string) {
+  return facilities.find((facility) => facility.id === id);
+}
+
+/** Detail-page slugs are the registry ids in every locale (proper nouns). */
+export function getFacilityBySlug(slug: string) {
+  return getFacilityById(slug);
+}
+
+export function findFacilityByAnySlug(slug: string) {
+  return getFacilityById(slug);
+}
+
+/** Group / brand display names (proper nouns, identical in every locale). */
+export const facilityBrandLabels: Record<FacilityBrand, string> = {
+  "medical-park": "Medical Park",
+  "vm-medical-park": "VM Medical Park",
+  "liv-hospital": "Liv Hospital",
+  "istinye-university": "İstinye University",
+  "istanbul-aydin": "İstanbul Aydın University",
+};
+
+export type FacilityAgreement = Facility["agreement"];
+export type FacilityType = Facility["type"];
+
+export const facilityTypeLabels: Record<Locale, Record<FacilityType, string>> = {
+  en: { hospital: "Hospital", dental: "Oral and dental health research and application center" },
+  tr: { hospital: "Hastane", dental: "Ağız ve diş sağlığı araştırma ve uygulama merkezi" },
+  ar: { hospital: "مستشفى", dental: "مركز أبحاث وتطبيقات صحة الفم والأسنان" },
+  fr: { hospital: "Hôpital", dental: "Centre de recherche et d'application en santé bucco-dentaire" },
+  ru: { hospital: "Больница", dental: "Стоматологический научно-прикладной центр" },
+};
+
+export const facilityAgreementLabels: Record<Locale, Record<FacilityAgreement, string>> = {
+  en: { mlp: "MLP / Medical Park agreement", liv: "Dedicated Liv Ulus & Vadistanbul agreement" },
+  tr: { mlp: "MLP / Medical Park anlaşması", liv: "Özel Liv Ulus ve Vadistanbul anlaşması" },
+  ar: { mlp: "اتفاقية MLP / Medical Park", liv: "اتفاقية Liv Ulus وVadistanbul المخصصة" },
+  fr: { mlp: "Accord MLP / Medical Park", liv: "Accord dédié Liv Ulus & Vadistanbul" },
+  ru: { mlp: "Соглашение MLP / Medical Park", liv: "Отдельное соглашение Liv Ulus и Vadistanbul" },
+};
+
+/** Localised city names, keyed by the registry city value. */
+export const facilityCityNames: Record<string, Record<Locale, string>> = {
+  "İstanbul": { en: "Istanbul", tr: "İstanbul", ar: "إسطنبول", fr: "Istanbul", ru: "Стамбул" },
+  "Ankara": { en: "Ankara", tr: "Ankara", ar: "أنقرة", fr: "Ankara", ru: "Анкара" },
+  "İzmir": { en: "Izmir", tr: "İzmir", ar: "إزمير", fr: "Izmir", ru: "Измир" },
+  "Bursa": { en: "Bursa", tr: "Bursa", ar: "بورصة", fr: "Bursa", ru: "Бурса" },
+  "Antalya": { en: "Antalya", tr: "Antalya", ar: "أنطاليا", fr: "Antalya", ru: "Анталья" },
+  "Ordu": { en: "Ordu", tr: "Ordu", ar: "أوردو", fr: "Ordu", ru: "Орду" },
+  "Trabzon": { en: "Trabzon", tr: "Trabzon", ar: "طرابزون", fr: "Trabzon", ru: "Трабзон" },
+  "Kocaeli": { en: "Kocaeli", tr: "Kocaeli", ar: "كوجالي", fr: "Kocaeli", ru: "Коджаэли" },
+  "Mersin": { en: "Mersin", tr: "Mersin", ar: "مرسين", fr: "Mersin", ru: "Мерсин" },
+  "Gaziantep": { en: "Gaziantep", tr: "Gaziantep", ar: "غازي عنتاب", fr: "Gaziantep", ru: "Газиантеп" },
+  "Tokat": { en: "Tokat", tr: "Tokat", ar: "توكات", fr: "Tokat", ru: "Токат" },
+  "Samsun": { en: "Samsun", tr: "Samsun", ar: "سامسون", fr: "Samsun", ru: "Самсун" },
+  "Adana": { en: "Adana", tr: "Adana", ar: "أضنة", fr: "Adana", ru: "Адана" },
+};
+
+/**
+ * District per facility id, only where the district is stated by the
+ * facility's own official website (mp-antalya, liv-ulus, liv-vadistanbul —
+ * checked November 2026) or by the facility's own name as listed in this
+ * registry (the three İstinye annex buildings).
+ */
+export const facilityDistricts: Record<string, Record<Locale, string>> = {
+  "mp-antalya": { en: "Muratpaşa", tr: "Muratpaşa", ar: "مراد باشا", fr: "Muratpaşa", ru: "Муратпаша" },
+  "liv-ulus": { en: "Beşiktaş", tr: "Beşiktaş", ar: "بشيكتاش", fr: "Beşiktaş", ru: "Бешикташ" },
+  "liv-vadistanbul": { en: "Sarıyer", tr: "Sarıyer", ar: "ساريير", fr: "Sarıyer", ru: "Сарыер" },
+  "istinye-esenyurt": { en: "Esenyurt", tr: "Esenyurt", ar: "إسنيورت", fr: "Esenyurt", ru: "Эсеньюрт" },
+  "istinye-topkapi": { en: "Topkapı", tr: "Topkapı", ar: "طوب قابي", fr: "Topkapı", ru: "Топкапы" },
+  "istinye-gop": { en: "Gaziosmanpaşa", tr: "Gaziosmanpaşa", ar: "غازي عثمان باشا", fr: "Gaziosmanpaşa", ru: "Газиосманпаша" },
+};

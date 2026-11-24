@@ -3,6 +3,7 @@ import { defaultLocale, localeConfig, locales } from "@/lib/i18n/config";
 import { staticPages } from "@/lib/i18n/routes";
 import { services } from "@/content/services";
 import { guides } from "@/content/guides";
+import { facilities } from "@/content/facilities";
 import { siteConfig } from "@/lib/config/site";
 import { serviceImage } from "@/lib/service-images";
 
@@ -66,6 +67,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.8,
+        alternates: { languages },
+      });
+    }
+  }
+
+  // 4. All 33 contracted-facility detail pages across all 5 locales
+  //    (165 facility URLs; the slug is the registry id in every locale).
+  //    The facilities index itself is covered by the staticPages loop above.
+  for (const facility of facilities) {
+    const languages: Record<string, string> = {};
+    for (const loc of locales) {
+      languages[localeConfig[loc].htmlLang] = `${siteConfig.url}/${loc}/facilities/${facility.id}`;
+    }
+    languages["x-default"] = `${siteConfig.url}/${defaultLocale}/facilities/${facility.id}`;
+
+    for (const loc of locales) {
+      entries.push({
+        url: `${siteConfig.url}/${loc}/facilities/${facility.id}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.7,
         alternates: { languages },
       });
     }
