@@ -232,6 +232,34 @@
       }
     ]
   },
+  "linksPage": {
+    "metaTitle": "Official Links – HEALIX MEDICAL",
+    "metaDescription": "All official HEALIX MEDICAL links in one place: WhatsApp by country, document guides for patients from Tunisia, Algeria, Morocco and Libya, services, contracted facilities and social media.",
+    "title": "Official links",
+    "lead": "Every official way to contact HEALIX MEDICAL and read our patient guides, in one place.",
+    "whatsappTitle": "WhatsApp",
+    "whatsappGeneral": "General enquiry",
+    "tunisia": "Tunisia",
+    "algeria": "Algeria",
+    "morocco": "Morocco",
+    "libya": "Libya",
+    "whatsappMessages": {
+      "general": "Hello, I would like to ask about the documents needed for a liver or kidney transplant in Türkiye.",
+      "tunisia": "Hello, I am a patient from Tunisia. I would like to ask about the documents needed for a liver or kidney transplant in Türkiye.",
+      "algeria": "Hello, I am a patient from Algeria. I would like to ask about the documents needed for a liver or kidney transplant in Türkiye.",
+      "morocco": "Hello, I am a patient from Morocco. I would like to ask about the documents needed for a liver or kidney transplant in Türkiye.",
+      "libya": "Hello, I am a patient from Libya. I would like to ask about the documents needed for a liver or kidney transplant in Türkiye."
+    },
+    "guidesTitle": "Document guides",
+    "servicesTitle": "Services and facilities",
+    "allServices": "All services",
+    "facilities": "Contracted healthcare facilities",
+    "socialTitle": "Social media",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "contactTitle": "Contact",
+    "contactPage": "Contact page"
+  },
   "servicesPage": {
     "metaTitle": "Services – Medical Coordination in Türkiye",
     "metaDescription": "Explore the twelve service areas in which HEALIX MEDICAL coordinates enquiries for international patients in Türkiye, including liver and kidney transplantation.",

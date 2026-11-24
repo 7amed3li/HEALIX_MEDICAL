@@ -232,6 +232,34 @@
       }
     ]
   },
+  "linksPage": {
+    "metaTitle": "Liens officiels – HEALIX MEDICAL",
+    "metaDescription": "Tous les liens officiels de HEALIX MEDICAL au même endroit : WhatsApp par pays, guides de documents pour les patients de Tunisie, d'Algérie, du Maroc et de Libye, services, établissements contractuels et réseaux sociaux.",
+    "title": "Liens officiels",
+    "lead": "Tous les moyens officiels de contacter HEALIX MEDICAL et de lire nos guides pour patients, au même endroit.",
+    "whatsappTitle": "WhatsApp",
+    "whatsappGeneral": "Demande générale",
+    "tunisia": "Tunisie",
+    "algeria": "Algérie",
+    "morocco": "Maroc",
+    "libya": "Libye",
+    "whatsappMessages": {
+      "general": "Bonjour, je souhaite me renseigner sur les documents nécessaires pour une greffe de foie ou de rein en Turquie.",
+      "tunisia": "Bonjour, je suis un patient de Tunisie. Je souhaite me renseigner sur les documents nécessaires pour une greffe de foie ou de rein en Turquie.",
+      "algeria": "Bonjour, je suis un patient d'Algérie. Je souhaite me renseigner sur les documents nécessaires pour une greffe de foie ou de rein en Turquie.",
+      "morocco": "Bonjour, je suis un patient du Maroc. Je souhaite me renseigner sur les documents nécessaires pour une greffe de foie ou de rein en Turquie.",
+      "libya": "Bonjour, je suis un patient de Libye. Je souhaite me renseigner sur les documents nécessaires pour une greffe de foie ou de rein en Turquie."
+    },
+    "guidesTitle": "Guides de documents",
+    "servicesTitle": "Services et établissements",
+    "allServices": "Tous les services",
+    "facilities": "Établissements de santé contractuels",
+    "socialTitle": "Réseaux sociaux",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "contactTitle": "Contact",
+    "contactPage": "Page de contact"
+  },
   "servicesPage": {
     "metaTitle": "Services – Coordination médicale en Turquie",
     "metaDescription": "Découvrez les douze domaines dans lesquels HEALIX MEDICAL coordonne les demandes de patients internationaux en Turquie, dont la transplantation hépatique et rénale.",

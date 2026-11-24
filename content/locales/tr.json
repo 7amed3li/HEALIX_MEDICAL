@@ -232,6 +232,34 @@
       }
     ]
   },
+  "linksPage": {
+    "metaTitle": "Resmi Bağlantılar – HEALIX MEDICAL",
+    "metaDescription": "Tüm resmi HEALIX MEDICAL bağlantıları tek yerde: ülkeye göre WhatsApp, Tunus, Cezayir, Fas ve Libya'dan hastalar için belge rehberleri, hizmetler, sözleşmeli tesisler ve sosyal medya.",
+    "title": "Resmi bağlantılar",
+    "lead": "HEALIX MEDICAL ile iletişime geçmenin ve hasta rehberlerimizi okumanın tüm resmi yolları tek yerde.",
+    "whatsappTitle": "WhatsApp",
+    "whatsappGeneral": "Genel soru",
+    "tunisia": "Tunus",
+    "algeria": "Cezayir",
+    "morocco": "Fas",
+    "libya": "Libya",
+    "whatsappMessages": {
+      "general": "Merhaba, Türkiye'de karaciğer veya böbrek nakli için gerekli belgeler hakkında bilgi almak istiyorum.",
+      "tunisia": "Merhaba, Tunus'tan bir hastayım. Türkiye'de karaciğer veya böbrek nakli için gerekli belgeler hakkında bilgi almak istiyorum.",
+      "algeria": "Merhaba, Cezayir'den bir hastayım. Türkiye'de karaciğer veya böbrek nakli için gerekli belgeler hakkında bilgi almak istiyorum.",
+      "morocco": "Merhaba, Fas'tan bir hastayım. Türkiye'de karaciğer veya böbrek nakli için gerekli belgeler hakkında bilgi almak istiyorum.",
+      "libya": "Merhaba, Libya'dan bir hastayım. Türkiye'de karaciğer veya böbrek nakli için gerekli belgeler hakkında bilgi almak istiyorum."
+    },
+    "guidesTitle": "Belge rehberleri",
+    "servicesTitle": "Hizmetler ve tesisler",
+    "allServices": "Tüm hizmetler",
+    "facilities": "Sözleşmeli sağlık tesisleri",
+    "socialTitle": "Sosyal medya",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "contactTitle": "İletişim",
+    "contactPage": "İletişim sayfası"
+  },
   "servicesPage": {
     "metaTitle": "Hizmetler – Türkiye’de Hasta Koordinasyonu",
     "metaDescription": "Karaciğer ve böbrek nakli dahil olmak üzere HEALIX MEDICAL’in Türkiye’de uluslararası hasta başvurularını koordine ettiği on iki hizmet alanını inceleyin.",

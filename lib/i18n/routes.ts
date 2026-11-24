@@ -14,6 +14,7 @@ export const staticPages = {
   journey: "/patient-journey",
   about: "/about",
   faq: "/faq",
+  links: "/links",
   contact: "/contact",
   privacy: "/privacy",
   terms: "/terms",
