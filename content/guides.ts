@@ -15,6 +15,10 @@ export const GUIDE_IDS = [
   "transplant-law-foreign-patients",
   "who-can-be-a-living-donor",
   "ethics-commission-documents-approval",
+  "documents-tunisian-patients",
+  "documents-algerian-patients",
+  "documents-moroccan-patients",
+  "documents-libyan-patients",
 ] as const;
 
 export type GuideId = (typeof GUIDE_IDS)[number];
@@ -53,6 +57,46 @@ export const guides: GuideDefinition[] = [
       fr: "commission-ethique-documents-approbation",
       ru: "komissiya-po-etike-dokumenty-odobrenie",
       tr: "etik-komisyonu-belgeleri-ve-onay",
+    },
+  },
+  {
+    id: "documents-tunisian-patients",
+    slugs: {
+      ar: "documents-tunisian-patients",
+      en: "documents-tunisian-patients",
+      fr: "documents-patients-tunisiens",
+      ru: "dokumenty-dlya-tunisskikh-patsientov",
+      tr: "tunuslu-hastalar-icin-belgeler",
+    },
+  },
+  {
+    id: "documents-algerian-patients",
+    slugs: {
+      ar: "documents-algerian-patients",
+      en: "documents-algerian-patients",
+      fr: "documents-patients-algeriens",
+      ru: "dokumenty-dlya-alzhirskikh-patsientov",
+      tr: "cezayirli-hastalar-icin-belgeler",
+    },
+  },
+  {
+    id: "documents-moroccan-patients",
+    slugs: {
+      ar: "documents-moroccan-patients",
+      en: "documents-moroccan-patients",
+      fr: "documents-patients-marocains",
+      ru: "dokumenty-dlya-marokkanskikh-patsientov",
+      tr: "fasli-hastalar-icin-belgeler",
+    },
+  },
+  {
+    id: "documents-libyan-patients",
+    slugs: {
+      ar: "documents-libyan-patients",
+      en: "documents-libyan-patients",
+      fr: "documents-patients-libyens",
+      ru: "dokumenty-dlya-liviyskikh-patsientov",
+      tr: "libyali-hastalar-icin-belgeler",
     },
   },
 ];
