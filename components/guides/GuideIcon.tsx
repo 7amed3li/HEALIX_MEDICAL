@@ -23,6 +23,7 @@ export function GuideIcon({ id, className = "h-6 w-6" }: Props) {
     case "documents-algerian-patients":
     case "documents-moroccan-patients":
     case "documents-libyan-patients":
+    case "documents-comparison-maghreb":
       return <FileText className={className} strokeWidth={1.75} aria-hidden="true" />;
     default:
       return <Scale className={className} strokeWidth={1.75} aria-hidden="true" />;
