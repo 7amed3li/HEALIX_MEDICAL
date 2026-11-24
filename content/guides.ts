@@ -19,6 +19,7 @@ export const GUIDE_IDS = [
   "documents-algerian-patients",
   "documents-moroccan-patients",
   "documents-libyan-patients",
+  "documents-comparison-maghreb",
 ] as const;
 
 export type GuideId = (typeof GUIDE_IDS)[number];
@@ -97,6 +98,16 @@ export const guides: GuideDefinition[] = [
       fr: "documents-patients-libyens",
       ru: "dokumenty-dlya-liviyskikh-patsientov",
       tr: "libyali-hastalar-icin-belgeler",
+    },
+  },
+  {
+    id: "documents-comparison-maghreb",
+    slugs: {
+      ar: "documents-comparison-maghreb",
+      en: "documents-comparison-maghreb",
+      fr: "comparaison-documents-maghreb",
+      ru: "sravnenie-dokumentov-magriba",
+      tr: "magrip-ulkeleri-belge-karsilastirmasi",
     },
   },
 ];
