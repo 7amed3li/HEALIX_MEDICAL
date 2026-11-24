@@ -12,6 +12,23 @@ export type ServiceDictionary = Record<ServiceId, ServiceContent>;
 export type GuideContent = (typeof enGuides)[keyof typeof enGuides];
 export type GuideDictionary = Record<GuideId, GuideContent>;
 
+/**
+ * Per-facility page copy (content/facilities/<locale>.json), keyed by the
+ * registry id from content/facilities.ts. `sourceNote` is present only for
+ * facilities whose extra facts were verified on the facility's own official
+ * website; it is present in all five locales for those ids and absent for
+ * the rest, so the explicit type keeps it optional.
+ */
+export type FacilityContent = {
+  metaTitle: string;
+  metaDescription: string;
+  intro: string;
+  overview: string[];
+  cta: string;
+  sourceNote?: string;
+};
+export type FacilityDictionary = Record<string, FacilityContent>;
+
 const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   ar: () => import("@/content/locales/ar.json").then((m) => m.default as Dictionary),
   en: () => import("@/content/locales/en.json").then((m) => m.default as Dictionary),
@@ -36,6 +53,19 @@ const guideDictionaries: Record<Locale, () => Promise<GuideDictionary>> = {
   tr: () => import("@/content/guides/tr.json").then((m) => m.default as GuideDictionary),
 };
 
+const facilityDictionaries: Record<Locale, () => Promise<FacilityDictionary>> = {
+  ar: () => import("@/content/facilities/ar.json").then((m) => m.default as FacilityDictionary),
+  en: () => import("@/content/facilities/en.json").then((m) => m.default as FacilityDictionary),
+  fr: () => import("@/content/facilities/fr.json").then((m) => m.default as FacilityDictionary),
+  ru: () => import("@/content/facilities/ru.json").then((m) => m.default as FacilityDictionary),
+  tr: () => import("@/content/facilities/tr.json").then((m) => m.default as FacilityDictionary),
+};
+
 export const getDictionary = (locale: Locale) => dictionaries[locale]();
 export const getServiceDictionary = (locale: Locale) => serviceDictionaries[locale]();
 export const getGuideDictionary = (locale: Locale) => guideDictionaries[locale]();
+export const getFacilityDictionary = (locale: Locale) => facilityDictionaries[locale]();
+
+export function getFacilityContent(dict: FacilityDictionary, facilityId: string) {
+  return dict[facilityId];
+}

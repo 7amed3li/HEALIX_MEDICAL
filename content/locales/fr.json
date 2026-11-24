@@ -502,5 +502,20 @@
     "enquireAction": "Coordonner",
     "noResults": "Aucun établissement ne correspond à votre recherche.",
     "resetFilters": "Afficher tout"
+  },
+  "facilityPage": {
+    "backToFacilities": "Retour à tous les établissements",
+    "factsTitle": "Informations sur l'établissement",
+    "brandLabel": "Groupe / marque",
+    "cityLabel": "Ville",
+    "districtLabel": "District",
+    "typeLabel": "Type d'établissement",
+    "agreementLabel": "Accord HEALIX",
+    "aboutTitle": "À propos de cet établissement",
+    "servicesTitle": "Services HEALIX liés à cet établissement",
+    "servicesText": "HEALIX MEDICAL coordonne la communication avec cet établissement. Les services de coordination ci-dessous couvrent les demandes de transplantation que HEALIX traite pour les établissements conventionnés ; l'équipe médicale agréée de l'établissement évalue chaque cas.",
+    "servicesTextDental": "HEALIX MEDICAL coordonne la communication avec ce centre. Vous pouvez consulter tous les services de coordination ci-dessous et demander à HEALIX d'organiser une demande auprès de ce centre.",
+    "otherTitle": "Autres établissements conventionnés",
+    "sourcesTitle": "Sources"
   }
 }

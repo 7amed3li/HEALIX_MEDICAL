@@ -122,6 +122,44 @@ export function guideJsonLd(args: {
   return jsonLd;
 }
 
+/**
+ * Facility detail page: BreadcrumbList + a plain Organization node for the
+ * facility itself. Only registry-verified facts are emitted (name, city,
+ * country) — no Hospital/MedicalOrganization type, no ratings, no medical
+ * claims, consistent with the caution applied to HEALIX's own nodes above.
+ */
+export function facilityJsonLd(args: {
+  locale: Locale;
+  name: string;
+  url: string;
+  homeLabel: string;
+  facilitiesLabel: string;
+  cityName: string;
+}) {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: args.name,
+      url: args.url,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: args.cityName,
+        addressCountry: "TR",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: args.homeLabel, item: `${siteConfig.url}/${args.locale}` },
+        { "@type": "ListItem", position: 2, name: args.facilitiesLabel, item: `${siteConfig.url}/${args.locale}/facilities` },
+        { "@type": "ListItem", position: 3, name: args.name, item: args.url },
+      ],
+    },
+  ];
+}
+
 export function facilitiesItemListJsonLd(args: {
   locale: Locale;
   title: string;

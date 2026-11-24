@@ -34,3 +34,8 @@ export function servicePath(locale: Locale, id: ServiceId) {
 export function guidePath(locale: Locale, id: GuideId) {
   return `/${locale}/guides/${getGuideById(id).slugs[locale]}`;
 }
+
+/** Facility detail pages use the registry id as the slug in every locale. */
+export function facilityPath(locale: Locale, facilityId: string) {
+  return `/${locale}/facilities/${facilityId}`;
+}
