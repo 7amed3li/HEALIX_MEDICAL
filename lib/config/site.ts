@@ -4,11 +4,31 @@
  * RULE: anything not confirmed by the project owner stays `null` / empty / disabled.
  * Components hide elements automatically when a value is missing. Never put placeholder data here.
  */
+/**
+ * The production site is served and indexed on the www host. NEXT_PUBLIC_SITE_URL
+ * may be set to the bare domain in the host environment, which would make every
+ * canonical / sitemap / hreflang / OG URL non-www and split indexing — so a bare
+ * `healixistanbul.com.tr` host is always rewritten to `www.healixistanbul.com.tr`.
+ */
+function normalizeSiteUrl(raw: string): string {
+  const trimmed = raw.replace(/\/$/, "");
+  try {
+    const parsed = new URL(trimmed);
+    if (parsed.hostname === "healixistanbul.com.tr") {
+      parsed.hostname = "www.healixistanbul.com.tr";
+      return parsed.toString().replace(/\/$/, "");
+    }
+  } catch {
+    // Not a parseable absolute URL — return the trimmed value unchanged.
+  }
+  return trimmed;
+}
+
 export const siteConfig = {
   brand: "HEALIX MEDICAL",
 
   /** Public site URL (used for canonical, hreflang, sitemap, Open Graph). Set NEXT_PUBLIC_SITE_URL in production. */
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.healixistanbul.com.tr").replace(/\/$/, ""),
+  url: normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL || "https://www.healixistanbul.com.tr"),
 
   /**
    * Official extracted emblem from the HEALIX MEDICAL reference card (transparent PNG).
