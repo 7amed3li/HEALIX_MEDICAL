@@ -21,6 +21,15 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["lucide-react"],
   },
   poweredByHeader: false,
+  async redirects() {
+    // Wrong-slug variant that reached Google (hyphenated "vadi-istanbul");
+    // the facility's real slug has always been "liv-vadistanbul".
+    return ["en", "tr", "ar", "fr", "ru"].map((locale) => ({
+      source: `/${locale}/facilities/liv-vadi-istanbul`,
+      destination: `/${locale}/facilities/liv-vadistanbul`,
+      permanent: true,
+    }));
+  },
   async headers() {
     return [
       {
